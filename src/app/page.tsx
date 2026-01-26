@@ -5,6 +5,8 @@ import WhyAeroSection from "@/components/WhyAeroSection";
 import GlobalAudienceSection from "@/components/GlobalAudienceSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import HowWeWorkSection from "@/components/HowWeWorkSection";
+import ConnectWithUsSection from "@/components/ConnectWithUsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <GlobalAudienceSection />
       <LogoCarousel />
       <HowWeWorkSection />
+      <ConnectWithUsSection />
+      <TestimonialsSection />
     </main>
   );
 }
