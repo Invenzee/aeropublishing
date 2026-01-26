@@ -1,26 +1,122 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFFFF;
+  --foreground: #000000;
+  --brand-primary: #433F7A;
+  --brand-secondary: #FE695B;
+  --brand-black: #000000;
+  --brand-white: #FFFFFF;
+  --brand-gray: #696969;
+  --brand-light: #F3F3F3;
+  --brand-muted: #B7B7B7;
+  --brand-accent: #36C0E7;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-black: var(--brand-black);
+  --color-brand-white: var(--brand-white);
+  --color-brand-gray: var(--brand-gray);
+  --color-brand-light: var(--brand-light);
+  --color-brand-muted: var(--brand-muted);
+  --color-brand-accent: var(--brand-accent);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-syne: var(--font-syne);
+  --font-poppins: var(--font-poppins);
+  --font-shaded: var(--font-shaded-larsh);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-syne), sans-serif;
+}
+
+/* Button Wave Fill Animation */
+.button-wave .button__text {
+  transform: translate(0, 0);
+}
+
+.button-wave .button__filler {
+  transform: translate3d(0, 75%, 0);
+  transition: transform 0.3s ease;
+}
+
+.button-wave.hover-in .button__text {
+  animation: textHoverIn 0.3s forwards;
+}
+
+.button-wave.hover-in .button__filler {
+  animation: fillerHoverIn 0.3s forwards;
+}
+
+.button-wave.hover-out .button__text {
+  animation: textHoverOut 0.3s forwards;
+}
+
+.button-wave.hover-out .button__filler {
+  animation: fillerHoverOut 0.3s forwards;
+}
+
+@keyframes textHoverIn {
+  0% {
+    opacity: 0;
+  }
+
+  1% {
+    transform: translate(0, -100%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    color: var(--hoverTextColor);
+  }
+}
+
+@keyframes textHoverOut {
+  0% {
+    opacity: 0;
+  }
+
+  1% {
+    transform: translate(0, 100%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fillerHoverIn {
+  0% {
+    transform: translate3d(0, 75%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fillerHoverOut {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 75%, 0);
+  }
 }
