@@ -50,7 +50,7 @@ export default function WhyAeroSection() {
                         WHY AERO
                     </p>
                     <h2 className="text-[50px] text-center font-syne font-bold leading-[.9] max-sm:text-[32px] max-w-2xl">
-                        <span className="text-brand-secondary font-shaded font-[300] text-[60px]">Publishing</span>{" "}
+                        <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px]">Publishing</span>{" "}
                         <span className="text-brand-primary font-[500]">Your Book Has Never </span>
                         <span className="text-brand-primary">Been Easier</span>
                     </h2>
@@ -106,7 +106,7 @@ export default function WhyAeroSection() {
                         }}
                         className="relative max-lg:order-first flex justify-end"
                     >
-                        <div className="relative w-[90%] rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="relative w-[90%] max-sm:w-full rounded-2xl overflow-hidden shadow-2xl">
                             <img
                                 src="/why-aero-book.png"
                                 alt="Open book"

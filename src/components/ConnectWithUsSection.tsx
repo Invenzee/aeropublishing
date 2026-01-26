@@ -41,7 +41,7 @@ export default function ConnectWithUsSection() {
                         className="w-2/3 max-lg:w-full border-l border-white/70 pl-12 max-lg:pl-0 max-lg:border-l-0"
                     >
                         <h2 className="text-[40px] font-syne font-medium leading-[1] text-white mb-8 max-sm:text-[28px] max-sm:text-center">
-                            Connect With <span className="text-brand-secondary font-shaded text-[50px] font-[300]">Leading</span> Book<br className="max-sm:hidden" /> Publishers in USA Today
+                            Connect With <span className="text-brand-secondary font-shaded max-sm:text-[40px] text-[50px] font-[300]">Leading</span> Book<br className="max-sm:hidden" /> Publishers in USA Today
                         </h2>
 
                         <form className="space-y-6">

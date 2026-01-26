@@ -56,7 +56,7 @@ export default function TestimonialsSection() {
                         Did you know
                     </p>
                     <h2 className="text-[40px] font-syne font-[500] leading-[1] text-brand-primary max-sm:text-[32px]">
-                        9 Out of 10 Fully <span className="text-brand-secondary text-[50px] font-shaded font-[400]">Written</span> Books<br />
+                        9 Out of 10 Fully <span className="text-brand-secondary text-[50px] font-shaded font-[400] max-sm:text-[40px]">Written</span> Books<br />
                         Never<span className="font-[700]"> Get Published</span>
                     </h2>
                 </motion.div>

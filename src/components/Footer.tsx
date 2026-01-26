@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="py-12 bg-white px-4">
+        <footer className="py-12 max-sm:py-6 bg-white px-4">
             <div
                 className="max-w-[1140px] mx-auto rounded-[50px] overflow-hidden relative bg-cover bg-center min-h-[400px] flex flex-col justify-between"
                 style={{ backgroundImage: "url('/connect-with-us.png')" }}
             >
 
-                <div className="relative z-10 px-12 pt-20 pb-12 grid grid-cols-1 md:grid-cols-12 gap-12 text-white">
+                <div className="relative z-10 px-12 max-sm:px-6 max-sm:py-10 pt-20 pb-12 grid grid-cols-1 md:grid-cols-12 gap-12 text-white">
                     {/* Brand Column */}
                     <div className="md:col-span-3 space-y-6">
                         {/* Logo Placeholder - simplified text/icon match */}
@@ -57,7 +57,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="relative z-10 border-t border-white/20 px-12 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[12px] text-white/70 font-poppins">
+                <div className="relative z-10 border-t border-white/20 px-12 max-sm:px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[12px] text-white/70 font-poppins">
                     <p>Powered by Aero Publishing . All rights reserved.</p>
                     <div className="flex gap-1">
                         <Link href="#" className="hover:text-white transition-colors text-brand-secondary">Terms & Conditions</Link>

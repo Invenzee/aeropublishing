@@ -77,7 +77,7 @@ export default function FAQSection() {
                                     onClick={() => setActiveId(activeId === faq.id ? null : faq.id)}
                                     className="w-full py-6 flex items-center justify-between gap-4 text-left group transition-colors cursor-pointer"
                                 >
-                                    <span className="text-lg font-syne font-medium text-brand-primary group-hover:text-brand-secondary transition-colors">
+                                    <span className="text-lg font-syne font-medium text-brand-primary group-hover:text-brand-secondary transition-colors max-sm:text-[16px]">
                                         {faq.question}
                                     </span>
                                     <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 shrink-0

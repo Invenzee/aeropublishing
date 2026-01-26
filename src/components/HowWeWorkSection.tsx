@@ -85,7 +85,7 @@ export default function HowWeWorkSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                         transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-                        className="flex justify-between gap-4 mb-12 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3"
+                        className="flex justify-between gap-4 mb-12 max-sm:grid max-sm:grid-cols-1 max-sm:gap-3"
                     >
                         {steps.map((step, index) => (
                             <button

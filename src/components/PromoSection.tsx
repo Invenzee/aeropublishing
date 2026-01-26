@@ -21,10 +21,10 @@ export default function PromoSection() {
                     {/* Left Side: Form */}
                     <div className="w-1/2 p-12 max-md:w-full max-sm:p-8 bg-[#F8F9FA]">
                         <div className="mb-8">
-                            <h3 className="text-2xl font-syne font-medium text-brand-black mb-1">
+                            <h3 className="text-2xl font-syne font-medium text-brand-black mb-1 max-sm:text-[18px]">
                                 Activate Your Coupon Now!
                             </h3>
-                            <h2 className="text-3xl font-syne font-bold text-brand-black">
+                            <h2 className="text-3xl font-syne font-bold text-brand-black max-sm:text-[24px]">
                                 Get Upto 50% Discount
                             </h2>
                         </div>

@@ -76,7 +76,7 @@ export default function CounterSection() {
         <section className="relative bg-brand-light py-10 max-sm:py-12">
             {/* Triangle Decoration */}
             <motion.div
-                className="absolute left-20 -top-16 w-44 h-44 max-sm:w-12 max-sm:h-12"
+                className="absolute left-20 -top-16 w-44 h-44 max-sm:w-20 max-sm:h-20 max-sm:left-10 max-sm:-top-8"
                 animate={{
                     y: [0, -20, 0],
                     x: [0, 10, 0]
