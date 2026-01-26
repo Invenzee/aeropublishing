@@ -7,6 +7,10 @@ import LogoCarousel from "@/components/LogoCarousel";
 import HowWeWorkSection from "@/components/HowWeWorkSection";
 import ConnectWithUsSection from "@/components/ConnectWithUsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection";
+import AuthorsShowcaseSection from "@/components/AuthorsShowcaseSection";
+import FAQSection from "@/components/FAQSection";
+import PromoSection from "@/components/PromoSection";
 
 export default function Home() {
   return (
@@ -20,6 +24,10 @@ export default function Home() {
       <HowWeWorkSection />
       <ConnectWithUsSection />
       <TestimonialsSection />
+      <WhyChooseUsSection />
+      <AuthorsShowcaseSection />
+      <PromoSection />
+      <FAQSection />
     </main>
   );
 }

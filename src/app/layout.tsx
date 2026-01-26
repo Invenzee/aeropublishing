@@ -3,6 +3,7 @@ import { Syne, Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const ShadedLarsh = localFont({
   src: "../../public/fonts/shaded-larsh.ttf",
@@ -35,13 +36,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon-2.svg" />
+        <link rel="icon" href="/favicon-3.png" />
       </head>
       <body
         className={`${syne.variable} ${poppins.variable} ${ShadedLarsh.variable} antialiased`}
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
