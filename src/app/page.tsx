@@ -3,6 +3,8 @@ import HeroSection from "@/components/HeroSection";
 import CounterSection from "@/components/CounterSection";
 import WhyAeroSection from "@/components/WhyAeroSection";
 import GlobalAudienceSection from "@/components/GlobalAudienceSection";
+import LogoCarousel from "@/components/LogoCarousel";
+import HowWeWorkSection from "@/components/HowWeWorkSection";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <CounterSection />
       <WhyAeroSection />
       <GlobalAudienceSection />
+      <LogoCarousel />
+      <HowWeWorkSection />
     </main>
   );
 }
