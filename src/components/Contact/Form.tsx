@@ -62,9 +62,9 @@ export default function ContactForm() {
       <img src="/carousel-bg.png" className="absolute right-0" alt="" />
       <form
         onSubmit={handleSubmit}
-        className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow"
+        className="max-w-[1140px] mx-auto bg-white p-8 rounded-xl shadow"
       >
-        <h2 className="text-5xl font-bold text-center mb-8">
+        <h2 className="text-5xl font-syne font-bold text-brand-primary text-center mb-8">
           Let Us Help You Out!
         </h2>
 
@@ -76,7 +76,7 @@ export default function ContactForm() {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 w-full border rounded-md px-4 py-2"
+            className="mt-1 w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
           />
         </label>
 
@@ -90,7 +90,7 @@ export default function ContactForm() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="mt-1 w-full border rounded-md px-4 py-2"
+            className="mt-1 w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
           />
         </label>
 
@@ -104,7 +104,7 @@ export default function ContactForm() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="mt-1 w-full border rounded-md px-4 py-2"
+            className="mt-1 w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
           />
         </label>
 
@@ -118,7 +118,7 @@ export default function ContactForm() {
             name="website"
             value={formData.website}
             onChange={handleChange}
-            className="mt-1 w-full border rounded-md px-4 py-2"
+            className="mt-1 w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
           />
         </label>
 
@@ -172,7 +172,7 @@ export default function ContactForm() {
             name="source"
             value={formData.source}
             onChange={handleChange}
-            className="mt-1 w-full border rounded-md px-4 py-2"
+            className="mt-1 w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
           />
         </label>
 
@@ -184,7 +184,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="mt-1 w-full border rounded-md px-4 py-2"
+            className="mt-1 w-full h-32 px-6 py-4 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all resize-none font-poppins"
           />
         </label>
 

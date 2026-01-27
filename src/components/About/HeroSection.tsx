@@ -12,7 +12,7 @@ const badges = [
     "/hero-badge-4.png",
 ]
 
-export default function HeroSection({ title, description, showButton = true }: { title: string, description: string, showButton?: boolean }) {
+export default function HeroSection({ title, description, showButton = true, className = "" }: { title: string, description: string, showButton?: boolean, className?: string }) {
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -27,7 +27,7 @@ export default function HeroSection({ title, description, showButton = true }: {
     }, []);
 
     return (
-        <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[url('/hero-bg.png')] bg-cover bg-center">
+        <section className={`${className} relative min-h-screen flex items-center pt-20 overflow-hidden bg-[url('/hero-bg.png')] bg-cover bg-center`}>
             <div className="max-w-[1140px] mx-auto my-24 relative z-10 w-full flex justify-center gap-5 items-center max-sm:flex-col max-sm:my-12 max-sm:px-6">
 
                 {/* Left Column: Content */}

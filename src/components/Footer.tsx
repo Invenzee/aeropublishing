@@ -26,6 +26,17 @@ export default function Footer() {
                         </p>
                     </div>
 
+                    <div className="md:col-span-3 space-y-6">
+                        <h4 className="text-[#36C0E7] font-syne font-bold text-lg mb-4">Quick Links</h4>
+                        <ul className="space-y-4 font-poppins text-sm opacity-90">
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/about">About</Link></li>
+                            <li><Link href="/pricing">Pricing</Link></li>
+                            <li><Link href="/blog">Blog</Link></li>
+                            <li><Link href="/contact-us">Contact</Link></li>
+                        </ul>
+                    </div>
+
                     {/* Contact Column */}
                     <div className="md:col-span-3 space-y-6">
                         <h4 className="text-[#36C0E7] font-syne font-bold text-lg mb-4">Contact</h4>
