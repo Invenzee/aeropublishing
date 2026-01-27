@@ -24,11 +24,11 @@ export default function ConnectWithUsSection() {
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         className="w-1/3 flex justify-center max-lg:w-full"
                     >
-                        <div className="relative w-full max-w-[250px] aspect-[2/1]">
+                        <div className="relative w-full">
                             <img
                                 src="/connect-with-us-logo.png"
                                 alt="Connect with us logo"
-                                className="w-full h-full object-contain"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </motion.div>
