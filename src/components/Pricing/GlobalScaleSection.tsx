@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import Button from "../Button";
+import { useRouter } from "next/navigation";
 
 export default function GlobalScaleSection() {
+    const router = useRouter();
     return (
         <section className="pb-20 bg-white">
             <div className="max-w-[1140px] mx-auto px-6">
@@ -36,7 +38,7 @@ export default function GlobalScaleSection() {
                     </h2>
 
                     <div className="">
-                        <Button variant="secondary" className="!h-14 !px-10 !text-lg !rounded-full shadow-lg hover:shadow-xl transition-shadow capitalize">
+                        <Button variant="secondary" className="!h-14 !px-10 !text-lg !rounded-full shadow-lg hover:shadow-xl transition-shadow capitalize" onClick={() => router.push('/pricing-global-premium')}>
                             Choose Global Premium
                         </Button>
                     </div>

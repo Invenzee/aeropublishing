@@ -12,7 +12,7 @@ const badges = [
     "/hero-badge-4.png",
 ]
 
-export default function HeroSection({ title, description }: { title: string, description: string }) {
+export default function HeroSection({ title, description, showButton = true }: { title: string, description: string, showButton?: boolean }) {
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -45,14 +45,16 @@ export default function HeroSection({ title, description }: { title: string, des
                         {description}
                     </p>
 
-                    <div className="flex flex-wrap gap-4 pt-4 justify-center">
-                        <Button variant="primary" className="max-sm:text-[14px] max-sm:px-4">
-                            +1 562 366 7780
-                        </Button>
-                        <Button variant="secondary" className="max-sm:text-[14px] max-sm:px-4">
-                            Chat Now
-                        </Button>
-                    </div>
+                    {showButton && (
+                        <div className="flex flex-wrap gap-4 pt-4 justify-center">
+                            <Button variant="primary" className="max-sm:text-[14px] max-sm:px-4">
+                                +1 562 366 7780
+                            </Button>
+                            <Button variant="secondary" className="max-sm:text-[14px] max-sm:px-4">
+                                Chat Now
+                            </Button>
+                        </div>
+                    )}
                 </motion.div>
 
 
