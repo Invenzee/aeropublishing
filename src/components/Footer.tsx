@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="py-12 max-sm:py-6 bg-white px-4">
+        <footer className="py-8 max-sm:py-6 bg-white px-4">
             <div
-                className="max-w-[1140px] mx-auto rounded-[50px] overflow-hidden relative bg-cover bg-center min-h-[400px] flex flex-col justify-between"
+                className="max-w-[1400px] mx-auto rounded-[50px] overflow-hidden relative bg-cover bg-center min-h-[400px] flex flex-col justify-between"
                 style={{ backgroundImage: "url('/connect-with-us.png')" }}
             >
 
