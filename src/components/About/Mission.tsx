@@ -12,7 +12,7 @@ export default function MissionSection() {
     return (
         <section className="bg-white overflow-hidden">
             {/* Section 1: Laptop with Books */}
-            <div ref={section1Ref} className="max-w-[1140px] mx-auto py-20 max-md:py-12">
+            <div ref={section1Ref} className="max-w-[1140px] mx-auto py-20 max-md:py-12 max-sm:px-6">
                 <div className="flex items-center gap-16 max-lg:flex-col max-lg:gap-12">
                     {/* Left: Image */}
                     <motion.div
