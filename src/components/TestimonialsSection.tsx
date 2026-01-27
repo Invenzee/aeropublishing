@@ -3,6 +3,7 @@
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import Image from "next/image";
+import { FaQuoteRight } from "react-icons/fa";
 
 // Sample data for testimonials
 const testimonials = [
@@ -90,7 +91,7 @@ export default function TestimonialsSection() {
                         {/* Speech Bubble & Profile */}
                         <div className="flex items-center gap-6">
                             {/* Speech Bubble */}
-                            <div className="rounded-2xl p-4 border border-gray-300 relative max-w-[250px]">
+                            <div className="rounded-2xl  -mr-8 z-20 bg-white p-4 border border-gray-300 relative max-w-[250px]">
                                 <p className="text-sm font-syne text-brand-black">
                                     Best <span className="text-brand-secondary font-shaded !text-lg">Riders</span> With Professional Content Writing Services
                                 </p>
@@ -98,10 +99,12 @@ export default function TestimonialsSection() {
 
                             {/* Author Profile Image */}
                             <div className="relative">
-                                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-md">
+                                <div className="w-32 h-40 rounded-lg overflow-hidden border-2 border-white shadow-md">
                                     <img src={activeTestimonial.authorImage} className="w-full h-full object-cover" />
                                 </div>
-                                <div className="absolute -top-2 -right-2 text-brand-secondary text-2xl font-serif">“</div>
+                                <div className="absolute -top-2 -right-2 text-brand-secondary bg-white leading-[1] text-xl p-2 rounded-sm font-serif">
+                                    <FaQuoteRight />
+                                </div>
                             </div>
                         </div>
 
@@ -141,7 +144,7 @@ export default function TestimonialsSection() {
                             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                             transition={{ duration: 0.5, delay: 0.6 + (testimonial.id * 0.1) }}
                             className={`bg-white rounded-2xl p-8 border-2 cursor-pointer transition-all duration-300 flex flex-col items-center text-center shadow-lg relative group overflow-hidden
-                        ${activeId === testimonial.id ? "border-brand-primary ring-1 ring-brand-primary" : "border-[#D4E9F7] hover:border-brand-primary/50"}
+                        ${activeId === testimonial.id ? "border-brand-primary ring-1 ring-brand-primary" : "border-[#D4E9F7]"}
                     `}
                         >
                             <p className="text-sm font-poppins text-brand-gray mb-6 leading-relaxed italic relative z-10">

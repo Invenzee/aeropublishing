@@ -15,7 +15,7 @@ const features = [
         icon: Copyright,
         title: "ISBN & copyright\nfiling included",
         description: "When a person really desires something, all the universe conspires to help that person to realize his dream",
-        highlight: true
+        highlight: false
     },
     {
         icon: UserCheck,
