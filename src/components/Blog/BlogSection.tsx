@@ -75,7 +75,7 @@ const blogPosts = [
 
 export default function BlogSection() {
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-white bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
             <div className="max-w-[1140px] mx-auto px-6">
 
                 {/* Featured Post */}

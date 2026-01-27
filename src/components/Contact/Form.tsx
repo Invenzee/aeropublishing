@@ -58,137 +58,140 @@ export default function ContactForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow"
-    >
-      <h2 className="text-5xl font-bold text-center mb-8">
-        Let Us Help You Out!
-      </h2>
+    <div className="bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
+      <img src="/carousel-bg.png" className="absolute right-0" alt="" />
+      <form
+        onSubmit={handleSubmit}
+        className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow"
+      >
+        <h2 className="text-5xl font-bold text-center mb-8">
+          Let Us Help You Out!
+        </h2>
 
-      {/* Name */}
-      <label className="block mb-4">
-        <span className="text-sm font-medium">What is your name?</span>
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          className="mt-1 w-full border rounded-md px-4 py-2"
-        />
-      </label>
+        {/* Name */}
+        <label className="block mb-4">
+          <span className="text-sm font-medium">What is your name?</span>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="mt-1 w-full border rounded-md px-4 py-2"
+          />
+        </label>
 
-      {/* Email */}
-      <label className="block mb-4">
-        <span className="text-sm font-medium">
-          What’s the best email to reach you?
-        </span>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          className="mt-1 w-full border rounded-md px-4 py-2"
-        />
-      </label>
+        {/* Email */}
+        <label className="block mb-4">
+          <span className="text-sm font-medium">
+            What’s the best email to reach you?
+          </span>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="mt-1 w-full border rounded-md px-4 py-2"
+          />
+        </label>
 
-      {/* Phone */}
-      <label className="block mb-4">
-        <span className="text-sm font-medium">
-          Do you prefer phone?
-        </span>
-        <input
-          type="text"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          className="mt-1 w-full border rounded-md px-4 py-2"
-        />
-      </label>
+        {/* Phone */}
+        <label className="block mb-4">
+          <span className="text-sm font-medium">
+            Do you prefer phone?
+          </span>
+          <input
+            type="text"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="mt-1 w-full border rounded-md px-4 py-2"
+          />
+        </label>
 
-      {/* Website */}
-      <label className="block mb-6">
-        <span className="text-sm font-medium">
-          If you have an existing website, what’s the link?
-        </span>
-        <input
-          type="text"
-          name="website"
-          value={formData.website}
-          onChange={handleChange}
-          className="mt-1 w-full border rounded-md px-4 py-2"
-        />
-      </label>
+        {/* Website */}
+        <label className="block mb-6">
+          <span className="text-sm font-medium">
+            If you have an existing website, what’s the link?
+          </span>
+          <input
+            type="text"
+            name="website"
+            value={formData.website}
+            onChange={handleChange}
+            className="mt-1 w-full border rounded-md px-4 py-2"
+          />
+        </label>
 
-      {/* Services + Timeline */}
-      <div className="grid md:grid-cols-2 gap-6 mb-6">
-        <div>
-          <p className="font-medium mb-2">
-            What are you reaching out for?
-          </p>
-          {servicesList.map((service) => (
-            <label key={service} className="flex items-center mb-2 text-sm">
-              <input
-                type="checkbox"
-                checked={formData.services.includes(service)}
-                onChange={() => handleCheckboxChange(service)}
-                className="mr-2"
-              />
-              {service}
-            </label>
-          ))}
-        </div>
-
-        <div>
-          <p className="font-medium mb-2">
-            When are you looking to get this done?
-          </p>
-          {["ASAP", "Within next couple weeks", "Within next 1–2 months", "Flexible"].map(
-            (time) => (
-              <label key={time} className="flex items-center mb-2 text-sm">
+        {/* Services + Timeline */}
+        <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <p className="font-medium mb-2">
+              What are you reaching out for?
+            </p>
+            {servicesList.map((service) => (
+              <label key={service} className="flex items-center mb-2 text-sm">
                 <input
-                  type="radio"
-                  name="timeline"
-                  value={time}
-                  onChange={handleChange}
+                  type="checkbox"
+                  checked={formData.services.includes(service)}
+                  onChange={() => handleCheckboxChange(service)}
                   className="mr-2"
                 />
-                {time}
+                {service}
               </label>
-            )
-          )}
+            ))}
+          </div>
+
+          <div>
+            <p className="font-medium mb-2">
+              When are you looking to get this done?
+            </p>
+            {["ASAP", "Within next couple weeks", "Within next 1–2 months", "Flexible"].map(
+              (time) => (
+                <label key={time} className="flex items-center mb-2 text-sm">
+                  <input
+                    type="radio"
+                    name="timeline"
+                    value={time}
+                    onChange={handleChange}
+                    className="mr-2"
+                  />
+                  {time}
+                </label>
+              )
+            )}
+          </div>
         </div>
-      </div>
 
-      {/* Source */}
-      <label className="block mb-4">
-        <span className="text-sm font-medium">
-          What did you type into Google to find us?
-        </span>
-        <input
-          type="text"
-          name="source"
-          value={formData.source}
-          onChange={handleChange}
-          className="mt-1 w-full border rounded-md px-4 py-2"
-        />
-      </label>
+        {/* Source */}
+        <label className="block mb-4">
+          <span className="text-sm font-medium">
+            What did you type into Google to find us?
+          </span>
+          <input
+            type="text"
+            name="source"
+            value={formData.source}
+            onChange={handleChange}
+            className="mt-1 w-full border rounded-md px-4 py-2"
+          />
+        </label>
 
-      {/* Message */}
-      <label className="block mb-6">
-        <span className="text-sm font-medium">Extra thoughts?</span>
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          rows={4}
-          className="mt-1 w-full border rounded-md px-4 py-2"
-        />
-      </label>
+        {/* Message */}
+        <label className="block mb-6">
+          <span className="text-sm font-medium">Extra thoughts?</span>
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            rows={4}
+            className="mt-1 w-full border rounded-md px-4 py-2"
+          />
+        </label>
 
-      <Button className="mx-auto px-12">
-        Submit
-      </Button>
-    </form>
+        <Button className="mx-auto px-12">
+          Submit
+        </Button>
+      </form>
+    </div>
   );
 }

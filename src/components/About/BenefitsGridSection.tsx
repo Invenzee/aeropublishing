@@ -23,7 +23,7 @@ export default function BenefitsGridSection({
     benefits
 }: BenefitsGridSectionProps) {
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-white bg-[url('/carousel-bg.png')] bg-contain bg-no-repeat bg-right">
             <div className="max-w-[1140px] mx-auto px-6">
 
                 {/* Header */}

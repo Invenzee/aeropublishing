@@ -32,7 +32,7 @@ export default function FeatureSection({
     isReversed = false,
 }: FeatureSectionProps) {
     return (
-        <section className="py-20 bg-white overflow-hidden">
+        <section className="py-20 bg-white overflow-hidden bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
             <div className={`max-w-[1140px] mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${isReversed ? 'lg:flex-row-reverse' : ''}`}>
 
                 {/* Content Side */}
