@@ -15,7 +15,7 @@ export default function About() {
     return (
         <main className="min-h-screen">
             <Header />
-            <HeroSection />
+            <HeroSection title="About Us" description="Your story is about to be in the hands of millions, and that's true! If you see our side, we are the opportunity for millions of authors to get published." />
             <CounterSection />
             <MissionSection />
             <WhyAeroSection />

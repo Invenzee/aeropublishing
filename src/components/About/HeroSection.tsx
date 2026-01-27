@@ -12,7 +12,7 @@ const badges = [
     "/hero-badge-4.png",
 ]
 
-export default function HeroSection() {
+export default function HeroSection({ title, description }: { title: string, description: string }) {
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -37,12 +37,12 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="space-y-2"
                 >
-                    <h1 className="text-[60px] text-center font-syne font-semibold leading-[1] text-brand-primary max-sm:text-[40px]">
-                        About Us
+                    <h1 className="text-[60px] text-center font-syne font-semibold leading-[1] text-brand-primary max-sm:text-[40px] max-w-3xl mx-auto">
+                        {title}
                     </h1>
 
-                    <p className="text-black text-center font-poppins text-md leading-relaxed max-w-2xl max-sm:text-[14px]">
-                        Your story is about to be in the hands of millions, and that's true! If you see our side, we are the opportunity for millions of authors to get published.
+                    <p className="text-black text-center font-poppins text-md leading-relaxed max-w-2xl max-sm:text-[14px] mx-auto">
+                        {description}
                     </p>
 
                     <div className="flex flex-wrap gap-4 pt-4 justify-center">
