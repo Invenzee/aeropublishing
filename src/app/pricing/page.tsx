@@ -1,6 +1,6 @@
 import HeroSection from '@/components/About/HeroSection'
 import PricingSection from '@/components/Pricing/PricingSection'
-import GlobalAudienceSection from "@/components/GlobalAudienceSection";
+import GlobalScaleSection from '@/components/Pricing/GlobalScaleSection';
 import ConnectWithUsSection from '@/components/ConnectWithUsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import WhyChooseUsSection from '@/components/WhyChooseUsSection';
@@ -16,7 +16,7 @@ export default function page() {
                 description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
             />
             <PricingSection />
-            <GlobalAudienceSection />
+            <GlobalScaleSection />
             <ConnectWithUsSection />
             <TestimonialsSection />
             <WhyChooseUsSection />

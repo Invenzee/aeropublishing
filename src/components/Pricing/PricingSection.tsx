@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import Button from "../Button";
@@ -49,6 +49,16 @@ const getPrice = (tierIdx: number, wordCount: number, category: string) => {
 export default function PricingSection() {
     const [wordCount, setWordCount] = useState(50000);
     const [category, setCategory] = useState("Fiction/Non-fiction");
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener("resize", checkMobile);
+    }, []);
 
     return (
         <section className="py-20 bg-white overflow-hidden">
@@ -65,8 +75,8 @@ export default function PricingSection() {
                     >
                         <ImageDecorator />
                         <h2 className="text-4xl md:text-5xl font-syne font-semibold text-brand-primary mb-12 relative z-10">
-                            How many words does<br />
-                            your <span className="text-brand-secondary italic font-shaded font-[300] text-[60px]">book</span> have?
+                            How many words does {isMobile ? "" : <br />}
+                            your <span className="text-brand-secondary italic font-shaded font-[300] text-[60px] max-sm:text-[40px]">book</span> have?
                         </h2>
                     </motion.div>
 
@@ -78,15 +88,15 @@ export default function PricingSection() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="text-center max-w-3xl mx-auto mb-4 relative px-8"
                     >
-                        <div className="relative h-2 bg-gray-200 rounded-full mb-8">
+                        <div className="relative h-2 max-sm:h-1 bg-gray-200 rounded-full mb-8">
                             <div
                                 className="absolute top-0 left-0 h-full bg-brand-secondary rounded-full transition-all duration-300"
                                 style={{ width: `${((wordCount - 25000) / 75000) * 100}%` }}
                             />
                             {/* Custom Thumb */}
                             <div
-                                className="absolute top-1/2 -translate-y-1/2 w-6 h-6 bg-white border-4 border-brand-secondary rounded-full shadow-lg cursor-grab active:cursor-grabbing hover:scale-110 transition-transform z-10"
-                                style={{ left: `${((wordCount - 25000) / 75000) * 100}%`, transform: `translate(-50%, -50%)` }}
+                                className="absolute -top-1/2 -translate-y-1/2 w-6 h-6 max-sm:w-4 max-sm:h-4 max-sm:border-2 bg-white border-4 border-brand-secondary rounded-full shadow-lg cursor-grab active:cursor-grabbing hover:scale-110 transition-transform z-10"
+                                style={{ left: `${((wordCount - 25000) / 75000) * 100}%`, transform: `translate(-25%, -50%)` }}
                             />
 
                             {/* Steps */}
@@ -99,9 +109,9 @@ export default function PricingSection() {
                                         style={{ left: `${position}%` }}
                                         onClick={() => setWordCount(option.value)}
                                     >
-                                        <div className={`w-3 h-3 rounded-full transition-colors duration-300 ${wordCount >= option.value ? 'bg-brand-secondary' : 'bg-gray-300'}`} />
+                                        <div className={`w-2 h-2 rounded-full transition-colors duration-300 ${wordCount >= option.value ? 'bg-brand-secondary' : 'bg-gray-300'}`} />
                                         <span
-                                            className={`absolute top-6 left-1/2 -translate-x-1/2 text-xs font-poppins font-medium whitespace-nowrap transition-colors duration-300 ${wordCount === option.value ? 'text-brand-black font-bold' : 'text-gray-400'
+                                            className={`absolute top-6 left-1/2 -translate-x-1/2 text-xs font-poppins font-medium whitespace-nowrap transition-colors duration-300 max-sm:text-[9px] ${wordCount === option.value ? 'text-brand-black font-bold' : 'text-gray-400'
                                                 }`}
                                         >
                                             {option.label}
@@ -128,7 +138,7 @@ export default function PricingSection() {
                         transition={{ delay: 0.4 }}
                         className="text-gray-500 text-sm mt-12 mb-10"
                     >
-                        More than 125,000 words? <a href="#" className="underline hover:text-brand-secondary transition-colors">Contact our publishing consultants</a>
+                        More than 125,000 words? <a href="#" className="underline hover:text-brand-secondary transition-colors max-sm:text-xs">Contact our publishing consultants</a>
                     </motion.p>
 
                     {/* Toggle */}
@@ -154,7 +164,7 @@ export default function PricingSection() {
                             <button
                                 key={cat}
                                 onClick={() => setCategory(cat)}
-                                className={`relative z-10 px-8 py-3 rounded-lg text-sm font-semibold transition-colors duration-300 cursor-pointer ${category === cat ? "text-brand-primary" : "text-gray-500 hover:text-gray-700"
+                                className={`relative z-10 px-8 py-3 rounded-lg text-sm max-sm:text-xs max-sm:px-6 font-semibold transition-colors duration-300 cursor-pointer ${category === cat ? "text-brand-primary" : "text-gray-500 hover:text-gray-700"
                                     }`}
                             >
                                 {cat}
@@ -164,7 +174,7 @@ export default function PricingSection() {
                 </div>
 
                 {/* Pricing Cards */}
-                <div className="grid md:grid-cols-3 gap-8 items-center !mt-20">
+                <div className="grid md:grid-cols-3 gap-8 items-center !mt-20 max-sm:!mt-8">
                     {/* Card 1 */}
                     <PricingCard
                         title="Signature"
