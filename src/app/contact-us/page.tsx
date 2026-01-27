@@ -11,8 +11,6 @@ export default function About() {
             <HeroSection />
             <CounterSection />
             <FOrm />
-           
-           
         </main>
     );
 }

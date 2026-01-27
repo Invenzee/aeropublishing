@@ -12,7 +12,7 @@ const navItems = [
     { name: "Services", href: "#" },
     { name: "Pricing", href: "#" },
     { name: "Blog", href: "#" },
-    { name: "Contact Us", href: "#" },
+    { name: "Contact Us", href: "/contact-us" },
 ];
 
 export default function Header() {

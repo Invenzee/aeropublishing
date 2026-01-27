@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Button from "../Button";
 
 interface FormData {
   name: string;
@@ -61,7 +62,7 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow"
     >
-      <h2 className="text-3xl font-bold text-center mb-8">
+      <h2 className="text-5xl font-bold text-center mb-8">
         Let Us Help You Out!
       </h2>
 
@@ -185,12 +186,9 @@ export default function ContactForm() {
         />
       </label>
 
-      <button
-        type="submit"
-        className="w-full bg-orange-500 text-white py-3 rounded-full font-semibold hover:bg-orange-600 transition"
-      >
+      <Button className="mx-auto px-12">
         Submit
-      </button>
+      </Button>
     </form>
   );
 }
