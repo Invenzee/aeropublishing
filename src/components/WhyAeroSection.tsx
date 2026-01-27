@@ -39,7 +39,7 @@ export default function WhyAeroSection() {
             <div className="absolute inset-0 left-0 bottom-0">
                 <img src="/why-aero-gradient-bg.png" alt="Why Aero" className="object-contain bg-no-repeat" />
             </div>
-            <div ref={containerRef} className="max-w-[1140px] mx-auto px-6">
+            <div ref={containerRef} className="max-w-[1140px] mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}

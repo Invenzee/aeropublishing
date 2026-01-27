@@ -12,7 +12,7 @@ export default function MissionSection() {
     return (
         <section className="bg-white overflow-hidden">
             {/* Section 1: Laptop with Books */}
-            <div ref={section1Ref} className="max-w-[1240px] mx-auto px-6 py-20 max-md:py-12">
+            <div ref={section1Ref} className="max-w-[1140px] mx-auto py-20 max-md:py-12">
                 <div className="flex items-center gap-16 max-lg:flex-col max-lg:gap-12">
                     {/* Left: Image */}
                     <motion.div
@@ -52,7 +52,7 @@ export default function MissionSection() {
                 </div>
             </div>
             {/* Section 2: Book House */}
-            <div ref={section2Ref} className="max-w-[1240px] mx-auto px-6 py-20 max-md:py-12">
+            <div ref={section2Ref} className="max-w-[1140px] mx-auto px-6 py-20 max-md:py-12">
                 <div className="flex items-center gap-16 max-lg:flex-col-reverse max-lg:gap-12">
                     {/* Left: Text */}
                     <motion.div
@@ -77,12 +77,8 @@ export default function MissionSection() {
                         initial={{ opacity: 0, x: 50 }}
                         animate={isSection2InView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
                         transition={{ duration: 0.8 }}
-                        className="relative w-1/2 max-lg:w-full flex justify-center "
+                        className="relative w-1/2 max-lg:w-full"
                     >
-                        {/* Background Color Layer */}
-                        {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[100%] bg-brand-secondary rounded-xl"></div> */}
-
-                        {/* Image Layer */}
                         <div className="relative w-full aspect-[4/5] z-10 transition-transform duration-500 hover:scale-105">
                             <Image
                                 src="/rightbook2.png"
