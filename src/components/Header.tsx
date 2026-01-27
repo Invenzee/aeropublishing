@@ -5,18 +5,38 @@ import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
 import Image from "next/image";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
-const navItems = [
+interface NavItem {
+    name: string;
+    href: string;
+    subItems?: { name: string; href: string }[];
+}
+
+const navItems: NavItem[] = [
     { name: "About", href: "/about" },
-    { name: "Services", href: "#" },
+    {
+        name: "Services",
+        href: "#",
+        subItems: [
+            { name: "Ghostwriting", href: "/ghostwriting" },
+            { name: "Book Editing", href: "/book-editing" },
+            { name: "Book Publishing", href: "/book-publishing" },
+            { name: "Book Cover Design", href: "/book-cover-design" },
+            { name: "Book Marketing", href: "/book-marketing" },
+        ]
+    },
     { name: "Pricing", href: "/pricing" },
     { name: "Blog", href: "#" },
     { name: "Contact Us", href: "/contact-us" },
 ];
 
 export default function Header() {
+    const router = useRouter();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [hoveredService, setHoveredService] = useState(false);
+    const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!mobileMenuOpen);
@@ -34,38 +54,69 @@ export default function Header() {
                     <div className="flex justify-between items-center h-20">
                         {/* Logo */}
                         <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-                            <Image src="/logo.png" alt="Logo" width={100} height={100} />
+                            <Image src="/logo.png" alt="Logo" width={100} height={100} onClick={() => window.location.href = "/"} />
                         </div>
 
                         {/* Desktop Navigation */}
                         <div className="flex items-center gap-12">
                             <nav className="hidden md:flex space-x-10 items-center">
                                 {navItems.map((item, index) => (
-                                    <motion.div
+                                    <div
                                         key={item.name}
-                                        initial={{ opacity: 0, y: -20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: index * 0.1 }}
                                         className="relative group"
+                                        onMouseEnter={() => item.subItems && setHoveredService(true)}
+                                        onMouseLeave={() => item.subItems && setHoveredService(false)}
                                     >
-                                        <Link
-                                            href={item.href}
-                                            className="text-base font-poppins font-medium text-brand-black transition-colors relative group-hover:text-brand-secondary"
-                                        >
-                                            {item.name}
+                                        <div className="relative flex items-center gap-1 cursor-pointer">
+                                            <Link
+                                                href={item.href}
+                                                className="text-base font-poppins font-medium text-brand-black transition-colors relative group-hover:text-brand-secondary flex items-center gap-1"
+                                            >
+                                                {item.name}
+                                                {item.subItems && (
+                                                    <ChevronDown size={14} className={`transition-transform duration-300 ${hoveredService ? "rotate-180 text-brand-secondary" : ""}`} />
+                                                )}
+                                            </Link>
 
-                                            {/* Animated underline */}
+                                            {/* Animated underline (only for non-dropdown top-level items or general underline logic) */}
                                             <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-brand-secondary transition-all duration-300 group-hover:w-full" />
+                                        </div>
 
-                                            {/* Animated dot */}
-                                            <motion.span
-                                                className="absolute -top-1 -right-1 w-1.5 h-1.5 bg-brand-secondary rounded-full opacity-0"
-                                                initial={{ scale: 0, opacity: 0 }}
-                                                whileHover={{ scale: 1, opacity: 1 }}
-                                                transition={{ duration: 0.2 }}
-                                            />
-                                        </Link>
-                                    </motion.div>
+                                        {/* Dropdown Menu */}
+                                        <AnimatePresence>
+                                            {item.subItems && hoveredService && (
+                                                <motion.div
+                                                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                                                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                                                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                                                    transition={{ duration: 0.2, ease: "easeOut" }}
+                                                    className="absolute top-full -left-6 w-64 pt-6 bg-transparent"
+                                                >
+                                                    <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-2 overflow-hidden">
+                                                        {item.subItems.map((subItem, i) => (
+                                                            <Link
+                                                                key={subItem.name}
+                                                                href={subItem.href}
+                                                                className="block"
+                                                            >
+                                                                <motion.div
+                                                                    initial={{ opacity: 0, x: -10 }}
+                                                                    animate={{ opacity: 1, x: 0 }}
+                                                                    transition={{ delay: i * 0.05 }}
+                                                                    className="px-4 py-3 rounded-lg hover:bg-brand-light group/item transition-colors flex items-center justify-between"
+                                                                >
+                                                                    <span className="text-sm font-medium text-gray-600 group-hover/item:text-brand-secondary transition-colors">
+                                                                        {subItem.name}
+                                                                    </span>
+                                                                    <ChevronRight size={14} className="opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-brand-secondary" />
+                                                                </motion.div>
+                                                            </Link>
+                                                        ))}
+                                                    </div>
+                                                </motion.div>
+                                            )}
+                                        </AnimatePresence>
+                                    </div>
                                 ))}
                             </nav>
 
@@ -137,25 +188,59 @@ export default function Header() {
                                 {/* Mobile Navigation */}
                                 <nav className="space-y-1">
                                     {navItems.map((item, index) => (
-                                        <motion.div
-                                            key={item.name}
-                                            initial={{ opacity: 0, x: 20 }}
-                                            animate={{ opacity: 1, x: 0 }}
-                                            transition={{ delay: index * 0.1 }}
-                                        >
-                                            <Link
-                                                href={item.href}
-                                                onClick={toggleMobileMenu}
-                                                className="block px-4 py-3 rounded-lg font-poppins font-medium text-brand-black hover:bg-brand-light hover:text-brand-secondary transition-all"
-                                            >
+                                        <div key={item.name}>
+                                            {item.subItems ? (
+                                                <div className="space-y-1">
+                                                    <button
+                                                        onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                                                        className="w-full flex items-center justify-between px-4 py-3 rounded-lg font-poppins font-medium text-brand-black hover:bg-brand-light hover:text-brand-secondary transition-all"
+                                                    >
+                                                        {item.name}
+                                                        <ChevronDown size={16} className={`transition-transform duration-300 ${mobileServicesOpen ? "rotate-180" : ""}`} />
+                                                    </button>
+                                                    <AnimatePresence>
+                                                        {mobileServicesOpen && (
+                                                            <motion.div
+                                                                initial={{ height: 0, opacity: 0 }}
+                                                                animate={{ height: "auto", opacity: 1 }}
+                                                                exit={{ height: 0, opacity: 0 }}
+                                                                className="overflow-hidden pl-4"
+                                                            >
+                                                                {item.subItems.map(subItem => (
+                                                                    <Link
+                                                                        key={subItem.name}
+                                                                        href={subItem.href}
+                                                                        onClick={toggleMobileMenu}
+                                                                        className="block px-4 py-2 text-sm text-gray-600 hover:text-brand-secondary transition-colors"
+                                                                    >
+                                                                        {subItem.name}
+                                                                    </Link>
+                                                                ))}
+                                                            </motion.div>
+                                                        )}
+                                                    </AnimatePresence>
+                                                </div>
+                                            ) : (
                                                 <motion.div
-                                                    whileHover={{ x: 4 }}
-                                                    transition={{ duration: 0.2 }}
+                                                    initial={{ opacity: 0, x: 20 }}
+                                                    animate={{ opacity: 1, x: 0 }}
+                                                    transition={{ delay: index * 0.1 }}
                                                 >
-                                                    {item.name}
+                                                    <Link
+                                                        href={item.href}
+                                                        onClick={toggleMobileMenu}
+                                                        className="block px-4 py-3 rounded-lg font-poppins font-medium text-brand-black hover:bg-brand-light hover:text-brand-secondary transition-all"
+                                                    >
+                                                        <motion.div
+                                                            whileHover={{ x: 4 }}
+                                                            transition={{ duration: 0.2 }}
+                                                        >
+                                                            {item.name}
+                                                        </motion.div>
+                                                    </Link>
                                                 </motion.div>
-                                            </Link>
-                                        </motion.div>
+                                            )}
+                                        </div>
                                     ))}
                                 </nav>
 
