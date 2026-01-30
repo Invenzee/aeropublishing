@@ -31,7 +31,7 @@ export default function Footer() {
                         <ul className="space-y-4 font-poppins text-sm opacity-90">
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/about">About</Link></li>
-                            {/* <li><Link href="/pricing">Pricing</Link></li> */}
+                            <li><Link href="/portfolio">Portfolio</Link></li>
                             <li><Link href="/blog">Blog</Link></li>
                             <li><Link href="/contact-us">Contact</Link></li>
                         </ul>
