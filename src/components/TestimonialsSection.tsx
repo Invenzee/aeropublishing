@@ -12,8 +12,8 @@ const testimonials = [
         name: "The Alchemist",
         quote: "When a person really desires something, all the universe conspires to help that person to realize his dream",
         details: "This includes professional editing, cover design, formatting, and distribution strategies tailored to your genre.",
-        authorImage: "/testimonial.png", // Using placeholders, ensure these exist or use generic
-        mainImage: "/why-aero-book.png" // Reusing an existing image for the left side
+        authorImage: "/testimonial.png",
+        mainImage: "/why-aero-book.png"
     },
     {
         id: 2,

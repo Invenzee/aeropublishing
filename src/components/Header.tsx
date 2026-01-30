@@ -5,8 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
 import Image from "next/image";
 import { useState } from "react";
-import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Phone, Mail } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 interface NavItem {
     name: string;
@@ -21,13 +22,13 @@ const navItems: NavItem[] = [
         href: "#",
         subItems: [
             { name: "Ghostwriting", href: "/ghostwriting" },
-            { name: "Book Editing", href: "/book-editing" },
-            { name: "Book Publishing", href: "/book-publishing" },
             { name: "Book Cover Design", href: "/book-cover-design" },
-            { name: "Book Marketing", href: "/book-marketing" },
         ]
     },
-    { name: "Pricing", href: "/pricing" },
+    { name: "Book Editing", href: "/book-editing" },
+    { name: "Book Publishing", href: "/book-publishing" },
+    { name: "Book Marketing", href: "/book-marketing" },
+    // { name: "Pricing", href: "/pricing" },
     { name: "Blog", href: "/blog" },
     { name: "Contact Us", href: "/contact-us" },
 ];
@@ -45,11 +46,35 @@ export default function Header() {
     return (
         <>
             <motion.header
-                initial={{ y: -100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
                 className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
             >
+                <div className="w-full h-10 bg-brand-primary flex items-center justify-between px-30">
+                    <div className="flex items-center gap-6">
+                        <div className="flex items-center gap-2">
+                            <Phone size={14} className="text-white" />
+                            <span className="text-white text-sm font-poppins font-normal cursor-pointer">760 280 1847</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                            <Mail size={14} className="text-white" />
+                            <span className="text-white text-sm font-poppins font-normal cursor-pointer">info@aeropublishing.com</span>
+                        </div>
+                    </div>
+                    <div className="flex gap-4">
+                        <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
+                            <FaFacebookF size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
+                        </a>
+                        <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
+                            <FaInstagram size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
+                        </a>
+                        <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
+                            <FaLinkedinIn size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
+                        </a>
+                        <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
+                            <FaTwitter size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
+                        </a>
+                    </div>
+
+                </div>
                 <div className="max-w-[1140px] mx-auto px-6 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-20">
                         {/* Logo */}
@@ -59,7 +84,7 @@ export default function Header() {
 
                         {/* Desktop Navigation */}
                         <div className="flex items-center gap-12">
-                            <nav className="hidden md:flex space-x-10 items-center">
+                            <nav className="hidden md:flex space-x-6 items-center">
                                 {navItems.map((item, index) => (
                                     <div
                                         key={item.name}
@@ -70,7 +95,7 @@ export default function Header() {
                                         <div className="relative flex items-center gap-1 cursor-pointer">
                                             <Link
                                                 href={item.href}
-                                                className="text-base font-poppins font-medium text-brand-black transition-colors relative group-hover:text-brand-secondary flex items-center gap-1"
+                                                className="text-sm font-poppins font-medium text-brand-black transition-colors relative group-hover:text-brand-secondary flex items-center gap-1"
                                             >
                                                 {item.name}
                                                 {item.subItems && (
