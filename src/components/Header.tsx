@@ -16,18 +16,27 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-    { name: "About", href: "/about" },
+    { name: "Editing", href: "/book-editing" },
+    { name: "Publishing", href: "/book-publishing" },
+    { name: "Marketing", href: "/book-marketing" },
     {
-        name: "Services",
+        name: "Other Services",
         href: "#",
         subItems: [
-            { name: "Ghostwriting", href: "/ghostwriting" },
+            { name: "Audio Book Narration", href: "/audio-book-narration" },
+            { name: "Authors Website", href: "/authors-website" },
+            { name: "Book Formating", href: "/book-formating" },
             { name: "Book Cover Design", href: "/book-cover-design" },
+            { name: "Book Printing", href: "/book-printing" },
+            { name: "Children Book", href: "/children-book" },
+            { name: "Ebook Writing", href: "/ebook-writing" },
+            { name: "Ghostwriting", href: "/ghostwriting" },
+            { name: "Fiction Writing", href: "/fiction-writing" },
+            { name: "Proof Reading", href: "/proof-reading" },
+            { name: "Video Trailer", href: "/video-trailer" },
         ]
     },
-    { name: "Book Editing", href: "/book-editing" },
-    { name: "Book Publishing", href: "/book-publishing" },
-    { name: "Book Marketing", href: "/book-marketing" },
+    { name: "About Us", href: "/about" },
     // { name: "Pricing", href: "/pricing" },
     { name: "Blog", href: "/blog" },
     { name: "Contact Us", href: "/contact-us" },
@@ -84,7 +93,7 @@ export default function Header() {
 
                         {/* Desktop Navigation */}
                         <div className="flex items-center gap-12">
-                            <nav className="hidden md:flex space-x-6 items-center">
+                            <nav className="hidden md:flex space-x-8 items-center">
                                 {navItems.map((item, index) => (
                                     <div
                                         key={item.name}
@@ -95,7 +104,7 @@ export default function Header() {
                                         <div className="relative flex items-center gap-1 cursor-pointer">
                                             <Link
                                                 href={item.href}
-                                                className="text-sm font-poppins font-medium text-brand-black transition-colors relative group-hover:text-brand-secondary flex items-center gap-1"
+                                                className="text-[15px] font-poppins font-medium text-brand-black transition-colors relative group-hover:text-brand-secondary flex items-center gap-1"
                                             >
                                                 {item.name}
                                                 {item.subItems && (
@@ -117,7 +126,7 @@ export default function Header() {
                                                     transition={{ duration: 0.2, ease: "easeOut" }}
                                                     className="absolute top-full -left-6 w-64 pt-6 bg-transparent"
                                                 >
-                                                    <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-2 overflow-hidden">
+                                                    <div className="bg-white max-h-100 rounded-xl shadow-xl border border-gray-100 p-2 overflow-y-auto">
                                                         {item.subItems.map((subItem, i) => (
                                                             <Link
                                                                 key={subItem.name}
