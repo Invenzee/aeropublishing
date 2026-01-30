@@ -57,15 +57,15 @@ export default function Header() {
             <motion.header
                 className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
             >
-                <div className="w-full h-10 bg-brand-primary flex items-center justify-between px-30">
+                <div className="w-full h-10 bg-brand-primary flex items-center justify-between px-30 max-sm:px-4">
                     <div className="flex items-center gap-6">
                         <div className="flex items-center gap-2">
-                            <Phone size={14} className="text-white" />
-                            <span className="text-white text-sm font-poppins font-normal cursor-pointer">760 280 1847</span>
+                            <Phone size={14} className="text-white cursor-pointer" />
+                            <span className="text-white text-sm font-poppins font-normal cursor-pointer max-sm:hidden">760 280 1847</span>
                         </div>
                         <div className="flex items-center gap-1">
-                            <Mail size={14} className="text-white" />
-                            <span className="text-white text-sm font-poppins font-normal cursor-pointer">info@aeropublishing.com</span>
+                            <Mail size={14} className="text-white cursor-pointer" />
+                            <span className="text-white text-sm font-poppins font-normal cursor-pointer max-sm:hidden">info@aeropublishing.com</span>
                         </div>
                     </div>
                     <div className="flex gap-4">
@@ -216,7 +216,7 @@ export default function Header() {
                             animate={{ x: 0 }}
                             exit={{ x: "100%" }}
                             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                            className="fixed top-20 right-0 bottom-0 w-[280px] bg-white shadow-2xl z-40 md:hidden overflow-y-auto"
+                            className="fixed top-30 right-0 bottom-0 w-[280px] bg-white shadow-2xl z-40 md:hidden overflow-y-auto"
                         >
                             <div className="p-6 space-y-6">
                                 {/* Mobile Navigation */}
