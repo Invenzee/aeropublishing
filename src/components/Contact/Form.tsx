@@ -70,7 +70,7 @@ export default function ContactForm() {
 
         {/* Name */}
         <label className="block mb-4">
-          <span className="text-sm font-medium">What is your name?</span>
+          <span className="text-sm font-medium">Name</span>
           <input
             type="text"
             name="name"
@@ -83,7 +83,7 @@ export default function ContactForm() {
         {/* Email */}
         <label className="block mb-4">
           <span className="text-sm font-medium">
-            What’s the best email to reach you?
+            Email
           </span>
           <input
             type="email"
@@ -97,7 +97,7 @@ export default function ContactForm() {
         {/* Phone */}
         <label className="block mb-4">
           <span className="text-sm font-medium">
-            Do you prefer phone?
+            Phone
           </span>
           <input
             type="text"
@@ -108,77 +108,9 @@ export default function ContactForm() {
           />
         </label>
 
-        {/* Website */}
-        <label className="block mb-6">
-          <span className="text-sm font-medium">
-            If you have an existing website, what’s the link?
-          </span>
-          <input
-            type="text"
-            name="website"
-            value={formData.website}
-            onChange={handleChange}
-            className="mt-1 w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
-          />
-        </label>
-
-        {/* Services + Timeline */}
-        <div className="grid md:grid-cols-2 gap-6 mb-6">
-          <div>
-            <p className="font-medium mb-2">
-              What are you reaching out for?
-            </p>
-            {servicesList.map((service) => (
-              <label key={service} className="flex items-center mb-2 text-sm">
-                <input
-                  type="checkbox"
-                  checked={formData.services.includes(service)}
-                  onChange={() => handleCheckboxChange(service)}
-                  className="mr-2"
-                />
-                {service}
-              </label>
-            ))}
-          </div>
-
-          <div>
-            <p className="font-medium mb-2">
-              When are you looking to get this done?
-            </p>
-            {["ASAP", "Within next couple weeks", "Within next 1–2 months", "Flexible"].map(
-              (time) => (
-                <label key={time} className="flex items-center mb-2 text-sm">
-                  <input
-                    type="radio"
-                    name="timeline"
-                    value={time}
-                    onChange={handleChange}
-                    className="mr-2"
-                  />
-                  {time}
-                </label>
-              )
-            )}
-          </div>
-        </div>
-
-        {/* Source */}
-        <label className="block mb-4">
-          <span className="text-sm font-medium">
-            What did you type into Google to find us?
-          </span>
-          <input
-            type="text"
-            name="source"
-            value={formData.source}
-            onChange={handleChange}
-            className="mt-1 w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
-          />
-        </label>
-
         {/* Message */}
         <label className="block mb-6">
-          <span className="text-sm font-medium">Extra thoughts?</span>
+          <span className="text-sm font-medium">Message</span>
           <textarea
             name="message"
             value={formData.message}
