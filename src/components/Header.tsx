@@ -37,9 +37,8 @@ const navItems: NavItem[] = [
         ]
     },
     { name: "About Us", href: "/about" },
-    // { name: "Pricing", href: "/pricing" },
+    { name: "Portfolio", href: "/portfolio" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact Us", href: "/contact-us" },
 ];
 
 export default function Header() {
@@ -57,7 +56,7 @@ export default function Header() {
             <motion.header
                 className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
             >
-                <div className="w-full h-10 bg-brand-primary flex items-center justify-between px-30 max-sm:px-4">
+                <div className="w-full h-10 bg-brand-primary flex items-center justify-between px-36 max-sm:px-4">
                     <div className="flex items-center gap-6">
                         <div className="flex items-center gap-2">
                             <Phone size={14} className="text-white cursor-pointer" />

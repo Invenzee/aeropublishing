@@ -31,7 +31,7 @@ export default function Footer() {
                         <ul className="space-y-4 font-poppins text-sm opacity-90">
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/about">About</Link></li>
-                            <li><Link href="/pricing">Pricing</Link></li>
+                            {/* <li><Link href="/pricing">Pricing</Link></li> */}
                             <li><Link href="/blog">Blog</Link></li>
                             <li><Link href="/contact-us">Contact</Link></li>
                         </ul>
@@ -40,10 +40,10 @@ export default function Footer() {
                     {/* Contact Column */}
                     <div className="md:col-span-3 space-y-6">
                         <h4 className="text-[#36C0E7] font-syne font-bold text-lg mb-4">Contact</h4>
-                        <div className="space-y-4 font-poppins text-sm opacity-90">
+                        <div className="flex flex-col gap-4 font-poppins text-sm opacity-90 ">
                             <p>12501 Center Dr, South Gate,<br />CA 90201, United States</p>
-                            <p>760 280 1847</p>
-                            <p>www.aeropublishing.com</p>
+                            <a href="tel:+17602801847">760 280 1847</a>
+                            <a href="mailto:info@aeropublishing.com">info@aeropublishing.com</a>
                         </div>
                     </div>
 
