@@ -126,8 +126,9 @@ export default function AuthorsShowcaseSection() {
             {/* Header */}
             <div className="text-center mb-16 relative z-10 px-6">
                 <h2 className="text-[50px] font-syne font-[400] leading-[1] text-brand-primary max-sm:text-[32px]">
-                    200+ <span className="text-brand-secondary font-shaded font-[400] text-[60px]max-sm:text-[40px]">Authors</span> Have <span className="font-bold">Published</span> Their<br />
-                    <span className="font-bold">Books</span> With Spines
+                    Authors Around the World Trust <br />
+                    <span className="text-brand-secondary font-shaded font-[400] text-[60px]max-sm:text-[40px]"> Aero Publishing </span>
+                    <span className="font-bold">With Their Books</span>
                 </h2>
             </div>
 

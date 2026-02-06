@@ -13,8 +13,8 @@ export default function HowWeWorkSection() {
     const steps = [
         {
             id: 1,
-            label: "Upload Your Manuscript",
-            title: "Upload Your Manuscript\nWith A Few Clicks",
+            label: "Upload Manuscript",
+            title: "Submit Your Manuscript for Review",
             description: [
                 "Easily upload your manuscript using Spines' user-friendly dashboard. Just fill in a few simple details, like the book title, author's name, and category.",
                 "Instantly receive a copyright certificate for your book."
@@ -23,8 +23,8 @@ export default function HowWeWorkSection() {
         },
         {
             id: 2,
-            label: "Upload Your Manuscript",
-            title: "Choose Your Publishing\nPackage",
+            label: "Editorial & Design",
+            title: "Editing, Design, and Formatting by Publishing Experts",
             description: [
                 "Select from our range of publishing packages tailored to your needs.",
                 "Get access to professional editing, cover design, and formatting services."
@@ -33,8 +33,8 @@ export default function HowWeWorkSection() {
         },
         {
             id: 3,
-            label: "Upload Your Manuscript",
-            title: "Review and Approve\nYour Book",
+            label: "Publishing Setup",
+            title: "ISBN Registration and Platform Setup",
             description: [
                 "Review the final version of your book before publishing.",
                 "Make any last-minute changes or approve for publication."
@@ -43,8 +43,8 @@ export default function HowWeWorkSection() {
         },
         {
             id: 4,
-            label: "Upload Your Manuscript",
-            title: "Publish and Distribute\nWorldwide",
+            label: "Distribution & Launch",
+            title: " Book Launch and Global Availability",
             description: [
                 "Your book goes live on major platforms like Amazon, Barnes & Noble, and more.",
                 "Track your sales and royalties through our dashboard."
@@ -70,10 +70,10 @@ export default function HowWeWorkSection() {
                         How We Work
                     </p>
                     <h2 className="text-[50px] font-syne font-bold leading-[1] max-sm:text-[32px]">
-                        <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px]">Publish</span>{" "}
-                        <span className="text-brand-primary font-[500]">with Spines</span>
+                        <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px]">How Our Book</span>{" "}
+                        <span className="text-brand-primary font-[500]">Publishing Process Works</span>
                         <br />
-                        <span className="text-brand-primary font-bold">in Just Four Simple Steps</span>
+                        <span className="text-brand-primary font-bold">From Manuscript to Market</span>
                     </h2>
                     <p className="text-sm font-poppins text-brand-gray mt-4 max-w-2xl mx-auto">
                         Spines prophesies, designs, curates, formats, publishes, and starts distributing your book in just a couple of weeks.
@@ -91,7 +91,7 @@ export default function HowWeWorkSection() {
                             <button
                                 key={step.id}
                                 onClick={() => setActiveStep(index)}
-                                className={`px-6 py-3 rounded-lg font-poppins text-sm font-medium transition-all duration-300 max-sm:px-4 max-sm:py-2 max-sm:text-xs cursor-pointer ${activeStep === index
+                                className={`px-6 py-3 w-full rounded-lg font-poppins text-sm font-medium transition-all duration-300 max-sm:px-4 max-sm:py-2 max-sm:text-xs cursor-pointer ${activeStep === index
                                     ? "bg-brand-primary text-white shadow-lg border border-brand-primary"
                                     : "bg-white text-brand-primary border border-brand-primary/20 hover:border-brand-primary/50"
                                     }`}

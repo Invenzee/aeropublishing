@@ -66,7 +66,7 @@ export default function WhyChooseUsSection() {
                         <span className="font-[400]">Why</span> Choose <span className="text-brand-secondary font-shaded font-[400]">Us?</span>
                     </h2>
                     <p className="text-md font-poppins text-brand-primary font-medium">
-                        We measure success by your book's impact, not just our profit
+                        Why Authors Choose Aero Publishing Over Generic Publishing Platforms
                     </p>
                 </motion.div>
 

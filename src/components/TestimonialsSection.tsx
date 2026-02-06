@@ -54,11 +54,12 @@ export default function TestimonialsSection() {
                     className="text-center mb-16"
                 >
                     <p className="text-md font-poppins text-brand-primary font-semibold tracking-wider uppercase mb-2">
-                        Did you know
+                        PROBLEM AWARENESS / EDUCATION
                     </p>
                     <h2 className="text-[40px] font-syne font-[500] leading-[1] text-brand-primary max-sm:text-[32px]">
-                        9 Out of 10 Fully <span className="text-brand-secondary text-[50px] font-shaded font-[400] max-sm:text-[40px]">Written</span> Books<br />
-                        Never<span className="font-[700]"> Get Published</span>
+                        Why Most Books
+                        <span className="text-brand-secondary text-[50px] font-shaded font-[400] max-sm:text-[40px]"> Never Reach</span><br />
+                        <span className="font-[700]"> Readers And How We Change That</span>
                     </h2>
                 </motion.div>
 

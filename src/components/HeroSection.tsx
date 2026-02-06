@@ -38,8 +38,8 @@ export default function HeroSection() {
                     className="space-y-2"
                 >
                     <h1 className="text-[60px] font-syne font-semibold leading-[1] text-brand-primary max-sm:text-[40px]">
-                        <span className="font-shaded font-[300] text-brand-secondary mr-3 text-[65px] max-sm:text-[45px]">Best</span>
-                        Book Publishers for Self-Publishing Success
+                        Trusted <span className="font-shaded font-[300] text-brand-secondary mr-3 text-[65px] max-sm:text-[45px]">Partner</span>
+                        for Self-Publishing Success
                     </h1>
 
                     <p className="text-black font-poppins text-md leading-relaxed max-w-md max-sm:text-[14px]">

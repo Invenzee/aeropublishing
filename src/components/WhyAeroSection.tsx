@@ -11,22 +11,22 @@ export default function WhyAeroSection() {
     const features = [
         {
             icon: "/feature-icon-1.png",
-            title: "Premium-Quality Publishing",
+            title: "Professional Publishing Without Compromise",
             description: "If you do not know where to begin, just relax. We take all the stress of writing, publishing,"
         },
         {
             icon: "/feature-icon-2.png",
-            title: "Rewarded in Advance",
+            title: "Expert-Led Editorial and Design Support",
             description: "If you do not know where to begin, just relax. We take all the stress of writing, publishing,"
         },
         {
             icon: "/feature-icon-3.png",
-            title: "Full Creative Control",
+            title: "Full Creative Control and 100% Royalties",
             description: "If you do not know where to begin, just relax. We take all the stress of writing, publishing,"
         },
         {
             icon: "/feature-icon-4.png",
-            title: "Global Distribution and Marketing",
+            title: "Global Distribution Across Major Platforms",
             description: "If you do not know where to begin, just relax. We take all the stress of writing, publishing,"
         }
     ];
@@ -47,12 +47,12 @@ export default function WhyAeroSection() {
                     className="space-y-3 flex flex-col items-center mb-16"
                 >
                     <p className="text-md font-poppins text-brand-primary font-semibold tracking-wider uppercase">
-                        WHY AERO
+                        WHY AERO / VALUE DIFFERENTIATION
                     </p>
-                    <h2 className="text-[50px] text-center font-syne font-bold leading-[.9] max-sm:text-[32px] max-w-2xl">
-                        <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px]">Publishing</span>{" "}
-                        <span className="text-brand-primary font-[500]">Your Book Has Never </span>
-                        <span className="text-brand-primary">Been Easier</span>
+                    <h2 className="text-[50px] text-center font-syne font-bold leading-[1.1] max-sm:text-[32px] max-w-2xl">
+                        <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px] leading-[.8]">Publishing</span>{" "}
+                        <span className="text-brand-primary font-[500]">Your Book Should Be </span>
+                        <span className="text-brand-primary">Simple, Transparent, and Author-First</span>
                     </h2>
                 </motion.div>
                 <div className="grid grid-cols-2 gap-16 items-center max-lg:grid-cols-1 max-lg:gap-12">
