@@ -54,7 +54,7 @@ export default function Header() {
     return (
         <>
             <motion.header
-                className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
+                className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 overflow-x-hidden"
             >
                 <div className="w-full h-10 bg-brand-primary flex items-center justify-between px-36 max-sm:px-4">
                     <div className="flex items-center gap-6">

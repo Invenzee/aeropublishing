@@ -48,7 +48,7 @@ export default function WhyChooseUsSection() {
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
     return (
-        <section className="relative py-20 bg-brand-light overflow-hidden max-sm:py-12">
+        <section className="relative py-20 bg-brand-light overflow-hidden max-sm:py-12  overflow-x-hidden">
             {/* Subtle background glow effect if needed, similar to image light blue tint */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100 rounded-full blur-[100px] opacity-30 pointer-events-none -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-100 rounded-full blur-[100px] opacity-30 pointer-events-none translate-y-1/2 -translate-x-1/2" />

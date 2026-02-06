@@ -11,7 +11,7 @@ export default function ConnectWithUsSection() {
 
     return (
         <section
-            className="relative py-10 bg-cover bg-center overflow-hidden max-sm:py-12"
+            className="relative py-10 bg-cover bg-center overflow-hidden max-sm:py-12  overflow-x-hidden"
             style={{ backgroundImage: "url('/connect-with-us.png')" }}
         >
             <div ref={containerRef} className="max-w-[1140px] mx-auto px-6 relative z-10">

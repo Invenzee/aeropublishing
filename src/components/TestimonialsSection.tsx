@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
     const activeTestimonial = testimonials.find((t) => t.id === activeId) || testimonials[0];
 
     return (
-        <section className="relative py-20 bg-brand-light overflow-hidden max-sm:py-12">
+        <section className="relative py-20 bg-brand-light overflow-hidden max-sm:py-12  overflow-x-hidden">
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white via-transparent to-[#D4E9F7] opacity-50 pointer-events-none" />
 
             <div ref={containerRef} className="max-w-[1140px] mx-auto px-6 relative z-10">

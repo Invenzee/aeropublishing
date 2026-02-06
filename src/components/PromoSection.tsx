@@ -10,7 +10,7 @@ export default function PromoSection() {
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
     return (
-        <section className="relative py-20 overflow-hidden max-sm:py-12">
+        <section className="relative py-20 overflow-hidden max-sm:py-12  overflow-x-hidden">
             <div ref={containerRef} className="max-w-[1140px] mx-auto px-6 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}

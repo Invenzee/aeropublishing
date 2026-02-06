@@ -73,7 +73,7 @@ export default function CounterSection() {
     ];
 
     return (
-        <section className="relative bg-brand-light py-10 max-sm:py-12">
+        <section className="relative bg-brand-light py-10 max-sm:py-12 overflow-x-hidden">
             {/* Triangle Decoration */}
             <motion.div
                 className="absolute left-20 -top-16 w-44 h-44 max-sm:w-20 max-sm:h-20 max-sm:left-10 max-sm:-top-8"

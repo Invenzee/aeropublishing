@@ -55,7 +55,7 @@ export default function HowWeWorkSection() {
 
     return (
         <section
-            className="relative py-20 bg-contain bg-top bg-no-repeat max-sm:py-12"
+            className="relative py-20 bg-contain bg-top bg-no-repeat max-sm:py-12  overflow-x-hidden"
             style={{ backgroundImage: "url('/why-aero-bg.png')" }}
         >
             <div ref={containerRef} className="max-w-[1140px] mx-auto px-6">

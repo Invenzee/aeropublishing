@@ -38,7 +38,7 @@ export default function FAQSection() {
     const [activeId, setActiveId] = useState<number | null>(2); // Default open second item as in image
 
     return (
-        <section className="relative py-20 bg-white overflow-hidden max-sm:py-12">
+        <section className="relative py-20 bg-white overflow-hidden max-sm:py-12  overflow-x-hidden">
             {/* Left Side Glow Effect */}
             <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#D4E9F7] rounded-full blur-[120px] opacity-60 -translate-y-1/2 -translate-x-1/2 pointer-events-none" />
 

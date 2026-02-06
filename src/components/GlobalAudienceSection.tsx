@@ -59,7 +59,7 @@ export default function GlobalAudienceSection() {
     ];
 
     return (
-        <section className="relative py-20 max-sm:py-12 bg-[url('/carousel-bg.png')] bg-contain bg-right bg-no-repeat">
+        <section className="relative py-20 max-sm:py-12 bg-[url('/carousel-bg.png')] bg-contain bg-right bg-no-repeat  overflow-x-hidden">
 
             <div ref={containerRef} className="max-w-[1140px] mx-auto px-6">
                 {/* Header */}
