@@ -33,7 +33,7 @@ export default function WhyAeroSection() {
 
     return (
         <section
-            className="relative py-20 bg-contain bg-top bg-no-repeat max-sm:py-12 overflow-x-hidden"
+            className="relative py-20 bg-contain bg-top bg-no-repeat max-sm:py-12 max-sm:overflow-x-hidden"
             style={{ backgroundImage: "url('/why-aero-bg.png')" }}
         >
             <div className="absolute inset-0 left-0 bottom-0">
