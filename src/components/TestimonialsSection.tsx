@@ -54,8 +54,7 @@ export default function TestimonialsSection() {
                     className="text-center mb-16"
                 >
                     <p className="text-md font-poppins text-brand-primary font-semibold tracking-wider uppercase mb-2">
-                        PROBLEM AWARENESS / EDUCATION
-                    </p>
+                        Did you know                    </p>
                     <h2 className="text-[40px] font-syne font-[500] leading-[1] text-brand-primary max-sm:text-[32px]">
                         Why Most Books
                         <span className="text-brand-secondary text-[50px] font-shaded font-[400] max-sm:text-[40px]"> Never Reach</span><br />

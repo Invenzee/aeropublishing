@@ -12,56 +12,56 @@ const reviews = [
         name: "Jaya Stewart",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         avatar: "/testimonial.png",
-        width: "w-[400px]"
+        width: "w-[400px] max-sm:w-[280px]"
     },
     {
         id: 2,
         name: "Emilia",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ",
         avatar: "/testimonial.png",
-        width: "w-[320px]"
+        width: "w-[320px] max-sm:w-[280px]"
     },
     {
         id: 3,
         name: "Andrea",
         text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         avatar: "/testimonial.png ",
-        width: "w-[380px]"
+        width: "w-[380px] max-sm:w-[280px]"
     },
     {
         id: 4,
         name: "Claudia",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         avatar: "/testimonial.png",
-        width: "w-[300px]"
+        width: "w-[300px] max-sm:w-[280px]"
     },
     {
         id: 5,
         name: "Hanna",
         text: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ",
         avatar: "/testimonial.png",
-        width: "w-[420px]"
+        width: "w-[420px] max-sm:w-[280px]"
     },
     {
         id: 6,
         name: "John Smith",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         avatar: "/testimonial.png",
-        width: "w-[350px]"
+        width: "w-[350px] max-sm:w-[280px]"
     },
     {
         id: 7,
         name: "Cordelia",
         text: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         avatar: "/testimonial.png",
-        width: "w-[300px]"
+        width: "w-[300px] max-sm:w-[280px]"
     },
     {
         id: 8,
         name: "Yasmin",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
         avatar: "/testimonial.png",
-        width: "w-[360px]"
+        width: "w-[360px] max-sm:w-[280px]"
     }
 ];
 
@@ -161,7 +161,7 @@ export default function AuthorsShowcaseSection() {
 
 function ReviewCard({ item }: { item: any }) {
     return (
-        <div className={`bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-4 shrink-0 transition-all hover:shadow-md ${item.width}`}>
+        <div className={`bg-white p-6 max-sm:p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-4 shrink-0 transition-all hover:shadow-md ${item.width}`}>
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100 shrink-0">
@@ -179,7 +179,7 @@ function ReviewCard({ item }: { item: any }) {
                     </svg>
                 </div>
             </div>
-            <p className="text-[13px] font-poppins text-gray-500 leading-relaxed">
+            <p className="text-[13px] font-poppins text-gray-500 leading-relaxed max-sm:text-[10px]">
                 {item.text}
             </p>
         </div>

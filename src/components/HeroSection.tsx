@@ -37,7 +37,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="space-y-2"
                 >
-                    <h1 className="text-[60px] font-syne font-semibold leading-[1] text-brand-primary max-sm:text-[40px]">
+                    <h1 className="text-[60px] font-syne font-semibold leading-[1] text-brand-primary max-sm:text-[40px] max-sm:pt-8">
                         <span className="font-shaded font-[300] text-brand-secondary mr-3 text-[65px] max-sm:text-[45px]">Trusted</span> Partner for Self-Publishing Success
                     </h1>
 
