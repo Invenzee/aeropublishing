@@ -47,7 +47,7 @@ export default function WhyAeroSection() {
                     className="space-y-3 flex flex-col items-center mb-16"
                 >
                     <p className="text-md font-poppins text-brand-primary font-semibold tracking-wider uppercase">
-                        WHY AERO / VALUE DIFFERENTIATION
+                        WHY AERO
                     </p>
                     <h2 className="text-[50px] text-center font-syne font-bold leading-[1.1] max-sm:text-[32px] max-w-2xl">
                         <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px] leading-[.8]">Publishing</span>{" "}
