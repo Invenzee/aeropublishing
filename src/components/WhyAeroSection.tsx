@@ -12,22 +12,22 @@ export default function WhyAeroSection() {
         {
             icon: "/feature-icon-1.png",
             title: "Professional Publishing Without Compromise",
-            description: "If you do not know where to begin, just relax. We take all the stress of writing, publishing,"
+            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
         },
         {
             icon: "/feature-icon-2.png",
             title: "Expert-Led Editorial and Design Support",
-            description: "If you do not know where to begin, just relax. We take all the stress of writing, publishing,"
+            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
         },
         {
             icon: "/feature-icon-3.png",
             title: "Full Creative Control and 100% Royalties",
-            description: "If you do not know where to begin, just relax. We take all the stress of writing, publishing,"
+            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
         },
         {
             icon: "/feature-icon-4.png",
             title: "Global Distribution Across Major Platforms",
-            description: "If you do not know where to begin, just relax. We take all the stress of writing, publishing,"
+            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
         }
     ];
 
@@ -54,6 +54,9 @@ export default function WhyAeroSection() {
                         <span className="text-brand-primary font-[500]">Your Book Should Be </span>
                         <span className="text-brand-primary">Simple, Transparent, and Author-First</span>
                     </h2>
+                    <p className="text-black text-center font-poppins text-sm leading-relaxed max-w-4xl max-sm:text-[14px]">
+                    Publishing doesn’t need to be confusing or overwhelming. We believe authors deserve a clear, honest, and supportive publishing experience—one where you stay informed, maintain control, and know exactly what to expect at every stage. Our process is designed to put your goals first while delivering professional results you can trust.
+                    </p>
                 </motion.div>
                 <div className="grid grid-cols-2 gap-16 items-center max-lg:grid-cols-1 max-lg:gap-12">
                     {/* Left Column: Content */}

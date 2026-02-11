@@ -7,38 +7,38 @@ import { Handshake, Copyright, UserCheck, Store, Share2, Target } from "lucide-r
 const features = [
     {
         icon: Handshake,
-        title: "Pre-order\ncampaign support",
-        description: "When a person really desires something, all the universe conspires to help that person to realize his dream",
+        title: "Pre-Order Campaign Support",
+        description: "We help you build early momentum through structured pre-order planning that supports visibility and reader interest before launch.",
         highlight: false
     },
     {
         icon: Copyright,
-        title: "ISBN & copyright\nfiling included",
-        description: "When a person really desires something, all the universe conspires to help that person to realize his dream",
+        title: "ISBN, Copyright & Publishing Compliance",
+        description: "All required publishing identifiers and compliance steps are handled correctly, ensuring your book meets industry and retailer standards.",
         highlight: false
     },
     {
         icon: UserCheck,
-        title: "Genre-matched\neditors & designers",
-        description: "When a person really desires something, all the universe conspires to help that person to realize his dream",
+        title: "Genre-Specialized Editors and Designers",
+        description: "Your book is matched with editors and designers who understand your genre, audience expectations, and market positioning.",
         highlight: false
     },
     {
         icon: Store,
-        title: "Bookstore &\nonline distribution",
-        description: "When a person really desires something, all the universe conspires to help that person to realize his dream",
+        title: "Print & Online Distribution",
+        description: "Your book is prepared for distribution across major print and online retailers, making it accessible to readers in the U.S. and worldwide.",
         highlight: false
     },
     {
         icon: Share2,
-        title: "Social media\nmarketing setup",
-        description: "When a person really desires something, all the universe conspires to help that person to realize his dream",
+        title: "Social Media Marketing Setup",
+        description: "We help set up the foundation for author branding and book promotion across key social media platforms.",
         highlight: false
     },
     {
         icon: Target,
-        title: "Author royalty\ntracking portal",
-        description: "When a person really desires something, all the universe conspires to help that person to realize his dream",
+        title: "Author Royalty Tracking Portal",
+        description: "You maintain clear visibility into your sales and earnings through a dedicated royalty tracking system.",
         highlight: false
     }
 ];
@@ -67,6 +67,9 @@ export default function WhyChooseUsSection() {
                     </h2>
                     <p className="text-md font-poppins text-brand-primary font-medium">
                         Why Authors Choose Aero Publishing Over Generic Publishing Platforms
+                    </p>
+                    <p className="text-black text-center font-poppins text-sm leading-relaxed max-w-4xl max-sm:text-[14px]">
+                    We offer more than tools—we provide guided support, professional expertise, and transparency at every stage of publishing.
                     </p>
                 </motion.div>
 

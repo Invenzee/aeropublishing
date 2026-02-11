@@ -41,9 +41,8 @@ export default function HeroSection() {
                         <span className="font-shaded font-[300] text-brand-secondary mr-3 text-[65px] max-sm:text-[45px]">Trusted</span> Partner for Self-Publishing Success
                     </h1>
 
-                    <p className="text-black font-poppins text-md leading-relaxed max-w-md max-sm:text-[14px]">
-                        If you do not know where to begin, just relax. We take all the stress of writing,
-                        publishing, and promoting your book off your shoulders.
+                    <p className="text-black font-poppins text-sm leading-relaxed max-w-lg max-sm:text-[14px]">
+                        If you’re unsure where to begin, you’re not alone. We help authors transform manuscripts into professionally published books by managing editing, design, publishing, and distribution—so you can focus on your story while we handle the rest.
                     </p>
 
                     {/* Badges Placeholder */}
@@ -72,8 +71,8 @@ export default function HeroSection() {
                 >
                     <div className="w-full max-w-md">
                         <div className="text-center mb-6">
-                            <h2 className="text-3xl font-syne font-bold text-brand-black max-sm:text-[24px]">Hire a Book Publisher</h2>
-                            <p className="text-lg font-syne text-black max-sm:text-[14px]">Discuss your project with our publishing expert</p>
+                            <h2 className="text-2xl font-syne font-bold text-brand-black max-sm:text-[24px]">Talk to a Publishing Expert Today</h2>
+                            <p className="text-lg font-syne text-black max-sm:text-[14px]">Discuss your project with an experienced publishing expert.</p>
                         </div>
 
                         <form className="space-y-4">

@@ -16,8 +16,7 @@ export default function HowWeWorkSection() {
             label: "Upload Manuscript",
             title: "Submit Your Manuscript for Review",
             description: [
-                "Easily upload your manuscript using Spines' user-friendly dashboard. Just fill in a few simple details, like the book title, author's name, and category.",
-                "Instantly receive a copyright certificate for your book."
+                "Upload your manuscript through our secure system and share basic details so our team can review your project and recommend the next steps.",
             ],
             illustration: "/how_we_work_section.png"
         },
@@ -26,8 +25,7 @@ export default function HowWeWorkSection() {
             label: "Editorial & Design",
             title: "Editing, Design, and Formatting by Publishing Experts",
             description: [
-                "Select from our range of publishing packages tailored to your needs.",
-                "Get access to professional editing, cover design, and formatting services."
+                "Our editors and designers refine your content, format your book, and create a professional presentation ready for print and digital release.",
             ],
             illustration: "/how_we_work_section.png"
         },
@@ -36,8 +34,7 @@ export default function HowWeWorkSection() {
             label: "Publishing Setup",
             title: "ISBN Registration and Platform Setup",
             description: [
-                "Review the final version of your book before publishing.",
-                "Make any last-minute changes or approve for publication."
+                "We manage ISBN registration and prepare your book for publishing across major platforms in the correct formats."
             ],
             illustration: "/how_we_work_section.png"
         },
@@ -46,8 +43,7 @@ export default function HowWeWorkSection() {
             label: "Distribution & Launch",
             title: " Book Launch and Global Availability",
             description: [
-                "Your book goes live on major platforms like Amazon, Barnes & Noble, and more.",
-                "Track your sales and royalties through our dashboard."
+                "Your book is released across leading online retailers, making it available to readers in the U.S. and worldwide."
             ],
             illustration: "/how_we_work_section.png"
         }
@@ -76,7 +72,7 @@ export default function HowWeWorkSection() {
                         <span className="text-brand-primary font-bold">From Manuscript to Market</span>
                     </h2>
                     <p className="text-sm font-poppins text-brand-gray mt-4 max-w-2xl mx-auto">
-                        Spines prophesies, designs, curates, formats, publishes, and starts distributing your book in just a couple of weeks.
+                    We follow a clear, step-by-step process that takes your book from submission to publication with transparency, professional support, and author-first guidance at every stage.
                     </p>
                 </motion.div>
 

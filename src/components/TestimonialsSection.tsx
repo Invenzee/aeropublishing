@@ -93,7 +93,7 @@ export default function TestimonialsSection() {
                             {/* Speech Bubble */}
                             <div className="rounded-2xl  -mr-8 z-20 bg-white p-4 border border-gray-300 relative max-w-[250px]">
                                 <p className="text-sm font-syne text-brand-black">
-                                    Best <span className="text-brand-secondary font-shaded !text-lg">Riders</span> With Professional Content Writing Services
+                                    Best <span className="text-brand-secondary font-shaded !text-lg">Writers</span> With Professional Content Writing Services
                                 </p>
                             </div>
 
@@ -117,15 +117,10 @@ export default function TestimonialsSection() {
                                 transition={{ duration: 0.4 }}
                             >
                                 <p className="text-sm font-poppins text-brand-gray leading-relaxed mb-4">
-                                    This is because the publishing process is full of barriers: overcomplicated, time-consuming, and out of reach for most writers. Frustrated and stuck, many give up before they even get the chance.
+                                Many books fall short because publishing is complex, technical, and difficult to manage without expert support. Issues with editing, design, and distribution often prevent books from ever reaching their audience.
                                 </p>
                                 <p className="text-sm font-poppins text-brand-gray leading-relaxed">
-                                    Founded by authors and writers themselves, Aero understands the many challenges authors face, aims to democratize publishing for writers everywhere.
-                                </p>
-
-                                {/* Dynamic Detail Text based on Selection */}
-                                <p className="text-sm font-poppins text-brand-primary font-medium mt-4 italic">
-                                    {activeTestimonial.details}
+                                We simplify the process by guiding authors through professional publishing and wide distribution—helping books reach readers in the U.S. and beyond.
                                 </p>
                             </motion.div>
                         </AnimatePresence>

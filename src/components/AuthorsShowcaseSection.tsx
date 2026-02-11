@@ -130,6 +130,9 @@ export default function AuthorsShowcaseSection() {
                     <span className="text-brand-secondary font-shaded font-[400] text-[60px]max-sm:text-[40px]"> Aero Publishing </span>
                     <span className="font-bold">With Their Books</span>
                 </h2>
+                <p className="text-black text-center font-poppins text-sm leading-relaxed max-w-4xl max-sm:text-[14px] mx-auto mt-4">
+                Authors choose Aero Publishing for our professional approach, transparent process, and commitment to quality. From first-time writers to experienced authors, clients trust us to guide their books through every stage of publishing with care, clarity, and industry expertise—helping their stories reach readers in the U.S. and worldwide.
+                </p>
             </div>
 
             {/* Scroll Container */}
