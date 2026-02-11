@@ -65,10 +65,10 @@ export default function WhyChooseUsSection() {
                     <h2 className="text-[50px] font-syne font-bold leading-[1] text-brand-primary max-sm:text-[32px]">
                         <span className="font-[400]">Why</span> Choose <span className="text-brand-secondary font-shaded font-[400]">Us?</span>
                     </h2>
-                    <p className="text-md font-poppins text-brand-primary font-medium">
+                    <p className="text-md font-poppins text-brand-primary font-medium max-auto">
                         Why Authors Choose Aero Publishing Over Generic Publishing Platforms
                     </p>
-                    <p className="text-black text-center font-poppins text-sm leading-relaxed max-w-4xl max-sm:text-[14px]">
+                    <p className="text-black text-center font-poppins text-sm leading-relaxed max-w-4xl max-sm:text-[14px] mx-auto">
                     We offer more than tools—we provide guided support, professional expertise, and transparency at every stage of publishing.
                     </p>
                 </motion.div>
