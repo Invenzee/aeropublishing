@@ -7,6 +7,7 @@ import WhyChooseUsSection from '@/components/WhyChooseUsSection';
 import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
+import HowWeWorkSection from '@/components/HowWeWorkSection';
 
 export default function page() {
     return (
@@ -58,7 +59,7 @@ export default function page() {
                         description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
                     },
                     {
-                        title: "Marketing and Distribution",
+                        title: "Marketing and Distribution",  
                         description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
                     }
                 ]}
