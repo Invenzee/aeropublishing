@@ -7,6 +7,7 @@ import WhyChooseUsSection from '@/components/WhyChooseUsSection';
 import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
+import HowWeWorkSection from '@/components/HowWeWorkSection';
 
 export default function page() {
     return (
@@ -72,7 +73,8 @@ export default function page() {
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""
-            />
+            />  
+            <HowWeWorkSection />
             <ConnectWithUsSection />
             <TestimonialsSection />
             <WhyChooseUsSection />
