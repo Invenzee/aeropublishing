@@ -4,32 +4,9 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
-export default function WhyAeroSection() {
+export default function WhyAeroSection({ features, highlightTitle, normalTitle }: { features: any[], highlightTitle: string, normalTitle: string }) {
     const containerRef = useRef(null);
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
-
-    const features = [
-        {
-            icon: "/feature-icon-1.png",
-            title: "Professional Publishing Without Compromise",
-            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
-        },
-        {
-            icon: "/feature-icon-2.png",
-            title: "Expert-Led Editorial and Design Support",
-            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
-        },
-        {
-            icon: "/feature-icon-3.png",
-            title: "Full Creative Control and 100% Royalties",
-            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
-        },
-        {
-            icon: "/feature-icon-4.png",
-            title: "Global Distribution Across Major Platforms",
-            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
-        }
-    ];
 
     return (
         <section
@@ -50,9 +27,8 @@ export default function WhyAeroSection() {
                         WHY AERO
                     </p>
                     <h2 className="text-[50px] text-center font-syne font-bold leading-[1.1] max-sm:text-[32px] max-w-2xl">
-                        <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px] leading-[.8]">Publishing</span>{" "}
-                        <span className="text-brand-primary font-[500]">Your Book Should Be </span>
-                        <span className="text-brand-primary">Simple, Transparent, and Author-First</span>
+                        <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px] leading-[.8]">{highlightTitle}</span>{" "}
+                        {normalTitle && <span className="text-brand-primary font-[500]">{normalTitle}</span>}
                     </h2>
                     <p className="text-black text-center font-poppins text-sm leading-relaxed max-w-4xl max-sm:text-[14px]">
                     Publishing doesn’t need to be confusing or overwhelming. We believe authors deserve a clear, honest, and supportive publishing experience—one where you stay informed, maintain control, and know exactly what to expect at every stage. Our process is designed to put your goals first while delivering professional results you can trust.

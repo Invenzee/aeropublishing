@@ -8,8 +8,34 @@ import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import HowWeWorkSection from '@/components/HowWeWorkSection';
+import WhyAeroSection from '@/components/WhyAeroSection';
 
 export default function page() {
+
+    const features = [
+        {
+            icon: "/feature-icon-1.png",
+            title: "Amazon Listing Optimization",
+            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+        },
+        {
+            icon: "/feature-icon-2.png",
+            title: "Book Launch Strategy",
+            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+        },
+        {
+            icon: "/feature-icon-3.png",
+            title: "Social Media Campaign Setup",
+            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+        },
+        {
+            icon: "/feature-icon-4.png",
+            title: "Press & Media Outreach",
+            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+        }
+    ];
+
+
     return (
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
@@ -74,7 +100,11 @@ export default function page() {
                 isReversed={true}
                 subtitle=""
             />
-            <HowWeWorkSection />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Book Marketing Services Include"
+                features={features}
+            />
             <ConnectWithUsSection />
             <TestimonialsSection />
             <WhyChooseUsSection />

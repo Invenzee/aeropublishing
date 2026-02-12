@@ -74,7 +74,6 @@ export default function page() {
                 isReversed={true}
                 subtitle=""
             />
-            <HowWeWorkSection />
             <ConnectWithUsSection />
             <TestimonialsSection />
             <WhyChooseUsSection />
