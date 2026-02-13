@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
                     >
                         <div className="absolute top-0 right-24 w-[90%] h-[90%] bg-brand-secondary rounded-2xl -z-10 translate-x-4 -translate-y-4 shadow-lg" />
 
-                        <div className="relative w-full max-w-[500px] aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl z-10">
+                        <div className="relative w-full max-w-[500px] aspect-[6/5] rounded-2xl overflow-hidden shadow-2xl z-10">
                             <img
                                 src={activeTestimonial.mainImage}
                                 alt="Books stack"
@@ -86,7 +86,7 @@ export default function TestimonialsSection() {
                         initial={{ opacity: 0, x: 50 }}
                         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
                         transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-                        className="lg:w-1/2 w-full space-y-8 pl-4"
+                        className="lg:w-1/2 w-full space-y-8 pl-4 mb-14"
                     >
                         {/* Speech Bubble & Profile */}
                         <div className="flex items-center gap-6">

@@ -18,22 +18,22 @@ export default function Home() {
     {
         icon: "/feature-icon-1.png",
         title: "Professional Publishing Without Compromise",
-        description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+        description: "We provide industry-standard publishing services from manuscript preparation to final release—handled with precision, care, and attention to detail for both print and digital formats."
     },
     {
         icon: "/feature-icon-2.png",
         title: "Expert-Led Editorial and Design Support",
-        description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+        description: "Work with experienced editors and designers who refine your manuscript, craft engaging interiors, and design covers that reflect your vision and appeal to your audience."
     },
     {
         icon: "/feature-icon-3.png",
         title: "Full Creative Control and 100% Royalties",
-        description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+        description: "You retain complete ownership of your work and receive 100% of your royalties. We support and guide the process—your intellectual property always remains yours."
     },
     {
         icon: "/feature-icon-4.png",
         title: "Global Distribution Across Major Platforms",
-        description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+        description: "Your book is professionally formatted and distributed across leading online retailers, reaching readers in the United States and worldwide in both print and digital formats."
     }
 ];
 

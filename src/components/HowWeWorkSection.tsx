@@ -16,7 +16,7 @@ export default function HowWeWorkSection() {
             label: "Upload Manuscript",
             title: "Submit Your Manuscript for Review",
             description: [
-                "Upload your manuscript through our secure system and share basic details so our team can review your project and recommend the next steps.",
+                "Upload your manuscript through our secure submission system and provide a few essential details about your project. Our publishing team carefully reviews your work to understand your goals, assess readiness, and recommend clear, practical next steps to move your book forward with confidence.",
             ],
             illustration: "/how_we_work_section.png"
         },
@@ -25,7 +25,7 @@ export default function HowWeWorkSection() {
             label: "Editorial & Design",
             title: "Editing, Design, and Formatting by Publishing Experts",
             description: [
-                "Our editors and designers refine your content, format your book, and create a professional presentation ready for print and digital release.",
+                "Our experienced editors and designers collaborate closely to refine your manuscript’s language, structure, and overall presentation. We professionally format your book, design engaging interiors and covers, and ensure your final product meets industry standards for both print and digital publication.",
             ],
             illustration: "/how_we_work_section.png"
         },
@@ -34,7 +34,7 @@ export default function HowWeWorkSection() {
             label: "Publishing Setup",
             title: "ISBN Registration and Platform Setup",
             description: [
-                "We manage ISBN registration and prepare your book for publishing across major platforms in the correct formats."
+                "We manage ISBN registration and handle all technical publishing requirements on your behalf. Your book is properly prepared, formatted, and configured for release across major publishing platforms, ensuring accuracy, compliance, and smooth distribution in the correct formats."
             ],
             illustration: "/how_we_work_section.png"
         },
@@ -43,7 +43,7 @@ export default function HowWeWorkSection() {
             label: "Distribution & Launch",
             title: " Book Launch and Global Availability",
             description: [
-                "Your book is released across leading online retailers, making it available to readers in the U.S. and worldwide."
+                "Your book is launched across leading online retailers, making it available to readers throughout the United States and worldwide. We ensure your title is accessible in both print and digital editions, helping your work reach a broad and diverse audience."
             ],
             illustration: "/how_we_work_section.png"
         }

@@ -31,7 +31,7 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle }
                         {normalTitle && <span className="text-brand-primary font-[500]">{normalTitle}</span>}
                     </h2>
                     <p className="text-black text-center font-poppins text-sm leading-relaxed max-w-4xl max-sm:text-[14px]">
-                    Publishing doesn’t need to be confusing or overwhelming. We believe authors deserve a clear, honest, and supportive publishing experience—one where you stay informed, maintain control, and know exactly what to expect at every stage. Our process is designed to put your goals first while delivering professional results you can trust.
+                    Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.
                     </p>
                 </motion.div>
                 <div className="grid grid-cols-2 gap-16 items-center max-lg:grid-cols-1 max-lg:gap-12">

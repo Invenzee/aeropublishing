@@ -7,8 +7,6 @@ import WhyChooseUsSection from '@/components/WhyChooseUsSection';
 import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
-import HowWeWorkSection from '@/components/HowWeWorkSection';
-import WhyAeroSection from '@/components/WhyAeroSection';
 
 export default function page() {
 
@@ -100,11 +98,7 @@ export default function page() {
                 isReversed={true}
                 subtitle=""
             />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Proof Reading Services Include"
-                features={features}
-            />
+    
             <ConnectWithUsSection />
             <TestimonialsSection />
             <WhyChooseUsSection />

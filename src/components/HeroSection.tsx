@@ -71,8 +71,8 @@ export default function HeroSection() {
                 >
                     <div className="w-full max-w-md">
                         <div className="text-center mb-6">
-                            <h2 className="text-2xl font-syne font-bold text-brand-black max-sm:text-[24px]">Talk to a Publishing Expert Today</h2>
-                            <p className="text-lg font-syne text-black max-sm:text-[14px]">Discuss your project with an experienced publishing expert.</p>
+                            <h2 className="text-2xl font-syne font-bold text-brand-black max-sm:text-[24px]">Talk to a Publishing Expert</h2>
+                            <p className="text-lg font-syne text-black max-sm:text-[14px]">Speak with a dedicated publishing consultant today</p>
                         </div>
 
                         <form className="space-y-4">
