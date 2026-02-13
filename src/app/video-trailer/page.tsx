@@ -102,7 +102,8 @@ export default function page() {
             />
             <WhyAeroSection
                 highlightTitle="What"
-                normalTitle=" Our Book Video Trailer Services Include"
+                normalTitle=" Our Book Video Trailer"
+                boldTitle=' Services Include'
                 features={features}
             />
             <ConnectWithUsSection />

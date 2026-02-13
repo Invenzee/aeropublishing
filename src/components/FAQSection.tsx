@@ -7,28 +7,23 @@ import { ArrowDownRight, ArrowRight } from "lucide-react";
 const faqs = [
     {
         id: 1,
-        question: "How do we start?",
-        answer: "We start with a free consultation to understand your goals, voice, and project requirements. Once aligned, we outline a roadmap and begin crafting your story."
+        question: "How long does self-publishing take?",
+        answer: "The timeline for self-publishing depends on the condition of your manuscript and the services required. On average, professionally publishing a book can take anywhere from 4 to 12 weeks. This includes editing, formatting, cover design, ISBN registration, and distribution setup. If your manuscript is already finalized, the process can move faster. At Aero Publishing, we provide a clear timeline at the beginning of every project so you know exactly what to expect."
     },
     {
         id: 2,
-        question: "Do you edit existing drafts?",
-        answer: "Yes — I offer developmental editing, line editing, and final proofreading. Whether it's a messy draft or polished manuscript, I can help shape and strengthen your voice."
+        question: "Do I keep full rights and royalties?",
+        answer: "Yes. When you publish with Aero Publishing, you retain 100% ownership of your manuscript and creative rights. You also receive the royalties generated from book sales based on the platform’s payout structure. We assist with the publishing process, but you remain the legal owner of your work at all times."
     },
     {
         id: 3,
-        question: "Can I hire you just for creative consulting?",
-        answer: "Absolutely! If you need guidance on plot structure, character development, or publishing advice without full ghostwriting, I offer hourly consulting sessions."
+        question: "Can you publish eBooks, paperbacks, and hardcovers?",
+        answer: "Yes, we offer publishing solutions for eBooks, paperback editions, and hardcover books. We format your manuscript according to platform-specific requirements and ensure it meets professional printing and digital distribution standards. Whether you want to publish on Amazon Kindle, distribute globally, or produce print-ready copies, we handle the technical setup for you."
     },
     {
         id: 4,
-        question: "Can I stay anonymous if you ghostwrite for me?",
-        answer: "100%. Confidentiality is a core part of ghostwriting. I sign a strict NDA, and you retain full authorship and copyright of your book."
-    },
-    {
-        id: 5,
-        question: "Do you offer ghostwriting for any genre?",
-        answer: "I specialize in non-fiction (memoirs, business, self-help) and fiction (thrillers, sci-fi). If your genre fits my expertise, I'd love to help bring it to life."
+        question: "Do you offer ghostwriting and editing services?",
+        answer: "Yes. In addition to publishing, we provide professional ghostwriting, developmental editing, copy editing, proofreading, formatting, cover design, and marketing support. Whether you need help starting your manuscript or refining a completed draft, our team offers end-to-end services designed for self-publishing authors."
     }
 ];
 

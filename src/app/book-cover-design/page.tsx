@@ -101,7 +101,8 @@ export default function page() {
             />
             <WhyAeroSection
                 highlightTitle="What"
-                normalTitle=" Our Book Cover Design Services Include"
+                normalTitle=" Our Book Cover Design"
+                boldTitle=' Services Include'
                 features={features}
             />
             <ConnectWithUsSection />

@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
-export default function WhyAeroSection({ features, highlightTitle, normalTitle }: { features: any[], highlightTitle: string, normalTitle: string }) {
+export default function WhyAeroSection({ features, highlightTitle, normalTitle, boldTitle }: { features: any[], highlightTitle: string, normalTitle: string, boldTitle: string }) {
     const containerRef = useRef(null);
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
@@ -26,9 +26,10 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle }
                     <p className="text-md font-poppins text-brand-primary font-semibold tracking-wider uppercase">
                         WHY AERO
                     </p>
-                    <h2 className="text-[50px] text-center font-syne font-bold leading-[1.1] max-sm:text-[32px] max-w-2xl">
+                    <h2 className="text-[50px] text-brand-primary text-center font-syne font-bold leading-[1.1] max-sm:text-[32px] max-w-2xl">
                         <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px] leading-[.8]">{highlightTitle}</span>{" "}
-                        {normalTitle && <span className="text-brand-primary font-[500]">{normalTitle}</span>}
+                        {normalTitle && <span className="font-[500]">{normalTitle}</span>}
+                        {boldTitle}
                     </h2>
                     <p className="text-black text-center font-poppins text-sm leading-relaxed max-w-4xl max-sm:text-[14px]">
                     Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.

@@ -65,11 +65,11 @@ export default function HowWeWorkSection() {
                     <p className="text-md font-poppins text-brand-primary font-semibold tracking-wider uppercase mb-3">
                         How We Work
                     </p>
-                    <h2 className="text-[50px] font-syne font-bold leading-[1] max-sm:text-[32px]">
-                        <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px]">How Our Book</span>{" "}
-                        <span className="text-brand-primary font-[500]">Publishing Process Works</span>
+                    <h2 className="text-[50px] text-brand-primary font-syne font-[500] leading-[1] max-sm:text-[32px]">
+                    How Our Book Publishing<span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px]"> Process</span>{" "}
+                        <span className="font-[500]"> Works</span>
                         <br />
-                        <span className="text-brand-primary font-bold">From Manuscript to Market</span>
+                        <span className="font-bold">From Manuscript to Market</span>
                     </h2>
                     <p className="text-sm font-poppins text-brand-gray mt-4 max-w-2xl mx-auto">
                     We follow a clear, step-by-step process that takes your book from submission to publication with transparency, professional support, and author-first guidance at every stage.

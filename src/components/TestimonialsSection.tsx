@@ -58,7 +58,7 @@ export default function TestimonialsSection() {
                     <h2 className="text-[40px] font-syne font-[500] leading-[1] text-brand-primary max-sm:text-[32px]">
                         Why Most Books
                         <span className="text-brand-secondary text-[50px] font-shaded font-[400] max-sm:text-[40px]"> Never Reach</span><br />
-                        <span className="font-[700]"> Readers And How We Change That</span>
+                        Readers <span className="font-[700]"> And How We Change That</span>
                     </h2>
                 </motion.div>
 

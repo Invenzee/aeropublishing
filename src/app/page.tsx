@@ -43,7 +43,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <CounterSection />
-      <WhyAeroSection highlightTitle="Publishing" normalTitle="Your Book Should Be Simple, Transparent, and Author-First" features={features} />
+      <WhyAeroSection highlightTitle="Publishing" normalTitle="Your Book Should Be " boldTitle="Simple, Transparent, and Author-First" features={features} />
       <GlobalAudienceSection />
       <LogoCarousel />
       <HowWeWorkSection />

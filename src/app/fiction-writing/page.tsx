@@ -102,7 +102,8 @@ export default function page() {
             />
             <WhyAeroSection
                 highlightTitle="What"
-                normalTitle=" Our Fiction Writing Services Include"
+                normalTitle=" Our Fiction Writing"
+                boldTitle=' Services Include'
                 features={features}
             />
             <ConnectWithUsSection />

@@ -63,7 +63,7 @@ export default function WhyChooseUsSection() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-[50px] mb-4 font-syne font-medium leading-[1] text-brand-primary max-sm:text-[32px]">
-                          Why Authors Choose<span className="text-brand-secondary font-shaded font-[400]"> Aero Publishing</span> Over Generic Publishing Platforms
+                          Why Authors Choose<span className="text-brand-secondary font-shaded font-[400]"> Aero Publishing</span> Over <span className="font-bold">Generic Publishing Platforms</span>
                     </h2>
                     <p className="text-black text-center font-poppins text-sm leading-relaxed max-w-4xl max-sm:text-[14px] mx-auto">
                     We offer more than tools—we provide guided support, professional expertise, and transparency at every stage of publishing.

@@ -42,7 +42,7 @@ export default function About() {
             <HeroSection title="About Us" description="Your story is about to be in the hands of millions, and that's true! If you see our side, we are the opportunity for millions of authors to get published." />
             <CounterSection />
             <MissionSection />
-            <WhyAeroSection highlightTitle="Publishing" normalTitle="Your Book Should Be Simple, Transparent, and Author-First" features={features} />
+            <WhyAeroSection highlightTitle="Publishing" normalTitle="Your Book Should Be " boldTitle=" Simple, Transparent, and Author-First" features={features} />
             <GlobalAudienceSection />
             <LogoCarousel />
             <HowWeWorkSection />
