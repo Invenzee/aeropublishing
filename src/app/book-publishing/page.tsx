@@ -40,7 +40,7 @@ export default function page() {
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
                 title="Book Publishing"
-                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
+                description="All-inclusive publishing packages designed to support authors at every stage. With copyright protection, transparent pricing, and a 7-day money-back guarantee, Aero Publishing makes publishing your book simple and stress-free."
             />
             <FeatureSection
                 subtitle="Book Publishing Made Effortless:"
@@ -49,13 +49,16 @@ export default function page() {
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Take full control of your publishing journey with Aero Publishing’s all-in-one self-publishing solutions. Whether you’re launching your first book or expanding your catalog, our streamlined process combines modern publishing tools with personalized editorial and production support.
+                From manuscript submission to final release, our team ensures your book is professionally edited, designed, and prepared for market—without sacrificing creative control or royalties. You’ll have clear guidance, expert support, and a dedicated publishing team every step of the way.
+                "
                 features={[
                     "7-Day Money Back Guarantee",
-                    "Copyright & ISBN Certificate",
-                    "Retain 100% of Your Book Rights"
+                    "Copyright & ISBN Registration",
+                    "100% Ownership of Your Book Rights"
                 ]}
                 imageSrc="/service-feature-section-image.png"
+                hasFeatures={true}
             />
             <BenefitsGridSection
                 subtitle="Why Book Publish with Aero?"
@@ -65,37 +68,39 @@ export default function page() {
                 }}
                 benefits={[
                     {
-                        title: "All-in-One Platform For Seamless Self-Publishing",
-                        description: "Our comprehensive platform covers every stage of publishing - editing, formatting, cover design, printing, distribution, and marketing - eliminating the need for costly third-party tools or complex workflows."
+                        title: "All-in-One Platform for Seamless Publishing",
+                        description: "Our publishing platform covers every stage of the process—editing, formatting, cover design, printing, distribution, and marketing—so you don’t need multiple vendors or complicated workflows."
                     },
                     {
                         title: "Full Creative & Financial Control",
-                        description: "You set your book's content, cover, pricing, and distribution options, fitting your publishing goals into your schedule without pressure or deadlines."
+                        description: "You remain in charge of your book’s content, pricing, and distribution decisions. We work around your goals and schedule, offering guidance without pressure or restrictive contracts."
                     },
                     {
-                        title: "Keep 100% of Your Royalties & Track Sales in Real Time",
-                        description: "Get your book into the hands of readers worldwide through distribution to Amazon, Barnes & Noble, IngramSpark, Apple Books, and over 100 other major platforms."
+                        title: "Keep 100% of Your Royalties & Track Sales",
+                        description: "Your earnings stay yours. We ensure full royalty transparency and help position your book across major platforms, so you can monitor performance and growth with confidence."
                     },
                     {
-                        title: "Publish Faster with Our Streamlined Process",
-                        description: "Bring your book to market within only a month - significantly faster than the industry average."
+                        title: "Publish Faster with a Streamlined Process",
+                        description: "Our efficient publishing workflow helps bring your book to market faster than traditional publishing timelines without compromising quality or professionalism."
                     },
                     {
-                        title: "Professional Quality, Backed by AI & Human Expertise",
-                        description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
+                        title: "Professional Quality, Backed by Expertise",
+                        description: "Every book is handled by experienced publishing professionals who understand industry standards, reader expectations, and market trends—supported by modern publishing technology."
                     },
                     {
-                        title: "Marketing and Distribution",
-                        description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
+                        title: "Marketing and Distribution Support",
+                        description: "From launch to long-term visibility, we help promote and distribute your book across leading platforms, giving it the best chance to reach the right readers."
                     }
                 ]}
             />
             <FeatureSection
                 title={{
-                    prefix: "Book Publish Your",
+                    prefix: "Publish Your",
                     highlight: "Book"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Bring your manuscript to life with Aero Publishing’s professional book publishing services. We help authors transform their ideas into polished, publication-ready books through expert editing, design, and production support.
+                Whether you’re publishing for the first time or refining a finished manuscript, our team ensures your book meets industry standards and is ready for print and digital distribution. With a clear process and dedicated guidance, we make publishing approachable, transparent, and author-focused.
+                "
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""

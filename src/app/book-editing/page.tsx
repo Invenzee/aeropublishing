@@ -15,23 +15,23 @@ export default function page() {
     const features = [
         {
             icon: "/feature-icon-1.png",
-            title: "Developmental Editing",
-            description: "Our developmental editing focuses on the big picture of your manuscript. We help refine structure, pacing, plot or argument flow, and overall clarity—ensuring your book is cohesive, engaging, and aligned with reader expectations before moving to final polish."
+            title: "ISBN Registration & Copyright Assistance",
+            description: "We take care of ISBN registration and copyright support to ensure your book is properly identified and protected. Our team manages the technical requirements with accuracy and care, so your book is ready for publication in both print and digital formats."
         },
         {
             icon: "/feature-icon-2.png",
-            title: "Line Editing",
-            description: "Line editing improves the style and readability of your writing. Our editors fine-tune sentence flow, word choice, and tone while preserving your unique voice—helping your manuscript read smoothly and professionally from start to finish."
+            title: "Manuscript Formatting & Layout",
+            description: "Your manuscript is professionally formatted to meet industry standards and platform requirements. We focus on clean layouts, readability, and consistency, ensuring your book looks polished and professional across all editions."
         },
         {
             icon: "/feature-icon-3.png",
-            title: "Copy Editing",
-            description: "Copy editing ensures accuracy and consistency throughout your manuscript. We correct grammar, punctuation, spelling, and syntax while maintaining consistency in language, formatting, and style across your entire book."
+            title: "Cover Design Integration",
+            description: "We integrate your cover design seamlessly into the publishing process. Our team ensures your cover meets technical specifications, aligns with market expectations, and presents your book professionally across all platforms."
         },
         {
             icon: "/feature-icon-4.png",
-            title: "Proofreading",
-            description: "Proofreading is the final quality check before publication. We carefully review your manuscript to catch any remaining errors or inconsistencies, ensuring your book is clean, polished, and ready for print and digital release."
+            title: "Platform Upload & Distribution",
+            description: "We prepare and upload your book to major online retailers and distribution platforms. Your title is correctly formatted, positioned, and ready to reach readers throughout the United States and worldwide in both print and digital marketplaces."
         }
     ];
 
