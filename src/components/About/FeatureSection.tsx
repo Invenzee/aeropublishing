@@ -61,6 +61,10 @@ export default function FeatureSection({
                         {description}
                     </p>
 
+                    <div className="text-sm font-medium text-brand-black">
+                        What you can expect:
+                    </div>
+
                     {features.length > 0 && (
                         <ul className="space-y-3 pt-2">
                             {features.map((feature, idx) => (

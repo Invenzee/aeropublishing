@@ -16,22 +16,22 @@ export default function page() {
         {
             icon: "/feature-icon-1.png",
             title: "Developmental Editing",
-            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+            description: "Our developmental editing focuses on the big picture of your manuscript. We help refine structure, pacing, plot or argument flow, and overall clarity—ensuring your book is cohesive, engaging, and aligned with reader expectations before moving to final polish."
         },
         {
             icon: "/feature-icon-2.png",
             title: "Line Editing",
-            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+            description: "Line editing improves the style and readability of your writing. Our editors fine-tune sentence flow, word choice, and tone while preserving your unique voice—helping your manuscript read smoothly and professionally from start to finish."
         },
         {
             icon: "/feature-icon-3.png",
             title: "Copy Editing",
-            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+            description: "Copy editing ensures accuracy and consistency throughout your manuscript. We correct grammar, punctuation, spelling, and syntax while maintaining consistency in language, formatting, and style across your entire book."
         },
         {
             icon: "/feature-icon-4.png",
             title: "Proofreading",
-            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+            description: "Proofreading is the final quality check before publication. We carefully review your manuscript to catch any remaining errors or inconsistencies, ensuring your book is clean, polished, and ready for print and digital release."
         }
     ];
 
@@ -40,62 +40,69 @@ export default function page() {
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
                 title="Book Editing"
-                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
+                description="Professional book editing tailored to your voice and genre. Our experienced editors refine structure, clarity, and flow—ensuring your manuscript is polished, publication-ready, and aligned with industry standards for both print and digital release."
             />
             <FeatureSection
                 subtitle="Book Editing Made Effortless:"
                 title={{
                     prefix: "Powered by",
-                    highlight: "Innovation",
-                    suffix: "and Human Expertise"
+                    highlight: "Expertise",
+                    suffix: "and Editorial Precision"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description={`Take control of your publishing journey with Aero Publishing’s professional book editing services. Whether you’re preparing your first manuscript or refining a completed draft, our experienced editors work closely with you to strengthen clarity, structure, and flow—while preserving your unique voice.
+
+                From developmental feedback to detailed line editing and final polish, we ensure your book meets industry standards and is ready for publication in both print and digital formats. Our streamlined process keeps you informed and involved at every stage, so your manuscript moves forward with confidence and care.                
+                `}
+
                 features={[
                     "7-Day Money Back Guarantee",
-                    "Copyright & ISBN Certificate",
-                    "Retain 100% of Your Book Rights"
+                    "Professional Editorial Review by Industry Experts",
+                    "Full Creative Control & 100% Author Rights"
                 ]}
                 imageSrc="/service-feature-section-image.png"
             />
             <BenefitsGridSection
                 subtitle="Why Book Editing with Aero?"
                 title={{
-                    text: <>A Faster, Easier, and More <br className='max-sm:hidden' /> Profitable </>,
+                    text: <>A Faster, Easier, and More <br className='max-sm:hidden' /> Profitable Editing </>,
                     highlight: "Experience"
                 }}
                 benefits={[
                     {
-                        title: "All-in-One Platform For Seamless Self-Publishing",
-                        description: "Our comprehensive platform covers every stage of publishing - editing, formatting, cover design, printing, distribution, and marketing - eliminating the need for costly third-party tools or complex workflows."
+                        title: "All-in-One Editing Solution for Self-Publishing",
+                        description: "Our book editing services cover every stage of refinement—from structural feedback to detailed line edits and final proofreading. We streamline the process so you don’t need multiple vendors or confusing workflows to prepare your manuscript for publication."
                     },
                     {
-                        title: "Full Creative & Financial Control",
-                        description: "You set your book's content, cover, pricing, and distribution options, fitting your publishing goals into your schedule without pressure or deadlines."
+                        title: "Full Creative & Editorial Control",
+                        description: "You stay in control of your manuscript at every stage. Our editors collaborate with you to strengthen clarity, flow, and consistency while preserving your voice, vision, and authorial intent—no unwanted changes, no loss of ownership."
                     },
                     {
-                        title: "Keep 100% of Your Royalties & Track Sales in Real Time",
-                        description: "Get your book into the hands of readers worldwide through distribution to Amazon, Barnes & Noble, IngramSpark, Apple Books, and over 100 other major platforms."
+                        title: "Keep 100% of Your Rights & Royalties",
+                        description: "Your work remains fully yours. Aero Publishing ensures you retain complete ownership of your content and earn 100% of your royalties, with no hidden clauses or restrictive contracts."
                     },
                     {
-                        title: "Publish Faster with Our Streamlined Process",
-                        description: "Bring your book to market within only a month - significantly faster than the industry average."
+                        title: "Edit Faster with a Streamlined Process",
+                        description: "Our structured editorial workflow helps move your manuscript forward efficiently without sacrificing quality. With clear timelines and dedicated support, your book progresses faster than traditional publishing timelines."
                     },
                     {
-                        title: "Professional Quality, Backed by AI & Human Expertise",
-                        description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
+                        title: "Professional Quality, Powered by Expertise",
+                        description: "Every manuscript is handled by experienced editors who understand market standards, genre expectations, and reader engagement. We combine editorial precision with modern tools to deliver polished, publication-ready results."
                     },
                     {
-                        title: "Marketing and Distribution",
-                        description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
+                        title: "Preparation for Publishing & Distribution",
+                        description: "Our editing process ensures your manuscript is fully prepared for the next stages of publishing. From formatting readiness to content consistency, we help set your book up for successful print and digital release."
                     }
                 ]}
             />
             <FeatureSection
                 title={{
                     prefix: "Book Editing",
-                    highlight: "Book"
+                    highlight: "Services"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description={`Take full control of your publishing journey with Aero Publishing’s professional book editing solutions. Whether you’re preparing your first manuscript or refining a completed draft, our experienced editors help strengthen clarity, structure, and flow—while preserving your unique voice.
+
+                From initial manuscript review to final polish, we combine editorial expertise with a streamlined process to ensure your book is professional, polished, and publication-ready. With dedicated support at every step, we help you move forward confidently toward print and digital release—without sacrificing ownership or creative control.
+                `}
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""
