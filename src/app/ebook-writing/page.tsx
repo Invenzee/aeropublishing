@@ -16,22 +16,22 @@ export default function page() {
         {
             icon: "/feature-icon-1.png",
             title: "Topic Research & Outline Creation",
-            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+            description: "We begin with in-depth research and a clear, structured outline to ensure your ebook is informative, focused, and aligned with reader expectations."
         },
         {
             icon: "/feature-icon-2.png",
             title: "Professional Manuscript Writing",
-            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+            description: "Our experienced writers craft engaging, original content in your preferred tone and style—designed to educate, inspire, or convert your audience."
         },
         {
             icon: "/feature-icon-3.png",
-            title: "SEO-Optimized eBook Structure",
-            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+            title: "SEO-Optimized Ebook Structure",
+            description: "We optimize headings, flow, and content structure to improve discoverability and performance across major ebook platforms."
         },
         {
             icon: "/feature-icon-4.png",
             title: "Editing & Quality Review",
-            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+            description: "Every manuscript undergoes thorough editing and quality checks for clarity, consistency, grammar, and originality—ensuring a polished final product."
         }
     ];
 
@@ -39,7 +39,7 @@ export default function page() {
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
                 title="Ebook Writing"
-                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
+                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your ebook with ease."
             />
             <FeatureSection
                 subtitle="Ebook Writing Made Effortless:"
@@ -48,13 +48,15 @@ export default function page() {
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="At Aero Publishing, we help you transform ideas into professionally written ebooks that inform, inspire, and sell. Whether you’re starting with a rough concept or a detailed outline, our expert writers combine creativity, research, and market insight to craft ebooks that resonate with readers and perform well across digital platforms.
+                From concept development to final manuscript delivery, every step is guided by publishing professionals—ensuring your ebook is polished, engaging, and ready for success in today’s competitive market."
                 features={[
-                    "7-Day Money Back Guarantee",
-                    "Copyright & ISBN Certificate",
+                    "7-Day Money-Back Guarantee",
+                    "Copyright & ISBN Certification",
                     "Retain 100% of Your Book Rights"
                 ]}
                 imageSrc="/service-feature-section-image.png"
+                hasFeatures={true}
             />
             <BenefitsGridSection
                 subtitle="Why Ebook Writing with Aero?"
@@ -64,28 +66,28 @@ export default function page() {
                 }}
                 benefits={[
                     {
-                        title: "All-in-One Platform For Seamless Self-Publishing",
-                        description: "Our comprehensive platform covers every stage of publishing - editing, formatting, cover design, printing, distribution, and marketing - eliminating the need for costly third-party tools or complex workflows."
+                        title: "All-in-One Platform for Seamless Self-Publishing",
+                        description: "We manage every stage of the ebook writing process—from research and drafting to editing and final review—so you don’t have to juggle multiple freelancers or tools."
                     },
                     {
                         title: "Full Creative & Financial Control",
-                        description: "You set your book's content, cover, pricing, and distribution options, fitting your publishing goals into your schedule without pressure or deadlines."
+                        description: "Your vision leads the way. You approve outlines, drafts, tone, and direction while maintaining full ownership of your content and royalties."
                     },
                     {
                         title: "Keep 100% of Your Royalties & Track Sales in Real Time",
-                        description: "Get your book into the hands of readers worldwide through distribution to Amazon, Barnes & Noble, IngramSpark, Apple Books, and over 100 other major platforms."
+                        description: "Once published, your ebook is distributed to leading platforms like Amazon Kindle, Apple Books, Barnes & Noble, and more—while you retain full earnings."
                     },
                     {
                         title: "Publish Faster with Our Streamlined Process",
-                        description: "Bring your book to market within only a month - significantly faster than the industry average."
+                        description: "Our structured workflow allows us to deliver high-quality ebooks efficiently—helping you launch faster without compromising quality."
                     },
                     {
                         title: "Professional Quality, Backed by AI & Human Expertise",
-                        description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
+                        description: "We blend advanced writing tools with skilled human writers to ensure clarity, originality, consistency, and reader engagement."
                     },
                     {
-                        title: "Marketing and Distribution",
-                        description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
+                        title: "Marketing and Distribution Support",
+                        description: "Beyond writing, we help position your ebook for success with SEO-friendly structure and market-ready content."
                     }
                 ]}
             />
@@ -94,7 +96,8 @@ export default function page() {
                     prefix: "Ebook Writing Your",
                     highlight: "Book"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Take full control of your publishing journey with Aero Publishing’s ebook writing services. Whether you’re launching your first ebook or expanding your catalog, our experienced writers and editors work closely with you to produce compelling, well-structured content tailored to your audience.
+                From idea to final manuscript, we ensure your ebook is professionally written, market-ready, and aligned with your goals—while you remain in control every step of the way."
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""
@@ -103,6 +106,7 @@ export default function page() {
                 highlightTitle="What"
                 normalTitle=" Our Ebook Writing"
                 boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
             />
             <ConnectWithUsSection />

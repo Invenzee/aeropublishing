@@ -8,7 +8,6 @@ export default function MissionSection() {
     const section2Ref = useRef(null);
     const isSection1InView = useInView(section1Ref, { once: true, margin: "-100px" });
     const isSection2InView = useInView(section2Ref, { once: true, margin: "-100px" });
-    const missionText = "Congrats in advance to all literary minds who want to be a published author in the future! Aero Book Publishing is addictive to make authors published worldwide - creating a bridge to fulfill millions of dreams. Focused and proud of delivering advanced ebook publishing services known for its interesting competition between old and new authors. Staying on our toes to provide the best book publishing services to authors worldwide. And they did publish their hottest and trending digital stories with a few clicks. Digitally and Globally! Inviting all authors to come and join the vast community of writers who are fanatic about writing as they were born to write. To provide the digital page-turners aesthetic and greatest e-books of all time that satisfy their literary needs. Aero Design Publishing redefines the old-school lazy publishing process and makes it the quickest and most reliable resource, with decades of experience and connections in the publishing industry. So, you're in seniors hands.";
     return (
         <section className="bg-white overflow-hidden">
             <div className="bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
@@ -47,7 +46,9 @@ export default function MissionSection() {
                             </h2>
                             {/* <div className="border-t border-brand-accent/30 w-1/3 pt-4"></div> */}
                             <p className="text-[14px] text-brand-gray font-poppins leading-[1.6] text-justify">
-                                {missionText}
+                                At Aero Publishing, our mission is simple: to remove barriers between authors and publication. We believe great stories shouldn’t be held back by complicated systems, hidden fees, or confusing processes.<br></br>
+                                We work with authors across the United States to provide a modern, streamlined publishing experience—combining technology, creativity, and human expertise. From first-time writers to experienced authors, we help transform ideas into professionally published books that meet today’s publishing standards.<br></br>
+                                Our team is driven by one goal: to make publishing accessible, transparent, and rewarding—so authors can focus on what matters most—writing.
                             </p>
                         </motion.div>
                     </div>
@@ -71,7 +72,9 @@ export default function MissionSection() {
                             </h2>
                             {/* <div className="border-t border-brand-accent/30 w-1/3 pt-4"></div> */}
                             <p className="text-[14px] text-brand-gray font-poppins leading-[1.6] text-justify">
-                                {missionText}
+                                Publishing a professional ebook doesn’t have to feel overwhelming. At Aero Publishing, we guide you through every step—from concept to completion—ensuring your book is polished, structured, and market-ready.<br></br>
+                                Our process blends editorial expertise, design precision, and strategic planning to create ebooks that readers enjoy and platforms approve. Whether you’re writing fiction, nonfiction, or educational content, we help shape your manuscript into a high-quality digital book that reflects your voice and vision.<br></br>
+                                With Aero, you’re never guessing—you’re guided, informed, and supported throughout the journey.
                             </p>
                         </motion.div>
 

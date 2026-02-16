@@ -69,7 +69,8 @@ export default function page() {
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
                 title="Portfolio"
-                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
+                description="Explore a curated selection of projects crafted by Aero Publishing—where ideas turn into professionally published books. Our portfolio reflects the quality, creativity, and care we bring to every author we work with.
+                From fiction and nonfiction to ebooks, children’s books, and visual marketing assets, each project showcases our commitment to polished execution, author ownership, and market-ready results."
             />
             <section className="relative py-20 !pt-0 max-sm:py-12 bg-[url('/carousel-bg.png')] bg-contain bg-right bg-no-repeat">
 

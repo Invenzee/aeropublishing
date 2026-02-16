@@ -16,22 +16,22 @@ export default function page() {
         {
             icon: "/feature-icon-1.png",
             title: "Concept Development & Planning",
-            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+            description: "We help shape your idea into a strong, structured concept with clear direction, chapter planning, and audience positioning before writing begins."
         },
         {
             icon: "/feature-icon-2.png",
             title: "In-Depth Research",
-            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+            description: "Our writers conduct thorough research to ensure accuracy, credibility, and depth—especially for memoirs, business books, and non-fiction titles."
         },
         {
             icon: "/feature-icon-3.png",
             title: "Full Manuscript Writing",
-            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+            description: "Experienced ghostwriters craft your manuscript in your voice and style, delivering engaging, original content tailored to your genre and goals."
         },
         {
             icon: "/feature-icon-4.png",
             title: "Collaborative Revisions",
-            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+            description: "You’re part of the process. We revise based on your feedback until the manuscript aligns perfectly with your vision."
         }
     ];
 
@@ -42,22 +42,23 @@ export default function page() {
                 description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
             />
             <FeatureSection
-                subtitle="Self-Publishing Made Effortless:"
+                subtitle="Ghostwriting Made Effortless:"
                 title={{
                     prefix: "Powered by",
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Take full control of your publishing journey with Aero Publishing’s all-in-one self-publishing platform. Whether you have a rough idea, an outline, or just a story to tell, our experienced ghostwriters work closely with you to craft a book that sounds authentically you.
+                We combine advanced publishing technology with professional writers, editors, and publishing specialists to deliver a manuscript that is polished, compelling, and market-ready—without giving up your rights or royalties. From concept to final draft, you’re supported every step of the way by a dedicated account manager."
                 features={[
-                    "7-Day Money Back Guarantee",
+                    "7-Day Money-Back Guarantee",
                     "Copyright & ISBN Certificate",
                     "Retain 100% of Your Book Rights"
                 ]}
                 imageSrc="/service-feature-section-image.png"
             />
             <BenefitsGridSection
-                subtitle="Why Self-Publish with Aero?"
+                subtitle="Why Ghostwriting with Aero?"
                 title={{
                     text: <>A Faster, Easier, and More <br className='max-sm:hidden' /> Profitable </>,
                     highlight: "Experience"
@@ -65,36 +66,37 @@ export default function page() {
                 benefits={[
                     {
                         title: "All-in-One Platform For Seamless Self-Publishing",
-                        description: "Our comprehensive platform covers every stage of publishing - editing, formatting, cover design, printing, distribution, and marketing - eliminating the need for costly third-party tools or complex workflows."
+                        description: "Our comprehensive platform supports every stage of publishing—from writing and editing to formatting, printing, and distribution—so you never need multiple vendors."
                     },
                     {
                         title: "Full Creative & Financial Control",
-                        description: "You set your book's content, cover, pricing, and distribution options, fitting your publishing goals into your schedule without pressure or deadlines."
+                        description: "You stay in charge of your story, voice, and vision. We write with you, not over you, and you keep full ownership of your work."
                     },
                     {
                         title: "Keep 100% of Your Royalties & Track Sales in Real Time",
-                        description: "Get your book into the hands of readers worldwide through distribution to Amazon, Barnes & Noble, IngramSpark, Apple Books, and over 100 other major platforms."
+                        description: "Publish globally through Amazon, Barnes & Noble, IngramSpark, Apple Books, and 100+ platforms while monitoring performance from one dashboard."
                     },
                     {
                         title: "Publish Faster with Our Streamlined Process",
-                        description: "Bring your book to market within only a month - significantly faster than the industry average."
+                        description: "Our structured ghostwriting workflow helps you move from idea to finished manuscript significantly faster than industry averages."
                     },
                     {
                         title: "Professional Quality, Backed by AI & Human Expertise",
-                        description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
+                        description: "We pair experienced ghostwriters with editorial specialists and smart publishing tools to ensure clarity, consistency, and market appeal."
                     },
                     {
-                        title: "Marketing and Distribution",
-                        description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
+                        title: "Marketing and Distribution Support",
+                        description: "From launch planning to long-term visibility, our built-in marketing tools help position your book for success."
                     }
                 ]}
             />
             <FeatureSection
                 title={{
-                    prefix: "Self Publish Your",
+                    prefix: "Ghostwriting Your",
                     highlight: "Book"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Bring your story to life with confidence. Whether you’re writing a memoir, business book, fiction, or non-fiction, Aero Publishing transforms your ideas into a professionally written manuscript that reflects your voice, goals, and audience.
+                From early brainstorming to final revisions, everything is managed through one intuitive system—with expert guidance at every step."
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""
@@ -103,6 +105,7 @@ export default function page() {
                 highlightTitle="What"
                 normalTitle=" Our Ghostwriting"
                 boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
             />
             <ConnectWithUsSection />

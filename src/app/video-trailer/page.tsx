@@ -16,22 +16,22 @@ export default function page() {
         {
             icon: "/feature-icon-1.png",
             title: "Script Development & Creative Storyboarding",
-            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+            description: "We develop a compelling trailer script and visual storyboard that captures your book’s core theme, tone, and audience appeal—ensuring every second has purpose."
         },
         {
             icon: "/feature-icon-2.png",
             title: "Professional Video Editing & Animation",
-            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+            description: "Our editors create polished trailers using cinematic transitions, motion graphics, typography, and pacing designed to engage readers instantly."
         },
         {
             icon: "/feature-icon-3.png",
             title: "Background Music & Voiceover Integration",
-            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+            description: "Choose from licensed music tracks and optional professional voiceovers to enhance emotion, clarity, and memorability."
         },
         {
             icon: "/feature-icon-4.png",
-            title: "Social Media & Amazon Optimization Formats",
-            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+            title: "Social Media & Amazon-Optimized Formats",
+            description: "Your trailer is delivered in multiple formats optimized for Amazon listings, YouTube, Instagram, Facebook, TikTok, and author websites—ready to publish immediately."
         }
     ];
 
@@ -40,7 +40,7 @@ export default function page() {
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
                 title="Video Trailer"
-                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
+                description="All-inclusive packages with full copyright protection and a 7-day money-back guarantee. Promote your book with cinematic impact and confidence."
             />
             <FeatureSection
                 subtitle="Video Trailer Made Effortless:"
@@ -49,10 +49,11 @@ export default function page() {
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Bring your story to life with professionally crafted book video trailers designed to captivate readers and boost visibility. At Aero Publishing, we combine creative storytelling, advanced production tools, and human expertise to produce compelling trailers that showcase the heart of your book.
+                Whether you’re launching a new release or reviving an existing title, our team manages the entire process—from concept to final cut—so you can focus on being the author while we handle the visuals."
                 features={[
-                    "7-Day Money Back Guarantee",
-                    "Copyright & ISBN Certificate",
+                    "7-Day Money-Back Guarantee",
+                    "Copyright & Creative Ownership Secured",
                     "Retain 100% of Your Book Rights"
                 ]}
                 imageSrc="/service-feature-section-image.png"
@@ -65,28 +66,28 @@ export default function page() {
                 }}
                 benefits={[
                     {
-                        title: "All-in-One Platform For Seamless Self-Publishing",
-                        description: "Our comprehensive platform covers every stage of publishing - editing, formatting, cover design, printing, distribution, and marketing - eliminating the need for costly third-party tools or complex workflows."
+                        title: "All-in-One Platform for Seamless Publishing",
+                        description: "Our integrated publishing ecosystem connects video production, book marketing, and distribution—eliminating the need for multiple vendors or complicated workflows."
                     },
                     {
                         title: "Full Creative & Financial Control",
-                        description: "You set your book's content, cover, pricing, and distribution options, fitting your publishing goals into your schedule without pressure or deadlines."
+                        description: "You stay in control of your story, visuals, branding, and budget. Every decision is guided by you, supported by our experienced creative team."
                     },
                     {
-                        title: "Keep 100% of Your Royalties & Track Sales in Real Time",
-                        description: "Get your book into the hands of readers worldwide through distribution to Amazon, Barnes & Noble, IngramSpark, Apple Books, and over 100 other major platforms."
+                        title: "Keep 100% of Your Royalties & Track Performance",
+                        description: "Your book trailer is designed for platforms like Amazon, social media, and author websites—helping drive engagement while you retain full earnings and rights."
                     },
                     {
                         title: "Publish Faster with Our Streamlined Process",
-                        description: "Bring your book to market within only a month - significantly faster than the industry average."
+                        description: "From concept approval to final delivery, our efficient workflow ensures your trailer is completed quickly without sacrificing quality."
                     },
                     {
                         title: "Professional Quality, Backed by AI & Human Expertise",
-                        description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
+                        description: "We blend modern production tools with skilled editors, designers, and storytellers to deliver visually striking, market-ready trailers."
                     },
                     {
-                        title: "Marketing and Distribution",
-                        description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
+                        title: "Marketing & Distribution Ready",
+                        description: "Your trailer is optimized for Amazon listings, social media ads, websites, and email campaigns—so it works where readers actually discover books."
                     }
                 ]}
             />
@@ -95,7 +96,8 @@ export default function page() {
                     prefix: "Video Trailer Your",
                     highlight: "Book"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Create buzz before launch—or reignite interest after publication—with a professional book video trailer. Aero Publishing delivers cinematic visuals that highlight your story’s emotion, genre, and appeal.
+                From scripting to final export, everything is handled through one intuitive process with a dedicated account manager guiding you at every step."
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""
@@ -104,6 +106,7 @@ export default function page() {
                 highlightTitle="What"
                 normalTitle=" Our Book Video Trailer"
                 boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a transparent, author-focused creative experience—keeping you informed, in control, and confident while delivering professional promotional assets you can trust.'
                 features={features}
             />
             <ConnectWithUsSection />

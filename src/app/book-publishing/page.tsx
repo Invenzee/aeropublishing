@@ -109,6 +109,7 @@ export default function page() {
                 highlightTitle="What"
                 normalTitle=" Our Book Publishing"
                 boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We provide a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
             />
             <ConnectWithUsSection />

@@ -17,22 +17,22 @@ export default function page() {
         {
             icon: "/feature-icon-1.png",
             title: "Print-Ready Interior Formatting",
-            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+            description: "We format your book interior for print with clean layouts, proper margins, and professional spacing—ensuring your book meets industry and printer requirements."
         },
         {
             icon: "/feature-icon-2.png",
             title: "eBook Formatting for Kindle & EPUB",
-            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+            description: "Your manuscript is formatted for major eBook platforms, including Kindle and EPUB formats, ensuring compatibility, readability, and smooth digital performance."
         },
         {
             icon: "/feature-icon-3.png",
             title: "Typography & Layout Optimization",
-            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+            description: "We refine typography, spacing, and layout elements to improve readability and visual consistency—creating a professional reading experience across all formats."
         },
         {
             icon: "/feature-icon-4.png",
             title: "Platform-Specific Submission Files",
-            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+            description: "We prepare final, platform-ready files for major retailers and distributors. Your book is correctly formatted, checked, and ready for upload in both U.S. and global marketplaces."
         }
     ];
 
@@ -40,7 +40,7 @@ export default function page() {
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
                 title="Book Formatting"
-                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
+                description="All-inclusive book formatting packages designed to prepare your manuscript for professional publication. With industry-standard formatting, platform compatibility, and a 7-day money-back guarantee, Aero Publishing makes formatting simple and stress-free."
             />
             <FeatureSection
                 subtitle="Book Formatting Made Effortless:"
@@ -49,13 +49,16 @@ export default function page() {
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Take full control of your publishing journey with Aero Publishing’s professional book formatting services. Whether you’re preparing your first book or refining a final manuscript, our team ensures your interior layout meets industry standards for both print and digital formats.
+                We combine technical precision with publishing expertise to deliver clean, readable, and professional layouts. From manuscript preparation to final files, our streamlined process ensures your book looks polished, consistent, and ready for distribution—without compromising ownership or creative control.
+                "
                 features={[
                     "7-Day Money Back Guarantee",
-                    "Copyright & ISBN Certificate",
-                    "Retain 100% of Your Book Rights"
+                    "Print & Digital Formatting Support",
+                    "100% Ownership of Your Book Files"
                 ]}
                 imageSrc="/service-feature-section-image.png"
+                hasFeatures={true}
             />
             <BenefitsGridSection
                 subtitle="Why Book Formatting with Aero?"
@@ -65,37 +68,39 @@ export default function page() {
                 }}
                 benefits={[
                     {
-                        title: "All-in-One Platform For Seamless Self-Publishing",
-                        description: "Our comprehensive platform covers every stage of publishing - editing, formatting, cover design, printing, distribution, and marketing - eliminating the need for costly third-party tools or complex workflows."
+                        title: "All-in-One Platform for Seamless Publishing",
+                        description: "Our formatting services integrate seamlessly with editing, publishing, and distribution—eliminating the need for multiple vendors or complex workflows."
                     },
                     {
                         title: "Full Creative & Financial Control",
-                        description: "You set your book's content, cover, pricing, and distribution options, fitting your publishing goals into your schedule without pressure or deadlines."
+                        description: "You maintain complete control over your content and design preferences. We format your book to professional standards while respecting your vision and publishing goals."
                     },
                     {
-                        title: "Keep 100% of Your Royalties & Track Sales in Real Time",
-                        description: "Get your book into the hands of readers worldwide through distribution to Amazon, Barnes & Noble, IngramSpark, Apple Books, and over 100 other major platforms."
+                        title: "Keep 100% of Your Royalties",
+                        description: "Your book remains fully yours. We deliver final, ready-to-upload files while you retain full ownership and earnings across all platforms."
                     },
                     {
                         title: "Publish Faster with Our Streamlined Process",
-                        description: "Bring your book to market within only a month - significantly faster than the industry average."
+                        description: "Our efficient formatting workflow helps move your book toward publication quickly, without delays or unnecessary revisions."
                     },
                     {
-                        title: "Professional Quality, Backed by AI & Human Expertise",
-                        description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
+                        title: "Professional Quality, Backed by Expertise",
+                        description: "Every book is formatted by experienced professionals who understand layout standards, readability, and platform requirements."
                     },
                     {
-                        title: "Marketing and Distribution",
-                        description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
+                        title: "Marketing and Distribution Ready",
+                        description: "Your formatted files are prepared to support distribution and marketing—ensuring a smooth transition into the next stage of publishing."
                     }
                 ]}
             />
             <FeatureSection
                 title={{
-                    prefix: "Book Formatting Your",
+                    prefix: "Format Your",
                     highlight: "Book"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Prepare your manuscript for publication with Aero Publishing’s professional book formatting services. We help authors transform raw documents into clean, polished interiors that meet industry standards and platform guidelines.
+                Whether you’re publishing in print, digital, or both, our team ensures your book is formatted accurately and consistently—so it’s ready for readers, not revisions.
+                "
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""
@@ -104,6 +109,7 @@ export default function page() {
                 highlightTitle="What"
                 normalTitle=" Our Book Formatting"
                 boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused formatting experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
             />
             <ConnectWithUsSection />

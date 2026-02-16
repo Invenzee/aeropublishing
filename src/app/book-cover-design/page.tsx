@@ -16,22 +16,22 @@ export default function page() {
         {
             icon: "/feature-icon-1.png",
             title: "Custom Front Cover Design",
-            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+            description: "Each cover is designed from scratch to reflect your story, genre expectations, and target audience—ensuring originality and market relevance."
         },
         {
             icon: "/feature-icon-2.png",
             title: "Spine & Back Cover Layout",
-            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+            description: "We professionally design the spine and back cover, including typography, barcode placement, and layout compliance for print platforms."
         },
         {
             icon: "/feature-icon-3.png",
             title: "Genre-Specific Market Research",
-            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+            description: "Our designers analyze top-performing titles in your genre to ensure your cover aligns with reader expectations while standing out competitively."
         },
         {
             icon: "/feature-icon-4.png",
             title: "Print & Digital Platform Optimization",
-            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+            description: "Your final cover is optimized for both print and digital distribution, meeting specifications for Amazon KDP, IngramSpark, and other major platforms in the U.S. and beyond."
         }
     ];
 
@@ -39,7 +39,7 @@ export default function page() {
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
                 title="Book Cover Design"
-                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
+                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Design your book cover with confidence."
             />
             <FeatureSection
                 subtitle="Book Cover Design Made Effortless:"
@@ -48,13 +48,15 @@ export default function page() {
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Take full control of your publishing journey with Aero Publishing’s all-in-one author services. Whether you’re launching your first book or refreshing an existing title, our design-led approach blends creative expertise with market insight to ensure your cover is professional, compelling, and ready to compete.
+                From concept development to final production, we manage the entire process with precision—without taking ownership of your rights. Every design is crafted to meet platform standards and attract readers across print and digital marketplaces."
                 features={[
-                    "7-Day Money Back Guarantee",
-                    "Copyright & ISBN Certificate",
-                    "Retain 100% of Your Book Rights"
+                    "7-Day Money-Back Guarantee",
+                    "Copyright & ISBN Assistance",
+                    "You Retain 100% of Your Book Rights"
                 ]}
                 imageSrc="/service-feature-section-image.png"
+                hasFeatures={true}
             />
             <BenefitsGridSection
                 subtitle="Why Book Cover Design with Aero?"
@@ -64,28 +66,28 @@ export default function page() {
                 }}
                 benefits={[
                     {
-                        title: "All-in-One Platform For Seamless Self-Publishing",
-                        description: "Our comprehensive platform covers every stage of publishing - editing, formatting, cover design, printing, distribution, and marketing - eliminating the need for costly third-party tools or complex workflows."
+                        title: "All-in-One Platform for Seamless Publishing",
+                        description: "Our comprehensive platform supports every stage of publishing—from cover design and formatting to distribution and marketing—so you don’t need multiple vendors or complicated workflows."
                     },
                     {
                         title: "Full Creative & Financial Control",
-                        description: "You set your book's content, cover, pricing, and distribution options, fitting your publishing goals into your schedule without pressure or deadlines."
+                        description: "You stay in control of your vision, pricing, and publishing decisions. We guide and execute, ensuring your book aligns with your goals without creative pressure or hidden costs."
                     },
                     {
                         title: "Keep 100% of Your Royalties & Track Sales in Real Time",
-                        description: "Get your book into the hands of readers worldwide through distribution to Amazon, Barnes & Noble, IngramSpark, Apple Books, and over 100 other major platforms."
+                        description: "Your book is distributed through Amazon, Barnes & Noble, IngramSpark, Apple Books, and more—while you maintain full ownership and transparency."
                     },
                     {
                         title: "Publish Faster with Our Streamlined Process",
-                        description: "Bring your book to market within only a month - significantly faster than the industry average."
+                        description: "Our proven workflows bring your book to market efficiently—often in weeks, not months."
                     },
                     {
                         title: "Professional Quality, Backed by AI & Human Expertise",
-                        description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
+                        description: "We combine industry-tested design practices with smart technology to deliver covers that are visually striking and marketplace-ready."
                     },
                     {
-                        title: "Marketing and Distribution",
-                        description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
+                        title: "Marketing and Distribution Support",
+                        description: "From launch preparation to ongoing visibility, we help position your book for long-term success."
                     }
                 ]}
             />
@@ -94,7 +96,9 @@ export default function page() {
                     prefix: "Book Cover Design Your",
                     highlight: "Book"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Your book’s cover is the first impression readers see—and often the deciding factor in whether they click, browse, or buy.
+                At Aero Publishing, we design covers that don’t just look good—they sell. Our team combines creative design with genre research and marketplace trends to ensure your book stands out while meeting professional publishing standards.
+                Every project includes guided collaboration, revision rounds, and platform-ready delivery—so your book is polished, credible, and ready for readers."
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""
@@ -103,6 +107,7 @@ export default function page() {
                 highlightTitle="What"
                 normalTitle=" Our Book Cover Design"
                 boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused design experience—keeping you informed, in control, and confident at every stage.'
                 features={features}
             />
             <ConnectWithUsSection />

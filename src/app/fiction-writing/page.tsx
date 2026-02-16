@@ -16,22 +16,22 @@ export default function page() {
         {
             icon: "/feature-icon-1.png",
             title: "Plot Development & Story Structuring",
-            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+            description: "We help shape strong story arcs, pacing, and chapter flow to keep readers engaged from start to finish."
         },
         {
             icon: "/feature-icon-2.png",
             title: "Character Creation & World-Building",
-            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+            description: "Develop memorable characters and believable worlds that resonate with your target audience."
         },
         {
             icon: "/feature-icon-3.png",
             title: "Dialogue & Narrative Crafting",
-            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+            description: "Natural dialogue, compelling narration, and emotionally driven scenes crafted by experienced fiction writers."
         },
         {
             icon: "/feature-icon-4.png",
             title: "Genre-Specific Writing Expertise",
-            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+            description: "Our writers specialize in multiple fiction genres—romance, fantasy, sci-fi, thrillers, mystery, and more—ensuring market-aligned storytelling."
         }
     ];
 
@@ -49,13 +49,15 @@ export default function page() {
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Bring your story to life with Aero Publishing’s end-to-end fiction writing solutions. Whether you’re developing your first novel or expanding an existing series, our experienced fiction writers, editors, and publishing specialists work closely with you to create compelling, market-ready stories—without compromising your creative vision.
+From concept to final manuscript, we combine human storytelling expertise with modern publishing tools to ensure your book is polished, engaging, and ready for global readers."
                 features={[
-                    "7-Day Money Back Guarantee",
+                    "7-Day Money-Back Guarantee",
                     "Copyright & ISBN Certificate",
                     "Retain 100% of Your Book Rights"
                 ]}
                 imageSrc="/service-feature-section-image.png"
+                hasFeatures={true}
             />
             <BenefitsGridSection
                 subtitle="Why Fiction Writing with Aero?"
@@ -65,28 +67,28 @@ export default function page() {
                 }}
                 benefits={[
                     {
-                        title: "All-in-One Platform For Seamless Self-Publishing",
-                        description: "Our comprehensive platform covers every stage of publishing - editing, formatting, cover design, printing, distribution, and marketing - eliminating the need for costly third-party tools or complex workflows."
+                        title: "All-in-One Platform for Seamless Publishing",
+                        description: "We handle writing, editing, formatting, cover design, printing, distribution, and marketing—so you don’t need multiple vendors."
                     },
                     {
                         title: "Full Creative & Financial Control",
-                        description: "You set your book's content, cover, pricing, and distribution options, fitting your publishing goals into your schedule without pressure or deadlines."
+                        description: "Your story, your voice, your decisions. You stay in control of content, pricing, and publishing timelines."
                     },
                     {
                         title: "Keep 100% of Your Royalties & Track Sales in Real Time",
-                        description: "Get your book into the hands of readers worldwide through distribution to Amazon, Barnes & Noble, IngramSpark, Apple Books, and over 100 other major platforms."
+                        description: "Distribute globally through Amazon, Barnes & Noble, IngramSpark, Apple Books, and more—while keeping full ownership."
                     },
                     {
                         title: "Publish Faster with Our Streamlined Process",
-                        description: "Bring your book to market within only a month - significantly faster than the industry average."
+                        description: "Launch your fiction book in significantly less time than traditional publishing routes."
                     },
                     {
                         title: "Professional Quality, Backed by AI & Human Expertise",
-                        description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
+                        description: "Industry-experienced writers and editors supported by smart publishing tools for consistent quality."
                     },
                     {
                         title: "Marketing and Distribution",
-                        description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
+                        description: "From launch to long-term visibility, we help position your fiction book for maximum reach and sales."
                     }
                 ]}
             />
@@ -95,7 +97,8 @@ export default function page() {
                     prefix: "Fiction Writing Your",
                     highlight: "Book"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Turn your ideas into a professionally written fiction book with Aero Publishing. We guide you through every step—from early brainstorming to a finished manuscript—ensuring your story is immersive, well-structured, and reader-ready.
+                Our collaborative process ensures your voice remains authentic while meeting modern fiction market expectations."
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""
@@ -104,6 +107,7 @@ export default function page() {
                 highlightTitle="What"
                 normalTitle=" Our Fiction Writing"
                 boldTitle=' Services Include'
+                description=''
                 features={features}
             />
             <ConnectWithUsSection />

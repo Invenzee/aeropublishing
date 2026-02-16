@@ -108,6 +108,7 @@ export default function page() {
                 highlightTitle="What"
                 normalTitle=" Our Audiobook Narration "
                 boldTitle='Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused audiobook experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
             />
             <ConnectWithUsSection />

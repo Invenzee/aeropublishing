@@ -39,10 +39,10 @@ export default function About() {
     return (
         <main className="min-h-screen">
             <Header />
-            <HeroSection title="About Us" description="Your story is about to be in the hands of millions, and that's true! If you see our side, we are the opportunity for millions of authors to get published." />
+            <HeroSection title="About Us" description="Your story deserves more than just being written—it deserves to be seen, shared, and remembered. At Aero Publishing, we help authors bring their ideas to life and place them in the hands of readers worldwide with confidence and ease." />
             <CounterSection />
             <MissionSection />
-            <WhyAeroSection highlightTitle="Publishing" normalTitle="Your Book Should Be " boldTitle=" Simple, Transparent, and Author-First" features={features} />
+            <WhyAeroSection highlightTitle="Publishing" normalTitle="Your Book Should Be " boldTitle=" Simple, Transparent, and Author-First" features={features} description="" />
             <GlobalAudienceSection />
             <LogoCarousel />
             <HowWeWorkSection />

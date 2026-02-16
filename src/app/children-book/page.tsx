@@ -16,22 +16,27 @@ export default function page() {
         {
             icon: "/feature-icon-1.png",
             title: "Story Development for Young Readers",
-            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+            description: "We help shape age-appropriate narratives with engaging language, clear structure, and meaningful themes that resonate with children and parents alike."
         },
         {
             icon: "/feature-icon-2.png",
             title: "Professional Illustration & Artwork",
-            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+            description: "Collaborate with skilled illustrators to create vibrant, expressive visuals that bring your story to life and capture young imaginations."
         },
         {
             icon: "/feature-icon-3.png",
             title: "Age-Appropriate Editing",
-            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+            description: "Our editors ensure tone, vocabulary, pacing, and content are perfectly suited to your target age group—while preserving your unique voice."
         },
         {
             icon: "/feature-icon-4.png",
             title: "Color Layout & Formatting",
-            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+            description: "We design visually balanced page layouts optimized for both print and digital formats, ensuring clarity, readability, and visual appeal across all platforms."
+        },
+        {
+            icon: "/feature-icon-4.png",
+            title: "Print & Digital Readiness",
+            description: "Your children’s book is professionally prepared for distribution across major US and global retailers, in both print and digital marketplaces."
         }
     ];
 
@@ -39,7 +44,7 @@ export default function page() {
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
                 title="Children Book"
-                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
+                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your children’s book with confidence and ease."
             />
             <FeatureSection
                 subtitle="Children Book Made Effortless:"
@@ -48,61 +53,65 @@ export default function page() {
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Bring your children’s story to life with Aero Publishing’s all-in-one self-publishing solution. Whether you’re creating a picture book, early reader, or middle-grade story, our blend of advanced technology and hands-on creative expertise ensures your book is engaging, professionally produced, and ready for young readers.
+                From concept development and illustration to printing, distribution, and marketing, we manage every step through a single intuitive dashboard—so you stay informed, confident, and in control."
                 features={[
-                    "7-Day Money Back Guarantee",
-                    "Copyright & ISBN Certificate",
+                    "7-Day Money-Back Guarantee",
+                    "Copyright & ISBN Certification",
                     "Retain 100% of Your Book Rights"
                 ]}
                 imageSrc="/service-feature-section-image.png"
+                hasFeatures={true}
             />
             <BenefitsGridSection
-                subtitle="Why Children Book with Aero?"
+                subtitle="Why Children’s Book Publishing with Aero?"
                 title={{
                     text: <>A Faster, Easier, and More <br className='max-sm:hidden' /> Profitable </>,
                     highlight: "Experience"
                 }}
                 benefits={[
                     {
-                        title: "All-in-One Platform For Seamless Self-Publishing",
-                        description: "Our comprehensive platform covers every stage of publishing - editing, formatting, cover design, printing, distribution, and marketing - eliminating the need for costly third-party tools or complex workflows."
+                        title: "All-in-One Platform for Seamless Self-Publishing",
+                        description: "We handle editing, illustration, formatting, cover design, printing, and distribution—eliminating the need for multiple vendors or complex workflows."
                     },
                     {
                         title: "Full Creative & Financial Control",
-                        description: "You set your book's content, cover, pricing, and distribution options, fitting your publishing goals into your schedule without pressure or deadlines."
+                        description: "You maintain complete ownership of your story, artwork, pricing, and publishing decisions—without pressure or hidden fees."
                     },
                     {
                         title: "Keep 100% of Your Royalties & Track Sales in Real Time",
-                        description: "Get your book into the hands of readers worldwide through distribution to Amazon, Barnes & Noble, IngramSpark, Apple Books, and over 100 other major platforms."
+                        description: "Sell worldwide through Amazon, Barnes & Noble, IngramSpark, Apple Books, and more—while monitoring performance through real-time reporting."
                     },
                     {
                         title: "Publish Faster with Our Streamlined Process",
-                        description: "Bring your book to market within only a month - significantly faster than the industry average."
+                        description: "Launch your children’s book in weeks, not months, with an efficient production timeline designed for modern authors."
                     },
                     {
                         title: "Professional Quality, Backed by AI & Human Expertise",
-                        description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
+                        description: "Every project is enhanced by AI-assisted tools and refined by experienced editors, illustrators, and designers."
                     },
                     {
-                        title: "Marketing and Distribution",
-                        description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
+                        title: "Marketing & Distribution Support",
+                        description: "From launch strategies to ongoing promotion, we help position your book for visibility, discoverability, and long-term success."
                     }
                 ]}
             />
             <FeatureSection
                 title={{
-                    prefix: "Children Book Your",
+                    prefix: "Children’s Book Publishing Your ",
                     highlight: "Book"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Turn your idea into a beautifully illustrated children’s book with Aero Publishing’s guided self-publishing experience. Our personalized approach ensures your book is age-appropriate, visually engaging, and professionally produced—without sacrificing creative freedom or royalties.
+                From manuscript upload to global distribution, everything is managed in one place with the support of a dedicated publishing specialist at every stage."
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""
-            />  
+            />
             <WhyAeroSection
                 highlightTitle="What"
                 normalTitle=" Our Children's Book"
                 boldTitle=' Services Include'
+                description='Publishing children’s books doesn’t need to be complicated. We offer a transparent, author-focused experience—keeping you informed, involved, and confident while delivering high-quality results you can trust.'
                 features={features}
             />
             <ConnectWithUsSection />
