@@ -71,9 +71,11 @@ export default function Footer() {
                 <div className="relative z-10 border-t border-white/20 px-12 max-sm:px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[12px] text-white/70 font-poppins">
                     <p>Powered by Aero Publishing . All rights reserved.</p>
                     <div className="flex gap-1">
-                        <Link href="#" className="hover:text-white transition-colors text-brand-secondary">Terms & Conditions</Link>
+                        <Link href="/terms-and-conditions" className="hover:text-white transition-colors ">Terms & Conditions</Link>
                         <span>|</span>
-                        <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <span>|</span>
+                        <Link href="/return-refund-policies" className="hover:text-white transition-colors">Return Refund Policies</Link>
                     </div>
                 </div>
             </div>
