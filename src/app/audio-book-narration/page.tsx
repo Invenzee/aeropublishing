@@ -16,22 +16,22 @@ export default function page() {
         {
             icon: "/feature-icon-1.png",
             title: "Professional Voice Talent Casting",
-            description: "We deliver industry-standard publishing services without cutting corners. From manuscript preparation to final release, every step is handled with precision, care, and attention to detail—so your book meets professional publishing standards in both print and digital formats."
+            description: "We help select the right narrator for your book based on genre, tone, and audience. Our professional voice talent brings your story to life with clarity, emotion, and consistency."
         },
         {
             icon: "/feature-icon-2.png",
             title: "Studio-Quality Recording & Production",
-            description: "Your book is supported by experienced editors and designers who understand both storytelling and market expectations. We work collaboratively to refine your manuscript, develop compelling interiors, and create covers that reflect your vision while appealing to your audience."
+            description: "Your audiobook is recorded and produced using industry-standard equipment and techniques. We focus on clean audio, balanced sound, and a professional listening experience from start to finish."
         },
         {
             icon: "/feature-icon-3.png",
             title: "Audio Editing & Mastering",
-            description: "You retain complete ownership of your work. Every creative decision remains yours, and you earn 100% of your royalties. Our role is to support, guide, and execute—not to take control of your intellectual property."
+            description: "We carefully edit and master your audiobook to ensure smooth pacing, clear narration, and consistent audio levels—delivering a polished final product ready for distribution."
         },
         {
             icon: "/feature-icon-4.png",
             title: "ACX & Audible Compliance Formatting",
-            description: "Your book is prepared for distribution across leading online retailers and platforms worldwide. We ensure your title is professionally formatted and positioned to reach readers in the United States and beyond, in both print and digital marketplaces."
+            description: "Your audiobook is prepared to meet ACX, Audible, and major platform requirements. We ensure proper formatting, technical compliance, and readiness for release in the U.S. and global marketplaces."
         }
     ];
 
@@ -39,7 +39,7 @@ export default function page() {
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
                 title="Audio Book Narration"
-                description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
+                description="All-inclusive audiobook narration packages designed to bring your story to life. With professional voice talent, studio-quality production, and a 7-day money-back guarantee, Aero Publishing makes audiobook creation simple and stress-free."
             />
             <FeatureSection
                 subtitle="Audio Book Narration Made Effortless:"
@@ -48,13 +48,16 @@ export default function page() {
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Take full control of your audiobook journey with Aero Publishing’s professional narration services. Whether you’re converting a published book into audio or launching your first audiobook, our streamlined process combines skilled voice talent with expert audio production.
+                From narration planning to final delivery, we ensure your audiobook sounds polished, engaging, and market-ready. With clear communication, dedicated support, and full creative control, we help you confidently expand your book’s reach into the fast-growing audiobook market.
+                "
                 features={[
-                    "7-Day Money Back Guarantee",
-                    "Copyright & ISBN Certificate",
-                    "Retain 100% of Your Book Rights"
+                    "7-Day Money-Back Guarantee",
+                    "Professional Audio Production Support",
+                    "100% Ownership of Your Audiobook Rights"
                 ]}
                 imageSrc="/service-feature-section-image.png"
+                hasFeatures={true}
             />
             <BenefitsGridSection
                 subtitle="Why Audio Book Narration with Aero?"
@@ -64,37 +67,39 @@ export default function page() {
                 }}
                 benefits={[
                     {
-                        title: "All-in-One Platform For Seamless Self-Publishing",
-                        description: "Our comprehensive platform covers every stage of publishing - editing, formatting, cover design, printing, distribution, and marketing - eliminating the need for costly third-party tools or complex workflows."
+                        title: "All-in-One Audiobook Solution",
+                        description: "We manage every stage of audiobook creation—from narration to final mastering—so you don’t need to coordinate multiple vendors or navigate complex technical requirements."
                     },
                     {
                         title: "Full Creative & Financial Control",
-                        description: "You set your book's content, cover, pricing, and distribution options, fitting your publishing goals into your schedule without pressure or deadlines."
+                        description: "You choose the voice, pacing, and overall tone of your audiobook. We work collaboratively to ensure the final production aligns with your vision, audience, and publishing goals."
                     },
                     {
-                        title: "Keep 100% of Your Royalties & Track Sales in Real Time",
-                        description: "Get your book into the hands of readers worldwide through distribution to Amazon, Barnes & Noble, IngramSpark, Apple Books, and over 100 other major platforms."
+                        title: "Keep 100% of Your Royalties",
+                        description: "Your audiobook remains fully yours. You retain complete ownership and earn 100% of your royalties, with no hidden restrictions or long-term contracts."
                     },
                     {
-                        title: "Publish Faster with Our Streamlined Process",
-                        description: "Bring your book to market within only a month - significantly faster than the industry average."
+                        title: "Produce Audiobooks Faster",
+                        description: "Our streamlined production workflow helps bring your audiobook to market efficiently, without sacrificing audio quality or listener experience."
                     },
                     {
-                        title: "Professional Quality, Backed by AI & Human Expertise",
-                        description: "Every book is enhanced by AI-driven tools for formatting, proofreading, and metadata optimization, combined with hands-on editorial and design support from industry professionals."
+                        title: "Professional Quality, Backed by Expertise",
+                        description: "Every audiobook is produced by experienced professionals using industry-standard tools and techniques to ensure clarity, consistency, and a polished listening experience."
                     },
                     {
-                        title: "Marketing and Distribution",
-                        description: "From launch to bestseller, our tools drive your book's success - promote your book with built-in marketing tools and strategies."
+                        title: "Distribution & Marketing Support",
+                        description: "We help prepare your audiobook for distribution across major platforms, giving your story greater reach and visibility among U.S. and global listeners."
                     }
                 ]}
             />
             <FeatureSection
                 title={{
-                    prefix: "Audio Book Narration Your",
+                    prefix: "Narrate Your",
                     highlight: "Book"
                 }}
-                description="Take full control of your publishing journey with Spines' all-in-one self-publishing platform. Whether you're launching your first book or adding to your catalog, our advanced technology combined with personalized editorial and publishing expertise ensures your book is professional, polished, and market-ready, without giving up any royalties. From manuscript upload to global distribution and marketing, manage everything through one intuitive dashboard, with the support of your dedicated account manager every step of the way."
+                description="Transform your book into a compelling listening experience with Aero Publishing’s audiobook narration services. We help authors connect with new audiences by producing high-quality audiobooks that are engaging, professional, and platform-ready.
+                Whether you’re expanding an existing title or launching an audiobook for the first time, our team provides expert guidance and reliable production—so your story is heard, not just read.
+                "
                 imageSrc="/globe-booked.png"
                 isReversed={true}
                 subtitle=""
