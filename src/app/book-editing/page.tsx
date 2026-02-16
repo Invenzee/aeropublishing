@@ -60,6 +60,7 @@ export default function page() {
                     "Full Creative Control & 100% Author Rights"
                 ]}
                 imageSrc="/service-feature-section-image.png"
+                hasFeatures={true}
             />
             <BenefitsGridSection
                 subtitle="Why Book Editing with Aero?"

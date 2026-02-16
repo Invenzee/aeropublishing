@@ -18,6 +18,7 @@ interface FeatureSectionProps {
     imageSrc: string;
     imageAlt?: string;
     isReversed?: boolean; // To swap image and content side
+    hasFeatures?: boolean
 }
 
 export default function FeatureSection({
@@ -30,6 +31,7 @@ export default function FeatureSection({
     imageSrc,
     imageAlt = "Feature Image",
     isReversed = false,
+    hasFeatures = false
 }: FeatureSectionProps) {
     return (
         <section className="py-20 bg-white overflow-hidden bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
@@ -61,9 +63,12 @@ export default function FeatureSection({
                         {description}
                     </p>
 
-                    <div className="text-sm font-medium text-brand-black">
-                        What you can expect:
-                    </div>
+                    {
+                        hasFeatures &&
+                        <div className="text-sm font-medium text-brand-black">
+                            What you can expect:
+                        </div>
+                    }
 
                     {features.length > 0 && (
                         <ul className="space-y-3 pt-2">
