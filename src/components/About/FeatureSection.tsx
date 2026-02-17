@@ -101,7 +101,7 @@ export default function FeatureSection({
                         <img
                             src={imageSrc}
                             alt={imageAlt}
-                            className="object-cover rounded-[40px] min-h-[500px] max-sm:min-h-full max-sm:rounded-lg"
+                            className="object-cover rounded-[40px] min-h-[500px] max-h-[500px] max-sm:min-h-full max-sm:rounded-lg max-sm:max-h-full"
                         />
                     </div>
                 </motion.div>
