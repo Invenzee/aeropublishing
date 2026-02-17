@@ -90,7 +90,7 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle, 
                             <img
                                 src={imageUrl}
                                 alt="Open book"
-                                className="w-full h-full object-cover"
+                                className="w-full rounded-[40px] min-h-[500px] max-sm:min-h-full max-sm:rounded-lg object-cover"
                             />
                         </div>
                     </motion.div>

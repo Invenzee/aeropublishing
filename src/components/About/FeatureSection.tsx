@@ -94,14 +94,14 @@ export default function FeatureSection({
                     whileInView={{ opacity: 1, x: 0, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                    className="flex-1 relative w-full max-w-[500px]"
+                    className="flex-1 relative w-full max-w-[500px] h-full"
                 >
 
                     <div className="relative w-full">
                         <img
                             src={imageSrc}
                             alt={imageAlt}
-                            className="object-cover"
+                            className="object-cover rounded-[40px] min-h-[500px] max-sm:min-h-full max-sm:rounded-lg"
                         />
                     </div>
                 </motion.div>
