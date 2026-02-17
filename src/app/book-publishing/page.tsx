@@ -57,7 +57,7 @@ export default function page() {
                     "Copyright & ISBN Registration",
                     "100% Ownership of Your Book Rights"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/publishing-1.png"
                 hasFeatures={true}
             />
             <BenefitsGridSection
@@ -101,7 +101,7 @@ export default function page() {
                 description="Bring your manuscript to life with Aero Publishing’s professional book publishing services. We help authors transform their ideas into polished, publication-ready books through expert editing, design, and production support.
                 Whether you’re publishing for the first time or refining a finished manuscript, our team ensures your book meets industry standards and is ready for print and digital distribution. With a clear process and dedicated guidance, we make publishing approachable, transparent, and author-focused.
                 "
-                imageSrc="/globe-booked.png"
+                imageSrc="/publishing-2.png"
                 isReversed={true}
                 subtitle=""
             />
@@ -111,6 +111,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing doesn’t need to be complicated. We provide a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
+                imageUrl='/publishing-3.png'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />
