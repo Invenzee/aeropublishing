@@ -55,7 +55,7 @@ export default function page() {
                     "Copyright & ISBN Certification",
                     "Retain 100% of Your Book Rights"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/ebook-writing-1.jpg"
                 hasFeatures={true}
             />
             <BenefitsGridSection
@@ -98,7 +98,7 @@ export default function page() {
                 }}
                 description="Take full control of your publishing journey with Aero Publishing’s ebook writing services. Whether you’re launching your first ebook or expanding your catalog, our experienced writers and editors work closely with you to produce compelling, well-structured content tailored to your audience.
                 From idea to final manuscript, we ensure your ebook is professionally written, market-ready, and aligned with your goals—while you remain in control every step of the way."
-                imageSrc="/globe-booked.png"
+                imageSrc="/ebook-writing-2.jpg"
                 isReversed={true}
                 subtitle=""
             />
@@ -108,6 +108,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
+                imageUrl='/ebook-writing-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

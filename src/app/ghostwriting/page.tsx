@@ -55,7 +55,7 @@ export default function page() {
                     "Copyright & ISBN Certificate",
                     "Retain 100% of Your Book Rights"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/ghostwriting-1.jpg"
             />
             <BenefitsGridSection
                 subtitle="Why Ghostwriting with Aero?"
@@ -97,7 +97,7 @@ export default function page() {
                 }}
                 description="Bring your story to life with confidence. Whether you’re writing a memoir, business book, fiction, or non-fiction, Aero Publishing transforms your ideas into a professionally written manuscript that reflects your voice, goals, and audience.
                 From early brainstorming to final revisions, everything is managed through one intuitive system—with expert guidance at every step."
-                imageSrc="/globe-booked.png"
+                imageSrc="/ghostwriting-2.jpg"
                 isReversed={true}
                 subtitle=""
             />
@@ -107,6 +107,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
+                imageUrl='/ghostwriting-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

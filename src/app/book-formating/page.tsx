@@ -57,7 +57,7 @@ export default function page() {
                     "Print & Digital Formatting Support",
                     "100% Ownership of Your Book Files"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/book-formatting-1.jpg"
                 hasFeatures={true}
             />
             <BenefitsGridSection
@@ -101,7 +101,7 @@ export default function page() {
                 description="Prepare your manuscript for publication with Aero Publishing’s professional book formatting services. We help authors transform raw documents into clean, polished interiors that meet industry standards and platform guidelines.
                 Whether you’re publishing in print, digital, or both, our team ensures your book is formatted accurately and consistently—so it’s ready for readers, not revisions.
                 "
-                imageSrc="/globe-booked.png"
+                imageSrc="/book-formatting-2.jpg"
                 isReversed={true}
                 subtitle=""
             />
@@ -111,6 +111,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused formatting experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
+                imageUrl='/book-formatting-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

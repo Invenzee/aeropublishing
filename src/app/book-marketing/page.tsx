@@ -56,7 +56,7 @@ export default function page() {
                     "Targeted Marketing Strategies Built for Authors",
                     "100% Ownership of Your Book & Campaigns"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/marketing-1.png"
                 hasFeatures={true}
             />
             <BenefitsGridSection
@@ -100,7 +100,7 @@ export default function page() {
                 description="Grow your readership with Aero Publishing’s professional book marketing solutions. We help authors build visibility, attract the right audience, and create momentum through strategic marketing campaigns designed for today’s publishing landscape.
                 Whether you’re launching a new release or scaling an existing title, our team provides clear strategy, expert execution, and ongoing support—so your book doesn’t just get published, it gets noticed.
                 "
-                imageSrc="/globe-booked.png"
+                imageSrc="/marketing-2.jpg"
                 isReversed={true}
                 subtitle=""
             />
@@ -110,6 +110,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing—and marketing—doesn’t need to be complicated. We offer a clear, honest, and author-focused marketing experience that keeps you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
+                imageUrl='/marketing-3.png'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

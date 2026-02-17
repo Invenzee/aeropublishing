@@ -56,7 +56,7 @@ From concept to final manuscript, we combine human storytelling expertise with m
                     "Copyright & ISBN Certificate",
                     "Retain 100% of Your Book Rights"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/fiction-writing-1.jpg"
                 hasFeatures={true}
             />
             <BenefitsGridSection
@@ -99,7 +99,7 @@ From concept to final manuscript, we combine human storytelling expertise with m
                 }}
                 description="Turn your ideas into a professionally written fiction book with Aero Publishing. We guide you through every step—from early brainstorming to a finished manuscript—ensuring your story is immersive, well-structured, and reader-ready.
                 Our collaborative process ensures your voice remains authentic while meeting modern fiction market expectations."
-                imageSrc="/globe-booked.png"
+                imageSrc="/fiction-writing-2.jpg"
                 isReversed={true}
                 subtitle=""
             />
@@ -109,6 +109,7 @@ From concept to final manuscript, we combine human storytelling expertise with m
                 boldTitle=' Services Include'
                 description=''
                 features={features}
+                imageUrl='/fiction-writing-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

@@ -56,7 +56,7 @@ export default function page() {
                     "Copyright & ISBN Support Available",
                     "Retain 100% Ownership of Your Work"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/proof-reading-1.jpg"
                 hasFeatures={true}
             />
             <BenefitsGridSection
@@ -100,7 +100,7 @@ export default function page() {
                 description="Your manuscript deserves a final review that leaves no room for doubt. Aero Publishing provides thorough proofreading that prepares your book for professional release — in print and digital formats.
                 We review your manuscript with precision, correcting surface-level errors while ensuring consistency across chapters, headings, dialogue, and formatting. Our goal is simple: deliver a clean, credible, and polished book that readers trust.
                 With Aero Publishing, you’re supported by a dedicated team that understands both storytelling and publishing standards — guiding your book confidently to the finish line."
-                imageSrc="/globe-booked.png"
+                imageSrc="/proof-reading-2.jpg"
                 isReversed={true}
                 subtitle=""
             />
@@ -110,6 +110,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing doesn’t have to feel overwhelming. Our proofreading services are designed to give authors clarity, control, and confidence — delivering professional results without unnecessary complexity.'
                 features={features}
+                imageUrl='/proof-reading-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

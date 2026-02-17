@@ -56,7 +56,7 @@ export default function page() {
                     "Professional Audio Production Support",
                     "100% Ownership of Your Audiobook Rights"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/audio-book-1.jpg"
                 hasFeatures={true}
             />
             <BenefitsGridSection
@@ -100,7 +100,7 @@ export default function page() {
                 description="Transform your book into a compelling listening experience with Aero Publishing’s audiobook narration services. We help authors connect with new audiences by producing high-quality audiobooks that are engaging, professional, and platform-ready.
                 Whether you’re expanding an existing title or launching an audiobook for the first time, our team provides expert guidance and reliable production—so your story is heard, not just read.
                 "
-                imageSrc="/globe-booked.png"
+                imageSrc="/audio-book-2.jpg"
                 isReversed={true}
                 subtitle=""
             />
@@ -110,6 +110,7 @@ export default function page() {
                 boldTitle='Services Include'
                 description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused audiobook experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
+                imageUrl='/audio-book-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

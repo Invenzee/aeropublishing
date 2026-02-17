@@ -60,7 +60,7 @@ export default function page() {
                     "Copyright & ISBN Certification",
                     "Retain 100% of Your Book Rights"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/children-book-1.jpg"
                 hasFeatures={true}
             />
             <BenefitsGridSection
@@ -103,7 +103,7 @@ export default function page() {
                 }}
                 description="Turn your idea into a beautifully illustrated children’s book with Aero Publishing’s guided self-publishing experience. Our personalized approach ensures your book is age-appropriate, visually engaging, and professionally produced—without sacrificing creative freedom or royalties.
                 From manuscript upload to global distribution, everything is managed in one place with the support of a dedicated publishing specialist at every stage."
-                imageSrc="/globe-booked.png"
+                imageSrc="/children-book-2.jpg"
                 isReversed={true}
                 subtitle=""
             />
@@ -113,6 +113,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing children’s books doesn’t need to be complicated. We offer a transparent, author-focused experience—keeping you informed, involved, and confident while delivering high-quality results you can trust.'
                 features={features}
+                imageUrl='/children-book-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

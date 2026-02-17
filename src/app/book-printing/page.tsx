@@ -55,7 +55,7 @@ export default function page() {
                     "Copyright & ISBN Assistance",
                     "Retain 100% Ownership of Your Book"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/book-printing-1.png"
                 hasFeatures={true}
             />
             <BenefitsGridSection
@@ -98,7 +98,7 @@ export default function page() {
                 }}
                 description="Take full control of your book’s production with Aero Publishing’s expert-managed printing services. We guide you through every step—from selecting print specifications to preparing final files—ensuring your book is polished, durable, and market-ready.
                 Whether you need short-run copies or scalable print solutions, our team ensures your book meets professional publishing standards while preserving your rights and creative vision."
-                imageSrc="/globe-booked.png"
+                imageSrc="/book-printing-2.png"
                 isReversed={true}
                 subtitle=""
             />
@@ -108,6 +108,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing doesn’t need to be complicated. Aero Publishing offers a clear, honest, and author-focused printing experience—keeping you informed, in control, and confident from start to finish.'
                 features={features}
+                imageUrl='/book-printing-3.png'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

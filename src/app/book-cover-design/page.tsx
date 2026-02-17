@@ -55,7 +55,7 @@ export default function page() {
                     "Copyright & ISBN Assistance",
                     "You Retain 100% of Your Book Rights"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/carousel-1.png"
                 hasFeatures={true}
             />
             <BenefitsGridSection
@@ -99,7 +99,7 @@ export default function page() {
                 description="Your book’s cover is the first impression readers see—and often the deciding factor in whether they click, browse, or buy.
                 At Aero Publishing, we design covers that don’t just look good—they sell. Our team combines creative design with genre research and marketplace trends to ensure your book stands out while meeting professional publishing standards.
                 Every project includes guided collaboration, revision rounds, and platform-ready delivery—so your book is polished, credible, and ready for readers."
-                imageSrc="/globe-booked.png"
+                imageSrc="/carousel-2.png"
                 isReversed={true}
                 subtitle=""
             />
@@ -109,6 +109,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused design experience—keeping you informed, in control, and confident at every stage.'
                 features={features}
+                imageUrl='/carousel-3.png'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

@@ -56,7 +56,7 @@ export default function page() {
                     "Copyright & Creative Ownership Secured",
                     "Retain 100% of Your Book Rights"
                 ]}
-                imageSrc="/service-feature-section-image.png"
+                imageSrc="/video-trailer-1.jpg"
             />
             <BenefitsGridSection
                 subtitle="Why Video Trailer with Aero?"
@@ -98,7 +98,7 @@ export default function page() {
                 }}
                 description="Create buzz before launch—or reignite interest after publication—with a professional book video trailer. Aero Publishing delivers cinematic visuals that highlight your story’s emotion, genre, and appeal.
                 From scripting to final export, everything is handled through one intuitive process with a dedicated account manager guiding you at every step."
-                imageSrc="/globe-booked.png"
+                imageSrc="/video-trailer-2.jpg"
                 isReversed={true}
                 subtitle=""
             />
@@ -108,6 +108,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing doesn’t need to be complicated. We offer a transparent, author-focused creative experience—keeping you informed, in control, and confident while delivering professional promotional assets you can trust.'
                 features={features}
+                imageUrl='/video-trailer-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />
