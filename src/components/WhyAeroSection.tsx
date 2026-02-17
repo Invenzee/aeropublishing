@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
-export default function WhyAeroSection({ features, highlightTitle, normalTitle, boldTitle, description }: { features: any[], highlightTitle: string, normalTitle: string, boldTitle: string, description: string }) {
+export default function WhyAeroSection({ features, highlightTitle, normalTitle, boldTitle, description, imageUrl = "/why-aero-book.png" }: { features: any[], highlightTitle: string, normalTitle: string, boldTitle: string, description: string, imageUrl?: string }) {
     const containerRef = useRef(null);
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
@@ -88,7 +88,7 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle, 
                     >
                         <div className="relative w-[90%] max-sm:w-full rounded-2xl overflow-hidden shadow-2xl">
                             <img
-                                src="/why-aero-book.png"
+                                src={imageUrl}
                                 alt="Open book"
                                 className="w-full h-full object-cover"
                             />
