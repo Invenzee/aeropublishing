@@ -60,7 +60,7 @@ export default function Header() {
                     <div className="flex items-center gap-6">
                         <div className="flex items-center gap-2">
                             <Phone size={14} className="text-white cursor-pointer" />
-                            <span className="text-white text-sm font-poppins font-normal cursor-pointer max-sm:hidden">760 280 1847</span>
+                            <span className="text-white text-sm font-poppins font-normal cursor-pointer max-sm:hidden"><a href="tel:+17602801847">760 280 1847</a></span>
                         </div>
                         <div className="flex items-center gap-1">
                             <Mail size={14} className="text-white cursor-pointer" />
@@ -68,17 +68,11 @@ export default function Header() {
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
+                        <a href="https://www.facebook.com/people/Aero-Publishing/100069250598189/" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
                             <FaFacebookF size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
                         </a>
-                        <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
+                        <a href="https://www.instagram.com/aeropublishing/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
                             <FaInstagram size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
-                        </a>
-                        <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
-                            <FaLinkedinIn size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
-                        </a>
-                        <a href="#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
-                            <FaTwitter size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
                         </a>
                     </div>
 

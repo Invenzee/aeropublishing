@@ -38,17 +38,17 @@ export default function HeroSection() {
                     className="space-y-2"
                 >
                     <h1 className="text-[60px] font-syne font-semibold leading-[1] text-brand-primary max-sm:text-[40px]">
-                       Contact Us
+                        Contact Us
                     </h1>
 
                     <p className="text-black font-poppins text-md leading-relaxed max-w-xl max-sm:text-[14px]">
-                       Things are easy here even if you don't know how to write. Explain the crazy plot you hide in your mind for years and see your imagination on paper. Aqua Book Publishing is interpreting millions of dreams of being published authors globally. That’s what they all truly wanted.
+                        Things are easy here even if you don't know how to write. Explain the crazy plot you hide in your mind for years and see your imagination on paper. Aqua Book Publishing is interpreting millions of dreams of being published authors globally. That’s what they all truly wanted.
                     </p>
 
-                   
+
                     <div className="flex flex-wrap gap-4 pt-4">
                         <Button variant="primary" className="max-sm:text-[14px] max-sm:px-4">
-                            +1 562 366 7780
+                            <a href="tel:+17602801847">760 280 1847</a>
                         </Button>
                         <Button variant="secondary" className="max-sm:text-[14px] max-sm:px-4">
                             Chat Now
@@ -64,7 +64,7 @@ export default function HeroSection() {
                     className="flex flex-col items-center lg:items-end  mt-4"
                 >
                     <div className="w-full max-w-md">
-                       
+
 
                         <img src="/contactus.png" alt="Contact Form" />
                     </div>

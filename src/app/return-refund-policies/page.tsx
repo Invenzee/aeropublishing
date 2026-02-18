@@ -106,7 +106,7 @@ export default function ReturnRefundPolicy() {
                             Contacting Us
                         </h2>
                         <p>
-                            Please do not hesitate to contact us info@aeropublishing.us regarding any matter relating to this policy.
+                            Please do not hesitate to contact us <a href="mailto:info@aeropublishing.com">info@aeropublishing.com</a> regarding any matter relating to this policy.
                         </p>
                     </div>
 

@@ -51,17 +51,11 @@ export default function Footer() {
                     <div className="md:col-span-3 space-y-6">
                         <h4 className="text-[#36C0E7] font-syne font-bold text-lg mb-4">Social Media</h4>
                         <div className="flex gap-4">
-                            <a href="#" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
+                            <a href="https://www.facebook.com/people/Aero-Publishing/100069250598189/" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
                                 <FaFacebookF size={18} className="group-hover:scale-110 transition-transform" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
+                            <a href="https://www.instagram.com/aeropublishing/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
                                 <FaInstagram size={18} className="group-hover:scale-110 transition-transform" />
-                            </a>
-                            <a href="#" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
-                                <FaLinkedinIn size={18} className="group-hover:scale-110 transition-transform" />
-                            </a>
-                            <a href="#" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
-                                <FaTwitter size={18} className="group-hover:scale-110 transition-transform" />
                             </a>
                         </div>
                     </div>
