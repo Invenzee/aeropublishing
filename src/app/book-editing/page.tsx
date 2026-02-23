@@ -49,7 +49,7 @@ export default function page() {
                     highlight: "Expertise",
                     suffix: "and Editorial Precision"
                 }}
-                description={`Take control of your publishing journey with Aero Publishing’s professional book editing services. Whether you’re preparing your first manuscript or refining a completed draft, our experienced editors work closely with you to strengthen clarity, structure, and flow—while preserving your unique voice.
+                description={`Take control of your publishing journey with Aero Publishing’s professional book editing services. you’re preparing your first manuscript or refining a completed draft, our experienced editors work closely with you to strengthen clarity, structure, and flow—while preserving your unique voice.
 
                 From developmental feedback to detailed line editing and final polish, we ensure your book meets industry standards and is ready for publication in both print and digital formats. Our streamlined process keeps you informed and involved at every stage, so your manuscript moves forward with confidence and care.                
                 `}

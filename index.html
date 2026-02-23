@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch & Reveal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400&display=swap');
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #0d0d0d;
+            font-family: 'DM Sans', sans-serif;
+            color: #fff;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        /* Grain overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            letter-spacing: 0.12em;
+            color: #ff2b2b;
+            margin-bottom: 6px;
+            text-shadow: 0 0 30px rgba(255, 43, 43, 0.4);
+        }
+
+        .subtitle {
+            font-size: 0.8rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: #555;
+            margin-bottom: 32px;
+        }
+
+        .canvas-wrapper {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 0 1px #222, 0 30px 80px rgba(0, 0, 0, 0.8), 0 0 60px rgba(255, 43, 43, 0.08);
+        }
+
+        #reveal-image {
+            display: block;
+            width: min(480px, 90vw);
+            height: min(320px, 60vw);
+            object-fit: cover;
+        }
+
+        #scratch-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: crosshair;
+            touch-action: none;
+        }
+
+        .progress-bar-wrap {
+            margin-top: 20px;
+            width: min(480px, 90vw);
+            height: 3px;
+            background: #1a1a1a;
+            border-radius: 99px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #ff2b2b, #ff7a00);
+            border-radius: 99px;
+            transition: width 0.1s linear;
+        }
+
+        .hint {
+            margin-top: 14px;
+            font-size: 0.72rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #333;
+            transition: opacity 0.4s;
+        }
+
+        .reset-btn {
+            margin-top: 28px;
+            background: none;
+            border: 1px solid #2a2a2a;
+            color: #555;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            padding: 10px 28px;
+            border-radius: 99px;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .reset-btn:hover {
+            border-color: #ff2b2b;
+            color: #ff2b2b;
+            box-shadow: 0 0 20px rgba(255, 43, 43, 0.15);
+        }
+
+        .complete-badge {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.0);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .complete-badge span {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3rem;
+            letter-spacing: 0.15em;
+            color: #fff;
+            text-shadow: 0 0 30px rgba(255, 43, 43, 0.9), 0 2px 4px rgba(0, 0, 0, 0.5);
+            transform: scale(0.8);
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .complete-badge.show {
+            opacity: 1;
+        }
+
+        .complete-badge.show span {
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Scratch & Reveal</h1>
+    <p class="subtitle">Rub to uncover what's beneath</p>
+
+    <div class="canvas-wrapper">
+        <!-- The image to reveal - using a beautiful landscape from picsum -->
+        <img id="reveal-image" src="https://picsum.photos/seed/redreveal/960/640" alt="Hidden image"
+            crossorigin="anonymous" draggable="false" />
+        <canvas id="scratch-canvas"></canvas>
+        <div class="complete-badge" id="badge"><span>REVEALED ✦</span></div>
+    </div>
+
+    <div class="progress-bar-wrap">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <p class="hint" id="hint">Drag your finger or mouse across the red surface</p>
+
+    <button class="reset-btn" id="reset-btn">↺ Reset</button>
+
+    <script>
+        const canvas = document.getElementById('scratch-canvas');
+        const ctx = canvas.getContext('2d');
+        const img = document.getElementById('reveal-image');
+        const progressBar = document.getElementById('progress-bar');
+        const hint = document.getElementById('hint');
+        const badge = document.getElementById('badge');
+        const resetBtn = document.getElementById('reset-btn');
+
+        let isDrawing = false;
+        let revealed = false;
+
+        function initCanvas() {
+            const rect = img.getBoundingClientRect();
+            canvas.width = img.naturalWidth || rect.width;
+            canvas.height = img.naturalHeight || rect.height;
+
+            // Fill with vivid red
+            ctx.fillStyle = '#cc1f1f';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Add subtle texture lines for depth
+            ctx.strokeStyle = 'rgba(0,0,0,0.07)';
+            ctx.lineWidth = 1;
+            for (let i = 0; i < canvas.height; i += 6) {
+                ctx.beginPath();
+                ctx.moveTo(0, i);
+                ctx.lineTo(canvas.width, i);
+                ctx.stroke();
+            }
+
+            // Subtle vignette
+            const radGrad = ctx.createRadialGradient(
+                canvas.width / 2, canvas.height / 2, canvas.height * 0.2,
+                canvas.width / 2, canvas.height / 2, canvas.height * 0.8
+            );
+            radGrad.addColorStop(0, 'rgba(0,0,0,0)');
+            radGrad.addColorStop(1, 'rgba(0,0,0,0.35)');
+            ctx.fillStyle = radGrad;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            revealed = false;
+            badge.classList.remove('show');
+            progressBar.style.width = '0%';
+            hint.style.opacity = 1;
+        }
+
+        function getPos(e) {
+            const rect = canvas.getBoundingClientRect();
+            const scaleX = canvas.width / rect.width;
+            const scaleY = canvas.height / rect.height;
+            const touch = e.touches ? e.touches[0] : e;
+            return {
+                x: (touch.clientX - rect.left) * scaleX,
+                y: (touch.clientY - rect.top) * scaleY
+            };
+        }
+
+        function scratch(x, y) {
+            ctx.globalCompositeOperation = 'destination-out';
+            ctx.beginPath();
+            ctx.arc(x, y, 55, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        function checkProgress() {
+            const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+            let transparent = 0;
+            const total = data.length / 4;
+            for (let i = 3; i < data.length; i += 4) {
+                if (data[i] < 128) transparent++;
+            }
+            const pct = (transparent / total) * 100;
+            progressBar.style.width = pct + '%';
+
+            if (pct > 35 && !revealed) {
+                revealed = true;
+                // Clear everything
+                ctx.globalCompositeOperation = 'destination-out';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                progressBar.style.width = '100%';
+                hint.style.opacity = 0;
+                badge.classList.add('show');
+            }
+        }
+
+        // Events
+        canvas.addEventListener('mousedown', e => { isDrawing = true; const p = getPos(e); scratch(p.x, p.y); });
+        canvas.addEventListener('mousemove', e => {
+            if (!isDrawing) return;
+            const p = getPos(e);
+            scratch(p.x, p.y);
+            checkProgress();
+        });
+        canvas.addEventListener('mouseup', () => isDrawing = false);
+        canvas.addEventListener('mouseleave', () => isDrawing = false);
+
+        canvas.addEventListener('touchstart', e => { e.preventDefault(); isDrawing = true; const p = getPos(e); scratch(p.x, p.y); }, { passive: false });
+        canvas.addEventListener('touchmove', e => {
+            e.preventDefault();
+            if (!isDrawing) return;
+            const p = getPos(e);
+            scratch(p.x, p.y);
+            checkProgress();
+        }, { passive: false });
+        canvas.addEventListener('touchend', () => isDrawing = false);
+
+        resetBtn.addEventListener('click', initCanvas);
+
+        img.addEventListener('load', initCanvas);
+        if (img.complete) initCanvas();
+    </script>
+</body>
+
+</html>
