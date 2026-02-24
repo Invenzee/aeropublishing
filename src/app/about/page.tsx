@@ -39,7 +39,7 @@ export default function About() {
     return (
         <main className="min-h-screen">
             <Header />
-            <HeroSection title="About Us" description="Your story deserves more than just being written—it deserves to be seen, shared, and remembered. At Aero Publishing, we help authors bring their ideas to life and place them in the hands of readers worldwide with confidence and ease." />
+            <HeroSection hasForm={false} title="About Us" description="Your story deserves more than just being written—it deserves to be seen, shared, and remembered. At Aero Publishing, we help authors bring their ideas to life and place them in the hands of readers worldwide with confidence and ease." />
             <CounterSection />
             <MissionSection />
             <WhyAeroSection highlightTitle="Publishing" normalTitle="Your Book Should Be " boldTitle=" Simple, Transparent, and Author-First" features={features} description="" />

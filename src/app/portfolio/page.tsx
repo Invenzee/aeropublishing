@@ -68,6 +68,7 @@ export default function page() {
     return (
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
+                hasForm={false}
                 title="Portfolio"
                 description="Explore a curated selection of projects crafted by Aero Publishing—where ideas turn into professionally published books. Our portfolio reflects the quality, creativity, and care we bring to every author we work with.
                 From fiction and nonfiction to ebooks, children’s books, and visual marketing assets, each project showcases our commitment to polished execution, author ownership, and market-ready results."

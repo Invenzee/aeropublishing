@@ -1,11 +1,13 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Button from "./Button";
 import { ChevronRight, Dot } from "lucide-react";
 
 export default function HowWeWorkSection() {
+    const router = useRouter();
     const containerRef = useRef(null);
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
     const [activeStep, setActiveStep] = useState(0);
@@ -66,13 +68,13 @@ export default function HowWeWorkSection() {
                         How We Work
                     </p>
                     <h2 className="text-[50px] text-brand-primary font-syne font-[500] leading-[1] max-sm:text-[32px]">
-                    How Our Book Publishing<span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px]"> Process</span>{" "}
+                        How Our Book Publishing<span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px]"> Process</span>{" "}
                         <span className="font-[500]"> Works</span>
                         <br />
                         <span className="font-bold">From Manuscript to Market</span>
                     </h2>
                     <p className="text-sm font-poppins text-brand-gray mt-4 max-w-2xl mx-auto">
-                    We follow a clear, step-by-step process that takes your book from submission to publication with transparency, professional support, and author-first guidance at every stage.
+                        We follow a clear, step-by-step process that takes your book from submission to publication with transparency, professional support, and author-first guidance at every stage.
                     </p>
                 </motion.div>
 
@@ -133,7 +135,11 @@ export default function HowWeWorkSection() {
                                 </ul>
 
                                 <div className="pt-4">
-                                    <Button variant="secondary" className="max-sm:text-[14px] max-sm:px-6">
+                                    <Button
+                                        variant="secondary"
+                                        className="max-sm:text-[14px] max-sm:px-6"
+                                        onClick={() => router.push("/contact-us")}
+                                    >
                                         GET STARTED
                                     </Button>
                                 </div>

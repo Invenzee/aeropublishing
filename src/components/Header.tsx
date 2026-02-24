@@ -150,7 +150,7 @@ export default function Header() {
 
                             {/* CTA Button - Desktop */}
                             <div className="hidden md:flex items-center">
-                                <Button variant="secondary" className="!px-6 !py-2.5 !text-base">
+                                <Button variant="secondary" className="!px-6 !py-2.5 !text-base" onClick={() => router.push("/contact-us")}>
                                     Get Started
                                 </Button>
                             </div>
@@ -279,7 +279,14 @@ export default function Header() {
                                     transition={{ delay: 0.5 }}
                                     className="pt-4 border-t border-gray-200"
                                 >
-                                    <Button variant="secondary" className="w-full !text-base">
+                                    <Button
+                                        variant="secondary"
+                                        className="w-full !text-base"
+                                        onClick={() => {
+                                            router.push("/contact-us");
+                                            toggleMobileMenu();
+                                        }}
+                                    >
                                         Get Started
                                     </Button>
                                 </motion.div>

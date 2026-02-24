@@ -100,7 +100,11 @@ export default function HeroSection() {
                         <Button variant="primary" className="max-sm:text-[14px] max-sm:px-4">
                             <a href="tel:+17602801847">760 280 1847</a>
                         </Button>
-                        <Button variant="secondary" className="max-sm:text-[14px] max-sm:px-4">
+                        <Button
+                            variant="secondary"
+                            className="max-sm:text-[14px] max-sm:px-4"
+                            onClick={() => (window as any).Tawk_API?.maximize()}
+                        >
                             Chat Now
                         </Button>
                     </div>

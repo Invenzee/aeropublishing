@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { Check, HelpCircle, Info } from "lucide-react";
 import Button from "../Button";
@@ -33,6 +34,7 @@ const addOns = [
 ];
 
 export default function GlobalPremiumCard() {
+    const router = useRouter();
     return (
         <div className="max-w-[500px] w-full mx-auto">
             <motion.div
@@ -121,6 +123,7 @@ export default function GlobalPremiumCard() {
                     <Button
                         variant="secondary"
                         className="!max-w-full w-full"
+                        onClick={() => router.push("/contact-us")}
                     >
                         Get started
                     </Button>

@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
@@ -47,6 +48,7 @@ const getPrice = (tierIdx: number, wordCount: number, category: string) => {
 };
 
 export default function PricingSection() {
+    const router = useRouter();
     const [wordCount, setWordCount] = useState(50000);
     const [category, setCategory] = useState("Fiction/Non-fiction");
     const [isMobile, setIsMobile] = useState(false);
@@ -182,6 +184,7 @@ export default function PricingSection() {
                         price={getPrice(0, wordCount, category)}
                         features={features}
                         variant="light"
+                        router={router}
                     />
 
                     {/* Card 2 (Featured) */}
@@ -192,6 +195,7 @@ export default function PricingSection() {
                         features={features}
                         variant="dark"
                         isPopular
+                        router={router}
                     />
 
                     {/* Card 3 */}
@@ -201,6 +205,7 @@ export default function PricingSection() {
                         price={getPrice(2, wordCount, category)}
                         features={features}
                         variant="light"
+                        router={router}
                     />
                 </div>
             </div>
@@ -215,9 +220,10 @@ interface PricingCardProps {
     features: string[];
     variant?: "light" | "dark";
     isPopular?: boolean;
+    router: any;
 }
 
-function PricingCard({ title, description, price, features, variant = "light", isPopular = false }: PricingCardProps) {
+function PricingCard({ title, description, price, features, variant = "light", isPopular = false, router }: PricingCardProps) {
     const isDark = variant === "dark";
 
     return (
@@ -271,6 +277,7 @@ function PricingCard({ title, description, price, features, variant = "light", i
                 <Button
                     variant={isDark ? "secondary" : "primary"}
                     className={`w-full !rounded-full !h-12 !text-base ${!isDark ? '!bg-transparent !border !border-gray-200 !text-brand-black hover:!bg-brand-black hover:!text-white hover:!border-brand-black' : ''}`}
+                    onClick={() => router.push("/contact-us")}
                 >
                     {isDark ? "Get Started" : "Start 14-day Trial"}
                 </Button>
