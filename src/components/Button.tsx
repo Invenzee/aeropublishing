@@ -10,6 +10,8 @@ interface ButtonProps {
     variant?: "primary" | "secondary";
     className?: string;
     font?: "syne" | "poppins" | "shaded";
+    disabled?: boolean;
+    type?: "button" | "submit" | "reset";
 }
 
 export default function Button({
@@ -18,7 +20,9 @@ export default function Button({
     href,
     variant = "primary",
     className = "",
-    font = "syne"
+    font = "syne",
+    disabled = false,
+    type = "submit"
 }: ButtonProps) {
     const [isHovering, setIsHovering] = useState(false);
     const [animationClass, setAnimationClass] = useState("");
@@ -65,6 +69,8 @@ export default function Button({
             onClick={onClick}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            disabled={disabled}
+            type={type}
             className={`
         button-wave
         ${animationClass}

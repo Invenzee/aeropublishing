@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Button from "../Button";
+import { sendEmail } from "@/app/actions/email";
 
 interface FormData {
   name: string;
@@ -35,6 +36,16 @@ export default function ContactForm() {
     message: "",
   });
 
+  const [status, setStatus] = useState<{
+    submitting: boolean;
+    success: boolean | null;
+    message: string;
+  }>({
+    submitting: false,
+    success: null,
+    message: "",
+  });
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -51,10 +62,43 @@ export default function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
-    // yahan API call kar sakte ho
+    setStatus({ submitting: true, success: null, message: "" });
+
+    try {
+      const result = await sendEmail({ ...formData, formType: "Contact Page Form" });
+      if (result.success) {
+        setStatus({
+          submitting: false,
+          success: true,
+          message: "Thank you! Your message has been sent.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          website: "",
+          services: [],
+          timeline: "",
+          source: "",
+          message: "",
+        });
+      } else {
+        setStatus({
+          submitting: false,
+          success: false,
+          message: "Oops! Something went wrong. Please try again.",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus({
+        submitting: false,
+        success: false,
+        message: "An error occurred. Please try again later.",
+      });
+    }
   };
 
   return (
@@ -74,6 +118,7 @@ export default function ContactForm() {
           <input
             type="text"
             name="name"
+            required
             value={formData.name}
             onChange={handleChange}
             className="mt-1 w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
@@ -88,6 +133,7 @@ export default function ContactForm() {
           <input
             type="email"
             name="email"
+            required
             value={formData.email}
             onChange={handleChange}
             className="mt-1 w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
@@ -102,6 +148,7 @@ export default function ContactForm() {
           <input
             type="text"
             name="phone"
+            required
             value={formData.phone}
             onChange={handleChange}
             className="mt-1 w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
@@ -113,6 +160,7 @@ export default function ContactForm() {
           <span className="text-sm font-medium">Message</span>
           <textarea
             name="message"
+            required
             value={formData.message}
             onChange={handleChange}
             rows={4}
@@ -120,9 +168,19 @@ export default function ContactForm() {
           />
         </label>
 
-        <Button className="mx-auto px-12">
-          Submit
-        </Button>
+        <div className="text-center">
+          {status.message && (
+            <p className={`mb-4 ${status.success ? 'text-green-600' : 'text-red-600'}`}>
+              {status.message}
+            </p>
+          )}
+          <Button
+            className="mx-auto px-12"
+            disabled={status.submitting}
+          >
+            {status.submitting ? "Sending..." : "Submit"}
+          </Button>
+        </div>
       </form>
     </div>
   );

@@ -1,13 +1,58 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Button from "./Button";
 import { Check } from "lucide-react";
+import { sendEmail } from "@/app/actions/email";
 
 export default function ConnectWithUsSection() {
     const containerRef = useRef(null);
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
+    const [status, setStatus] = useState<{
+        submitting: boolean;
+        success: boolean | null;
+        message: string;
+    }>({
+        submitting: false,
+        success: null,
+        message: "",
+    });
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setStatus({ submitting: true, success: null, message: "" });
+        const formData = new FormData(e.currentTarget);
+        const data = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            formType: "Connect With Us Form"
+        };
+
+        try {
+            const result = await sendEmail(data);
+            if (result.success) {
+                setStatus({
+                    submitting: false,
+                    success: true,
+                    message: "Subscribed successfully!",
+                });
+                e.currentTarget.reset();
+            } else {
+                setStatus({
+                    submitting: false,
+                    success: false,
+                    message: "Error subscribing.",
+                });
+            }
+        } catch (error) {
+            setStatus({
+                submitting: false,
+                success: false,
+                message: "An error occurred.",
+            });
+        }
+    };
 
     return (
         <section
@@ -44,38 +89,50 @@ export default function ConnectWithUsSection() {
                             Connect With <span className="text-brand-secondary font-shaded max-sm:text-[40px] text-[50px] font-[300]">Leading</span> Book<br className="max-sm:hidden" /> Publishers in USA Today
                         </h2>
 
-                        <form className="space-y-6">
+                        <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-2 gap-6 max-sm:grid-cols-1">
                                 <input
+                                    name="name"
                                     type="text"
+                                    required
                                     placeholder="Full Name"
                                     className="w-full h-12 px-6 bg-transparent border border-white/30 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins text-sm"
                                 />
                                 <input
+                                    name="email"
                                     type="email"
+                                    required
                                     placeholder="Email*"
                                     className="w-full h-12 px-6 bg-transparent border border-white/30 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins text-sm"
                                 />
                             </div>
 
                             <div className="flex items-start gap-4 justify-between max-sm:flex-col max-sm:gap-6">
-                                <label className="flex items-start gap-3 cursor-pointer group max-w-lg">
-                                    <div className="relative flex-shrink-0 w-5 h-5 border border-white/30 rounded mt-0.5 group-hover:border-white transition-colors">
-                                        <input type="checkbox" className="peer absolute opacity-0 w-full h-full cursor-pointer" />
-                                        <div className="absolute inset-0 bg-white opacity-0 peer-checked:opacity-100 transition-opacity flex items-center justify-center">
-                                            <Check className="w-3.5 h-3.5 text-brand-primary" />
+                                <div className="flex flex-col gap-2">
+                                    <label className="flex items-start gap-3 cursor-pointer group max-w-lg">
+                                        <div className="relative flex-shrink-0 w-5 h-5 border border-white/30 rounded mt-0.5 group-hover:border-white transition-colors">
+                                            <input type="checkbox" required className="peer absolute opacity-0 w-full h-full cursor-pointer" />
+                                            <div className="absolute inset-0 bg-white opacity-0 peer-checked:opacity-100 transition-opacity flex items-center justify-center">
+                                                <Check className="w-3.5 h-3.5 text-brand-primary" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <span className="text-xs font-poppins text-white/70 leading-relaxed group-hover:text-white/90 transition-colors">
-                                        We will add your info to our CRM for contacting you regarding your request. For more info please consult our privacy policy.
-                                    </span>
-                                </label>
+                                        <span className="text-xs font-poppins text-white/70 leading-relaxed group-hover:text-white/90 transition-colors">
+                                            We will add your info to our CRM for contacting you regarding your request. For more info please consult our privacy policy.
+                                        </span>
+                                    </label>
+                                    {status.message && (
+                                        <p className={`text-xs ${status.success ? 'text-green-400' : 'text-red-400'}`}>
+                                            {status.message}
+                                        </p>
+                                    )}
+                                </div>
 
                                 <Button
                                     variant="secondary"
                                     className="max-sm:w-full"
+                                    disabled={status.submitting}
                                 >
-                                    Subscribe
+                                    {status.submitting ? "Processing..." : "Subscribe"}
                                 </Button>
                             </div>
                         </form>

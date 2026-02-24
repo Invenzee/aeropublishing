@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Button from "./Button";
 import { X } from "lucide-react";
+import { sendEmail } from "@/app/actions/email";
 
 export default function PromoSection() {
     const containerRef = useRef(null);
@@ -29,30 +30,68 @@ export default function PromoSection() {
                             </h2>
                         </div>
 
-                        <form className="space-y-6">
+                        <form
+                            onSubmit={async (e) => {
+                                e.preventDefault();
+                                const formData = new FormData(e.currentTarget);
+                                const data = {
+                                    name: formData.get("name"),
+                                    email: formData.get("email"),
+                                    phone: formData.get("phone"),
+                                    services: formData.get("services"),
+                                    message: formData.get("description"),
+                                    formType: "Promo Discount Form"
+                                };
+
+                                const submitBtn = e.currentTarget.querySelector('button');
+                                if (submitBtn) submitBtn.disabled = true;
+
+                                try {
+                                    const result = await sendEmail(data);
+                                    if (result.success) {
+                                        alert("Thank you! Your coupon has been activated.");
+                                        (e.target as HTMLFormElement).reset();
+                                    } else {
+                                        alert("Failed to send. Please try again.");
+                                    }
+                                } catch (error) {
+                                    alert("An error occurred.");
+                                } finally {
+                                    if (submitBtn) submitBtn.disabled = false;
+                                }
+                            }}
+                            className="space-y-6"
+                        >
                             <div>
                                 <input
+                                    name="name"
                                     type="text"
+                                    required
                                     placeholder="Name"
                                     className="w-full bg-transparent border-b border-gray-400 py-3 text-sm font-poppins focus:outline-none focus:border-brand-primary transition-colors placeholder:text-gray-500"
                                 />
                             </div>
                             <div>
                                 <input
+                                    name="email"
                                     type="email"
+                                    required
                                     placeholder="Email"
                                     className="w-full bg-transparent border-b border-gray-400 py-3 text-sm font-poppins focus:outline-none focus:border-brand-primary transition-colors placeholder:text-gray-500"
                                 />
                             </div>
                             <div>
                                 <input
+                                    name="phone"
                                     type="tel"
+                                    required
                                     placeholder="Phone Number"
                                     className="w-full bg-transparent border-b border-gray-400 py-3 text-sm font-poppins focus:outline-none focus:border-brand-primary transition-colors placeholder:text-gray-500"
                                 />
                             </div>
                             <div>
                                 <input
+                                    name="services"
                                     type="text"
                                     placeholder="Type of Services"
                                     className="w-full bg-transparent border-b border-gray-400 py-3 text-sm font-poppins focus:outline-none focus:border-brand-primary transition-colors placeholder:text-gray-500"
@@ -60,6 +99,7 @@ export default function PromoSection() {
                             </div>
                             <div>
                                 <input
+                                    name="description"
                                     type="text"
                                     placeholder="Description"
                                     className="w-full bg-transparent border-b border-gray-400 py-3 text-sm font-poppins focus:outline-none focus:border-brand-primary transition-colors placeholder:text-gray-500"

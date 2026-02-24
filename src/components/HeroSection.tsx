@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Button from "./Button";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { sendEmail } from "@/app/actions/email";
 
 const badges = [
     "/hero-badge-1.png",
@@ -15,6 +16,15 @@ const badges = [
 export default function HeroSection() {
 
     const [isMobile, setIsMobile] = useState(false);
+    const [status, setStatus] = useState<{
+        submitting: boolean;
+        success: boolean | null;
+        message: string;
+    }>({
+        submitting: false,
+        success: null,
+        message: "",
+    });
 
     useEffect(() => {
         const checkMobile = () => {
@@ -25,6 +35,43 @@ export default function HeroSection() {
         window.addEventListener("resize", checkMobile);
         return () => window.removeEventListener("resize", checkMobile);
     }, []);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setStatus({ submitting: true, success: null, message: "" });
+        const formData = new FormData(e.currentTarget);
+        const data = {
+            name: formData.get("name"),
+            phone: formData.get("phone"),
+            email: formData.get("email"),
+            message: formData.get("message"),
+            formType: "Hero Section Form"
+        };
+
+        try {
+            const result = await sendEmail(data);
+            if (result.success) {
+                setStatus({
+                    submitting: false,
+                    success: true,
+                    message: "Sent! We'll contact you soon.",
+                });
+                e.currentTarget.reset();
+            } else {
+                setStatus({
+                    submitting: false,
+                    success: false,
+                    message: "Failed to send. Try again.",
+                });
+            }
+        } catch (error) {
+            setStatus({
+                submitting: false,
+                success: false,
+                message: "An error occurred.",
+            });
+        }
+    };
 
     return (
         <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[url('/hero-bg.png')] bg-cover bg-center">
@@ -48,7 +95,7 @@ export default function HeroSection() {
                     {/* Badges Placeholder */}
                     <div className="flex gap-4 items-center py-2">
                         {badges.map((badge, i) => (
-                            <Image src={badge} alt="Badge" width={i === 1 && !isMobile ? 70 : isMobile ? 60 : 80} height={i === 1 && !isMobile ? 70 : isMobile ? 60 : 80} />
+                            <Image key={i} src={badge} alt="Badge" width={i === 1 && !isMobile ? 70 : isMobile ? 60 : 80} height={i === 1 && !isMobile ? 70 : isMobile ? 60 : 80} />
                         ))}
                     </div>
 
@@ -75,30 +122,48 @@ export default function HeroSection() {
                             <p className="text-lg font-syne text-black max-sm:text-[14px]">Speak with a dedicated publishing consultant today</p>
                         </div>
 
-                        <form className="space-y-4">
+                        <form onSubmit={handleSubmit} className="space-y-4">
                             <input
+                                name="name"
                                 type="text"
+                                required
                                 placeholder="First Name"
                                 className="w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
                             />
                             <input
+                                name="phone"
                                 type="tel"
+                                required
                                 placeholder="Phone Number"
                                 className="w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
                             />
                             <input
+                                name="email"
                                 type="email"
+                                required
                                 placeholder="Email Address"
                                 className="w-full h-14 px-6 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all font-poppins"
                             />
                             <textarea
+                                name="message"
+                                required
                                 placeholder="Write A Message"
                                 className="w-full h-32 px-6 py-4 bg-transparent border border-[#818181] focus:outline-none focus:border-brand-secondary focus:ring-1 focus:ring-brand-secondary transition-all resize-none font-poppins"
                             />
 
+                            {status.message && (
+                                <p className={`text-center text-sm ${status.success ? 'text-green-600' : 'text-red-600'}`}>
+                                    {status.message}
+                                </p>
+                            )}
+
                             <div className="flex justify-center pt-4">
-                                <Button variant="secondary" className="max-sm:text-[14px] max-sm:px-8">
-                                    Submit
+                                <Button
+                                    variant="secondary"
+                                    className="max-sm:text-[14px] max-sm:px-8"
+                                    disabled={status.submitting}
+                                >
+                                    {status.submitting ? "Submitting..." : "Submit"}
                                 </Button>
                             </div>
                         </form>
