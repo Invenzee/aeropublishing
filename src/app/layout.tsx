@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PromoPopup from "@/components/PromoPopup";
 
 const ShadedLarsh = localFont({
   src: "../../public/fonts/shaded-larsh.ttf",
@@ -73,6 +74,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <PromoPopup />
       </body>
     </html>
   );

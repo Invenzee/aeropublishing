@@ -3,7 +3,7 @@
 import nodemailer from "nodemailer";
 
 export async function sendEmail(formData: any) {
-    const { name, email, phone, website, services, timeline, source, message, formType } = formData;
+    const { name, email, phone, website, services, timeline, source, message, formType, genre, pages } = formData;
 
     const GMAIL_USER = process.env.GMAIL_USER || "aeropublishingus@gmail.com";
     const GMAIL_PASS = process.env.GMAIL_PASS || "rjzj zxso dfbk nzzv";
@@ -27,6 +27,8 @@ export async function sendEmail(formData: any) {
       Email: ${email || "N/A"}
       Phone: ${phone || "N/A"}
       Website: ${website || "N/A"}
+      Genre: ${genre || "N/A"}
+      Pages: ${pages || "N/A"}
       Services: ${Array.isArray(services) ? services.join(", ") : services || "N/A"}
       Timeline: ${timeline || "N/A"}
       Source: ${source || "N/A"}
@@ -39,6 +41,8 @@ export async function sendEmail(formData: any) {
         <p><strong>Name:</strong> ${name || "N/A"}</p>
         <p><strong>Email:</strong> ${email || "N/A"}</p>
         <p><strong>Phone:</strong> ${phone || "N/A"}</p>
+        ${genre ? `<p><strong>Genre:</strong> ${genre}</p>` : ""}
+        ${pages ? `<p><strong>Pages:</strong> ${pages}</p>` : ""}
         ${website ? `<p><strong>Website:</strong> ${website}</p>` : ""}
         ${services ? `<p><strong>Services:</strong> ${Array.isArray(services) ? services.join(", ") : services}</p>` : ""}
         ${timeline ? `<p><strong>Timeline:</strong> ${timeline}</p>` : ""}
