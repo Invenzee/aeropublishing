@@ -5,8 +5,10 @@ import { useRef, useState } from "react";
 import Button from "./Button";
 import { Check } from "lucide-react";
 import { sendEmail } from "@/app/actions/email";
+import { useRouter } from "next/navigation";
 
 export default function ConnectWithUsSection() {
+    const router = useRouter();
     const containerRef = useRef(null);
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
     const [status, setStatus] = useState<{
@@ -33,12 +35,7 @@ export default function ConnectWithUsSection() {
         try {
             const result = await sendEmail(data);
             if (result.success) {
-                setStatus({
-                    submitting: false,
-                    success: true,
-                    message: "Subscribed successfully!",
-                });
-                form.reset();
+                router.push("/thank-you");
             } else {
                 setStatus({
                     submitting: false,

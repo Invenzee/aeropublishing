@@ -5,6 +5,7 @@ import Button from "./Button";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { sendEmail } from "@/app/actions/email";
+import { useRouter } from "next/navigation";
 
 const badges = [
     "/hero-badge-1.png",
@@ -14,7 +15,7 @@ const badges = [
 ]
 
 export default function HeroSection() {
-
+    const router = useRouter();
     const [isMobile, setIsMobile] = useState(false);
     const [status, setStatus] = useState<{
         submitting: boolean;
@@ -52,12 +53,7 @@ export default function HeroSection() {
         try {
             const result = await sendEmail(data);
             if (result.success) {
-                setStatus({
-                    submitting: false,
-                    success: true,
-                    message: "Sent! We'll contact you soon.",
-                });
-                form.reset();
+                router.push("/thank-you");
             } else {
                 setStatus({
                     submitting: false,

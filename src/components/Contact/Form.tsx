@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Button from "../Button";
 import { sendEmail } from "@/app/actions/email";
+import { useRouter } from "next/navigation";
 
 interface FormData {
   name: string;
@@ -25,6 +26,7 @@ const servicesList = [
 ];
 
 export default function ContactForm() {
+  const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -69,21 +71,7 @@ export default function ContactForm() {
     try {
       const result = await sendEmail({ ...formData, formType: "Contact Page Form" });
       if (result.success) {
-        setStatus({
-          submitting: false,
-          success: true,
-          message: "Thank you! Your message has been sent.",
-        });
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          website: "",
-          services: [],
-          timeline: "",
-          source: "",
-          message: "",
-        });
+        router.push("/thank-you");
       } else {
         setStatus({
           submitting: false,

@@ -5,8 +5,10 @@ import { useRef } from "react";
 import Button from "./Button";
 import { X } from "lucide-react";
 import { sendEmail } from "@/app/actions/email";
+import { useRouter } from "next/navigation";
 
 export default function PromoSection() {
+    const router = useRouter();
     const containerRef = useRef(null);
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
@@ -50,8 +52,7 @@ export default function PromoSection() {
                                 try {
                                     const result = await sendEmail(data);
                                     if (result.success) {
-                                        alert("Thank you! Your coupon has been activated.");
-                                        form.reset();
+                                        router.push("/thank-you");
                                     } else {
                                         alert("Failed to send. Please try again.");
                                     }
