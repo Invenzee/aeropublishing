@@ -21,8 +21,9 @@ export default function ConnectWithUsSection() {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        const form = e.currentTarget;
         setStatus({ submitting: true, success: null, message: "" });
-        const formData = new FormData(e.currentTarget);
+        const formData = new FormData(form);
         const data = {
             name: formData.get("name"),
             email: formData.get("email"),
@@ -37,7 +38,7 @@ export default function ConnectWithUsSection() {
                     success: true,
                     message: "Subscribed successfully!",
                 });
-                e.currentTarget.reset();
+                form.reset();
             } else {
                 setStatus({
                     submitting: false,

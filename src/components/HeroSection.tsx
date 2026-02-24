@@ -38,8 +38,9 @@ export default function HeroSection() {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        const form = e.currentTarget;
         setStatus({ submitting: true, success: null, message: "" });
-        const formData = new FormData(e.currentTarget);
+        const formData = new FormData(form);
         const data = {
             name: formData.get("name"),
             phone: formData.get("phone"),
@@ -56,7 +57,7 @@ export default function HeroSection() {
                     success: true,
                     message: "Sent! We'll contact you soon.",
                 });
-                e.currentTarget.reset();
+                form.reset();
             } else {
                 setStatus({
                     submitting: false,

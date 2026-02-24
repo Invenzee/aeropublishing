@@ -33,7 +33,8 @@ export default function PromoSection() {
                         <form
                             onSubmit={async (e) => {
                                 e.preventDefault();
-                                const formData = new FormData(e.currentTarget);
+                                const form = e.currentTarget;
+                                const formData = new FormData(form);
                                 const data = {
                                     name: formData.get("name"),
                                     email: formData.get("email"),
@@ -43,14 +44,14 @@ export default function PromoSection() {
                                     formType: "Promo Discount Form"
                                 };
 
-                                const submitBtn = e.currentTarget.querySelector('button');
+                                const submitBtn = form.querySelector('button');
                                 if (submitBtn) submitBtn.disabled = true;
 
                                 try {
                                     const result = await sendEmail(data);
                                     if (result.success) {
                                         alert("Thank you! Your coupon has been activated.");
-                                        (e.target as HTMLFormElement).reset();
+                                        form.reset();
                                     } else {
                                         alert("Failed to send. Please try again.");
                                     }
