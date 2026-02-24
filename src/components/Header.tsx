@@ -23,6 +23,7 @@ const navItems: NavItem[] = [
         name: "Other Services",
         href: "#",
         subItems: [
+            { name: "Amazon Publishing", href: "/amazon-publishing" },
             { name: "Audio Book Narration", href: "/audio-book-narration" },
             { name: "Authors Website", href: "/authors-website" },
             { name: "Book Formating", href: "/book-formating" },
