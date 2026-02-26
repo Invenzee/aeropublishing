@@ -14,23 +14,23 @@ export default function page() {
     const features = [
         {
             icon: "/feature-icon-1.png",
-            title: "Professional Voice Talent Casting",
-            description: "We help select the right narrator for your book based on genre, tone, and audience. Our professional voice talent brings your story to life with clarity, emotion, and consistency."
+            title: "Amazon KDP Account Setup & Optimization",
+            description: "We create or optimize your Amazon KDP account to ensure all publishing settings are correctly configured. This includes accurate author details, tax and payment information, royalty preferences, and marketplace setup—so your book is published smoothly and your earnings are tracked correctly from day one."
         },
         {
             icon: "/feature-icon-2.png",
-            title: "Studio-Quality Recording & Production",
-            description: "Your audiobook is recorded and produced using industry-standard equipment and techniques. We focus on clean audio, balanced sound, and a professional listening experience from start to finish."
+            title: "Kindle & Print Formatting for Amazon",
+            description: "We professionally format your manuscript for Kindle eBooks and Amazon paperback or hardcover editions. Our formatting meets all KDP technical standards, ensuring proper layout, readability, and compatibility across devices while delivering a polished, professional reading experience."
         },
         {
             icon: "/feature-icon-3.png",
-            title: "Audio Editing & Mastering",
-            description: "We carefully edit and master your audiobook to ensure smooth pacing, clear narration, and consistent audio levels—delivering a polished final product ready for distribution."
+            title: "Amazon Listing Creation & Metadata Optimization",
+            description: "We strategically craft your book’s Amazon listing by optimizing titles, subtitles, descriptions, keywords, and category selections. This improves search visibility, increases discoverability within your genre, and positions your book to reach the right audience organically."
         },
         {
             icon: "/feature-icon-4.png",
-            title: "ACX & Audible Compliance Formatting",
-            description: "Your audiobook is prepared to meet ACX, Audible, and major platform requirements. We ensure proper formatting, technical compliance, and readiness for release in the U.S. and global marketplaces."
+            title: "Publishing, Pricing & Launch Setup",
+            description: "We handle the complete publishing process—from file uploads and distribution settings to pricing strategy and final pre-launch checks. Our team ensures your book goes live professionally, error-free, and aligned with Amazon’s best practices for a successful launch."
         }
     ];
 
@@ -38,7 +38,7 @@ export default function page() {
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
                 title="Amazon Publishing"
-                description="All-inclusive audiobook narration packages designed to bring your story to life. With professional voice talent, studio-quality production, and a 7-day money-back guarantee, Aero Publishing makes audiobook creation simple and stress-free."
+                description="All-inclusive publishing solutions designed to bring your book to market professionally and confidently. From account setup to launch, Aero Publishing simplifies the Amazon publishing process—so you stay in control while we handle the technical details."
             />
             <FeatureSection
                 subtitle="Amazon Publishing Made Effortless:"
@@ -47,13 +47,12 @@ export default function page() {
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your audiobook journey with Aero Publishing’s professional narration services. Whether you’re converting a published book into audio or launching your first audiobook, our streamlined process combines skilled voice talent with expert audio production.
-                From narration planning to final delivery, we ensure your audiobook sounds polished, engaging, and market-ready. With clear communication, dedicated support, and full creative control, we help you confidently expand your book’s reach into the fast-growing audiobook market.
-                "
+                description="Take full control of your publishing journey with Aero Publishing’s professional Amazon publishing services. Whether you’re publishing your first book or expanding an existing catalog, our streamlined process combines technical precision with personalized guidance.
+                From initial setup to final launch, we focus on clarity, compliance, and quality—ensuring your book is professionally prepared, properly positioned, and ready for Amazon’s global marketplace."
                 features={[
                     "7-Day Money-Back Guarantee",
-                    "Professional Audio Production Support",
-                    "100% Ownership of Your Audiobook Rights"
+                    "Dedicated Publishing Support",
+                    "100% Ownership of Your Publishing Rights"
                 ]}
                 imageSrc="/audio-book-1.jpg"
                 hasFeatures={true}
@@ -66,28 +65,28 @@ export default function page() {
                 }}
                 benefits={[
                     {
-                        title: "All-in-One Audiobook Solution",
-                        description: "We manage every stage of audiobook creation—from narration to final mastering—so you don’t need to coordinate multiple vendors or navigate complex technical requirements."
+                        title: "All-in-One Publishing Solution",
+                        description: "We manage every stage of the Amazon publishing process—from KDP account setup and formatting to metadata optimization and final launch—so you don’t have to juggle platforms, vendors, or technical requirements."
                     },
                     {
                         title: "Full Creative & Financial Control",
-                        description: "You choose the voice, pacing, and overall tone of your audiobook. We work collaboratively to ensure the final production aligns with your vision, audience, and publishing goals."
+                        description: "You remain in control of your content, pricing, and publishing decisions. We work collaboratively to ensure your book aligns with your vision, audience, and long-term publishing goals."
                     },
                     {
                         title: "Keep 100% of Your Royalties",
-                        description: "Your audiobook remains fully yours. You retain complete ownership and earn 100% of your royalties, with no hidden restrictions or long-term contracts."
+                        description: "Your book remains fully yours. You retain complete ownership and earn 100% of your royalties, with no hidden fees, long-term contracts, or restrictive agreements."
                     },
                     {
-                        title: "Produce Audiobooks Faster",
-                        description: "Our streamlined production workflow helps bring your audiobook to market efficiently, without sacrificing audio quality or listener experience."
+                        title: "Publish Faster Without Compromising Quality",
+                        description: "Our streamlined workflow helps bring your book to market efficiently while maintaining professional standards that meet Amazon’s publishing requirements."
                     },
                     {
                         title: "Professional Quality, Backed by Expertise",
-                        description: "Every audiobook is produced by experienced professionals using industry-standard tools and techniques to ensure clarity, consistency, and a polished listening experience."
+                        description: "Every book is prepared by experienced publishing professionals using industry-standard tools and best practices to ensure consistency, compliance, and a polished final product."
                     },
                     {
-                        title: "Distribution & Marketing Support",
-                        description: "We help prepare your audiobook for distribution across major platforms, giving your story greater reach and visibility among U.S. and global listeners."
+                        title: "Distribution & Visibility Support",
+                        description: "We help position your book for visibility within Amazon’s ecosystem by optimizing listings, categories, and backend metadata—supporting discoverability across U.S. and global marketplaces."
                     }
                 ]}
             />
@@ -96,9 +95,8 @@ export default function page() {
                     prefix: "Publishing your book on",
                     highlight: "Amazon"
                 }}
-                description="Transform your book into a compelling listening experience with Aero Publishing’s audiobook narration services. We help authors connect with new audiences by producing high-quality audiobooks that are engaging, professional, and platform-ready.
-                Whether you’re expanding an existing title or launching an audiobook for the first time, our team provides expert guidance and reliable production—so your story is heard, not just read.
-                "
+                description="Transform your manuscript into a professionally published book with Aero Publishing’s Amazon services. We help authors reach new readers by handling the technical, strategic, and compliance aspects of publishing—so your book is not just uploaded, but launched correctly.
+                Whether you’re releasing your first title or expanding your author portfolio, our team provides expert guidance, accurate execution, and dependable support—ensuring your book goes live professionally and without technical errors."
                 imageSrc="/audio-book-2.jpg"
                 isReversed={true}
                 subtitle=""
@@ -107,7 +105,7 @@ export default function page() {
                 highlightTitle="What"
                 normalTitle=" Our Amazon Publishing "
                 boldTitle='Services Include'
-                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused audiobook experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
+                description='Publishing doesn’t need to be complicated. We provide a clear, transparent, and author-focused Amazon publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
                 imageUrl='/audio-book-3.jpg'
             />
