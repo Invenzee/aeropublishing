@@ -65,7 +65,7 @@ export default function Header() {
                         </div>
                         <div className="flex items-center gap-1">
                             <Mail size={14} className="text-white cursor-pointer" />
-                            <span className="text-white text-sm font-poppins font-normal cursor-pointer max-sm:hidden">info@aeropublishing.com</span>
+                            <span className="text-white text-sm font-poppins font-normal cursor-pointer max-sm:hidden">aeropublishingus@gmail.com</span>
                         </div>
                     </div>
                     <div className="flex gap-4">

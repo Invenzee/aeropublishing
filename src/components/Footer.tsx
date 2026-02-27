@@ -43,7 +43,7 @@ export default function Footer() {
                         <div className="flex flex-col gap-4 font-poppins text-sm opacity-90 ">
                             <p>12501 Center Dr, South Gate,<br />CA 90201, United States</p>
                             <a href="tel:+17602801847">760 280 1847</a>
-                            <a href="mailto:info@aeropublishing.com">info@aeropublishing.com</a>
+                            <a href="mailto:aeropublishingus@gmail.com">aeropublishingus@gmail.com</a>
                         </div>
                     </div>
 
