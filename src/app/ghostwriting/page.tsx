@@ -57,6 +57,14 @@ export default function page() {
                 ]}
                 imageSrc="/ghostwriting-1.jpg"
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Ghostwriting"
+                boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
+                features={features}
+                imageUrl='/ghostwriting-3.png'
+            />
             <BenefitsGridSection
                 subtitle="Why Ghostwriting with Aero?"
                 title={{
@@ -100,14 +108,6 @@ export default function page() {
                 imageSrc="/ghostwriting-2.jpg"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Ghostwriting"
-                boldTitle=' Services Include'
-                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
-                features={features}
-                imageUrl='/ghostwriting-3.png'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

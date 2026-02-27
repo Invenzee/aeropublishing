@@ -60,6 +60,14 @@ export default function page() {
                 imageSrc="/book-formatting-1.jpg"
                 hasFeatures={true}
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Book Formatting"
+                boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused formatting experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
+                features={features}
+                imageUrl='/book-formatting-3.jpg'
+            />
             <BenefitsGridSection
                 subtitle="Why Book Formatting with Aero?"
                 title={{
@@ -104,14 +112,6 @@ export default function page() {
                 imageSrc="/book-formatting-2.jpg"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Book Formatting"
-                boldTitle=' Services Include'
-                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused formatting experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
-                features={features}
-                imageUrl='/book-formatting-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

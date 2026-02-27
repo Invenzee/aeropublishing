@@ -58,6 +58,14 @@ export default function page() {
                 ]}
                 imageSrc="/video-trailer-1.jpg"
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Book Video Trailer"
+                boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a transparent, author-focused creative experience—keeping you informed, in control, and confident while delivering professional promotional assets you can trust.'
+                features={features}
+                imageUrl='/video-trailer-3.jpg'
+            />
             <BenefitsGridSection
                 subtitle="Why Video Trailer with Aero?"
                 title={{
@@ -101,14 +109,6 @@ export default function page() {
                 imageSrc="/video-trailer-2.jpg"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Book Video Trailer"
-                boldTitle=' Services Include'
-                description='Publishing doesn’t need to be complicated. We offer a transparent, author-focused creative experience—keeping you informed, in control, and confident while delivering professional promotional assets you can trust.'
-                features={features}
-                imageUrl='/video-trailer-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

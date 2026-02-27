@@ -58,6 +58,14 @@ export default function page() {
                 imageSrc="/carousel-1.png"
                 hasFeatures={true}
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Book Cover Design"
+                boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused design experience—keeping you informed, in control, and confident at every stage.'
+                features={features}
+                imageUrl='/carousel-3.png'
+            />
             <BenefitsGridSection
                 subtitle="Why Book Cover Design with Aero?"
                 title={{
@@ -102,14 +110,6 @@ export default function page() {
                 imageSrc="/carousel-2.png"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Book Cover Design"
-                boldTitle=' Services Include'
-                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused design experience—keeping you informed, in control, and confident at every stage.'
-                features={features}
-                imageUrl='/carousel-3.png'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

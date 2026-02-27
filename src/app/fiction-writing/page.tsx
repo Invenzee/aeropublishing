@@ -59,6 +59,14 @@ From concept to final manuscript, we combine human storytelling expertise with m
                 imageSrc="/fiction-writing-1.jpg"
                 hasFeatures={true}
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Fiction Writing"
+                boldTitle=' Services Include'
+                description=''
+                features={features}
+                imageUrl='/fiction-writing-3.jpg'
+            />
             <BenefitsGridSection
                 subtitle="Why Fiction Writing with Aero?"
                 title={{
@@ -102,14 +110,6 @@ From concept to final manuscript, we combine human storytelling expertise with m
                 imageSrc="/fiction-writing-2.jpg"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Fiction Writing"
-                boldTitle=' Services Include'
-                description=''
-                features={features}
-                imageUrl='/fiction-writing-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

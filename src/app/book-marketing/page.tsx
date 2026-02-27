@@ -59,6 +59,14 @@ export default function page() {
                 imageSrc="/marketing-1.png"
                 hasFeatures={true}
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Book Marketing"
+                boldTitle=' Services Include'
+                description='Publishing—and marketing—doesn’t need to be complicated. We offer a clear, honest, and author-focused marketing experience that keeps you informed, in control, and confident at every stage while delivering professional results you can trust.'
+                features={features}
+                imageUrl='/marketing-3.png'
+            />
             <BenefitsGridSection
                 subtitle="Why Book Marketing with Aero?"
                 title={{
@@ -103,14 +111,6 @@ export default function page() {
                 imageSrc="/marketing-2.jpg"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Book Marketing"
-                boldTitle=' Services Include'
-                description='Publishing—and marketing—doesn’t need to be complicated. We offer a clear, honest, and author-focused marketing experience that keeps you informed, in control, and confident at every stage while delivering professional results you can trust.'
-                features={features}
-                imageUrl='/marketing-3.png'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

@@ -60,6 +60,14 @@ export default function page() {
                 imageSrc="/publishing-1.png"
                 hasFeatures={true}
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Book Publishing"
+                boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. We provide a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
+                features={features}
+                imageUrl='/publishing-3.png'
+            />
             <BenefitsGridSection
                 subtitle="Why Book Publish with Aero?"
                 title={{
@@ -104,14 +112,6 @@ export default function page() {
                 imageSrc="/publishing-2.png"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Book Publishing"
-                boldTitle=' Services Include'
-                description='Publishing doesn’t need to be complicated. We provide a clear, honest, and author-focused publishing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
-                features={features}
-                imageUrl='/publishing-3.png'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

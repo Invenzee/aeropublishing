@@ -63,6 +63,14 @@ export default function page() {
                 imageSrc="/children-book-1.jpg"
                 hasFeatures={true}
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Children's Book"
+                boldTitle=' Services Include'
+                description='Publishing children’s books doesn’t need to be complicated. We offer a transparent, author-focused experience—keeping you informed, involved, and confident while delivering high-quality results you can trust.'
+                features={features}
+                imageUrl='/children-book-3.jpg'
+            />
             <BenefitsGridSection
                 subtitle="Why Children’s Book Publishing with Aero?"
                 title={{
@@ -106,14 +114,6 @@ export default function page() {
                 imageSrc="/children-book-2.jpg"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Children's Book"
-                boldTitle=' Services Include'
-                description='Publishing children’s books doesn’t need to be complicated. We offer a transparent, author-focused experience—keeping you informed, involved, and confident while delivering high-quality results you can trust.'
-                features={features}
-                imageUrl='/children-book-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

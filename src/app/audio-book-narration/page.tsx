@@ -59,6 +59,14 @@ export default function page() {
                 imageSrc="/audio-book-1.jpg"
                 hasFeatures={true}
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Audiobook Narration "
+                boldTitle='Services Include'
+                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused audiobook experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
+                features={features}
+                imageUrl='/audio-book-3.jpg'
+            />
             <BenefitsGridSection
                 subtitle="Why Audio Book Narration with Aero?"
                 title={{
@@ -103,14 +111,6 @@ export default function page() {
                 imageSrc="/audio-book-2.jpg"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Audiobook Narration "
-                boldTitle='Services Include'
-                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused audiobook experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
-                features={features}
-                imageUrl='/audio-book-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

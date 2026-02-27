@@ -59,6 +59,14 @@ export default function page() {
                 imageSrc="/proof-reading-1.jpg"
                 hasFeatures={true}
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Book Proof Reading"
+                boldTitle=' Services Include'
+                description='Publishing doesn’t have to feel overwhelming. Our proofreading services are designed to give authors clarity, control, and confidence — delivering professional results without unnecessary complexity.'
+                features={features}
+                imageUrl='/proof-reading-3.jpg'
+            />
             <BenefitsGridSection
                 subtitle="Why Proof Reading with Aero?"
                 title={{
@@ -103,14 +111,6 @@ export default function page() {
                 imageSrc="/proof-reading-2.jpg"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Book Proof Reading"
-                boldTitle=' Services Include'
-                description='Publishing doesn’t have to feel overwhelming. Our proofreading services are designed to give authors clarity, control, and confidence — delivering professional results without unnecessary complexity.'
-                features={features}
-                imageUrl='/proof-reading-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

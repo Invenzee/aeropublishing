@@ -60,6 +60,14 @@ export default function page() {
                 imageSrc="/author-website-1.jpg"
                 hasFeatures={true}
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Author Website Design"
+                boldTitle=' Services Include'
+                description="Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused website experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust."
+                features={features}
+                imageUrl='/author-website-3.jpg'
+            />
             <BenefitsGridSection
                 subtitle="Why Authors Website with Aero?"
                 title={{
@@ -104,14 +112,6 @@ export default function page() {
                 imageSrc="/author-website-2.jpg"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Author Website Design"
-                boldTitle=' Services Include'
-                description="Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused website experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust."
-                features={features}
-                imageUrl='/author-website-3.jpg'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />

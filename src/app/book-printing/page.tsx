@@ -58,6 +58,14 @@ export default function page() {
                 imageSrc="/book-printing-1.png"
                 hasFeatures={true}
             />
+            <WhyAeroSection
+                highlightTitle="What"
+                normalTitle=" Our Book Printing"
+                boldTitle=' Services Include'
+                description='Publishing doesn’t need to be complicated. Aero Publishing offers a clear, honest, and author-focused printing experience—keeping you informed, in control, and confident from start to finish.'
+                features={features}
+                imageUrl='/book-printing-3.png'
+            />
             <BenefitsGridSection
                 subtitle="Why Book Printing with Aero?"
                 title={{
@@ -101,14 +109,6 @@ export default function page() {
                 imageSrc="/book-printing-2.png"
                 isReversed={true}
                 subtitle=""
-            />
-            <WhyAeroSection
-                highlightTitle="What"
-                normalTitle=" Our Book Printing"
-                boldTitle=' Services Include'
-                description='Publishing doesn’t need to be complicated. Aero Publishing offers a clear, honest, and author-focused printing experience—keeping you informed, in control, and confident from start to finish.'
-                features={features}
-                imageUrl='/book-printing-3.png'
             />
             <ConnectWithUsSection />
             <TestimonialsSection />
