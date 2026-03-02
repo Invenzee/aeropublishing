@@ -210,18 +210,19 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.1
+            staggerChildren: 0.08
         }
     }
 };
 
 const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 40, scale: 0.95 },
     visible: {
         opacity: 1,
         y: 0,
+        scale: 1,
         transition: {
-            duration: 0.5,
+            duration: 0.6,
             ease: "easeOut" as const
         }
     }
@@ -258,65 +259,127 @@ export default function ServicesGridSection() {
                             <motion.div
                                 key={index}
                                 variants={itemVariants}
-                                className="group bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                                whileHover={{ 
+                                    y: -10, 
+                                    scale: 1.02,
+                                    transition: { duration: 0.3, ease: "easeOut" }
+                                }}
+                                className="group relative bg-gradient-to-br from-white to-gray-800 rounded-2xl p-8 overflow-hidden cursor-pointer"
+                                style={{
+                                    boxShadow: `0 12px 40px -8px #3F377440, 0 4px 12px -2px #3F377430, 0 2px 4px -1px #3F377420`,
+                                    border: `1px solid ${service.color}25`
+                                }}
                             >
-                                {/* Icon */}
+                                {/* Animated Background Gradient on Hover */}
                                 <div 
-                                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110"
-                                    style={{ backgroundColor: `${service.color}15` }}
-                                >
-                                    <IconComponent 
-                                        className="w-7 h-7" 
-                                        style={{ color: service.color }}
-                                    />
-                                </div>
+                                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                    style={{
+                                        background: `linear-gradient(135deg, ${service.color}08 0%, transparent 50%, ${service.color}05 100%)`
+                                    }}
+                                />
+                                
+                                {/* Enhanced Shadow on Hover */}
+                                <div 
+                                    className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                                    style={{
+                                        boxShadow: `0 25px 60px -12px #3F377450, 0 12px 32px -8px #3F377440`
+                                    }}
+                                />
+                                
+                                {/* Top Border Accent */}
+                                <div 
+                                    className="absolute top-0 left-0 right-0 h-1 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"
+                                    style={{ backgroundColor: service.color }}
+                                />
 
-                                {/* Title */}
-                                <h3 className="text-xl font-syne font-semibold text-brand-primary mb-3">
-                                    {service.title}
-                                </h3>
-
-                                {/* Description */}
-                                <p className="text-brand-gray text-sm font-poppins leading-relaxed mb-6">
-                                    {service.description}
-                                </p>
-
-                                {/* Features List */}
-                                <ul className="space-y-3 mb-8">
-                                    {service.features.map((feature, featureIndex) => (
-                                        <li key={featureIndex} className="flex items-start gap-3">
-                                            <div 
-                                                className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                                                style={{ backgroundColor: `${service.color}15` }}
-                                            >
-                                                <Check 
-                                                    className="w-3 h-3" 
-                                                    style={{ color: service.color }}
-                                                />
-                                            </div>
-                                            <span className="text-brand-gray text-sm font-poppins">
-                                                {feature}
-                                            </span>
-                                        </li>
-                                    ))}
-                                </ul>
-
-                                {/* Learn More Link */}
-                                <Link 
-                                    href={service.link}
-                                    className="inline-flex items-center gap-2 text-sm font-syne font-semibold transition-colors duration-300 hover:gap-3"
-                                    style={{ color: service.color }}
-                                >
-                                    Learn more 
-                                    <svg 
-                                        className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
-                                        fill="none" 
-                                        stroke="currentColor" 
-                                        viewBox="0 0 24 24"
+                                {/* Content */}
+                                <div className="relative z-10">
+                                    {/* Icon with Pulse Animation */}
+                                    <motion.div 
+                                        className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 relative"
+                                        style={{ 
+                                            background: `linear-gradient(135deg, ${service.color}20 0%, ${service.color}10 100%)`,
+                                            border: `1px solid ${service.color}30`
+                                        }}
+                                        whileHover={{ rotate: [0, -5, 5, 0], scale: 1.1 }}
+                                        transition={{ duration: 0.5 }}
                                     >
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                    </svg>
-                                </Link>
+                                        <IconComponent 
+                                            className="w-8 h-8 transition-transform duration-300" 
+                                            style={{ color: service.color }}
+                                        />
+                                        {/* Glow Effect */}
+                                        <div 
+                                            className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"
+                                            style={{ backgroundColor: `${service.color}40` }}
+                                        />
+                                    </motion.div>
+
+                                    {/* Title */}
+                                    <h3 className="text-xl font-syne font-bold text-brand-primary mb-3 group-hover:text-brand-primary transition-colors duration-300">
+                                        {service.title}
+                                    </h3>
+
+                                    {/* Description */}
+                                    <p className="text-brand-gray text-sm font-poppins leading-relaxed mb-6">
+                                        {service.description}
+                                    </p>
+
+                                    {/* Features List */}
+                                    <ul className="space-y-3 mb-8">
+                                        {service.features.map((feature, featureIndex) => (
+                                            <motion.li 
+                                                key={featureIndex} 
+                                                className="flex items-start gap-3"
+                                                initial={{ opacity: 0, x: -10 }}
+                                                whileInView={{ opacity: 1, x: 0 }}
+                                                transition={{ delay: featureIndex * 0.1 }}
+                                                viewport={{ once: true }}
+                                            >
+                                                <div 
+                                                    className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110"
+                                                    style={{ 
+                                                        backgroundColor: `${service.color}15`,
+                                                        border: `1px solid ${service.color}30`
+                                                    }}
+                                                >
+                                                    <Check 
+                                                        className="w-3 h-3" 
+                                                        style={{ color: service.color }}
+                                                    />
+                                                </div>
+                                                <span className="text-brand-gray text-sm font-poppins group-hover:text-brand-black transition-colors duration-300">
+                                                    {feature}
+                                                </span>
+                                            </motion.li>
+                                        ))}
+                                    </ul>
+
+                                    {/* Learn More Link with Animated Underline */}
+                                    <Link 
+                                        href={service.link}
+                                        className="inline-flex items-center gap-2 text-sm font-syne font-semibold relative overflow-hidden group/link"
+                                        style={{ color: service.color }}
+                                    >
+                                        <span className="relative">
+                                            Learn more 
+                                            <span 
+                                                className="absolute bottom-0 left-0 w-0 h-0.5 group-hover/link:w-full transition-all duration-300"
+                                                style={{ backgroundColor: service.color }}
+                                            />
+                                        </span>
+                                        <motion.svg 
+                                            className="w-4 h-4" 
+                                            fill="none" 
+                                            stroke="currentColor" 
+                                            viewBox="0 0 24 24"
+                                            animate={{ x: [0, 4, 0] }}
+                                            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                                        >
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                        </motion.svg>
+                                    </Link>
+                                </div>
                             </motion.div>
                         );
                     })}
