@@ -264,7 +264,7 @@ export default function ServicesGridSection() {
                                     scale: 1.02,
                                     transition: { duration: 0.3, ease: "easeOut" }
                                 }}
-                                className="group relative bg-gradient-to-br from-white to-gray-800 rounded-2xl p-8 overflow-hidden cursor-pointer"
+                                className="group relative bg-gradient-to-br from-white to-gray-100 rounded-2xl p-8 overflow-hidden cursor-pointer"
                                 style={{
                                     boxShadow: `0 12px 40px -8px #3F377440, 0 4px 12px -2px #3F377430, 0 2px 4px -1px #3F377420`,
                                     border: `1px solid ${service.color}25`
