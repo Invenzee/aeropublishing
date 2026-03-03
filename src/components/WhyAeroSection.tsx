@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
-export default function WhyAeroSection({ features, highlightTitle, normalTitle, boldTitle, description, imageUrl = "/why-aero-book.png" }: { features: any[], highlightTitle: string, normalTitle: string, boldTitle: string, description: string, imageUrl?: string }) {
+export default function WhyAeroSection({ features, highlightTitle, normalTitle, boldTitle, description, imageUrl = "/why-aero-book.png", eyebrowTitle = "Why Aero" }: { features: any[], highlightTitle: string, normalTitle: string, boldTitle: string, description: string, imageUrl?: string, eyebrowTitle?: string }) {
     const containerRef = useRef(null);
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
@@ -24,7 +24,7 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle, 
                     className="space-y-3 flex flex-col items-center mb-16"
                 >
                     <p className="text-md font-poppins text-brand-primary font-semibold tracking-wider uppercase">
-                        WHY AERO
+                        {eyebrowTitle}
                     </p>
                     <h2 className="text-[50px] text-brand-primary text-center font-syne font-bold leading-[1.1] max-sm:text-[32px] max-w-2xl">
                         <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px] leading-[.8]">{highlightTitle}</span>{" "}
