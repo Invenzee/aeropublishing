@@ -137,7 +137,9 @@ export default function PromoPopup() {
                                 onClick={closePopup}
                                 className="absolute top-4 right-4 text-black/50 hover:text-black transition-colors p-2 cursor-pointer"
                             >
+                                <a href="#promo-popup-closed">
                                 <X size={24} />
+                                </a>
                             </button>
 
                             <div className="max-w-md mx-auto">
