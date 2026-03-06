@@ -5,8 +5,8 @@ import nodemailer from "nodemailer";
 export async function sendEmail(formData: any) {
     const { name, email, phone, website, services, timeline, source, message, formType, genre, pages } = formData;
 
-    const GMAIL_USER = process.env.GMAIL_USER || "aeropublishingus@gmail.com";
-    const GMAIL_PASS = process.env.GMAIL_PASS || "rjzj zxso dfbk nzzv";
+    const GMAIL_USER = process.env.GMAIL_USER || "info@aeropublishing.us";
+    const GMAIL_PASS = process.env.GMAIL_PASS || "faci aibl dcvu yopk";
 
     const transporter = nodemailer.createTransport({
         service: "gmail",
@@ -18,7 +18,7 @@ export async function sendEmail(formData: any) {
 
     const mailOptions = {
         from: GMAIL_USER,
-        to: "aeropublishingus@gmail.com",
+        to: "info@aeropublishing.us",
         subject: `New Form Submission: ${formType || "General Contact"}`,
         text: `
       Form Details:
