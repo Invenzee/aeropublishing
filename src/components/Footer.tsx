@@ -17,7 +17,7 @@ export default function Footer() {
                         {/* Logo Placeholder - simplified text/icon match */}
                         <div className="flex items-center gap-2 mb-6">
                             <div className="w-26">
-                                <img src="/footer-logo.png" alt="Aero Publishing" className="w-full h-auto object-contain" />
+                                <img src="/footer-logo.png" alt="Aero Publishing" className="w-full h-auto object-contain cursor-pointer" onClick={() => window.location.href = "/"} />
                             </div>
                         </div>
 
