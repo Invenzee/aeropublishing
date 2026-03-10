@@ -9,6 +9,16 @@ gsap.registerPlugin(ScrollTrigger);
 const reviews = [
     {
         id: 1,
+        name: "Clifton Goodson",
+        country: "US",
+        rating: 5,
+        date: "Feb 28, 2026",
+        title: "My interaction with Aero Publishing was…",
+        text: "My interaction with Aero Publishing was excellent. the staff was really helpful, and their service was seamless and professional. overall, I'm rather happy with the experience!",
+        width: "w-[420px] max-sm:w-[300px]"
+    },
+        {
+        id: 2,
         name: "Piku Jergy",
         country: "US",
         rating: 5,
@@ -16,16 +26,6 @@ const reviews = [
         title: "I had a new and wonderful experience...",
         text: "I had a new and wonderful experience with Aero Publishing. the group produced high-caliber work on schedule and with professionalism and assistance. I truly value their commitment and service, and communication was clear. strongly advised. ",
         avatar: "/review-1.png",
-        width: "w-[420px] max-sm:w-[300px]"
-    },
-    {
-        id: 2,
-        name: "Clifton Goodson",
-        country: "US",
-        rating: 5,
-        date: "Feb 28, 2026",
-        title: "My interaction with Aero Publishing was…",
-        text: "My interaction with Aero Publishing was excellent. the staff was really helpful, and their service was seamless and professional. overall, I'm rather happy with the experience!",
         width: "w-[420px] max-sm:w-[300px]"
     },
     {
