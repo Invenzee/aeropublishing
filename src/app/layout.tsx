@@ -5,6 +5,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PromoPopup from "@/components/PromoPopup";
+import { Suspense } from "react";
+import FacebookPixel from "@/components/FacebookPixel";
 
 const ShadedLarsh = localFont({
   src: "../../public/fonts/shaded-larsh.ttf",
@@ -60,7 +62,8 @@ export default function RootLayout({
 
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDYR2R3WP0" />
-        <script dangerouslySetInnerHTML={{ __html: `
+        <script dangerouslySetInnerHTML={{
+          __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
@@ -69,7 +72,8 @@ export default function RootLayout({
         {/* End Google tag */}
 
         {/* Meta Pixel Code */}
-        <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
+        <script dangerouslySetInnerHTML={{
+          __html: `!function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
           if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -84,6 +88,12 @@ export default function RootLayout({
       <body
         className={`${syne.variable} ${poppins.variable} ${ShadedLarsh.variable} antialiased`}
       >
+        {/* Wrap in Suspense to prevent build-time errors with useSearchParams */}
+        <Suspense fallback={null}>
+          <FacebookPixel />
+        </Suspense>
+
+
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -95,7 +105,7 @@ export default function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
 
-        
+
 
         {/* Meta Pixel Code (noscript) */}
         <noscript>
