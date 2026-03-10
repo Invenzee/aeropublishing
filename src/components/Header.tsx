@@ -75,6 +75,33 @@ export default function Header() {
                         <a href="https://www.instagram.com/aeropublishing/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
                             <FaInstagram size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
                         </a>
+                                                        {/* Trustpilot */}
+                                <div className="relative group">
+                                    <a href="https://www.trustpilot.com/review/aeropublishing.us" target="_blank" rel="noopener noreferrer" className="block w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                        <img src="/trustPilot.svg" alt="Trustpilot" className="w-7 h-7 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                    </a>
+                                </div>
+
+                                {/* Sitejabber */}
+                                <div className="relative group">
+                                    <a href="https://www.smartcustomer.com/reviews/aeropublishing.us" target="_blank" rel="noopener noreferrer" className="block w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                        <img src="/sitejabber.svg" alt="Sitejabber" className="w-7 h-7 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                    </a>
+                                </div>
+
+                                {/* Bark */}
+                                <div className="relative group">
+                                    <a href="https://www.bark.com/en/us/company/aeropublishingus/E6Lb9D/?review_source=share_link" target="_blank" rel="noopener noreferrer" className="block w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                        <img src="/Bark.svg" alt="Bark" className="w-7 h-7 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                    </a>
+                                </div>
+
+                                {/* Clutch */}
+                                <div className="relative group">
+                                    <a href="https://clutch.co/profile/aero-publishing" target="_blank" rel="noopener noreferrer" className="block w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                        <img src="/Clutch.svg" alt="Clutch" className="w-7 h-7 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                    </a>
+                                </div>
                     </div>
 
                 </div>
