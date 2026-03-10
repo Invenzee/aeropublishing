@@ -62,11 +62,11 @@ export default function Footer() {
 
                         {/* Review Platform Badges with Tooltips */}
                         <div className="">
-                            <h4 className="text-[#36C0E7] font-syne font-bold text-lg mb-4">Review Platforms</h4>
+                            <h4 className="text-[#36C0E7] font-syne font-bold text-lg mb-4">Feedback Hubs</h4>
                             <div className="flex gap-3">
                                 {/* Trustpilot */}
                                 <div className="relative group">
-                                    <a href="https://www.trustpilot.com" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                    <a href="https://www.trustpilot.com/review/aeropublishing.us" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
                                         <img src="/trustPilot.svg" alt="Trustpilot" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
                                     </a>
                                     {/* Tooltip */}
@@ -78,7 +78,7 @@ export default function Footer() {
 
                                 {/* Sitejabber */}
                                 <div className="relative group">
-                                    <a href="https://www.sitejabber.com" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                    <a href="https://www.smartcustomer.com/reviews/aeropublishing.us" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
                                         <img src="/sitejabber.svg" alt="Sitejabber" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
                                     </a>
                                     {/* Tooltip */}
@@ -90,7 +90,7 @@ export default function Footer() {
 
                                 {/* Bark */}
                                 <div className="relative group">
-                                    <a href="https://www.bark.com" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                    <a href="https://www.bark.com/en/us/company/aeropublishingus/E6Lb9D/?review_source=share_link" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
                                         <img src="/Bark.svg" alt="Bark" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
                                     </a>
                                     {/* Tooltip */}
@@ -102,8 +102,8 @@ export default function Footer() {
 
                                 {/* Clutch */}
                                 <div className="relative group">
-                                    <a href="https://www.clutch.co" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
-                                        <img src="/clutch.svg" alt="Clutch" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                    <a href="https://clutch.co/profile/aero-publishing" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                        <img src="/Clutch.svg" alt="Clutch" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
                                     </a>
                                     {/* Tooltip */}
                                     <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-white text-brand-primary text-xs font-syne font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-lg">
