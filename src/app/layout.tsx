@@ -58,6 +58,16 @@ export default function RootLayout({
 
         <link rel="icon" href="/favicon-3.png" />
 
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDYR2R3WP0" />
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-NDYR2R3WP0');
+        ` }} />
+        {/* End Google tag */}
+
         {/* Meta Pixel Code */}
         <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -84,6 +94,8 @@ export default function RootLayout({
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}
+
+        
 
         {/* Meta Pixel Code (noscript) */}
         <noscript>
