@@ -9,59 +9,85 @@ gsap.registerPlugin(ScrollTrigger);
 const reviews = [
     {
         id: 1,
-        name: "Jaya Stewart",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        avatar: "/testimonial.png",
-        width: "w-[400px] max-sm:w-[280px]"
+        name: "Piku Jergy",
+        country: "US",
+        rating: 5,
+        date: "6 days ago",
+        title: "I had a new and wonderful experience...",
+        text: "I had a new and wonderful experience with Aero Publishing. the group produced high-caliber work on schedule and with professionalism and assistance. I truly value their commitment and service, and communication was clear. strongly advised. ",
+        avatar: "/review-1.png",
+        width: "w-[420px] max-sm:w-[300px]"
     },
     {
         id: 2,
-        name: "Emilia",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ",
-        avatar: "/testimonial.png",
-        width: "w-[320px] max-sm:w-[280px]"
+        name: "Clifton Goodson",
+        country: "US",
+        rating: 5,
+        date: "Feb 28, 2026",
+        title: "My interaction with Aero Publishing was…",
+        text: "My interaction with Aero Publishing was excellent. the staff was really helpful, and their service was seamless and professional. overall, I'm rather happy with the experience!",
+        width: "w-[420px] max-sm:w-[300px]"
     },
     {
         id: 3,
-        name: "Andrea",
-        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        avatar: "/testimonial.png ",
-        width: "w-[380px] max-sm:w-[280px]"
+        name: "Kathleen Daniel",
+        country: "US",
+        rating: 5,
+        date: "Feb 20, 2026",
+        title: "Fantastic encounter with Aero…",
+        text: "Fantastic encounter with Aero Publishing. Excellent service, a seamless process, and a really professional team. extremely happy and very impressive!",
+        width: "w-[420px] max-sm:w-[300px]"
     },
     {
         id: 4,
-        name: "Claudia",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        avatar: "/testimonial.png",
-        width: "w-[300px] max-sm:w-[280px]"
+        name: "Betty Martinez",
+        country: "US",
+        rating: 5,
+        date: "Feb 13, 2026",
+        title: "My interaction with Aero Publishing was…",
+        text: "My interaction with Aero Publishing was excellent throughout the process, their team demonstrated professionalism, assistance, and responsiveness. everything went smoothly and on schedule and the service quality was outstanding. I am truly pleased with the outcome and am quite pleased with their service. strongly advised.",
+        width: "w-[420px] max-sm:w-[300px]"
     },
     {
         id: 5,
-        name: "Hanna",
-        text: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ",
-        avatar: "/testimonial.png",
-        width: "w-[420px] max-sm:w-[280px]"
+        name: "Roma Gagne",
+        country: "AU",
+        rating: 5,
+        date: "Jul 18, 2025",
+        title: "After months of poor sales",
+        text: "After months of poor sales, Aero Publishing marketing turned everything around. My book is now consistently ranking in its category.",
+        width: "w-[420px] max-sm:w-[300px]"
     },
     {
         id: 6,
-        name: "John Smith",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        avatar: "/testimonial.png",
-        width: "w-[350px] max-sm:w-[280px]"
+        name: "Stella Bell",
+        country: "US",
+        rating: 5,
+        date: "Jun 24, 2025",
+        title: "I appreciated Aero Publishing attention…",
+        text: "I appreciated Aero Publishing attention to detail and quick responses. Their editing improved my manuscript’s quality significantly.",
+        width: "w-[420px] max-sm:w-[300px]"
     },
     {
         id: 7,
-        name: "Cordelia",
-        text: "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        avatar: "/testimonial.png",
-        width: "w-[300px] max-sm:w-[280px]"
+        name: "Isaac Stewart",
+        country: "US",
+        rating: 5,
+        date: "Jun 24, 2025",
+        title: "Aero Publishing helped me polish my…",
+        text: "Aero Publishing helped me polish my paper and understand journal submission better. Their support reduced my stress and improved my chances of acceptance.",
+        width: "w-[420px] max-sm:w-[300px]"
     },
     {
         id: 8,
-        name: "Yasmin",
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        name: "Ahmed Schmeler",
+        country: "US",
+        rating: 5,
+        date: "Jun 4, 2025",
+        title: "I couldn't believe the difference once…",
+        text: "I couldn't believe the difference once Aero Publishing got involved. Their book marketing services not only increased visibility but also amplified it. Sales increased significantly, as did engagement on my social media and Amazon pages.",
         avatar: "/testimonial.png",
-        width: "w-[360px] max-sm:w-[280px]"
+        width: "w-[420px] max-sm:w-[300px]"
     }
 ];
 
@@ -162,27 +188,79 @@ export default function AuthorsShowcaseSection() {
     );
 }
 
-function ReviewCard({ item }: { item: any }) {
+function StarRating({ rating }: { rating: number }) {
     return (
-        <div className={`bg-white p-6 max-sm:p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-4 shrink-0 transition-all hover:shadow-md ${item.width}`}>
-            <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100 shrink-0">
+        <div className="flex gap-0.5">
+            {[...Array(5)].map((_, i) => (
+                <svg
+                    key={i}
+                    className="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill={i < rating ? "#E96659" : "#E5E7EB"}
+                >
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+            ))}
+        </div>
+    );
+}
+
+function getInitials(name: string): string {
+    const words = name.trim().split(' ');
+    if (words.length === 1) {
+        return words[0].substring(0, 2).toUpperCase();
+    }
+    return (words[0][0] + words[words.length - 1][0]).toUpperCase();
+}
+
+function ReviewCard({ item }: { item: any }) {
+    const hasAvatar = item.avatar && item.avatar.trim() !== '' && !item.avatar.includes('testimonial.png');
+    
+    return (
+        <div className={`bg-white p-5 max-sm:p-4 rounded-lg shadow-sm border border-gray-200 flex flex-col gap-3 shrink-0 transition-all hover:shadow-md min-h-[320px] max-sm:min-h-auto ${item.width}`}>
+            {/* Header: Avatar, Name, Review Count, Country */}
+            <div className="flex items-center gap-3">
+                <div 
+                    className="w-10 h-10 rounded-full overflow-hidden shrink-0 flex items-center justify-center text-white font-syne font-bold text-sm"
+                    style={{ backgroundColor: hasAvatar ? 'transparent' : '#E96659' }}
+                >
+                    {hasAvatar ? (
                         <img src={item.avatar} alt={item.name} className="w-full h-full object-cover" />
-                    </div>
-                    <span className="font-syne font-bold text-sm text-brand-primary whitespace-nowrap">{item.name}</span>
+                    ) : (
+                        getInitials(item.name)
+                    )}
                 </div>
-                {/* Google G Logo Placeholder */}
-                <div className="w-6 h-6 flex items-center justify-center shrink-0">
-                    <svg viewBox="0 0 24 24" className="w-5 h-5">
-                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
-                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
-                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
-                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
-                    </svg>
+                <div className="flex flex-col">
+                    <span className="font-syne font-bold text-sm text-brand-primary">{item.name}</span>
+                    <div className="flex items-center gap-2 text-xs text-gray-500">
+                        <span className="flex items-center gap-1">
+                            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                <path d="M12 2v20" />
+                            </svg>
+                            {item.country}
+                        </span>
+                    </div>
                 </div>
             </div>
-            <p className="text-[13px] font-poppins text-gray-500 leading-relaxed max-sm:text-[10px]">
+
+            {/* Divider */}
+            <div className="border-t border-gray-100" />
+
+            {/* Rating and Date Row */}
+            <div className="flex items-center justify-between">
+                <StarRating rating={item.rating} />
+                <span className="text-xs text-gray-400 font-poppins">{item.date}</span>
+            </div>
+
+            {/* Review Title */}
+            <h4 className="font-syne font-bold text-sm text-brand-primary leading-tight">
+                {item.title}
+            </h4>
+
+            {/* Review Text */}
+            <p className="text-[13px] font-poppins text-gray-600 leading-relaxed max-sm:text-[12px]">
                 {item.text}
             </p>
         </div>
