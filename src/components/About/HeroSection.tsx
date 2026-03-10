@@ -92,7 +92,7 @@ export default function HeroSection({ title, description, showButton = true, cla
 
                     {showButton && (
                         <div className={`flex flex-wrap gap-4 pt-4 ${hasForm ? 'justify-start' : 'justify-center'}`}>
-                            <Button variant="primary" className="max-sm:text-[14px] max-sm:px-4">
+                            <Button font="poppins" variant="primary" className="max-sm:text-[14px] max-sm:px-4">
                                 <a href="tel:+17602801847">760 280 1847</a>
                             </Button>
                             <Button

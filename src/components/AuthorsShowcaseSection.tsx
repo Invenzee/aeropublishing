@@ -15,6 +15,7 @@ const reviews = [
         date: "Feb 28, 2026",
         title: "My interaction with Aero Publishing was…",
         text: "My interaction with Aero Publishing was excellent. the staff was really helpful, and their service was seamless and professional. overall, I'm rather happy with the experience!",
+        avatar: "/review-2.jpg",
         width: "w-[420px] max-sm:w-[300px]"
     },
         {
@@ -36,6 +37,7 @@ const reviews = [
         date: "Feb 20, 2026",
         title: "Fantastic encounter with Aero…",
         text: "Fantastic encounter with Aero Publishing. Excellent service, a seamless process, and a really professional team. extremely happy and very impressive!",
+        avatar: "/review-3.jpg",
         width: "w-[420px] max-sm:w-[300px]"
     },
     {
@@ -46,16 +48,18 @@ const reviews = [
         date: "Feb 13, 2026",
         title: "My interaction with Aero Publishing was…",
         text: "My interaction with Aero Publishing was excellent throughout the process, their team demonstrated professionalism, assistance, and responsiveness. everything went smoothly and on schedule and the service quality was outstanding. I am truly pleased with the outcome and am quite pleased with their service. strongly advised.",
+        avatar: "/review-4.jpg",        
         width: "w-[420px] max-sm:w-[300px]"
     },
     {
         id: 5,
         name: "Roma Gagne",
-        country: "AU",
+        country: "US",
         rating: 5,
         date: "Jul 18, 2025",
         title: "After months of poor sales",
         text: "After months of poor sales, Aero Publishing marketing turned everything around. My book is now consistently ranking in its category.",
+        avatar: "/review-5.jpg",
         width: "w-[420px] max-sm:w-[300px]"
     },
     {
@@ -66,6 +70,7 @@ const reviews = [
         date: "Jun 24, 2025",
         title: "I appreciated Aero Publishing attention…",
         text: "I appreciated Aero Publishing attention to detail and quick responses. Their editing improved my manuscript’s quality significantly.",
+        avatar: "/review-6.jpg",        
         width: "w-[420px] max-sm:w-[300px]"
     },
     {
@@ -76,6 +81,7 @@ const reviews = [
         date: "Jun 24, 2025",
         title: "Aero Publishing helped me polish my…",
         text: "Aero Publishing helped me polish my paper and understand journal submission better. Their support reduced my stress and improved my chances of acceptance.",
+        avatar: "/review-7.jpg",        
         width: "w-[420px] max-sm:w-[300px]"
     },
     {
@@ -86,7 +92,7 @@ const reviews = [
         date: "Jun 4, 2025",
         title: "I couldn't believe the difference once…",
         text: "I couldn't believe the difference once Aero Publishing got involved. Their book marketing services not only increased visibility but also amplified it. Sales increased significantly, as did engagement on my social media and Amazon pages.",
-        avatar: "/testimonial.png",
+        avatar: "/review-8.jpg",        
         width: "w-[420px] max-sm:w-[300px]"
     }
 ];
