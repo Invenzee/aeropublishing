@@ -2,6 +2,7 @@
 
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -41,7 +42,7 @@ export default function Footer() {
                     <div className="md:col-span-3 space-y-6">
                         <h4 className="text-[#36C0E7] font-syne font-bold text-lg mb-4">Contact</h4>
                         <div className="flex flex-col gap-4 font-poppins text-sm opacity-90 ">
-                            <p>12501 Center Dr, South Gate,<br />CA 90201, United States</p>
+                            <p>12508 Center St, South Gate,<br /> CA 90280, United States</p>
                             <a href="tel:+17602801847">760 280 1847</a>
                             <a href="mailto:info@aeropublishing.us">info@aeropublishing.us</a>
                         </div>
@@ -57,6 +58,60 @@ export default function Footer() {
                             <a href="https://www.instagram.com/aeropublishing/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
                                 <FaInstagram size={18} className="group-hover:scale-110 transition-transform" />
                             </a>
+                        </div>
+
+                        {/* Review Platform Badges with Tooltips */}
+                        <div className="">
+                            <h4 className="text-[#36C0E7] font-syne font-bold text-lg mb-4">Review Platforms</h4>
+                            <div className="flex gap-3">
+                                {/* Trustpilot */}
+                                <div className="relative group">
+                                    <a href="https://www.trustpilot.com" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                        <img src="/trustPilot.svg" alt="Trustpilot" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                    </a>
+                                    {/* Tooltip */}
+                                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-white text-brand-primary text-xs font-syne font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-lg">
+                                        Trustpilot
+                                        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-white"></div>
+                                    </div>
+                                </div>
+
+                                {/* Sitejabber */}
+                                <div className="relative group">
+                                    <a href="https://www.sitejabber.com" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                        <img src="/sitejabber.svg" alt="Sitejabber" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                    </a>
+                                    {/* Tooltip */}
+                                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-white text-brand-primary text-xs font-syne font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-lg">
+                                        Sitejabber
+                                        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-white"></div>
+                                    </div>
+                                </div>
+
+                                {/* Bark */}
+                                <div className="relative group">
+                                    <a href="https://www.bark.com" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                        <img src="/Bark.svg" alt="Bark" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                    </a>
+                                    {/* Tooltip */}
+                                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-white text-brand-primary text-xs font-syne font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-lg">
+                                        Bark
+                                        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-white"></div>
+                                    </div>
+                                </div>
+
+                                {/* Clutch */}
+                                <div className="relative group">
+                                    <a href="https://www.clutch.co" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
+                                        <img src="/clutch.svg" alt="Clutch" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                    </a>
+                                    {/* Tooltip */}
+                                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-white text-brand-primary text-xs font-syne font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-lg">
+                                        Clutch
+                                        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-white"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
