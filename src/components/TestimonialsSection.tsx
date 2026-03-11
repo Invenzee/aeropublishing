@@ -9,26 +9,26 @@ import { FaQuoteRight } from "react-icons/fa";
 const testimonials = [
     {
         id: 1,
-        name: "The Alchemist",
-        quote: "When a person really desires something, all the universe conspires to help that person to realize his dream",
+        name: "Jodi Picoult",
+        quote: "You can always edit a bad page. You can’t edit a blank page.",
         details: "This includes professional editing, cover design, formatting, and distribution strategies tailored to your genre.",
-        authorImage: "/testimonial.png",
+        authorImage: "/quote-1.jfif",
         mainImage: "/why-aero-book.png"
     },
     {
         id: 2,
-        name: "J.K. Rowling",
-        quote: "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+        name: "Toni Morrison",
+        quote: "If there’s a book that you want to read, but it hasn’t been written yet, then you must write it.",
         details: "Our team of experts will guide you through every step of the publishing process, ensuring your book reaches its full potential.",
-        authorImage: "/men-2.jpg",
+        authorImage: "/quote-2.webp",
         mainImage: "/why-aero-book.png"
     },
     {
         id: 3,
         name: "Stephen King",
-        quote: "Get busy living or get busy dying.",
+        quote: "The scariest moment is always just before you start.",
         details: "We provide comprehensive marketing plans to get your book in front of the right readers and maximize your sales.",
-        authorImage: "/men-3.jpg",
+        authorImage: "/quote-3.jfif",
         mainImage: "/why-aero-book.png"
     }
 ];
@@ -93,7 +93,7 @@ export default function TestimonialsSection() {
                             {/* Speech Bubble */}
                             <div className="rounded-2xl  -mr-8 z-20 bg-white p-4 border border-gray-300 relative max-w-[250px]">
                                 <p className="text-sm font-syne text-brand-black">
-                                    Best <span className="text-brand-secondary font-shaded !text-lg">Writers</span> With Professional Content Writing Services
+                                    Helping  <span className="text-brand-secondary font-shaded !text-lg">Authors</span> Turn Manuscripts Into Published Books
                                 </p>
                             </div>
 
@@ -117,10 +117,10 @@ export default function TestimonialsSection() {
                                 transition={{ duration: 0.4 }}
                             >
                                 <p className="text-sm font-poppins text-brand-gray leading-relaxed mb-4">
-                                Many books fall short because publishing is complex, technical, and difficult to manage without expert support. Issues with editing, design, and distribution often prevent books from ever reaching their audience.
+                                Many great books never reach readers—not because the ideas aren’t powerful, but because the publishing process can be complex and overwhelming. Editing, formatting, design, and distribution often become barriers that stop authors before their work is ever seen.
                                 </p>
                                 <p className="text-sm font-poppins text-brand-gray leading-relaxed">
-                                We simplify the process by guiding authors through professional publishing and wide distribution—helping books reach readers in the U.S. and beyond.
+                                At Aero Publishing, we simplify the journey. From professional editing to wide distribution, we help authors transform their manuscripts into professionally published books that reach readers across the U.S. and beyond.
                                 </p>
                             </motion.div>
                         </AnimatePresence>
