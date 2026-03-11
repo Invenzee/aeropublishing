@@ -20,7 +20,7 @@ const testimonials = [
         name: "J.K. Rowling",
         quote: "It is our choices, Harry, that show what we truly are, far more than our abilities.",
         details: "Our team of experts will guide you through every step of the publishing process, ensuring your book reaches its full potential.",
-        authorImage: "/testimonial.png",
+        authorImage: "/men-2.jpg",
         mainImage: "/why-aero-book.png"
     },
     {
@@ -28,7 +28,7 @@ const testimonials = [
         name: "Stephen King",
         quote: "Get busy living or get busy dying.",
         details: "We provide comprehensive marketing plans to get your book in front of the right readers and maximize your sales.",
-        authorImage: "/testimonial.png",
+        authorImage: "/men-3.jpg",
         mainImage: "/why-aero-book.png"
     }
 ];
