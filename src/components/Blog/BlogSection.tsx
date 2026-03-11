@@ -8,8 +8,8 @@ import Button from "../Button";
 // Dummy blog data
 const featuredPost = {
     category: "Recent News",
-    title: "Publishing Industry Trends 2026: The Book Publishing News Authors Need",
-    description: "The publishing landscape in 2026 feels bigger and more vast. Publishing didn't suddenly change overnight. It's been shifting for years, but by late 2025 the signals got harder to ignore. \n\nIn fact, major publisher revenue was still edging up in late 2025, with the AAP's October 2025 StatShot showing industry revenue up 8.7% year over year for the month and up 6.2% year to date.",
+    title: "Why Most First-Time Authors Fail at Self-Publishing (And How to Avoid It)",
+    description: "Many first-time authors assume that once their manuscript is finished, publishing the book will be simple. In reality, the publishing journey involves far more than uploading a file online. Editing, formatting, cover design, metadata optimization, and distribution all play a crucial role in whether a book actually reaches readers. One of the biggest challenges new authors face is navigating the technical side of publishing. A poorly formatted book, an unprofessional cover, or weak book descriptions can significantly impact a book's visibility and sales.",
     date: "05 January 2026",
     comments: "0 Comments",
     image: "/main-blog-image.png",
@@ -19,8 +19,8 @@ const featuredPost = {
 const blogPosts = [
     {
         category: "Tips & Tricks",
-        title: "Publishing Industry Trends 2026: The Book Publishing News Authors Need",
-        description: "The publishing landscape in 2026 feels bigger and more vast. Publishing didn't suddenly change overnight. It's been shifting for years, but by late 2025 the signals got harder to ignore.",
+        title: "How Professional Book Editing Can Transform Your Manuscript",
+        description: "Many authors underestimate the importance of professional editing. Even the most talented writers benefit from expert editing that improves clarity, structure, and readability. Proper editing not only strengthens your story but also ensures your book meets publishing standards and creates a better experience for readers..",
         date: "04 January 2026",
         comments: "10 Comments",
         image: "/blog-1.png",
@@ -28,8 +28,8 @@ const blogPosts = [
     },
     {
         category: "Tips & Tricks",
-        title: "Publishing Industry Trends 2026: The Book Publishing News Authors Need",
-        description: "The publishing landscape in 2026 feels bigger and more vast. Publishing didn't suddenly change overnight. However shifting for years, but by late 2025 the signals got harder to ignore",
+        title: "Amazon KDP Explained: A Beginner’s Guide for New Authors",
+        description: "Amazon Kindle Direct Publishing has made it easier than ever for authors to publish their own books. However, understanding the platform, formatting requirements, and publishing process is essential for success. With the right preparation, authors can turn their manuscripts into professionally published books available worldwide…",
         date: "04 January 2026",
         comments: "4 Comments",
         image: "/blog-2.png",
@@ -37,8 +37,8 @@ const blogPosts = [
     },
     {
         category: "Tips & Tricks",
-        title: "Publishing Industry Trends 2026: The Book Publishing News Authors Need",
-        description: "The publishing landscape in 2026 feels bigger and more vast. Publishing didn't suddenly change overnight. It's been shifting for years, but by late 2025 the signals got harder to ignore",
+        title: "Why Book Cover Design Is One of the Most Important Parts of Publishing",
+        description: "Readers often judge a book by its cover before they ever read the description. A professionally designed cover communicates genre, tone, and credibility. Investing in strong cover design can dramatically improve a book’s chances of attracting readers and standing out in competitive marketplaces…",
         date: "04 January 2026",
         comments: "0 Comments",
         image: "/blog-3.png",
@@ -46,8 +46,8 @@ const blogPosts = [
     },
     {
         category: "Tips & Tricks",
-        title: "Publishing Industry Trends 2026: The Book Publishing News Authors Need",
-        description: "The publishing landscape in 2026 feels bigger and more vast. Publishing didn't suddenly change overnight. It's been shifting for years, but by late 2025 the signals got harder to ignore",
+        title: "From Manuscript to Published Book: Understanding the Publishing Process",
+        description: "Writing a manuscript is only the first step in becoming a published author. The publishing process includes editing, formatting, cover design, distribution setup, and marketing preparation. Understanding each step helps authors navigate the journey more confidently and avoid common mistakes….",
         date: "04 January 2026",
         comments: "14 Comments",
         image: "/blog-2.png",
@@ -55,8 +55,8 @@ const blogPosts = [
     },
     {
         category: "Tips & Tricks",
-        title: "Publishing Industry Trends 2026: The Book Publishing News Authors Need",
-        description: "The publishing landscape in 2026 feels bigger and more vast. Publishing didn't suddenly change overnight. However shifting for years, but by late 2025 the signals got harder to ignore",
+        title: "How Self-Publishing Gives Authors More Control Over Their Work",
+        description: "Self-publishing allows authors to maintain full ownership of their books, including rights and royalties. Unlike traditional publishing models, authors have more flexibility in pricing, marketing, and distribution, allowing them to build their careers on their own terms….",
         date: "04 January 2026",
         comments: "8 Comments",
         image: "/blog-3.png",
@@ -64,8 +64,8 @@ const blogPosts = [
     },
     {
         category: "Tips & Tricks",
-        title: "Publishing Industry Trends 2026: The Book Publishing News Authors Need",
-        description: "The publishing landscape in 2026 feels bigger and more vast. Publishing didn't suddenly change overnight. It's been shifting for years, but by late 2025 the signals got harder to ignore",
+        title: "Common Mistakes First-Time Authors Make When Publishing a Book",
+        description: "Many new authors rush the publishing process without fully preparing their book for readers. Skipping professional editing, ignoring formatting standards, or neglecting marketing can reduce a book’s chances of success. Avoiding these mistakes can make a major difference in a book’s visibility and impact….",
         date: "04 January 2026",
         comments: "2 Comments",
         image: "/blog-4.png",
@@ -108,9 +108,9 @@ export default function BlogSection() {
                         className="flex-1 space-y-3"
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-[36px] leading-[1.2] font-syne font-semibold text-brand-primary">
-                            Publishing Industry Trends <br />
-                            2026: The Book <span className="text-brand-secondary font-shaded italic font-light text-[40px]">Publishing</span> <br />
-                            News Authors Need
+                            Why Most First-Time <br />
+                            2026: The Book <span className="text-brand-secondary font-shaded italic font-light text-[40px]">Authors Fail </span> <br />
+                            at Self-Publishing (And How to Avoid It)
                         </h2>
 
                         <p className="text-gray-600 font-poppins text-sm leading-relaxed whitespace-pre-line">
