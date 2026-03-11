@@ -100,7 +100,7 @@ export default function TestimonialsSection() {
                             {/* Author Profile Image */}
                             <div className="relative">
                                 <div className="w-32 h-40 rounded-lg overflow-hidden border-2 border-white shadow-md">
-                                    <img src={activeTestimonial.authorImage} className="w-full h-full object-cover" />
+                                    <img src='testimonial.png' className="w-full h-full object-cover" />
                                 </div>
                                 <div className="absolute -top-2 -right-2 text-brand-secondary bg-white leading-[1] text-xl p-2 rounded-sm font-serif">
                                     <FaQuoteRight />
