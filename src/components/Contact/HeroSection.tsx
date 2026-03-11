@@ -42,7 +42,7 @@ export default function HeroSection() {
                     </h1>
 
                     <p className="text-black font-poppins text-md leading-relaxed max-w-xl max-sm:text-[14px]">
-                        Things are easy here even if you don't know how to write. Explain the crazy plot you hide in your mind for years and see your imagination on paper. Aqua Book Publishing is interpreting millions of dreams of being published authors globally. That’s what they all truly wanted.
+                        Connect with the Aero Publishing team to discuss your book publishing goals. Whether you need Amazon KDP support, editing, formatting, or complete publishing management, we’re here to guide you. Share your project details with us, and let’s take the next step toward bringing your book to life.
                     </p>
 
 
