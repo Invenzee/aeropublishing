@@ -10,6 +10,12 @@ import ConnectWithUsSection from "@/components/ConnectWithUsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import PromoSection from "@/components/PromoSection";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "About Aero Publishing – Helping Authors Get Published",
+  description:
+    "Meet the team behind Aero Publishing. We empower authors to bring their stories to life with transparent, creative, and results-driven publishing services.",
+};
 
 export default function About() {
 

@@ -1,5 +1,13 @@
 "use client";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy – How Aero Publishing Protects Your Data",
+  description:
+    "Read how Aero Publishing collects, uses, and protects your personal data when you use our website or services, in full compliance with data privacy laws.",
+};
+
 export default function PrivacyPolicy() {
     return (
         <section className="bg-brand-light pb-20 pt-60 max-sm:py-20">

@@ -1,4 +1,10 @@
 "use client";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Terms & Conditions – Aero Publishing Legal Info",
+  description:
+    "Read our terms of service outlining your rights, responsibilities, and how Aero Publishing delivers services, including ghostwriting, design, and publishing.",
+};
 
 export default function TermsAndConditions() {
     return (

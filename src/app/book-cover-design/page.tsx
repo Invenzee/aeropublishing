@@ -9,6 +9,13 @@ import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import HowWeWorkSection from '@/components/HowWeWorkSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Custom Book Cover Design Services – Aero Publishing",
+  description:
+    "Make your book stand out with a professionally designed cover tailored to your genre. Aero’s custom designs help boost credibility and attract readers.",
+};
+
 
 export default function page() {
 

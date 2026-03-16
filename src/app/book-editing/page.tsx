@@ -9,6 +9,13 @@ import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import HowWeWorkSection from '@/components/HowWeWorkSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Book Editing & Proofreading Services – Aero Publishing",
+  description:
+    "Polish your manuscript with Aero’s editing services: developmental editing, copyediting, and final proofreading tailored to your book’s genre and voice.",
+};
 
 export default function page() {
 

@@ -8,6 +8,12 @@ import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Book Marketing Services That Drive Sales – Aero",
+  description:
+    "Promote your book like a pro with Aero's marketing plans—social media, Amazon ads, press releases & author branding tailored to boost visibility and sales.",
+};
 
 export default function page() {
 

@@ -27,8 +27,47 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  title: "Aero Publishing",
-  description: "Aero Publishing",
+  metadataBase: new URL("https://aeropublishing.us"),
+  title: {
+    default: "Publish Your Book with Aero – Ghostwriting, Editing & More",
+    template: "%s | Aero Publishing",
+  },
+  description:
+    "Turn your manuscript into a published book with Aero Publishing’s expert services—ghostwriting, editing, design, and global book marketing included.",
+  keywords: [
+    "book publishing",
+    "ghostwriting services",
+    "book editing",
+    "book marketing",
+    "self publishing",
+    "book cover design",
+  ],
+  openGraph: {
+    title: "Publish Your Book with Aero – Ghostwriting, Editing & More",
+    description:
+      "Turn your manuscript into a published book with Aero Publishing’s expert services—ghostwriting, editing, design, and global marketing.",
+    url: "https://aeropublishing.us",
+    siteName: "Aero Publishing",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Aero Publishing",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Publish Your Book with Aero",
+    description:
+      "Ghostwriting, editing, publishing and marketing services for authors.",
+    images: ["/og-image.jpg"],
+  },
+  icons: {
+    icon: "/favicon-3.png",
+  },
 };
 
 export default function RootLayout({

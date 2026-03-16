@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import CounterSection from "@/components/CounterSection";
@@ -11,6 +12,12 @@ import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import AuthorsShowcaseSection from "@/components/AuthorsShowcaseSection";
 import FAQSection from "@/components/FAQSection";
 import PromoSection from "@/components/PromoSection";
+
+export const metadata: Metadata = {
+  title: "Publish Your Book with Aero – Ghostwriting, Editing & More",
+  description:
+    "Turn your manuscript into a published book with Aero Publishing’s expert services—ghostwriting, editing, design, and global book marketing included.",
+};
 
 export default function Home() {
 

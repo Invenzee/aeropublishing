@@ -9,6 +9,13 @@ import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import HowWeWorkSection from '@/components/HowWeWorkSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Self-Publishing Services for Authors – Aero Publishing",
+  description:
+    "Get your book published in 72 hours with full-service self-publishing: formatting, ISBNs, Amazon & global distribution—all handled by Aero experts.",
+};
 
 export default function page() {
 
