@@ -46,7 +46,7 @@ export default function page() {
                 title="Children Book"
                 description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your children’s book with confidence and ease."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Children Book Made Effortless:"
                 title={{
                     prefix: "Powered by",

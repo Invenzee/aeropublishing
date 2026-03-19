@@ -48,7 +48,7 @@ export default function page() {
                 title="Book Cover Design"
                 description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Design your book cover with confidence."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Book Cover Design Made Effortless:"
                 title={{
                     prefix: "Powered by",

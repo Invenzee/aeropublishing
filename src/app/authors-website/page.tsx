@@ -42,7 +42,7 @@ export default function page() {
                 title="Authors Website"
                 description="All-inclusive author website packages designed to help you build a strong online presence. With professional design, SEO-ready structure, and a 7-day money-back guarantee, Aero Publishing makes launching your author website simple and stress-free."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Authors Website Made Effortless:"
                 title={{
                     prefix: "Powered by",

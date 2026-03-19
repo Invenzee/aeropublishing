@@ -27,7 +27,15 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[url('/hero-bg.png')] bg-cover bg-center">
+        <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+            <Image
+                src="/hero-bg.png"
+                alt="Hero Background"
+                fill
+                priority
+                className="object-cover object-center -z-10"
+                sizes="100vw"
+            />
             <div className="max-w-[1140px] mx-auto my-24 relative z-10 w-full flex gap-12 items-start max-sm:flex-col max-sm:my-12 max-sm:px-6">
 
                 {/* Left Column: Content */}
@@ -70,7 +78,7 @@ export default function HeroSection() {
                     <div className="w-full max-w-md">
 
 
-                        <img src="/contactus.png" alt="Contact Form" />
+                        <Image src="/contactus.png" alt="Contact Form" width={400} height={400} priority className="w-full h-auto" />
                     </div>
                 </motion.div>
 

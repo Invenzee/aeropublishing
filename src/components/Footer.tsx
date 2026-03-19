@@ -17,8 +17,8 @@ export default function Footer() {
                     <div className="md:col-span-3 space-y-6">
                         {/* Logo Placeholder - simplified text/icon match */}
                         <div className="flex items-center gap-2 mb-6">
-                            <div className="w-26">
-                                <img src="/footer-logo.png" alt="Aero Publishing" className="w-full h-auto object-contain cursor-pointer" onClick={() => window.location.href = "/"} />
+                            <div className="w-26 relative h-12 w-32">
+                                <Image src="/footer-logo.png" alt="Aero Publishing" fill className="object-contain cursor-pointer" onClick={() => window.location.href = "/"} />
                             </div>
                         </div>
 
@@ -67,7 +67,7 @@ export default function Footer() {
                                 {/* Trustpilot */}
                                 <div className="relative group">
                                     <a href="https://www.trustpilot.com/review/aeropublishing.us" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
-                                        <img src="/trustPilot.svg" alt="Trustpilot" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                        <Image src="/trustPilot.svg" alt="Trustpilot" width={40} height={40} className="object-contain group-hover:scale-110 transition-transform hover:invert" />
                                     </a>
                                     {/* Tooltip */}
                                     <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-white text-brand-primary text-xs font-syne font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-lg">
@@ -79,7 +79,7 @@ export default function Footer() {
                                 {/* Sitejabber */}
                                 <div className="relative group">
                                     <a href="https://www.smartcustomer.com/reviews/aeropublishing.us" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
-                                        <img src="/sitejabber.svg" alt="Sitejabber" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                        <Image src="/sitejabber.svg" alt="Sitejabber" width={40} height={40} className="object-contain group-hover:scale-110 transition-transform hover:invert" />
                                     </a>
                                     {/* Tooltip */}
                                     <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-white text-brand-primary text-xs font-syne font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-lg">
@@ -91,7 +91,7 @@ export default function Footer() {
                                 {/* Bark */}
                                 <div className="relative group">
                                     <a href="https://www.bark.com/en/us/company/aeropublishingus/E6Lb9D/?review_source=share_link" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
-                                        <img src="/Bark.svg" alt="Bark" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                        <Image src="/Bark.svg" alt="Bark" width={40} height={40} className="object-contain group-hover:scale-110 transition-transform hover:invert" />
                                     </a>
                                     {/* Tooltip */}
                                     <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-white text-brand-primary text-xs font-syne font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-lg">
@@ -103,7 +103,7 @@ export default function Footer() {
                                 {/* Clutch */}
                                 <div className="relative group">
                                     <a href="https://clutch.co/profile/aero-publishing" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
-                                        <img src="/Clutch.svg" alt="Clutch" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" />
+                                        <Image src="/Clutch.svg" alt="Clutch" width={40} height={40} className="object-contain group-hover:scale-110 transition-transform hover:invert" />
                                     </a>
                                     {/* Tooltip */}
                                     <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-white text-brand-primary text-xs font-syne font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-lg">

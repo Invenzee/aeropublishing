@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Button from "./Button";
 import { ChevronRight, Dot } from "lucide-react";
+import Image from "next/image";
 
 export default function HowWeWorkSection() {
     const router = useRouter();
@@ -154,10 +155,13 @@ export default function HowWeWorkSection() {
                                 className="flex justify-center items-center max-lg:order-first"
                             >
                                 <div className="relative w-full max-w-[350px] aspect-square">
-                                    <img
+                                    <Image
                                         src={steps[activeStep].illustration}
                                         alt={steps[activeStep].title}
-                                        className="w-full h-full object-contain"
+                                        fill
+                                        className="object-contain"
+                                        loading="lazy"
+                                        sizes="(max-width: 1024px) 100vw, 350px"
                                     />
                                 </div>
                             </motion.div>

@@ -41,7 +41,7 @@ export default function page() {
                 title="Audio Book Narration"
                 description="All-inclusive audiobook narration packages designed to bring your story to life. With professional voice talent, studio-quality production, and a 7-day money-back guarantee, Aero Publishing makes audiobook creation simple and stress-free."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Audio Book Narration Made Effortless:"
                 title={{
                     prefix: "Powered by",

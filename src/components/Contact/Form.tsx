@@ -4,6 +4,7 @@ import { useState } from "react";
 import Button from "../Button";
 import { sendEmail } from "@/app/actions/email";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 interface FormData {
   name: string;
@@ -90,8 +91,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
-      <img src="/carousel-bg.png" className="absolute right-0" alt="" />
+    <div className="bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left relative overflow-hidden">
+      <Image src="/carousel-bg.png" className="absolute right-0 object-contain object-right -z-10" fill alt="" loading="lazy" />
       <form
         onSubmit={handleSubmit}
         className="max-w-[1140px] mx-auto bg-white p-8 rounded-xl shadow"

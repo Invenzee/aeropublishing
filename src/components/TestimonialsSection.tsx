@@ -73,10 +73,13 @@ export default function TestimonialsSection() {
                         <div className="absolute top-0 right-24 w-[90%] h-[90%] bg-brand-secondary rounded-2xl -z-10 translate-x-4 -translate-y-4 shadow-lg" />
 
                         <div className="relative w-full max-w-[500px] aspect-[6/5] rounded-2xl overflow-hidden shadow-2xl z-10">
-                            <img
+                            <Image
                                 src={activeTestimonial.mainImage}
                                 alt="Books stack"
-                                className="w-full h-full object-cover"
+                                fill
+                                className="object-cover"
+                                loading="lazy"
+                                sizes="(max-width: 768px) 100vw, 500px"
                             />
                         </div>
                     </motion.div>
@@ -100,7 +103,7 @@ export default function TestimonialsSection() {
                             {/* Author Profile Image */}
                             <div className="relative">
                                 <div className="w-32 h-40 rounded-lg overflow-hidden border-2 border-white shadow-md">
-                                    <img src='testimonial.png' className="w-full h-full object-cover" />
+                                    <Image src='/testimonial.png' alt="Testimonial author" width={128} height={160} className="w-full h-full object-cover" loading="lazy" />
                                 </div>
                                 <div className="absolute -top-2 -right-2 text-brand-secondary bg-white leading-[1] text-xl p-2 rounded-sm font-serif">
                                     <FaQuoteRight />
@@ -148,7 +151,7 @@ export default function TestimonialsSection() {
 
                             <div className="mt-auto flex flex-col items-center gap-2 relative z-10">
                                 <div className="w-12 h-12 rounded-full overflow-hidden border border-gray-200">
-                                    <img src={testimonial.authorImage} className="w-full h-full object-cover" />
+                                    <Image src={testimonial.authorImage} alt={testimonial.name} width={48} height={48} className="w-full h-full object-cover" loading="lazy" />
                                 </div>
                                 <span className="font-syne font-bold text-brand-primary text-sm">
                                     {testimonial.name}

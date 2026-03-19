@@ -48,7 +48,7 @@ export default function page() {
                 title="Ghostwriting"
                 description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Ghostwriting Made Effortless:"
                 title={{
                     prefix: "Powered by",

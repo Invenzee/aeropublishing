@@ -41,7 +41,7 @@ export default function page() {
                 title="Proof Reading"
                 description="All-inclusive proofreading packages designed for authors who value accuracy, clarity, and professionalism. Protect your work, polish every word, and publish with confidence."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Proof Reading Made Effortless:"
                 title={{
                     prefix: "Powered by",

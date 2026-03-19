@@ -40,7 +40,7 @@ export default function page() {
                 title="Amazon KDP Publishing Services"
                 description="At Aero Publishing, we provide end-to-end Amazon KDP publishing support, from manuscript preparation to final release. Our team edits and proofreads for clarity, formats your interior according to KDP standards, and manages cover design and account configuration. We oversee each stage of the publishing process so your book launches smoothly while you retain full ownership and royalties."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Amazon Publishing Made Simple"
                 title={{
                     prefix: "Professional",

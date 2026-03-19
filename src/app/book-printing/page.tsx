@@ -41,7 +41,7 @@ export default function page() {
                 title="Book Printing"
                 description="All-inclusive book printing solutions with copyright protection and a 7-day money-back guarantee. Print your book professionally—without the stress."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Book Printing Made Effortless:"
                 title={{
                     prefix: "Powered by",

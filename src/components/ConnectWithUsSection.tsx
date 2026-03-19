@@ -6,6 +6,7 @@ import Button from "./Button";
 import { Check } from "lucide-react";
 import { sendEmail } from "@/app/actions/email";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function ConnectWithUsSection() {
     const router = useRouter();
@@ -53,10 +54,8 @@ export default function ConnectWithUsSection() {
     };
 
     return (
-        <section
-            className="relative py-10 bg-cover bg-center overflow-hidden max-sm:py-12  overflow-x-hidden"
-            style={{ backgroundImage: "url('/connect-with-us.png')" }}
-        >
+        <section className="relative py-10 overflow-hidden max-sm:py-12 overflow-x-hidden">
+            <Image src="/connect-with-us.png" alt="Background" fill className="object-cover object-center -z-20" loading="lazy" sizes="100vw" />
             <div ref={containerRef} className="max-w-[1140px] mx-auto px-6 relative z-10">
                 <div className="flex items-center gap-12 max-lg:flex-col max-lg:gap-8">
 
@@ -68,10 +67,13 @@ export default function ConnectWithUsSection() {
                         className="w-1/3 flex justify-center max-lg:w-full"
                     >
                         <div className="relative w-full">
-                            <img
+                            <Image
                                 src="/connect-with-us-logo.png"
                                 alt="Connect with us logo"
-                                className="w-full h-full object-cover"
+                                width={400}
+                                height={400}
+                                className="w-full h-auto object-cover"
+                                loading="lazy"
                             />
                         </div>
                     </motion.div>

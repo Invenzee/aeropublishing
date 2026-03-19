@@ -47,7 +47,7 @@ export default function page() {
                 title="Book Marketing"
                 description="All-inclusive book marketing packages designed to help authors reach the right readers. With transparent strategies, measurable results, and a 7-day money-back guarantee, Aero Publishing makes book marketing clear, effective, and stress-free."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Book Marketing Made Effortless:"
                 title={{
                     prefix: "Powered by",
@@ -114,7 +114,7 @@ export default function page() {
                 description="Grow your readership with Aero Publishing’s professional book marketing solutions. We help authors build visibility, attract the right audience, and create momentum through strategic marketing campaigns designed for today’s publishing landscape.
                 Whether you’re launching a new release or scaling an existing title, our team provides clear strategy, expert execution, and ongoing support—so your book doesn’t just get published, it gets noticed.
                 "
-                imageSrc="/marketing-2.jpg"
+                imageSrc="/marketing-3.png"
                 isReversed={true}
                 subtitle=""
             />

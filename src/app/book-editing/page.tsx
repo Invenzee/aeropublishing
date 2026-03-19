@@ -49,7 +49,7 @@ export default function page() {
                 title="Book Editing"
                 description="Professional book editing tailored to your voice and genre. Our experienced editors refine structure, clarity, and flow—ensuring your manuscript is polished, publication-ready, and aligned with industry standards for both print and digital release."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Book Editing Made Effortless:"
                 title={{
                     prefix: "Powered by",

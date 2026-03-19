@@ -42,7 +42,7 @@ export default function page() {
                 title="Video Trailer"
                 description="All-inclusive packages with full copyright protection and a 7-day money-back guarantee. Promote your book with cinematic impact and confidence."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Video Trailer Made Effortless:"
                 title={{
                     prefix: "Powered by",

@@ -61,10 +61,12 @@ export default function CounterSection() {
                     ease: "easeInOut"
                 }}
             >
-                <img
+                <Image
                     src="/triangle.png"
                     alt="Triangle decoration"
-                    className="w-full h-full object-contain"
+                    fill
+                    className="object-contain"
+                    sizes="176px"
                 />
             </motion.div>
 

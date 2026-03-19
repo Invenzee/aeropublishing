@@ -14,7 +14,7 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle, 
             style={{ backgroundImage: "url('/why-aero-bg.png')" }}
         >
             <div className="absolute inset-0 left-0 bottom-0">
-                <img src="/why-aero-gradient-bg.png" alt="Why Aero" className="object-contain bg-no-repeat" />
+                <Image src="/why-aero-gradient-bg.png" alt="Why Aero" fill className="object-contain" />
             </div>
             <div ref={containerRef} className="max-w-[1140px] mx-auto max-sm:px-4">
                 <motion.div
@@ -52,12 +52,13 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle, 
                                     }}
                                     className="flex items-start gap-4 p-4 rounded-xl border border-black hover:border-brand-secondary transition-colors duration-300"
                                 >
-                                    {/* Icon */}
-                                    <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center">
-                                        <img
+                                    <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center relative">
+                                        <Image
                                             src={feature.icon}
                                             alt={feature.title}
-                                            className="w-full h-full object-cover rounded-xl"
+                                            fill
+                                            className="object-cover rounded-xl"
+                                            loading="lazy"
                                         />
                                     </div>
 
@@ -87,10 +88,14 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle, 
                         className="relative max-lg:order-first flex justify-end"
                     >
                         <div className="relative w-[90%] max-sm:w-full rounded-2xl overflow-hidden shadow-2xl">
-                            <img
+                            <Image
                                 src={imageUrl}
                                 alt="Open book"
+                                width={600}
+                                height={500}
                                 className="w-full rounded-[40px] min-h-[500px] max-sm:min-h-full max-sm:rounded-lg object-cover"
+                                loading="lazy"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                     </motion.div>

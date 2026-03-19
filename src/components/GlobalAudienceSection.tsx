@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Swiper as SwiperType } from 'swiper';
+import Image from "next/image";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -140,10 +141,13 @@ export default function GlobalAudienceSection() {
                                     className="flex justify-center"
                                 >
                                     <div className="relative w-full max-w-[200px] aspect-[2/3] rounded-lg overflow-hidden mx-auto">
-                                        <img
+                                        <Image
                                             src={book.image}
                                             alt={book.title}
-                                            className="w-full h-full object-cover"
+                                            fill
+                                            className="object-cover"
+                                            loading="lazy"
+                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                                         />
                                     </div>
                                 </motion.div>

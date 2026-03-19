@@ -49,7 +49,7 @@ export default function page() {
                 title="Fiction Writing"
                 description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Fiction Writing Made Effortless:"
                 title={{
                     prefix: "Powered by",

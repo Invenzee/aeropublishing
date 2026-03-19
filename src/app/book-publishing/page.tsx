@@ -49,7 +49,7 @@ export default function page() {
                 title="Book Publishing"
                 description="All-inclusive publishing packages designed to support authors at every stage. With copyright protection, transparent pricing, and a 7-day money-back guarantee, Aero Publishing makes publishing your book simple and stress-free."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Book Publishing Made Effortless:"
                 title={{
                     prefix: "Powered by",

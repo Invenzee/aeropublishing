@@ -18,8 +18,10 @@ interface FeatureSectionProps {
     imageSrc: string;
     imageAlt?: string;
     isReversed?: boolean; // To swap image and content side
-    hasFeatures?: boolean
+    hasFeatures?: boolean;
+    priority?: boolean; // true for first/above-fold image on each page
 }
+
 
 export default function FeatureSection({
     subtitle = "Self-Publishing Made Effortless:",
@@ -31,7 +33,8 @@ export default function FeatureSection({
     imageSrc,
     imageAlt = "Feature Image",
     isReversed = false,
-    hasFeatures = false
+    hasFeatures = false,
+    priority = false,
 }: FeatureSectionProps) {
     return (
         <section className="py-20 bg-white overflow-hidden bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
@@ -97,11 +100,15 @@ export default function FeatureSection({
                     className="flex-1 relative w-full max-w-[500px] h-full"
                 >
 
-                    <div className="relative w-full">
-                        <img
+                    <div className="relative w-full min-h-[500px] max-h-[500px] max-sm:min-h-[300px] rounded-[40px] max-sm:rounded-lg overflow-hidden">
+                        <Image
                             src={imageSrc}
                             alt={imageAlt}
-                            className="object-cover rounded-[40px] min-h-[500px] max-h-[500px] max-sm:min-h-full max-sm:rounded-lg max-sm:max-h-full w-full"
+                            fill
+                            className="object-cover"
+                            priority={priority}
+                            loading={priority ? undefined : "lazy"}
+                            sizes="(max-width: 768px) 100vw, 500px"
                         />
                     </div>
                 </motion.div>

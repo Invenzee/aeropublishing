@@ -41,7 +41,7 @@ export default function page() {
                 title="Book Formatting"
                 description="All-inclusive book formatting packages designed to prepare your manuscript for professional publication. With industry-standard formatting, platform compatibility, and a 7-day money-back guarantee, Aero Publishing makes formatting simple and stress-free."
             />
-            <FeatureSection
+            <FeatureSection priority={true}
                 subtitle="Book Formatting Made Effortless:"
                 title={{
                     prefix: "Powered by",
