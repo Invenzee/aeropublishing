@@ -55,7 +55,7 @@ export default function ConnectWithUsSection() {
 
     return (
         <section className="relative py-10 overflow-hidden max-sm:py-12 overflow-x-hidden">
-            <Image src="/connect-with-us.png" alt="Background" fill className="object-cover object-center -z-20" loading="lazy" sizes="100vw" />
+            <Image src="/connect-with-us.png" alt="Background" fill className="object-cover object-center " loading="lazy" sizes="100vw" />
             <div ref={containerRef} className="max-w-[1140px] mx-auto px-6 relative z-10">
                 <div className="flex items-center gap-12 max-lg:flex-col max-lg:gap-8">
 
