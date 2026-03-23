@@ -1,0 +1,66 @@
+"use client"
+import Image from "next/image";
+import Button from "@/components/Button";
+
+export default function PromoBanner() {
+    return (
+        <section
+            className="relative py-10 bg-cover bg-center overflow-hidden max-sm:py-12  overflow-x-hidden"
+            style={{ backgroundImage: "url('/connect-with-us.png')" }}
+        >
+
+            <div className="max-w-[1140px] mx-auto max-sm:px-4 px-6 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+
+                {/* Left Book Mockup */}
+                <div className="hidden lg:flex flex-1 justify-start">
+                    <div className="relative w-[240px] aspect-2/3">
+                        {/* Placeholder. Replace with 'New Girl In Town' cover */}
+                        <Image
+                            src="/carousel-2.png"
+                            alt="Book Mockup"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                </div>
+
+                {/* Center Content */}
+                <div className="flex-2 text-center max-w-[800px] mx-auto flex flex-col items-center py-8">
+                    <h2 className="text-[40px] font-syne font-medium leading-[1] text-white mb-8 max-sm:text-[28px] max-sm:text-center">
+                        Don’t Let A Great  <span className="text-brand-secondary font-shaded max-sm:text-[40px] text-[50px] font-[300]">Book Get Held</span> Back By A Weak Launch
+                    </h2>
+                    <p className="text-gray-200 font-poppins text-[16px] leading-relaxed mb-8 max-w-[700px] mx-auto">
+                        Your manuscript can be excellent, but presentation matters. Editing quality, cover design, formatting, and publishing setup determine how readers judge your book in seconds. Let’s build a professional release that gives your story the best chance to succeed.
+                    </p>
+                    {/* Buttons as requested */}
+                    <div className="flex flex-wrap gap-4 pt-4">
+                        <Button font="poppins" variant="primary" className="max-sm:text-[14px] max-sm:px-4">
+                            <a href="tel:+17602801847">760 280 1847</a>
+                        </Button>
+                        <Button
+                            variant="secondary"
+                            className="max-sm:text-[14px] max-sm:px-4"
+                            onClick={() => (window as any).Tawk_API?.maximize()}
+                        >
+                            Chat Now
+                        </Button>
+                    </div>
+                </div>
+
+                {/* Right Book / Hand Mockup */}
+                <div className="hidden lg:flex flex-1 justify-end">
+                    <div className="relative w-[300px] aspect-square rotate-[-5deg]">
+                        {/* Placeholder. Replace with the hand-held book image */}
+                        <Image
+                            src="/carousel-3.png"
+                            alt="Hand holding book"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    );
+}
