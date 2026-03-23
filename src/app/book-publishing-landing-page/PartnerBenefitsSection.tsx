@@ -1,3 +1,5 @@
+"use client"
+import Button from "@/components/Button";
 import Image from "next/image";
 
 export default function PartnerBenefitsSection() {
@@ -71,6 +73,20 @@ export default function PartnerBenefitsSection() {
                         </div>
                     </div>
 
+
+                </div>
+                {/* Buttons as requested */}
+                <div className="flex flex-wrap gap-4 pt-4 mt-10">
+                    <Button font="poppins" variant="primary" className="max-sm:text-[14px] max-sm:px-4">
+                        <a href="tel:+17602801847">760 280 1847</a>
+                    </Button>
+                    <Button
+                        variant="secondary"
+                        className="max-sm:text-[14px] max-sm:px-4"
+                        onClick={() => (window as any).Tawk_API?.maximize()}
+                    >
+                        Chat Now
+                    </Button>
                 </div>
             </div>
         </section>

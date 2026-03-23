@@ -34,7 +34,7 @@ export default function PromoBanner() {
                     </p>
                     {/* Buttons as requested */}
                     <div className="flex flex-wrap gap-4 pt-4">
-                        <Button font="poppins" variant="primary" className="max-sm:text-[14px] max-sm:px-4">
+                        <Button font="poppins" variant="secondary" className="max-sm:text-[14px] max-sm:px-4">
                             <a href="tel:+17602801847">760 280 1847</a>
                         </Button>
                         <Button
