@@ -14,7 +14,7 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle, 
             style={{ backgroundImage: "url('/why-aero-bg.png')" }}
         >
             <div className="absolute inset-0 left-0 bottom-0">
-                <Image src="/why-aero-gradient-bg.png" alt="Why Aero" width={500} height={500} className="object-contain bg-no-repeat" />
+                <Image src="/why-aero-gradient-bg.png" alt="Why Aero" width={500} height={500} className="object-contain bg-no-repeat" loading="lazy" quality={75} />
             </div>
             <div ref={containerRef} className="max-w-[1140px] mx-auto max-sm:px-4 relative">
                 <motion.div
@@ -61,6 +61,7 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle, 
                                             height={50}
                                             className="object-cover rounded-xl"
                                             loading="lazy"
+                                            quality={75}
                                         />
                                     </div>
 
@@ -97,6 +98,8 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle, 
                                 height={500}
                                 className="w-full rounded-[40px] min-h-[500px] max-sm:min-h-full max-sm:rounded-lg object-cover"
                                 priority
+                                sizes="(max-width: 768px) 400px, 500px"
+                                quality={80}
                             />
                         </div>
                     </motion.div>

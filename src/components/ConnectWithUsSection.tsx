@@ -76,6 +76,8 @@ export default function ConnectWithUsSection() {
                                 height={500}
                                 className="object-cover"
                                 loading="lazy"
+                                sizes="(max-width: 768px) 200px, 300px"
+                                quality={75}
                             />
                         </div>
                     </motion.div>

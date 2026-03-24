@@ -172,6 +172,8 @@ export default function page() {
                                                 className="w-full h-full object-cover"
                                                 width={200}
                                                 height={300}
+                                                loading="lazy"
+                                                quality={75}
                                             />
                                         </div>
                                     </motion.div>
@@ -256,6 +258,8 @@ export default function page() {
                                                 className="w-full h-full object-cover"
                                                 width={200}
                                                 height={300}
+                                                loading="lazy"
+                                                quality={75}
                                             />
                                         </div>
                                     </motion.div>

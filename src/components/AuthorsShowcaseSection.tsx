@@ -232,7 +232,7 @@ function ReviewCard({ item }: { item: any }) {
                     style={{ backgroundColor: hasAvatar ? 'transparent' : '#E96659' }}
                 >
                     {hasAvatar ? (
-                        <Image src={item.avatar} alt={item.name} width={100} height={100} className="object-cover" loading="lazy" />
+                        <Image src={item.avatar} alt={item.name} width={40} height={40} className="object-cover" loading="lazy" quality={75} />
                     ) : (
                         getInitials(item.name)
                     )}

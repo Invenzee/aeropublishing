@@ -79,6 +79,8 @@ export default function TestimonialsSection() {
                                 fill
                                 className="object-cover"
                                 priority
+                                sizes="(max-width: 768px) 400px, 500px"
+                                quality={80}
                             />
                         </div>
                     </motion.div>
@@ -150,7 +152,7 @@ export default function TestimonialsSection() {
 
                             <div className="mt-auto flex flex-col items-center gap-2 relative z-10">
                                 <div className="w-12 h-12 rounded-full overflow-hidden border border-gray-200">
-                                    <Image src={testimonial.authorImage} alt={testimonial.name} width={200} height={200} className="object-cover" loading="lazy" />
+                                    <Image src={testimonial.authorImage} alt={testimonial.name} width={48} height={48} className="object-cover" loading="lazy" quality={75} />
                                 </div>
                                 <span className="font-syne font-bold text-brand-primary text-sm">
                                     {testimonial.name}

@@ -147,6 +147,8 @@ export default function GlobalAudienceSection() {
                                             fill
                                             className="object-cover"
                                             loading="lazy"
+                                            sizes="(max-width: 640px) 300px, (max-width: 1024px) 250px, 300px"
+                                            quality={75}
                                         />
                                     </div>
                                 </motion.div>
