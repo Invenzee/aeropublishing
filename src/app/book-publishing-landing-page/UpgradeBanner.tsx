@@ -17,7 +17,7 @@ export default function UpgradeBanner() {
                     </h2>
 
                     <p className="text-gray-200 font-poppins text-[16px] leading-relaxed mb-8 max-w-[650px]">
-                        You wrote the book. Now let’s present it with professional polish, strong design, and a launch setup built to sell. When your book looks credible, readers buy with confidence.
+                        You’ve written your book — now it’s time to prepare it for readers. With the right editing, design, and publishing setup, your work becomes something readers trust and value.
                     </p>
 
                     {/* Buttons as requested */}
@@ -40,7 +40,7 @@ export default function UpgradeBanner() {
                     <div className="relative w-full max-w-[320px] aspect-3/4 transform rotate-2">
                         {/* Placeholder. Update to the 'Between Love and Loathing' composite book image later */}
                         <Image
-                            src="/carousel-1.png"
+                            src="/book-landing-page-9.png"
                             alt="Publish Ready Books"
                             fill
                             className="object-contain drop-shadow-2xl"

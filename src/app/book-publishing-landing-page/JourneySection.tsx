@@ -12,7 +12,7 @@ export default function JourneySection() {
                         {/* We use an existing book image as a placeholder. The user can swap to the exact "History's Unsolved Mysteries" if needed. */}
                         <div className="relative w-full max-w-[800px] aspect-4/3">
                             <Image
-                                src="/popup-image.png"
+                                src="/book-landing-page-5.png"
                                 alt="Book Publishing Journey"
                                 fill
                                 className="object-contain"
@@ -23,17 +23,17 @@ export default function JourneySection() {
                     {/* Right: Text Content */}
                     <div className="space-y-6 lg:pl-4 z-10 pt-16 lg:pt-0">
                         <h2 className="text-4xl md:text-[40px] leading-[1] font-syne font-semibold text-brand-primary ">
-                            Are You Ready To Take Your
+                            Are You Ready To Take Your {" "}
                             <span className="text-brand-secondary font-shaded font-[300] text-5xl md:text-[50px] ">
                                 Publishing Journey
-                            </span>
-                            <br />
+                            </span> {" "}
+                            <br className="max-sm:hidden" />
                             To The Next Level?
 
                         </h2>
 
                         <p className="text-gray-600 font-poppins text-[17px] leading-relaxed max-w-xl">
-                            Join the Aero Publishing today and reach millions of readers. Start publishing your work on the world's largest online marketplace.
+                            Join Aero Publishing and take the next step toward becoming a published author. We guide you through every stage with clarity and confidence.
                         </p>
 
                         {/* Buttons as requested */}

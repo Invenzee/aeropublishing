@@ -6,23 +6,23 @@ export default function WhyChooseFrontline() {
     const listItems = [
         {
             title: "Focused Commitment:",
-            desc: "We treat your book like it matters, because it does."
+            desc: "Your book is treated with attention and care at every stage."
         },
         {
             title: "End-to-End Support:",
-            desc: "Editing, design, formatting, and publishing handled in one place."
+            desc: "Editing, design, and publishing handled in one place."
         },
         {
             title: "Quality Specialists:",
-            desc: "Experienced professionals across every stage of production."
+            desc: "Experienced professionals working on every detail."
         },
         {
             title: "Author-First Workflow:",
-            desc: "You stay informed and involved without being overwhelmed."
+            desc: "You stay informed without feeling overwhelmed."
         },
         {
             title: "Results That Show:",
-            desc: "Clean, credible publishing that builds trust with readers."
+            desc: "Clean, credible publishing that builds reader trust."
         }
     ];
 
@@ -36,7 +36,7 @@ export default function WhyChooseFrontline() {
                         {/* Main background image of the book flatlay */}
                         <div className="relative w-full max-w-[480px] aspect-4/5 lg:mr-10">
                             <Image
-                                src="/marketing-1.png" // placeholder for "Shadow's Mystery" book flatlay
+                                src="/book-landing-page-12.jpg" // placeholder for "Shadow's Mystery" book flatlay
                                 alt="Book publishing process"
                                 fill
                                 className="object-cover"
@@ -65,14 +65,14 @@ export default function WhyChooseFrontline() {
                         </h2>
 
                         <p className="text-gray-700 font-poppins text-[16px] leading-relaxed mb-8 max-w-xl">
-                            We combine publishing experience with a straightforward process and a quality-first mindset. From manuscript polish to final production, we focus on details readers notice and reviewers respect. Our goal is simple: help you publish a book that looks professional, reads smoothly, and launches with confidence.
+                            We combine publishing expertise with a clear and structured process. From manuscript refinement to final production, our focus is on delivering a book that feels professional and ready for real readers.
                         </p>
 
                         <ul className="space-y-4 mb-10 text-gray-800 font-poppins text-[15px] leading-relaxed">
                             {listItems.map((item, index) => (
                                 <li key={index} className="flex items-start gap-3">
                                     <span className="w-1.5 h-1.5 rounded-full bg-gray-800 shrink-0 mt-[10px]"></span>
-                                    <p>
+                                    <p className="text-sm">
                                         <span className="font-bold text-gray-900">{item.title}</span> {item.desc}
                                     </p>
                                 </li>

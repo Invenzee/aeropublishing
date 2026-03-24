@@ -16,7 +16,7 @@ export default function PromoBanner() {
                     <div className="relative w-[240px] aspect-2/3">
                         {/* Placeholder. Replace with 'New Girl In Town' cover */}
                         <Image
-                            src="/carousel-2.png"
+                            src="/book-landing-page-11.png"
                             alt="Book Mockup"
                             fill
                             className="object-contain"
@@ -30,7 +30,7 @@ export default function PromoBanner() {
                         Don’t Let A Great  <span className="text-brand-secondary font-shaded max-sm:text-[40px] text-[50px] font-[300]">Book Get Held</span> Back By A Weak Launch
                     </h2>
                     <p className="text-gray-200 font-poppins text-[16px] leading-relaxed mb-8 max-w-[700px] mx-auto">
-                        Your manuscript can be excellent, but presentation matters. Editing quality, cover design, formatting, and publishing setup determine how readers judge your book in seconds. Let’s build a professional release that gives your story the best chance to succeed.
+                        A strong manuscript needs an equally strong presentation. Editing, design, formatting, and publishing setup all influence how readers perceive your book. We help you build a release that gives your work the attention it deserves.
                     </p>
                     {/* Buttons as requested */}
                     <div className="flex flex-wrap gap-4 pt-4">
@@ -52,7 +52,7 @@ export default function PromoBanner() {
                     <div className="relative w-[300px] aspect-square rotate-[-5deg]">
                         {/* Placeholder. Replace with the hand-held book image */}
                         <Image
-                            src="/carousel-3.png"
+                            src="/book-landing-page-10.png"
                             alt="Hand holding book"
                             fill
                             className="object-contain"

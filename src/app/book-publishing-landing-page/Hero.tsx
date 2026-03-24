@@ -64,11 +64,11 @@ export default function Hero() {
                     {/* Left Column: Content */}
                     <div className="space-y-8">
                         <h1 className="text-[60px] font-syne font-semibold leading-[1] text-brand-primary max-sm:text-[40px]">
-                            Make Your Mark With Our Premium Publishing Services
+                            Premium Publishing Services
                         </h1>
 
                         <p className="text-black font-poppins text-base leading-relaxed max-w-xl">
-                            Our team integrates your idea & storyline with our experience to publish your story perfectly.
+                            OurYour story deserves more than just publication — it deserves to be presented the right way. At Aero Publishing, we combine your ideas with professional expertise into a polished, publish-ready book.
                         </p>
 
                         <div className="flex flex-wrap gap-4 pt-4">

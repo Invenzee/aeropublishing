@@ -6,15 +6,15 @@ export default function PartnerBenefitsSection() {
     const listItems = [
         {
             title: "High Standards At Every Step",
-            desc: "From editing to layout, we focus on the details that affect reader experience, reviews, and credibility."
+            desc: "From editing to layout, we focus on the details that shape reader experience and credibility."
         },
         {
             title: "Strategy Built Around Your Goals",
-            desc: "We tailor the publishing route to your objectives, timeline, and target readers so your launch makes sense."
+            desc: "Your publishing journey is tailored to your timeline, audience, and long-term vision."
         },
         {
             title: "Experienced Publishing Support",
-            desc: "Our team brings real publishing knowledge across editing, design, setup, and marketing guidance."
+            desc: "Our team brings practical expertise across editing, design, and publishing execution."
         }
     ];
 
@@ -27,11 +27,12 @@ export default function PartnerBenefitsSection() {
                     <div className="w-full lg:w-1/2 flex flex-col items-start z-20">
 
                         <h2 className="text-[50px] mb-4 font-syne font-medium leading-[1] text-brand-primary max-sm:text-[32px]">
-                            What You Get When You <span className=" text-brand-secondary font-shaded font-[400] s"> Partner</span><span className="font-bold">With Us</span>
+                            
+                            What You Get When You <span className=" text-brand-secondary font-shaded font-[400] s"> Partner </span><span className="font-bold">With Us</span>
                         </h2>
 
                         <p className="text-gray-700 font-poppins text-[15.5px] leading-relaxed mb-12 max-w-[600px]">
-                            Authors choose us for a simple reason: we make publishing feel clear, professional, and achievable. We combine creative quality with practical guidance so your book is ready for real readers and real platforms.
+                            We make publishing simple, structured, and results-driven. Our goal is to ensure your book is not only completed — but ready to perform in the real market.
                         </p>
 
                         <div className="space-y-8">
@@ -64,7 +65,7 @@ export default function PartnerBenefitsSection() {
                             {/* Tilted Book */}
                             <div className="absolute w-[75%] h-[115%] transform -rotate-12 hover:-translate-y-2 transition-transform duration-500 ease-in-out cursor-pointer z-10">
                                 <Image
-                                    src="/carousel-4.png" // placeholder for "Descent Into The Void"
+                                    src="/book-landing-page-4.png" // placeholder for "Descent Into The Void"
                                     alt="Book Mockup"
                                     fill
                                     className="object-contain drop-shadow-2xl"

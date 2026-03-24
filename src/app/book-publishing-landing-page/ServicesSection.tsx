@@ -7,32 +7,32 @@ export default function ServicesSection() {
         {
             num: "01.",
             title: "Manuscript Evaluation",
-            desc: "The review comprises a thorough reading of the work by an editor, who then summarizes its advantages and weaknesses."
+            desc: "We carefully review your manuscript to highlight strengths, identify gaps, and provide clear direction for improvement."
         },
         {
             num: "02.",
             title: "Quality Assurance",
-            desc: "To guarantee that spelling and grammatical errors are found and fixed, we complete a thorough copyedit and a final proofread of your text."
+            desc: "Our editing process ensures your book is free from grammatical errors, inconsistencies, and structural issues."
         },
         {
             num: "03.",
             title: "Book Cover Design",
-            desc: "Our design team includes some of the top designers in the world who have created bestsellers like It's Me, Chelsea & Choose Yourself."
+            desc: "Our design team creates visually compelling covers that align with your genre and attract your target audience."
         },
         {
             num: "04.",
             title: "Interior Layout",
-            desc: "Our expertise in interior design guarantees that your book will provide a seamless visual experience from the cover to the last page."
+            desc: "We format your book for a seamless reading experience across print and digital platforms."
         },
         {
             num: "05.",
             title: "Distribution & Royalty Setup",
-            desc: "We establish major distributor and retailer accounts under your name, ensuring full ownership of your material and royalties."
+            desc: "We help set up your book across major platforms while ensuring you retain full ownership and control."
         },
         {
             num: "06.",
             title: "Ebook Creation And Distribution",
-            desc: "Your eBook or Kindle will be available on major eBook stores such as Amazon and Barnes & Noble, making it accessible worldwide."
+            desc: "Your book is converted into eBook formats and distributed globally for maximum reach."
         }
     ];
 
@@ -44,11 +44,11 @@ export default function ServicesSection() {
                 <div className="text-center max-w-4xl mx-auto mb-16">
 
                     <h2 className="text-[50px] text-brand-primary text-center font-syne font-bold leading-[1.1] max-sm:text-[32px] ">
-                        <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px] leading-[.8]"> What’s</span>{" "}
-                        In The Aero Publishing Services?
+                        <span className="text-brand-secondary font-shaded font-[300] text-[60px] max-sm:text-[40px] leading-[.8]"> What</span>{" "}
+                        Does Aero Publishing Services Consist Of?
                     </h2>
-                    <p className="text-gray-700 font-poppins text-[15px]">
-                        Our publishing services has everything you need to turn your completed manuscript into a polished and officially published book.
+                    <p className="text-gray-700 w-2xl mx-auto font-poppins text-[15px]">
+                        Our publishing services cover everything you need to transform your manuscript into a professionally published book.
                     </p>
                 </div>
 
@@ -99,7 +99,7 @@ export default function ServicesSection() {
                         <div className="relative w-full max-w-[400px] aspect-3/4">
                             {/* Using placeholder. Update to the Schizophrenia book image later */}
                             <Image
-                                src="/carousel-1.png"
+                                src="/book-landing-page-8.png"
                                 alt="Book Publishing Services"
                                 fill
                                 className="object-contain"
