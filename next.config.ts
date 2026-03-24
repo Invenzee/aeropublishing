@@ -22,33 +22,9 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === "production",
   },
   
-  // Webpack optimizations
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      // Defer non-critical JavaScript
-      config.optimization = {
-        ...config.optimization,
-        splitChunks: {
-          chunks: 'all',
-          cacheGroups: {
-            default: false,
-            vendors: false,
-            commons: {
-              name: 'commons',
-              chunks: 'all',
-              minChunks: 2,
-            },
-            // Separate vendor chunks
-            node_modules: {
-              test: /[\\/]node_modules[\\/]/,
-              name: 'vendors',
-              priority: 10,
-            },
-          },
-        },
-      };
-    }
-    return config;
+  // Turbopack configuration (required for Next.js 16+)
+  turbopack: {
+    // Turbopack handles optimization automatically
   },
 };
 
