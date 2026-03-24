@@ -12,7 +12,7 @@ export default function JourneySection() {
                         {/* We use an existing book image as a placeholder. The user can swap to the exact "History's Unsolved Mysteries" if needed. */}
                         <div className="relative w-full max-w-[800px] aspect-4/3">
                             <Image
-                                src="/book-landing-page-5.png"
+                                src="/book-landing-page-hero.png"
                                 alt="Book Publishing Journey"
                                 fill
                                 className="object-contain"
