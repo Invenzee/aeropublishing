@@ -67,6 +67,30 @@ export default function Home() {
     }
   ];
 
+  const facebookPagePlugin = (
+    <div className="w-full">
+      <iframe 
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100069250598189&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=25813019315030230" 
+        width="200%" 
+        height="500" 
+        style={{border:"none",overflow:"hidden"}} 
+        scrolling="no" 
+        frameBorder="0" 
+        allowFullScreen={true} 
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      />
+    </div>
+  );
+
+  const instagramFeed = (
+    <div className="w-full">
+      {/* Elfsight Instagram Feed | Untitled Instagram Feed */}
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div className="elfsight-app-0fa2e1f2-bf6f-4ce1-888b-a08759ee1301" data-elfsight-app-lazy></div>
+    </div>
+  );
+
+
   return (
     <main className="min-h-screen">
       <Header />
@@ -81,7 +105,19 @@ export default function Home() {
       <WhyChooseUsSection />
       <AuthorsShowcaseSection />
       <FAQSection faqs={faqs} />
+      
+      
       <PromoSection />
+      {/* Social Media Section - Facebook & Instagram */}
+      <section className="py-16 max-w-[1140px] mx-auto">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">Connect With Us on Social Media</h2>
+          <div className="flex justify-center gap-8 max-sm:flex-col max-sm:items-center">
+            {instagramFeed}
+            {facebookPagePlugin}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
