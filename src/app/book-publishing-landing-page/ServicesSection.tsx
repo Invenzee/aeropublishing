@@ -99,7 +99,7 @@ export default function ServicesSection() {
                         <div className="relative w-full max-w-[400px] aspect-3/4">
                             {/* Using placeholder. Update to the Schizophrenia book image later */}
                             <Image
-                                src="/book-landing-page-8.png"
+                                src="/book-landing-page-7.png"
                                 alt="Book Publishing Services"
                                 fill
                                 className="object-contain"

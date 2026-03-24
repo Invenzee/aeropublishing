@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import CounterSection from "@/components/CounterSection";
 import WhyAeroSection from "@/components/WhyAeroSection";
-import GlobalAudienceSection from "@/components/GlobalAudienceSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import HowWeWorkSection from "@/components/HowWeWorkSection";
 import ConnectWithUsSection from "@/components/ConnectWithUsSection";
@@ -12,6 +11,7 @@ import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import AuthorsShowcaseSection from "@/components/AuthorsShowcaseSection";
 import FAQSection from "@/components/FAQSection";
 import PromoSection from "@/components/PromoSection";
+import PortfolioSection from "./book-publishing-landing-page/PortfolioSection";
 
 export const metadata: Metadata = {
   title: "Publish Your Book with Aero – Ghostwriting, Editing & More",
@@ -74,7 +74,7 @@ export default function Home() {
       <HeroSection />
       <CounterSection />
       <WhyAeroSection description="" highlightTitle="Publishing" normalTitle="Your Book Should Be " boldTitle="Simple, Transparent, and Author-First" features={features} />
-      <GlobalAudienceSection />
+      <PortfolioSection />
       <LogoCarousel />
       <HowWeWorkSection />
       <ConnectWithUsSection />

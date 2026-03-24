@@ -26,7 +26,7 @@ export default function MissionSection() {
                                     width={500}
                                     height={500}
                                     src="/booksabout.png"
-                                    alt="Laptop with books"
+                                    alt="Laptop with books" 
                                     className="object-contain"
                                 />
                             </div>

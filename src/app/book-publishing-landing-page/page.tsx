@@ -9,7 +9,7 @@ import { Metadata } from "next";
 import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
-import GlobalAudienceSection from '@/components/GlobalAudienceSection';
+import PortfolioSection from './PortfolioSection';
 
 export const metadata: Metadata = {
     title: "Book Publishing Landing Page – Aero Publishing",
@@ -52,7 +52,7 @@ export default function BookPublishingLandingPage() {
             <JourneySection />
             <ServicesSection />
             <PromoBanner />
-            <GlobalAudienceSection />
+            <PortfolioSection />
             <WhyChooseFrontline />
             <PartnerBenefitsSection />
             <UpgradeBanner />

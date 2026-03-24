@@ -3,7 +3,6 @@ import HeroSection from "@/components/About/HeroSection";
 import MissionSection from "@/components/About/Mission";
 import CounterSection from "@/components/CounterSection";
 import WhyAeroSection from "@/components/WhyAeroSection";
-import GlobalAudienceSection from "@/components/GlobalAudienceSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import HowWeWorkSection from "@/components/HowWeWorkSection";
 import ConnectWithUsSection from "@/components/ConnectWithUsSection";
@@ -11,6 +10,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import PromoSection from "@/components/PromoSection";
 import { Metadata } from "next";
+import PortfolioSection from "../book-publishing-landing-page/PortfolioSection";
 export const metadata: Metadata = {
   title: "About Aero Publishing – Helping Authors Get Published",
   description:
@@ -72,7 +72,7 @@ export default function About() {
             <CounterSection />
             <MissionSection />
             <WhyAeroSection highlightTitle="Publishing" normalTitle="Your Book Should Be " boldTitle=" Simple, Transparent, and Author-First" features={features} description="" />
-            <GlobalAudienceSection />
+            <PortfolioSection />
             <LogoCarousel />
             <HowWeWorkSection />
             <ConnectWithUsSection />

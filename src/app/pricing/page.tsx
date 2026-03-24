@@ -1,12 +1,12 @@
 import HeroSection from '@/components/About/HeroSection'
 import PricingSection from '@/components/Pricing/PricingSection'
-import GlobalScaleSection from '@/components/Pricing/GlobalScaleSection';
 import ConnectWithUsSection from '@/components/ConnectWithUsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import WhyChooseUsSection from '@/components/WhyChooseUsSection';
 import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
+import PortfolioSection from '../book-publishing-landing-page/PortfolioSection';
 
 const faqs = [
     {
@@ -39,7 +39,7 @@ export default function page() {
                 description="All-inclusive packages with copyright protection and a 7-day money-back guarantee. Publish your book with ease."
             />
             <PricingSection />
-            <GlobalScaleSection />
+            <PortfolioSection />
             <ConnectWithUsSection />
             <TestimonialsSection />
             <WhyChooseUsSection />
