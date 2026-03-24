@@ -78,11 +78,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Preconnect to third-party domains for faster loading */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://connect.facebook.net" />
+        <link rel="preconnect" href="https://www.facebook.com" />
+        <link rel="preconnect" href="https://embed.tawk.to" />
+        
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-ML8Q9N76');` }} />
         {/* End Google Tag Manager */}
 
-        {/* Start of Tawk.to Script */}
+        {/* Start of Tawk.to Script - Deferred for better performance */}
         <script type="text/javascript" dangerouslySetInnerHTML={{
           __html: `
           var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -99,9 +106,9 @@ export default function RootLayout({
 
         <link rel="icon" href="/favicon-3.png" />
 
-        {/* Google tag (gtag.js) */}
+        {/* Google tag (gtag.js) - Async loading */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDYR2R3WP0" />
-        <script dangerouslySetInnerHTML={{
+        <script async dangerouslySetInnerHTML={{
           __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

@@ -17,7 +17,16 @@ export default function FacebookPixel() {
   useEffect(() => {
     // We check if window and fbq are available
     if (typeof window !== "undefined" && window.fbq) {
-      window.fbq("track", "PageView");
+      // Use requestIdleCallback for non-critical tracking
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => {
+          window.fbq("track", "PageView");
+        });
+      } else {
+        setTimeout(() => {
+          window.fbq("track", "PageView");
+        }, 1000);
+      }
     }
   }, [pathname, searchParams]); 
 
