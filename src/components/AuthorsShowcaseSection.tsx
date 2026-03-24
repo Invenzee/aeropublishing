@@ -3,6 +3,7 @@
 import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -231,7 +232,7 @@ function ReviewCard({ item }: { item: any }) {
                     style={{ backgroundColor: hasAvatar ? 'transparent' : '#E96659' }}
                 >
                     {hasAvatar ? (
-                        <img src={item.avatar} alt={item.name} className="w-full h-full object-cover" />
+                        <Image src={item.avatar} alt={item.name} width={100} height={100} className="object-cover" loading="lazy" />
                     ) : (
                         getInitials(item.name)
                     )}

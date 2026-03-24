@@ -23,9 +23,10 @@ export default function MissionSection() {
                         >
                             <div className="relative w-full aspect-[4/3]">
                                 <Image
+                                    width={500}
+                                    height={500}
                                     src="/booksabout.png"
                                     alt="Laptop with books"
-                                    fill
                                     className="object-contain"
                                 />
                             </div>
@@ -87,9 +88,10 @@ export default function MissionSection() {
                         >
                             <div className="relative w-full aspect-[4/5] z-10 transition-transform duration-500 hover:scale-105">
                                 <Image
+                                    width={500}
+                                    height={500}
                                     src="/rightbook2.png"
                                     alt="Book house structure"
-                                    fill
                                     className="object-contain"
                                 />
                             </div>

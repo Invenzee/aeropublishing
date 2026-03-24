@@ -70,7 +70,7 @@ export default function HeroSection() {
                     <div className="w-full max-w-md">
 
 
-                        <img src="/contactus.png" alt="Contact Form" />
+                        <Image src="/contactus.png" alt="Contact Form" width={500} height={300} />
                     </div>
                 </motion.div>
 

@@ -16,6 +16,7 @@ import type { Swiper as SwiperType } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import Image from 'next/image';
 
 const faqs = [
     {
@@ -165,10 +166,12 @@ export default function page() {
                                         className="flex justify-center"
                                     >
                                         <div className="relative w-full max-w-[200px] aspect-[2/3] rounded-lg overflow-hidden mx-auto">
-                                            <img
+                                            <Image
                                                 src={book.image}
                                                 alt={book.title}
                                                 className="w-full h-full object-cover"
+                                                width={200}
+                                                height={300}
                                             />
                                         </div>
                                     </motion.div>
@@ -247,10 +250,12 @@ export default function page() {
                                         className="flex justify-center"
                                     >
                                         <div className="relative w-full max-w-[200px] aspect-[2/3] rounded-lg overflow-hidden mx-auto">
-                                            <img
+                                            <Image
                                                 src={book.image}
                                                 alt={book.title}
                                                 className="w-full h-full object-cover"
+                                                width={200}
+                                                height={300}
                                             />
                                         </div>
                                     </motion.div>

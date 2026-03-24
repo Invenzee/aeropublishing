@@ -6,6 +6,7 @@ import Button from "./Button";
 import { Check } from "lucide-react";
 import { sendEmail } from "@/app/actions/email";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function ConnectWithUsSection() {
     const router = useRouter();
@@ -68,10 +69,13 @@ export default function ConnectWithUsSection() {
                         className="w-1/3 flex justify-center max-lg:w-full"
                     >
                         <div className="relative w-full">
-                            <img
+                            <Image
                                 src="/connect-with-us-logo.png"
                                 alt="Connect with us logo"
-                                className="w-full h-full object-cover"
+                                width={500}
+                                height={500}
+                                className="object-cover"
+                                loading="lazy"
                             />
                         </div>
                     </motion.div>

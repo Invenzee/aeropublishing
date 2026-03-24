@@ -92,7 +92,7 @@ export default function HeroSection() {
                     {/* Badges Placeholder */}
                     <div className="flex gap-4 items-center py-2">
                         {badges.map((badge, i) => (
-                            <Image key={i} src={badge} alt="Badge" width={i === 1 && !isMobile ? 70 : isMobile ? 60 : 80} height={i === 1 && !isMobile ? 70 : isMobile ? 60 : 80} />
+                            <Image key={i} src={badge} alt="Badge" width={i === 1 && !isMobile ? 70 : isMobile ? 60 : 80} height={i === 1 && !isMobile ? 70 : isMobile ? 60 : 80} priority={i === 0} />
                         ))}
                     </div>
 

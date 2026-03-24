@@ -48,7 +48,7 @@ export default function CounterSection() {
     const stats = [
         {
             icon: (
-                <img src="/book.svg" alt="Book icon" className="w-12 h-12 max-sm:w-10 max-sm:h-10" />
+                <Image src="/book.svg" alt="Book icon" width={48} height={48} className="w-12 h-12 max-sm:w-10 max-sm:h-10" />
             ),
             number: 800,
             suffix: "+",
@@ -56,7 +56,7 @@ export default function CounterSection() {
         },
         {
             icon: (
-                <img src="/reload.svg" alt="Reload icon" className="w-12 h-12 max-sm:w-10 max-sm:h-10" />
+                <Image src="/reload.svg" alt="Reload icon" width={48} height={48} className="w-12 h-12 max-sm:w-10 max-sm:h-10" />
             ),
             number: 100,
             suffix: "+",
@@ -64,7 +64,7 @@ export default function CounterSection() {
         },
         {
             icon: (
-                <img src="/growth.svg" alt="Growth icon" className="w-12 h-12 max-sm:w-10 max-sm:h-10" />
+                <Image src="/growth.svg" alt="Growth icon" width={48} height={48} className="w-12 h-12 max-sm:w-10 max-sm:h-10" />
             ),
             number: 200,
             suffix: "+",
@@ -87,9 +87,11 @@ export default function CounterSection() {
                     ease: "easeInOut"
                 }}
             >
-                <img
+                <Image
                     src="/triangle.png"
                     alt="Triangle decoration"
+                    width={176}
+                    height={176}
                     className="w-full h-full object-contain"
                 />
             </motion.div>

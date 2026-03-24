@@ -83,7 +83,7 @@ export default function PromoPopup() {
                         {/* Left Side: Brand Promo */}
                         <div className="w-full md:w-[50%] bg-brand-primary text-white flex flex-col justify-between relative overflow-hidden max-sm:hidden">
 
-                            <img
+                            <Image
                                 src="/popup-image.png"
                                 alt="Book cover"
                                 className="w-full h-full object-cover filter drop-shadow-2xl brightness-110"
@@ -103,7 +103,7 @@ export default function PromoPopup() {
 
                                     <div className="flex items-center gap-4 bg-white/5 rounded-2xl p-4 border border-white/5">
                                         <div className="bg-white p-2 rounded-lg shrink-0">
-                                            <img src="/logo.png" alt="BBB" className="h-8 object-contain grayscale" />
+                                            <Image src="/logo.png" alt="BBB" className="h-8 object-contain grayscale" />
                                         </div>
                                         <div>
                                             <p className="font-syne font-bold text-sm">BBB ACCREDITED</p>

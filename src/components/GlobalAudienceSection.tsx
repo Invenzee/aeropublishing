@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Swiper as SwiperType } from 'swiper';
+import Image from 'next/image';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -15,45 +16,45 @@ export default function GlobalAudienceSection() {
     const isInView = useInView(containerRef, { once: true, margin: "-100px" });
     const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
-    const books = [
+   const books = [
         {
             id: 1,
-            image: "/carousel-1.png",
+            image: "/book-landing-page-11.png",
             title: "Book 1"
         },
         {
             id: 2,
-            image: "/carousel-2.png",
+            image: "/book-landing-page-4.png",
             title: "Book 2"
         },
         {
             id: 3,
-            image: "/carousel-3.png",
+            image: "/book-landing-page-5.png",
             title: "Book 3"
         },
         {
             id: 4,
-            image: "/carousel-4.png",
+            image: "/book-landing-page-6.png",
             title: "Book 4"
         },
         {
             id: 5,
-            image: "/carousel-1.png",
+            image: "/book-landing-page-7.png",
             title: "Book 5"
         },
         {
             id: 6,
-            image: "/carousel-2.png",
+            image: "/book-landing-page-8.png",
             title: "Book 6"
         },
         {
             id: 7,
-            image: "/carousel-3.png",
+            image: "/book-landing-page-9.png",
             title: "Book 7"
         },
         {
             id: 8,
-            image: "/carousel-4.png",
+            image: "/book-landing-page-10.png",
             title: "Book 8"
         }
     ];
@@ -140,10 +141,12 @@ export default function GlobalAudienceSection() {
                                     className="flex justify-center"
                                 >
                                     <div className="relative w-full max-w-[200px] aspect-[2/3] rounded-lg overflow-hidden mx-auto">
-                                        <img
+                                        <Image
                                             src={book.image}
                                             alt={book.title}
-                                            className="w-full h-full object-cover"
+                                            fill
+                                            className="object-cover"
+                                            loading="lazy"
                                         />
                                     </div>
                                 </motion.div>

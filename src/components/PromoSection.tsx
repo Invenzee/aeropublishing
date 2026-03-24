@@ -6,6 +6,7 @@ import Button from "./Button";
 import { X } from "lucide-react";
 import { sendEmail } from "@/app/actions/email";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function PromoSection() {
     const router = useRouter();
@@ -119,10 +120,12 @@ export default function PromoSection() {
 
                     {/* Right Side: Image */}
                     <div className="w-1/2 relative bg-[#1A2E35] max-md:w-full min-h-[300px]">
-                        <img
+                        <Image
                             src="/popup-image.png"
                             alt="Book cover"
                             className="w-full h-full object-cover filter drop-shadow-2xl brightness-110"
+                            width={500}
+                            height={300}
                         />
                     </div>
                 </motion.div>

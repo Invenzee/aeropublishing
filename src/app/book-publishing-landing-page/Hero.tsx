@@ -4,6 +4,7 @@ import { useState } from "react";
 import Button from "@/components/Button";
 import { sendEmail } from "@/app/actions/email";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Hero() {
     const router = useRouter();
@@ -163,7 +164,7 @@ export default function Hero() {
                                 />
                                 <div className="flex">
                                     <span className="inline-flex items-center px-3 h-12 bg-gray-50 border border-r-0 border-gray-200 text-gray-500 text-sm">
-                                        <img src="https://flagcdn.com/w40/us.png" alt="US Flag" className="h-4 w-6 object-cover mr-2" />
+                                        <Image src="https://flagcdn.com/w40/us.png" alt="US Flag" className="h-4 w-6 object-cover mr-2" width={20} height={12} />
                                         +1
                                     </span>
                                     <input

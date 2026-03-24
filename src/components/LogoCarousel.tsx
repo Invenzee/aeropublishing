@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function LogoCarousel() {
     // Logo data - will be replaced with actual logo images
@@ -43,10 +44,12 @@ export default function LogoCarousel() {
                                 key={`${logo.id}-${index}`}
                                 className="flex-shrink-0 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
                             >
-                                <img
+                                <Image
                                     src={logo.src}
                                     alt={logo.alt}
-                                    className="h-12 w-auto object-contain max-sm:h-8"
+                                    className="w-auto object-contain"
+                                    width={100}
+                                    height={100}
                                 />
                             </div>
                         ))}

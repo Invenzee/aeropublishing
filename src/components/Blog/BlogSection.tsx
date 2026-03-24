@@ -89,7 +89,7 @@ export default function BlogSection() {
                         className="flex-1 w-full"
                     >
                         <div className="relative">
-                            <img src={featuredPost.image} alt="Featured Blog" className="object-cover  rounded-2xl" />
+                            <Image src={featuredPost.image} alt="Featured Blog" className="object-cover  rounded-2xl" width={500} height={300} />
                             {/* Decorative Sparkle */}
                             <motion.div
                                 animate={{ rotate: 360 }}
@@ -142,7 +142,7 @@ export default function BlogSection() {
                         >
                             {/* Image Container */}
                             <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] mb-6 shadow-md group-hover:shadow-xl transition-all duration-300">
-                                <Image src={post.image} alt={post.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                                <Image src={post.image} alt={post.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105"  />
 
                                 {/* Badge */}
                                 <div className="absolute top-4 right-4">

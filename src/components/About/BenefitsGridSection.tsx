@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from 'react';
 
 interface BenefitCard {
@@ -48,7 +49,7 @@ export default function BenefitsGridSection({
                                     {title.highlight}
                                 </span>
                                 {/* Decorative Underline matching the image style */}
-                                <img src="/title-underline.svg" className="absolute -bottom-5 left-0 w-full h-6" alt="" />
+                                <Image src="/title-underline.svg" className="absolute -bottom-5 left-0 w-full h-6" alt="" width={500} height={100} />
                             </span>
                         )}
                     </h2>
