@@ -12,12 +12,43 @@ const nextConfig: NextConfig = {
   experimental: {
     // Inline small CSS for faster initial load
     optimizeCss: true,
+    // Reduce JavaScript bundle size
+    optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
   
   // Reduce JavaScript bundle size
   compiler: {
     // Remove console.log in production
     removeConsole: process.env.NODE_ENV === "production",
+  },
+  
+  // Webpack optimizations
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      // Defer non-critical JavaScript
+      config.optimization = {
+        ...config.optimization,
+        splitChunks: {
+          chunks: 'all',
+          cacheGroups: {
+            default: false,
+            vendors: false,
+            commons: {
+              name: 'commons',
+              chunks: 'all',
+              minChunks: 2,
+            },
+            // Separate vendor chunks
+            node_modules: {
+              test: /[\\/]node_modules[\\/]/,
+              name: 'vendors',
+              priority: 10,
+            },
+          },
+        },
+      };
+    }
+    return config;
   },
 };
 

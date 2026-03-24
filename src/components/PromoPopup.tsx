@@ -86,7 +86,10 @@ export default function PromoPopup() {
                             <Image
                                 src="/popup-image.png"
                                 alt="Book cover"
+                                fill
                                 className="w-full h-full object-cover filter drop-shadow-2xl brightness-110"
+                                sizes="(max-width: 768px) 400px, 450px"
+                                quality={75}
                             />
 
                             {/* <div className="relative z-10">

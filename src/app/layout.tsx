@@ -78,12 +78,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preconnect to third-party domains for faster loading */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
-        <link rel="preconnect" href="https://connect.facebook.net" />
-        <link rel="preconnect" href="https://www.facebook.com" />
-        <link rel="preconnect" href="https://embed.tawk.to" />
+        {/* Preconnect to third-party domains for faster loading - LIMIT TO 4 */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://connect.facebook.net" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://embed.tawk.to" />
         
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-ML8Q9N76');` }} />
@@ -99,6 +98,7 @@ export default function RootLayout({
           s1.src='https://embed.tawk.to/6855bbafc96da61913b7204e/1iu7ea9e7';
           s1.charset='UTF-8';
           s1.setAttribute('crossorigin','*');
+          s1.setAttribute('defer','true');
           s0.parentNode.insertBefore(s1,s0);
           })();
         `}} />
