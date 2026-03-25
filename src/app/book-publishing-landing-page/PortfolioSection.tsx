@@ -135,11 +135,11 @@ const defaultCategories: Category[] = [
     {
         id: "children",
         label: "Children's",
-        books: [
-            { id: 13, image: "/children-1.png", title: "Adventures of Pip" },
-            { id: 14, image: "/children-2.png", title: "Magic Kingdom" },
-            { id: 15, image: "/children-3.png", title: "Bedtime Stories" },
-            { id: 16, image: "/children-4.png", title: "Rainbow Tales" },
+ books: [
+            { id: 17, image: "/book-landing-page-11.png", title: "The Lost City" },
+            { id: 19, image: "/book-landing-page-5.png", title: "Love & Betrayal" },
+            { id: 20, image: "/book-landing-page-6.png", title: "Mystery Unfolded" },
+            { id: 18, image: "/book-landing-page-4.png", title: "Whispers in the Dark" },
         ],
     },
     {
@@ -166,10 +166,10 @@ const defaultCategories: Category[] = [
         id: "poetry",
         label: "Poetry",
         books: [
-            { id: 25, image: "/book-landing-page-11.png", title: "Words of the Soul" },
             { id: 26, image: "/book-landing-page-4.png", title: "Verses & Dreams" },
-            { id: 27, image: "/book-landing-page-5.png", title: "Poetry Collection" },
+            { id: 25, image: "/book-landing-page-11.png", title: "Words of the Soul" },
             { id: 28, image: "/book-landing-page-6.png", title: "Emotions in Verse" },
+            { id: 27, image: "/book-landing-page-5.png", title: "Poetry Collection" },
         ],
     },
 ];
