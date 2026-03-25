@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 
 const badges = [
     "/hero-badge-1.png",
-    "/hero-badge-2.png",
+    // "/hero-badge-2.png",
     "/hero-badge-3.png",
     "/hero-badge-4.png",
 ]

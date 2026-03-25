@@ -97,11 +97,11 @@ export default function Header() {
                                 </div>
 
                                 {/* Clutch */}
-                                <div className="relative group">
+                                {/* <div className="relative group">
                                     <a href="https://clutch.co/profile/aero-publishing" target="_blank" rel="noopener noreferrer" className="block w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
                                         <Image src="/Clutch.svg" alt="Clutch" width={28} height={28} className="object-contain group-hover:scale-110 transition-transform hover:invert" />
                                     </a>
-                                </div>
+                                </div> */}
                     </div>
 
                 </div>

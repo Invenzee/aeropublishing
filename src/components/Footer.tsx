@@ -104,16 +104,15 @@ export default function Footer() {
                                 </div>
 
                                 {/* Clutch */}
-                                <div className="relative group">
+                                {/* <div className="relative group">
                                     <a href="https://clutch.co/profile/aero-publishing" target="_blank" rel="noopener noreferrer" className="block w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white transition-all duration-300">
                                         <Image src="/Clutch.svg" alt="Clutch" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform hover:invert" width={20} height={20} />
                                     </a>
-                                    {/* Tooltip */}
                                     <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-white text-brand-primary text-xs font-syne font-bold rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap shadow-lg">
                                         Clutch
                                         <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-white"></div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
