@@ -146,10 +146,10 @@ const defaultCategories: Category[] = [
         id: "fiction",
         label: "Fiction",
         books: [
-            { id: 17, image: "/book-landing-page-11.png", title: "The Lost City" },
-            { id: 18, image: "/book-landing-page-4.png", title: "Whispers in the Dark" },
-            { id: 19, image: "/book-landing-page-5.png", title: "Love & Betrayal" },
-            { id: 20, image: "/book-landing-page-6.png", title: "Mystery Unfolded" },
+            { id: 17, image: "/fiction-1.png", title: "The Lost City" },
+            { id: 18, image: "/fiction-2.png", title: "Whispers in the Dark" },
+            { id: 19, image: "/fiction-3.png", title: "Love & Betrayal" },
+            { id: 20, image: "/fiction-4.png", title: "Mystery Unfolded" },
         ],
     },
     {
