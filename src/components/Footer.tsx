@@ -58,7 +58,7 @@ export default function Footer() {
                             <a href="https://www.facebook.com/people/Aero-Publishing/100069250598189/" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
                                 <FaFacebookF size={18} className="group-hover:scale-110 transition-transform" />
                             </a>
-                            <a href="htthttps://www.instagram.com/aeropublishingus/" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
+                            <a href="https://www.instagram.com/aeropublishingus/" className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
                                 <FaInstagram size={18} className="group-hover:scale-110 transition-transform" />
                             </a>
                         </div>
