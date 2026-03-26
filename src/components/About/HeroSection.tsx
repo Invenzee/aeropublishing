@@ -72,7 +72,7 @@ export default function HeroSection({ title, description, showButton = true, cla
     };
 
     return (
-        <section className={`${className} relative min-h-screen flex items-center pt-20 overflow-hidden bg-[url('/hero-bg.png')] bg-cover bg-center`}>
+        <section className={`${className} relative min-h-screen flex items-center pt-20 overflow-hidden bg-[url('/hero-bg.webp')] bg-cover bg-center`}>
             <div className="max-w-[1140px] mx-auto my-24 relative z-10 w-full flex justify-between gap-5 items-center max-sm:flex-col max-sm:my-12 max-sm:px-6">
 
                 {/* Left Column: Content */}

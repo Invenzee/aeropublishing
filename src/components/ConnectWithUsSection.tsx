@@ -56,7 +56,7 @@ export default function ConnectWithUsSection() {
     return (
         <section
             className="relative py-10 bg-cover bg-center overflow-hidden max-sm:py-12  overflow-x-hidden"
-            style={{ backgroundImage: "url('/connect-with-us.png')" }}
+            style={{ backgroundImage: "url('/connect-with-us.webp')" }}
         >
             <div ref={containerRef} className="max-w-[1140px] mx-auto px-6 relative z-10">
                 <div className="flex items-center gap-12 max-lg:flex-col max-lg:gap-8">

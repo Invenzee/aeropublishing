@@ -58,7 +58,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[url('/hero-bg.png')] bg-cover bg-center">
+        <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[url('/hero-bg.webp')] bg-cover bg-center">
             <div className="max-w-[1240px] mx-auto max-sm:px-4 py-12 relative z-10 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 

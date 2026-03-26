@@ -6,7 +6,7 @@ export default function UpgradeBanner() {
     return (
         <section
             className="relative py-10 bg-cover bg-center overflow-hidden max-sm:py-12  overflow-x-hidden"
-            style={{ backgroundImage: "url('/connect-with-us.png')" }}
+            style={{ backgroundImage: "url('/connect-with-us.webp')" }}
         >
             <div className="max-w-[1140px] mx-auto max-sm:px-4 px-6 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20">
                 {/* Left Content */}

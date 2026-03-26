@@ -11,7 +11,7 @@ export default function WhyAeroSection({ features, highlightTitle, normalTitle, 
     return (
         <section
             className="relative py-20 bg-contain bg-top bg-no-repeat max-sm:py-12 max-sm:overflow-x-hidden"
-            style={{ backgroundImage: "url('/why-aero-bg.png')" }}
+            style={{ backgroundImage: "url('/why-aero-bg.webp')" }}
         >
             <div className="absolute inset-0 left-0 bottom-0">
                 <Image src="/why-aero-gradient-bg.png" alt="Why Aero" width={500} height={500} className="object-contain bg-no-repeat" loading="lazy" quality={75} />
