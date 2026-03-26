@@ -12,7 +12,7 @@ const testimonials = [
         name: "Jodi Picoult",
         quote: "You can always edit a bad page. You can’t edit a blank page.",
         details: "This includes professional editing, cover design, formatting, and distribution strategies tailored to your genre.",
-        authorImage: "/quote-1.jfif",
+        authorImage: "/quote-1.webp",
         mainImage: "/why-aero-book.png"
     },
     {
@@ -28,7 +28,7 @@ const testimonials = [
         name: "Stephen King",
         quote: "The scariest moment is always just before you start.",
         details: "We provide comprehensive marketing plans to get your book in front of the right readers and maximize your sales.",
-        authorImage: "/quote-3.jfif",
+        authorImage: "/quote-3.webp",
         mainImage: "/why-aero-book.png"
     }
 ];
