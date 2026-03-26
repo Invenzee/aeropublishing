@@ -102,11 +102,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon-3.png" />
 
         {/* Google Tag Manager - Inline critical code only */}
-        <script
+        {/* <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-ML8Q9N76');`,
           }}
-        />
+        /> */}
       </head>
       <body
         className={`${syne.variable} ${poppins.variable} ${ShadedLarsh.variable} antialiased`}
@@ -117,17 +117,17 @@ export default function RootLayout({
         </Suspense>
 
         {/* Google Tag Manager (noscript) */}
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-ML8Q9N76"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
-        </noscript>
+        </noscript> */}
 
         {/* Meta Pixel Code (noscript) */}
-        <noscript>
+        {/* <noscript>
           <img
             height="1"
             width="1"
@@ -135,7 +135,7 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=1595522894901835&ev=PageView&noscript=1"
             alt="facebook-pixel"
           />
-        </noscript>
+        </noscript> */}
 
         <Header />
         {children}
@@ -143,7 +143,7 @@ export default function RootLayout({
         <PromoPopup />
 
         {/* OPTIMIZED: Google Analytics - Load after interaction (afterInteractive strategy) */}
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-NDYR2R3WP0"
           strategy="afterInteractive"
         />
@@ -158,10 +158,10 @@ export default function RootLayout({
               gtag('config', 'G-NDYR2R3WP0');
             `,
           }}
-        />
+        /> */}
 
         {/* OPTIMIZED: Meta Pixel - Load after interaction */}
-        <Script
+        {/* <Script
           id="meta-pixel"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -176,10 +176,10 @@ export default function RootLayout({
               fbq('init', '1595522894901835');
               fbq('track', 'PageView');`,
           }}
-        />
+        /> */}
 
         {/* OPTIMIZED: Tawk.to - Load on idle (no impact on LCP) */}
-        <Script
+        {/* <Script
           id="tawk-script"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -195,7 +195,7 @@ export default function RootLayout({
               })();
             `,
           }}
-        />
+        /> */}
       </body>
     </html>
   );
