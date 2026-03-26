@@ -109,7 +109,7 @@ export default function Home() {
       
       <PromoSection />
       {/* Social Media Section - Facebook & Instagram */}
-      <section className="py-16 max-w-[1140px] mx-auto">
+      <section className="py-16 max-w-[1140px] mx-auto overflow-hidden">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Connect With Us on Social Media</h2>
           <div className="flex justify-center gap-8 max-sm:flex-col max-sm:items-center">
