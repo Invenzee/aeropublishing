@@ -28,6 +28,21 @@
   --font-shaded: var(--font-shaded-larsh);
 }
 
+/* Force GPU acceleration for animations */
+@media (prefers-reduced-motion: no-preference) {
+  [style*="transform"],
+  [style*="opacity"] {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+  }
+}
+
+/* Optimize transitions */
+.transition-all {
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

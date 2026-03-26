@@ -80,43 +80,49 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* OPTIMIZED: Reduced from 7 to 3 preconnects (most critical only) */}
+        {/* ✅ CRITICAL OPTIMIZATION: Only 2 essential preconnects */}
         <link 
           rel="preconnect" 
           href="https://www.googletagmanager.com" 
-          crossOrigin="anonymous" 
         />
         <link 
           rel="preconnect" 
           href="https://connect.facebook.net" 
-          crossOrigin="anonymous" 
-        />
-        <link 
-          rel="preconnect" 
-          href="https://core.service.elfsight.com" 
-          crossOrigin="anonymous" 
         />
         
-        {/* <link rel="dns-prefetch" href="https://embed.tawk.to" /> */}
+        {/* ✅ DNS-prefetch for non-critical domains */}
+        <link rel="dns-prefetch" href="https://core.service.elfsight.com" />
+        <link rel="dns-prefetch" href="https://static.elfsight.com" />
+        <link rel="dns-prefetch" href="https://embed.tawk.to" />
+        
         <meta name="msvalidate.01" content="7000FF60495EE20E0D4689F671EDA603" />
         <link rel="icon" href="/favicon-3.png" />
-
-        {/* Google Tag Manager - Inline critical code only */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-ML8Q9N76');`,
-          }}
-        />
       </head>
       <body
         className={`${syne.variable} ${poppins.variable} ${ShadedLarsh.variable} antialiased`}
       >
-        {/* Wrap in Suspense to prevent build-time errors with useSearchParams */}
+        {/* ✅ Google Tag Manager - Delayed to improve LCP */}
+        <Script
+          id="gtm-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.defer=true;
+              j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-ML8Q9N76');
+            `,
+          }}
+        />
+
+        {/* ✅ Suspense wrapper for search params */}
         <Suspense fallback={null}>
           <FacebookPixel />
         </Suspense>
 
-        {/* Google Tag Manager (noscript) */}
+        {/* Noscript fallbacks */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-ML8Q9N76"
@@ -126,7 +132,6 @@ export default function RootLayout({
           />
         </noscript>
 
-        {/* Meta Pixel Code (noscript) */}
         <noscript>
           <img
             height="1"
@@ -142,43 +147,57 @@ export default function RootLayout({
         <Footer />
         <PromoPopup />
 
-        {/* OPTIMIZED: Google Analytics - Load after interaction (afterInteractive strategy) */}
+        {/* ✅ Google Analytics - Delayed further */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-NDYR2R3WP0"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <Script
           id="ga-script"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-NDYR2R3WP0');
+              gtag('config', 'G-NDYR2R3WP0', {
+                send_page_view: false
+              });
+              // Send pageview after everything loads
+              window.addEventListener('load', function() {
+                gtag('event', 'page_view');
+              });
             `,
           }}
         />
 
-        {/* OPTIMIZED: Meta Pixel - Load after interaction */}
+        {/* ✅ Meta Pixel - Delayed with timeout */}
         <Script
           id="meta-pixel"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
-            __html: `!function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '1595522894901835');
-              fbq('track', 'PageView');`,
+            __html: `
+              window.fbAsyncInit = function() {
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '1595522894901835');
+                fbq('track', 'PageView');
+              };
+              // Delay initialization by 3 seconds
+              setTimeout(function() { 
+                if(typeof fbAsyncInit === 'function') fbAsyncInit(); 
+              }, 3000);
+            `,
           }}
         />
 
-        {/* OPTIMIZED: Tawk.to - Load on idle (no impact on LCP) */}
+        {/* ✅ Tawk.to - Load on idle (unchanged, already optimized) */}
         <Script
           id="tawk-script"
           strategy="lazyOnload"
