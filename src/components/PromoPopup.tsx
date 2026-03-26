@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, CheckCircle, Star } from "lucide-react";
+import { X } from "lucide-react";
 import Button from "./Button";
 import { sendEmail } from "@/app/actions/email";
 import { useRouter } from "next/navigation";
@@ -14,7 +14,7 @@ export default function PromoPopup() {
     const router = useRouter();
 
     useEffect(() => {
-        // Show popup after 8 seconds
+        // Show popup after 3 seconds (reduced from 8s for better UX)
         const timer = setTimeout(() => {
             const hasSeenPopup = sessionStorage.getItem("hasSeenPromoPopup");
             if (!hasSeenPopup) {
@@ -80,69 +80,29 @@ export default function PromoPopup() {
                         exit={{ scale: 0.9, opacity: 0, y: 20 }}
                         className="relative w-full max-w-[900px] bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row min-h-[400px]"
                     >
-                        {/* Left Side: Brand Promo */}
+                        {/* Left Side: Brand Promo with Image */}
                         <div className="w-full md:w-[50%] bg-brand-primary text-white flex flex-col justify-between relative overflow-hidden max-sm:hidden">
-
+                            {/* OPTIMIZED: eager loading, fetchPriority="high", quality optimized for LCP */}
                             <Image
                                 src="/popup-image.png"
                                 alt="Book cover"
                                 fill
                                 className="w-full h-full object-cover filter drop-shadow-2xl brightness-110"
                                 sizes="(max-width: 768px) 400px, 450px"
-                                quality={75}
+                                quality={65}
+                                priority={true}
+                                fetchPriority="high"
                             />
-
-                            {/* <div className="relative z-10">
-                                <h2 className="text-4xl font-syne font-bold leading-tight mb-2">
-                                    Publish Your Book <span className="text-brand-secondary">Today</span>
-                                </h2>
-                                <div className="w-20 h-1 bg-brand-secondary mb-8" />
-
-                                <div className="space-y-6">
-                                    <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10">
-                                        <p className="text-3xl font-syne font-bold text-brand-secondary mb-1">1,678+</p>
-                                        <p className="text-sm font-poppins opacity-80 uppercase tracking-wider">Total Books Published</p>
-                                    </div>
-
-                                    <div className="flex items-center gap-4 bg-white/5 rounded-2xl p-4 border border-white/5">
-                                        <div className="bg-white p-2 rounded-lg shrink-0">
-                                            <Image src="/logo.png" alt="BBB" className="h-8 object-contain grayscale" />
-                                        </div>
-                                        <div>
-                                            <p className="font-syne font-bold text-sm">BBB ACCREDITED</p>
-                                            <p className="text-xs opacity-70">A+ Rating | Scam Shield Verified</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex flex-col gap-2">
-                                        <div className="flex gap-1 text-brand-secondary">
-                                            {[...Array(5)].map((_, i) => (
-                                                <Star key={i} size={16} fill="currentColor" />
-                                            ))}
-                                        </div>
-                                        <p className="text-sm font-syne font-medium">Excellent on Trustpilot</p>
-                                    </div>
-                                </div>
-                            </div> */}
-
-                            {/* <div className="relative z-10 mt-8">
-                                <div className="bg-gradient-to-r from-brand-secondary to-brand-secondary/80 p-4 rounded-2xl shadow-lg">
-                                    <p className="text-xs font-bold uppercase tracking-widest mb-1">Exclusive Offer</p>
-                                    <p className="text-lg font-syne font-bold">Publishing Only Package</p>
-                                    <p className="text-2xl font-bold">JUST <span className="text-brand-primary">$299!</span></p>
-                                </div>
-                            </div> */}
                         </div>
 
                         {/* Right Side: Form */}
                         <div className="w-full md:w-[50%] bg-brand-white p-4 md:p-10 text-black relative">
                             <button
                                 onClick={closePopup}
-                                className="absolute top-4 right-4 text-black/50 hover:text-black transition-colors p-2 cursor-pointer"
+                                className="absolute top-4 right-4 text-black/50 hover:text-black transition-colors p-2 cursor-pointer z-10"
+                                aria-label="Close popup"
                             >
-                                <a href="#promo-popup-closed">
                                 <X size={24} />
-                                </a>
                             </button>
 
                             <div className="max-w-md mx-auto">
@@ -162,6 +122,7 @@ export default function PromoPopup() {
                                         required
                                         placeholder="Your Full Name*"
                                         className="w-full h-12 px-5 bg-white/5 border border-black/10 rounded-xl focus:outline-none focus:border-brand-secondary transition-all text-sm font-poppins"
+                                        autoComplete="name"
                                     />
                                     <input
                                         name="email"
@@ -169,6 +130,7 @@ export default function PromoPopup() {
                                         required
                                         placeholder="Email Address*"
                                         className="w-full h-12 px-5 bg-white/5 border border-black/10 rounded-xl focus:outline-none focus:border-brand-secondary transition-all text-sm font-poppins"
+                                        autoComplete="email"
                                     />
                                     <input
                                         name="phone"
@@ -176,6 +138,7 @@ export default function PromoPopup() {
                                         required
                                         placeholder="Phone Number*"
                                         className="w-full h-12 px-5 bg-white/5 border border-black/10 rounded-xl focus:outline-none focus:border-brand-secondary transition-all text-sm font-poppins"
+                                        autoComplete="tel"
                                     />
                                     <div className="grid grid-cols-2 gap-4">
                                         <input
