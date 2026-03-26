@@ -72,7 +72,7 @@ export default function Header() {
                         <a href="https://www.facebook.com/people/Aero-Publishing/100069250598189/" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
                             <FaFacebookF size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
                         </a>
-                        <a href="https://www.instagram.com/aeropublishing/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
+                        <a href="https://www.instagram.com/aeropublishingus/" className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-brand-primary transition-all duration-300 group">
                             <FaInstagram size={15} className="group-hover:scale-110 transition-transform text-white group-hover:text-brand-primary" />
                         </a>
                                                         {/* Trustpilot */}
