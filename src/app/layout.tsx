@@ -81,7 +81,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* OPTIMIZED: Reduced from 7 to 3 preconnects (most critical only) */}
-        <link 
+        {/* <link 
           rel="preconnect" 
           href="https://www.googletagmanager.com" 
           crossOrigin="anonymous" 
@@ -95,9 +95,9 @@ export default function RootLayout({
           rel="preconnect" 
           href="https://core.service.elfsight.com" 
           crossOrigin="anonymous" 
-        />
+        /> */}
         
-        <link rel="dns-prefetch" href="https://embed.tawk.to" />
+        {/* <link rel="dns-prefetch" href="https://embed.tawk.to" /> */}
         <meta name="msvalidate.01" content="7000FF60495EE20E0D4689F671EDA603" />
         <link rel="icon" href="/favicon-3.png" />
 
