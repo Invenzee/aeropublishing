@@ -96,6 +96,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://embed.tawk.to" />
         
         <meta name="msvalidate.01" content="7000FF60495EE20E0D4689F671EDA603" />
+        <meta name="google-site-verification" content="70KQU6GQM-v5XdEOb0Zykiq6Q3sYzR1QO6o3LlfzSmo" />
         <link rel="icon" href="/favicon-3.png" />
       </head>
       <body
