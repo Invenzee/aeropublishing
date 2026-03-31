@@ -80,7 +80,7 @@ export default function page() {
                     "Professional Website Design & Setup",
                     "100% Ownership of Your Website & Content"
                 ]}
-                imageSrc="/author-website-1.jpg"
+                imageSrc="/author-1.jpg"
                 hasFeatures={true}
             />
             <WhyAeroSection
@@ -89,7 +89,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description="Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused website experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust."
                 features={features}
-                imageUrl='/author-website-3.jpg'
+                imageUrl='/author-3.jpg'
             />
             <BenefitsGridSection
                 subtitle="Why Authors Website with Aero?"
@@ -132,7 +132,7 @@ export default function page() {
                 description="Establish a professional online presence with Aero Publishing’s author website design services. We help authors create websites that showcase books, highlight achievements, and connect directly with readers.
                 Whether you’re just starting out or rebranding your author platform, our team delivers clean design, clear structure, and reliable functionality—so your website works for you, not against you.
                 "
-                imageSrc="/author-website-2.jpg"
+                imageSrc="/author-2.jpg"
                 isReversed={true}
                 subtitle=""
             />

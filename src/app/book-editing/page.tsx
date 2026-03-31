@@ -89,7 +89,7 @@ export default function page() {
                     "Professional Editorial Review by Industry Experts",
                     "Full Creative Control & 100% Author Rights"
                 ]}
-                imageSrc="/editing-1.png"
+                imageSrc="/editing-1.jpg"
                 hasFeatures={true}
             />
             <WhyAeroSection
@@ -98,7 +98,7 @@ export default function page() {
                 boldTitle=' Services Include'
                 description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused editing experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
-                imageUrl='/editing-3.png'
+                imageUrl='/editing-3.jpg'
             />
             <BenefitsGridSection
                 subtitle="Why Book Editing with Aero?"
@@ -142,7 +142,7 @@ export default function page() {
 
                 From initial manuscript review to final polish, we combine editorial expertise with a streamlined process to ensure your book is professional, polished, and publication-ready. With dedicated support at every step, we help you move forward confidently toward print and digital release—without sacrificing ownership or creative control.
                 `}
-                imageSrc="/editing-2.png"
+                imageSrc="/editing-2.jpeg"
                 isReversed={true}
                 subtitle=""
             />
