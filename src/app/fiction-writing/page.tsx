@@ -137,7 +137,7 @@ From concept to final manuscript, we combine human storytelling expertise with m
                 }}
                 description="Turn your ideas into a professionally written fiction book with Aero Publishing. We guide you through every step—from early brainstorming to a finished manuscript—ensuring your story is immersive, well-structured, and reader-ready.
                 Our collaborative process ensures your voice remains authentic while meeting modern fiction market expectations."
-                imageSrc="/fiction-writing-2.jpg"
+                imageSrc="/fiction-writing-2.JPG"
                 isReversed={true}
                 subtitle=""
             />
