@@ -89,7 +89,7 @@ export default function page() {
                     "Professional Editorial Review by Industry Experts",
                     "Full Creative Control & 100% Author Rights"
                 ]}
-                imageSrc="/editing-1.jpg"
+                imageSrc="/book-editing-1.jpg"
                 hasFeatures={true}
             />
             <WhyAeroSection

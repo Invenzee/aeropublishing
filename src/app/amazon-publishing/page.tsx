@@ -76,7 +76,7 @@ export default function page() {
                     "Professional formatting for Kindle and print editions",
                     "Strategic metadata and category optimization"
                 ]}
-                imageSrc="/audio-book-1.jpg"
+                imageSrc="/amazon-publishing-1.jpg"
                 hasFeatures={true}
             />
             <WhyAeroSection
@@ -86,7 +86,7 @@ export default function page() {
                 boldTitle='Done for You'
                 description='We manage the technical, creative, and strategic elements required to publish your book in full compliance with Amazon KDP standards, positioning it for professional presentation and long-term visibility.'
                 features={features}
-                imageUrl='/audio-book-3.jpg'
+                imageUrl='/amazon-publishing-3.jpg'
             />
             <BenefitsGridSection
                 subtitle="Why Authors Choose Aero"
@@ -127,7 +127,7 @@ export default function page() {
                     highlight: "Confidence"
                 }}
                 description="Amazon offers global reach, but successful publishing requires careful execution. We manage manuscript refinement, interior formatting for digital and print editions, cover development, account configuration, and listing setup, all aligned with KDP standards. With a structured publishing process and strategic optimization, your book launches professionally while you maintain full ownership and earnings."
-                imageSrc="/audio-book-2.jpg"
+                imageSrc="/amazon-publishing-2.jpg"
                 isReversed={true}
                 subtitle=""
             />
