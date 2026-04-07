@@ -3,24 +3,27 @@
 import nodemailer from "nodemailer";
 
 export async function sendEmail(formData: any) {
-    const { name, email, phone, website, services, timeline, source, message, formType, genre, pages } = formData;
+    try {
+        const { name, email, phone, website, services, timeline, source, message, formType, genre, pages } = formData;
 
-    const GMAIL_USER = process.env.GMAIL_USER || "info@aeropublishing.us";
-    const GMAIL_PASS = process.env.GMAIL_PASS || "faci aibl dcvu yopk";
+        console.log("Clicked send email")
 
-    const transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-            user: GMAIL_USER,
-            pass: GMAIL_PASS,
-        },
-    });
+        const GMAIL_USER = process.env.GMAIL_USER || "info@aeropublishing.us";
+        const GMAIL_PASS = process.env.GMAIL_PASS || "onmt czwk glrz jtld";
 
-    const mailOptions = {
-        from: GMAIL_USER,
-        to: "info@aeropublishing.us",
-        subject: `New Form Submission: ${formType || "General Contact"}`,
-        text: `
+        const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+                user: GMAIL_USER,
+                pass: GMAIL_PASS,
+            },
+        });
+
+        const mailOptions = {
+            from: GMAIL_USER,
+            to: "info@aeropublishing.us",
+            subject: `New Form Submission: ${formType || "General Contact"}`,
+            text: `
       Form Details:
       Form Type: ${formType || "N/A"}
       Name: ${name || "N/A"}
@@ -34,7 +37,7 @@ export async function sendEmail(formData: any) {
       Source: ${source || "N/A"}
       Message: ${message || "N/A"}
     `,
-        html: `
+            html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
         <h2 style="color: #3F3774; border-bottom: 2px solid #FE695B; padding-bottom: 10px;">New Form Submission</h2>
         <p><strong>Form Type:</strong> ${formType || "N/A"}</p>
@@ -56,9 +59,8 @@ export async function sendEmail(formData: any) {
         </footer>
       </div>
     `,
-    };
+        };
 
-    try {
         const info = await transporter.sendMail(mailOptions);
         console.log("Email sent: " + info.response);
         return { success: true, message: "Email sent successfully" };

@@ -13,7 +13,7 @@ const faqs = [
     {
         id: 1,
         question: "How long does self-publishing take?",
-        answer: "The timeline for self-publishing depends on the condition of your manuscript and the services required. On average, professionally publishing a book can take anywhere from 4 to 12 weeks. This includes editing, formatting, cover design, ISBN registration, and distribution setup. If your manuscript is already finalized, the process can move faster. At Aero Publishing, we provide a clear timeline at the beginning of every project so you know exactly what to expect."
+        answer: "The timeline for self-publishing depends on the condition of your manuscript and the services required. On average, professionally publishing a book can take anywhere from 4 to 12 weeks. This includes editing, formating, cover design, ISBN registration, and distribution setup. If your manuscript is already finalized, the process can move faster. At Aero Publishing, we provide a clear timeline at the beginning of every project so you know exactly what to expect."
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ const faqs = [
     {
         id: 4,
         question: "Do you offer ghostwriting and editing services?",
-        answer: "Yes. In addition to publishing, we provide professional ghostwriting, developmental editing, copy editing, proofreading, formatting, cover design, and marketing support. Whether you need help starting your manuscript or refining a completed draft, our team offers end-to-end services designed for self-publishing authors."
+        answer: "Yes. In addition to publishing, we provide professional ghostwriting, developmental editing, copy editing, proofreading, formating, cover design, and marketing support. Whether you need help starting your manuscript or refining a completed draft, our team offers end-to-end services designed for self-publishing authors."
     }
 ];
 
@@ -38,12 +38,12 @@ export default function page() {
     const features = [
         {
             icon: "/feature-icon-1.png",
-            title: "Print-Ready Interior Formatting",
+            title: "Print-Ready Interior formating",
             description: "We format your book interior for print with clean layouts, proper margins, and professional spacing—ensuring your book meets industry and printer requirements."
         },
         {
             icon: "/feature-icon-2.png",
-            title: "eBook Formatting for Kindle & EPUB",
+            title: "eBook formating for Kindle & EPUB",
             description: "Your manuscript is formatted for major eBook platforms, including Kindle and EPUB formats, ensuring compatibility, readability, and smooth digital performance."
         },
         {
@@ -61,22 +61,22 @@ export default function page() {
     return (
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
-                title="Book Formatting"
-                description="All-inclusive book formatting packages designed to prepare your manuscript for professional publication. With industry-standard formatting, platform compatibility, and a 7-day money-back guarantee, Aero Publishing makes formatting simple and stress-free."
+                title="Book formating"
+                description="All-inclusive book formating packages designed to prepare your manuscript for professional publication. With industry-standard formating, platform compatibility, and a 7-day money-back guarantee, Aero Publishing makes formating simple and stress-free."
             />
             <FeatureSection
-                subtitle="Book Formatting Made Effortless:"
+                subtitle="Book formating Made Effortless:"
                 title={{
                     prefix: "Powered by",
                     highlight: "Innovation",
                     suffix: "and Human Expertise"
                 }}
-                description="Take full control of your publishing journey with Aero Publishing’s professional book formatting services. Whether you’re preparing your first book or refining a final manuscript, our team ensures your interior layout meets industry standards for both print and digital formats.
+                description="Take full control of your publishing journey with Aero Publishing’s professional book formating services. Whether you’re preparing your first book or refining a final manuscript, our team ensures your interior layout meets industry standards for both print and digital formats.
                 We combine technical precision with publishing expertise to deliver clean, readable, and professional layouts. From manuscript preparation to final files, our streamlined process ensures your book looks polished, consistent, and ready for distribution—without compromising ownership or creative control.
                 "
                 features={[
                     "7-Day Money Back Guarantee",
-                    "Print & Digital Formatting Support",
+                    "Print & Digital formating Support",
                     "100% Ownership of Your Book Files"
                 ]}
                 imageSrc="/book-formatting-1.jpg"
@@ -84,14 +84,14 @@ export default function page() {
             />
             <WhyAeroSection
                 highlightTitle="What"
-                normalTitle=" Our Book Formatting"
+                normalTitle=" Our Book formating"
                 boldTitle=' Services Include'
-                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused formatting experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
+                description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused formating experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
                 imageUrl='/book-formatting-3.jpg'
             />
             <BenefitsGridSection
-                subtitle="Why Book Formatting with Aero?"
+                subtitle="Why Book formating with Aero?"
                 title={{
                     text: <>A Faster, Easier, and More <br className='max-sm:hidden' /> Profitable </>,
                     highlight: "Experience"
@@ -99,7 +99,7 @@ export default function page() {
                 benefits={[
                     {
                         title: "All-in-One Platform for Seamless Publishing",
-                        description: "Our formatting services integrate seamlessly with editing, publishing, and distribution—eliminating the need for multiple vendors or complex workflows."
+                        description: "Our formating services integrate seamlessly with editing, publishing, and distribution—eliminating the need for multiple vendors or complex workflows."
                     },
                     {
                         title: "Full Creative & Financial Control",
@@ -111,7 +111,7 @@ export default function page() {
                     },
                     {
                         title: "Publish Faster with Our Streamlined Process",
-                        description: "Our efficient formatting workflow helps move your book toward publication quickly, without delays or unnecessary revisions."
+                        description: "Our efficient formating workflow helps move your book toward publication quickly, without delays or unnecessary revisions."
                     },
                     {
                         title: "Professional Quality, Backed by Expertise",
@@ -128,7 +128,7 @@ export default function page() {
                     prefix: "Format Your",
                     highlight: "Book"
                 }}
-                description="Prepare your manuscript for publication with Aero Publishing’s professional book formatting services. We help authors transform raw documents into clean, polished interiors that meet industry standards and platform guidelines.
+                description="Prepare your manuscript for publication with Aero Publishing’s professional book formating services. We help authors transform raw documents into clean, polished interiors that meet industry standards and platform guidelines.
                 Whether you’re publishing in print, digital, or both, our team ensures your book is formatted accurately and consistently—so it’s ready for readers, not revisions.
                 "
                 imageSrc="/book-formatting-2.jpg"

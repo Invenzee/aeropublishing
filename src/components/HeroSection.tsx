@@ -41,6 +41,7 @@ export default function HeroSection() {
         e.preventDefault();
         const form = e.currentTarget;
         setStatus({ submitting: true, success: null, message: "" });
+        console.log("Submitting form...");
         const formData = new FormData(form);
         const data = {
             name: formData.get("name"),
@@ -52,9 +53,13 @@ export default function HeroSection() {
 
         try {
             const result = await sendEmail(data);
+            console.log(result)
+            console.log(result.success)
             if (result.success) {
+                console.log("Form submission successful.");
                 router.push("/thank-you");
             } else {
+                console.log("Form submission failed.");
                 setStatus({
                     submitting: false,
                     success: false,
@@ -62,6 +67,7 @@ export default function HeroSection() {
                 });
             }
         } catch (error) {
+            console.error("Error sending email:", error);
             setStatus({
                 submitting: false,
                 success: false,
