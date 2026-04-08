@@ -26,7 +26,7 @@ const navItems: NavItem[] = [
             { name: "Amazon Publishing", href: "/amazon-publishing" },
             { name: "Audio Book Narration", href: "/audio-book-narration" },
             { name: "Authors Website", href: "/authors-website" },
-            { name: "Book Formating", href: "/book-formating" },
+            { name: "Book Formatting", href: "/book-formatting" },
             { name: "Book Cover Design", href: "/book-cover-design" },
             { name: "Book Printing", href: "/book-printing" },
             { name: "Children Book", href: "/children-book" },
