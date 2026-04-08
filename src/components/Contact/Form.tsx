@@ -92,7 +92,7 @@ export default function ContactForm() {
 
   return (
     <div className="bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
-      <Image src="/carousel-bg.png" className="absolute right-0" alt="" width={500} height={500} />
+      {/* <Image src="/carousel-bg.png" className="absolute right-0" alt="" width={500} height={500} /> */}
       <form
         onSubmit={handleSubmit}
         className="max-w-[1140px] mx-auto bg-white p-8 rounded-xl shadow"
