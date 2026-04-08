@@ -30,9 +30,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aeropublishing.us"),
-  title: {
-    default: "Publish Your Book with Aero Publishing – Ghostwriting, Editing & More",
-  },
+  title: "Publish Your Book with Aero Publishing – Ghostwriting, Editing & More",
   description:
     "Turn your manuscript into a published book with Aero Publishing’s expert services—ghostwriting, editing, design, and global book marketing included.",
   keywords: [
