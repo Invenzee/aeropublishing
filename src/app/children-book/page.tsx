@@ -9,6 +9,12 @@ import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import HowWeWorkSection from '@/components/HowWeWorkSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from 'next';
+
+export const metadata : Metadata = {
+    title: "Children’s Book Publishing & Illustration Services",
+    description: "Bring your children’s book to life with writing, illustration, and publishing support tailored for young readers and engaging storytelling.",
+}
 
 const faqs = [
     {

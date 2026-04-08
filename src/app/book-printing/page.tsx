@@ -9,6 +9,12 @@ import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import HowWeWorkSection from '@/components/HowWeWorkSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Book Printing Services for Authors – High-Quality Prints",
+    description: "Print your book with professional quality and precision. Aero Publishing offers reliable book printing solutions for authors worldwide.",
+}
 
 const faqs = [
     {

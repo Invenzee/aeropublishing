@@ -31,11 +31,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://aeropublishing.us"),
   title: {
-    default: "Publish Your Book with Aero – Ghostwriting, Editing & More",
+    default: "Publish Your Book with Aero Publishing – Ghostwriting, Editing & More",
     template: "%s | Aero Publishing",
   },
   description:
-    "Turn your manuscript into a published book with Aero Publishing's expert services—ghostwriting, editing, design, and global book marketing included.",
+    "Turn your manuscript into a published book with Aero Publishing’s expert services—ghostwriting, editing, design, and global book marketing included.",
   keywords: [
     "book publishing",
     "ghostwriting services",
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     "book cover design",
   ],
   openGraph: {
-    title: "Publish Your Book with Aero – Ghostwriting, Editing & More",
+    title: "Publish Your Book with Aero Publishing – Ghostwriting, Editing & More",
     description:
-      "Turn your manuscript into a published book with Aero Publishing's expert services—ghostwriting, editing, design, and global marketing.",
+      "Turn your manuscript into a published book with Aero Publishing’s expert services—ghostwriting, editing, design, and global book marketing included.",
     url: "https://aeropublishing.us",
     siteName: "Aero Publishing",
     images: [
@@ -62,9 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Publish Your Book with Aero",
+    title: "Publish Your Book with Aero Publishing – Ghostwriting, Editing & More",
     description:
-      "Ghostwriting, editing, publishing and marketing services for authors.",
+      "Turn your manuscript into a published book with Aero Publishing’s expert services—ghostwriting, editing, design, and global book marketing included.",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -213,6 +213,14 @@ export default function RootLayout({
                 s1.setAttribute('crossorigin','*');
                 s0.parentNode.insertBefore(s1,s0);
               })();
+              
+              // Auto-open chat on desktop only
+              Tawk_API.onLoad = function(){
+                // Check if device is desktop (screen width > 768px)
+                if(window.innerWidth > 768) {
+                  Tawk_API.maximize();
+                }
+              };
             `,
           }}
         />

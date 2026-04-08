@@ -10,6 +10,12 @@ import FAQSection from "@/components/FAQSection";
 import PromoSection from "@/components/PromoSection";
 import HeroSection from "@/components/About/HeroSection";
 import ServicesGridSection from "@/components/ServicesGridSection";
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+    title: "Book Publishing Services for Authors – Aero Publishing",
+    description: "Explore Aero Publishing’s full range of services, including ghostwriting, editing, design, and marketing—everything you need to publish your book professionally.",
+}
 
 const faqs = [
     {

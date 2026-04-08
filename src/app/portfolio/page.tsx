@@ -7,17 +7,21 @@ import WhyChooseUsSection from '@/components/WhyChooseUsSection';
 import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
-import { useInView, motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Swiper as SwiperType } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import Image from 'next/image';
 import PortfolioSection from '../book-publishing-landing-page/PortfolioSection';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Our Portfolio – Books Published by Aero Authors",
+  description:
+    "Browse books published by Aero Publishing. See real author success stories, professional designs, and completed projects across multiple genres.",
+};
+
 
 const faqs = [
     {

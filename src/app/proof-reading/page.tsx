@@ -8,6 +8,12 @@ import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from 'next';
+
+export const metadata : Metadata = {
+    title: "Proofreading Services for Books – Error-Free Manuscripts",
+    description: "Ensure your manuscript is polished and error-free with professional proofreading services focused on grammar, clarity, and consistency.",
+}
 
 const faqs = [
     {

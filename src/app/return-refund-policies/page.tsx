@@ -1,5 +1,12 @@
 "use client";
 
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+    title: "Return & Refund Policy – Aero Publishing",
+    description: "Review Aero Publishing’s refund and return policy, including eligibility, timelines, and conditions for services offered to authors.",
+}
+
 export default function ReturnRefundPolicy() {
     return (
         <section className="bg-brand-light pb-20 pt-60 max-sm:py-20">

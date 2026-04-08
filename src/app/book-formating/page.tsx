@@ -8,6 +8,12 @@ import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from "next";
+
+export const metadata : Metadata = {
+    title: "Book Formatting Services for eBook & Print – Aero Publishing",
+    description: "Get your manuscript professionally formatted for Kindle and print. Ensure clean layout, readability, and compliance with publishing standards.",
+}
 
 const faqs = [
     {
@@ -61,11 +67,11 @@ export default function page() {
     return (
         <main className="min-h-screen bg-white pb-20">
             <HeroSection
-                title="Book formating"
+                title="Book Formating"
                 description="All-inclusive book formating packages designed to prepare your manuscript for professional publication. With industry-standard formating, platform compatibility, and a 7-day money-back guarantee, Aero Publishing makes formating simple and stress-free."
             />
             <FeatureSection
-                subtitle="Book formating Made Effortless:"
+                subtitle="Book Formating Made Effortless:"
                 title={{
                     prefix: "Powered by",
                     highlight: "Innovation",
@@ -84,14 +90,14 @@ export default function page() {
             />
             <WhyAeroSection
                 highlightTitle="What"
-                normalTitle=" Our Book formating"
+                normalTitle=" Our Book Formating"
                 boldTitle=' Services Include'
                 description='Publishing doesn’t need to be complicated. We offer a clear, honest, and author-focused formating experience—keeping you informed, in control, and confident at every stage while delivering professional results you can trust.'
                 features={features}
                 imageUrl='/book-formatting-3.jpg'
             />
             <BenefitsGridSection
-                subtitle="Why Book formating with Aero?"
+                subtitle="Why Book Formating with Aero?"
                 title={{
                     text: <>A Faster, Easier, and More <br className='max-sm:hidden' /> Profitable </>,
                     highlight: "Experience"

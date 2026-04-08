@@ -9,6 +9,12 @@ import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import HowWeWorkSection from '@/components/HowWeWorkSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "eBook Writing Services – Professional Content Creation",
+    description: "Turn your ideas into a professionally written eBook. Our writers create engaging, well-structured content ready for publishing success.",
+}
 
 const faqs = [
     {

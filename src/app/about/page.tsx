@@ -11,6 +11,7 @@ import FAQSection from "@/components/FAQSection";
 import PromoSection from "@/components/PromoSection";
 import { Metadata } from "next";
 import PortfolioSection from "../book-publishing-landing-page/PortfolioSection";
+
 export const metadata: Metadata = {
   title: "About Aero Publishing – Helping Authors Get Published",
   description:

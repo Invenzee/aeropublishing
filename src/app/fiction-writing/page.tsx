@@ -12,9 +12,9 @@ import WhyAeroSection from '@/components/WhyAeroSection';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Fiction Book Publishing Services for Authors – Aero",
+  title: "Fiction Writing Services – Novels & Story Development",
   description:
-    "Get your novel professionally published with Aero: expert fiction editing, cover design, formatting, and global distribution for indie authors.",
+    "Work with expert writers to create compelling fiction stories, novels, and narratives crafted for readers and publishing success.",
 };
 
 const faqs = [

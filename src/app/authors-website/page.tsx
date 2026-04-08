@@ -9,6 +9,12 @@ import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import HowWeWorkSection from '@/components/HowWeWorkSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from 'next';
+
+export const metadata : Metadata = {
+    title: "Author Website Design Services – Build Your Brand",
+    description: "Create a professional author website to showcase your book, build your brand, and connect with readers online with Aero Publishing.",
+}
 
 const faqs = [
     {

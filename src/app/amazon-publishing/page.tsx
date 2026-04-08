@@ -8,6 +8,12 @@ import AuthorsShowcaseSection from '@/components/AuthorsShowcaseSection';
 import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from 'next';
+
+export const metadata : Metadata = {
+    title: "Amazon KDP Publishing Services – Aero Publishing",
+    description: "Publish your book on Amazon KDP with expert support. Aero handles formatting, setup, and distribution so your book reaches readers worldwide."
+}
 
 const faqs = [
     {

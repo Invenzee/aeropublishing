@@ -12,7 +12,7 @@ import WhyAeroSection from '@/components/WhyAeroSection';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Professional Ghostwriting Services – Memoirs to Fiction",
+  title: "Professional Ghostwriting Services – Memoirs to Fiction ",
   description:
     "Hire experienced ghostwriters for memoirs, novels, business books & more. We turn your ideas into polished manuscripts ready for publishing success.",
 };

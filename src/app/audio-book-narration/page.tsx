@@ -9,6 +9,12 @@ import PromoSection from '@/components/PromoSection';
 import FAQSection from '@/components/FAQSection';
 import HowWeWorkSection from '@/components/HowWeWorkSection';
 import WhyAeroSection from '@/components/WhyAeroSection';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Audiobook Narration Services – Professional Voiceovers",
+    description: "Turn your book into a professional audiobook with expert narration, editing, and production—ready for platforms like Audible and beyond.",
+}
 
 const faqs = [
     {
