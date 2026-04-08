@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://aeropublishing.us"),
   title: {
     default: "Publish Your Book with Aero Publishing – Ghostwriting, Editing & More",
-    template: "%s | Aero Publishing",
   },
   description:
     "Turn your manuscript into a published book with Aero Publishing’s expert services—ghostwriting, editing, design, and global book marketing included.",
