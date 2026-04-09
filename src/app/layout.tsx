@@ -78,20 +78,20 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* ✅ CRITICAL OPTIMIZATION: Only 2 essential preconnects */}
-        <link 
-          rel="preconnect" 
-          href="https://www.googletagmanager.com" 
+        <link
+          rel="preconnect"
+          href="https://www.googletagmanager.com"
         />
-        <link 
-          rel="preconnect" 
-          href="https://connect.facebook.net" 
+        <link
+          rel="preconnect"
+          href="https://connect.facebook.net"
         />
-        
+
         {/* ✅ DNS-prefetch for non-critical domains */}
         <link rel="dns-prefetch" href="https://core.service.elfsight.com" />
         <link rel="dns-prefetch" href="https://static.elfsight.com" />
         <link rel="dns-prefetch" href="https://embed.tawk.to" />
-        
+
         <meta name="msvalidate.01" content="7000FF60495EE20E0D4689F671EDA603" />
         <meta name="google-site-verification" content="70KQU6GQM-v5XdEOb0Zykiq6Q3sYzR1QO6o3LlfzSmo" />
         <link rel="icon" href="/favicon-3.png" />
@@ -195,8 +195,8 @@ export default function RootLayout({
           }}
         />
 
-        {/* ✅ Tawk.to - Load on idle (unchanged, already optimized) */}
-        <Script
+        {/* ✅ Tawk.to - Load on idle (unchanged, already optimized) old one */}
+        {/* <Script
           id="tawk-script"
           strategy="lazyOnload"
           dangerouslySetInnerHTML={{
@@ -210,6 +210,33 @@ export default function RootLayout({
                 s1.setAttribute('crossorigin','*');
                 s0.parentNode.insertBefore(s1,s0);
               })();
+              
+              // Auto-open chat on desktop only
+              Tawk_API.onLoad = function(){
+                // Check if device is desktop (screen width > 768px)
+                if(window.innerWidth > 768) {
+                  Tawk_API.maximize();
+                }
+              };
+            `,
+          }}
+        /> */}
+
+
+        <Script
+          id="tawk-script"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69d7d37066239b1c36ac7b45/1jlph3s9v';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
               
               // Auto-open chat on desktop only
               Tawk_API.onLoad = function(){
