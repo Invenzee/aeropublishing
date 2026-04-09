@@ -20,7 +20,7 @@ export default function PromoPopup() {
             if (!hasSeenPopup) {
                 setIsOpen(true);
             }
-        }, 3000);
+        }, 9000);
 
         return () => clearTimeout(timer);
     }, []);
