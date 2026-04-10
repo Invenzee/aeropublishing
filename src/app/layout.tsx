@@ -241,9 +241,9 @@ s0.parentNode.insertBefore(s1,s0);
               // Auto-open chat on desktop only
               Tawk_API.onLoad = function(){
                 // Check if device is desktop (screen width > 768px)
-                if(window.innerWidth > 768) {
+                // if(window.innerWidth > 768) {
                   Tawk_API.maximize();
-                }
+                // }
               };
             `,
           }}
