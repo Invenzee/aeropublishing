@@ -75,6 +75,116 @@ Publishing a book is one of the most rewarding experiences an author can have. A
 };
 
 export const blogPosts: BlogPost[] = [
+        {
+        slug: "how-to-promote-your-ebook-on-booktok-instagram-linkedin",
+        category: "Tips & Tricks",
+        title: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
+        description:
+            "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
+        date: "06 January 2026",
+        comments: "0 Comments",
+        image: "/ebook-promotion.jpg",
+        readTime: "10 min read",
+        author: "Aero Publishing Team",
+        authorRole: "Publishing Experts",
+        content: `
+## Introduction
+
+Not long ago, publishing an eBook and listing it on Amazon to generate sales was fairly simple. Sadly, that is no longer the case today. The way people discover books now has changed. Readers are now finding books through social media, rather than search engines or marketplaces. Social media platforms like TikTok, Instagram and LinkedIn are now powerful tools for authors. These tools boost visibility, engagement and can also bring consistent sales. Understanding these platforms and using them strategically can make all the difference between a book that gathers dust and one that gains real traction.
+
+## The New Rules of eBook Promotion
+
+Readers today don't simply search for books, they stumble upon them. And not always accidentally. Social media has changed how it should be consumed, making it more organic to discover content. Algorithms favour engagement, storytelling and relatability over old school marketing tactics. This is where BookTok marketing saves the day.
+
+As an author, it means that visibility is no longer achieved by being listed, rather it is about being seen, shared and talked about. A strong author presence can allow you to build familiarity and a loyal audience. Instead of relying solely on book listings, authors are finding creative ways to increase their sales. Many also combine these efforts with professional support like Aero Publishing's book marketing services to amplify reach and position their eBooks effectively across platforms. Successful ecosystems, where readers can connect with their ideas, personality and process can make all the difference.
+
+## Leveraging TikTok's Viral Potential
+
+Social media platforms, especially TikTok, have the potential to capture the attention of the readers within seconds. The BookTok community has transformed how books gain popularity through emotionally engaging content.
+
+### For Fiction: Selling the "Vibe" And Tropes
+
+Fiction thrives on emotion and relatability. On TikTok readers are not looking for boring long summaries, rather they are drawn to the feeling a story evokes. Instead of rote reading, focus on creating a mood. Use short clips, trending sounds and highlight text or tropes. These nifty tricks can help you attract the attention of your audience. Even a simple POV style video can be far more effective than a traditional post.
+
+A clip for example that reads, "POV: You fall in love with the villain who was never meant to be saved." Paired with the right visuals, it can immediately resonate with the right audience. This emotional hook encourages shares, which is where TikTok's true power lies.
+
+### For Non-Fiction: Sharing "Aha" Moments
+
+Non-fiction performs best when it delivers instant value. Readers want advice that can apply immediately.
+
+Short impactful videos that present a key idea or a unique fact from your book can be impactful and leave a lasting impression.
+
+For instance, if the book is about productivity, a quick 30 second video explaining a simple habit can garner attention. The book then becomes an extension of that value rather than a sole focus of it.
+
+## Visual Storytelling On Instagram
+
+As opposed to TikTok, Instagram for authors offers a more curated environment where aesthetics play a big role in building a loyal audience.
+
+### Using Reels for Discovery
+
+Reels function like TikTok and are currently one of the best ways to reach new audiences. Instagram prioritizes short form videos, making it an ideal platform for showcasing your book in creative ways.
+
+For fiction authors, this might include aesthetics edits, character introductions, or visually engaging quotes. For non-fiction authors, reels can highlight key takeaways, quick lessons or myth-busting content.
+
+In the end, the goal is to make your content discoverable. Strong hooks, captions and relatable messaging help ensure sales and increase reels reach beyond existing followers.
+
+### Using Stories for Connection
+
+While reels help you grow, stories can help you connect with your audience. They offer a more personal, behind the scenes look into your journey as an author.
+
+Sharing daily updates, sharing your writing process or even small challenges build trust and make you more likeable. You can also add polls, Q&A, stickers and interactive elements to encourage engagement and make your followers feel involved.
+
+This is how readers turn into a community. With time, that connection translates into stronger support when you promote your book.
+
+## Professional Networking for Authors
+
+LinkedIn may not be the first platform that comes to mind for book promotion; however, it has proven to be highly effective. This is especially true for authors who want to build credibility and a loyal audience. When combined with a strong publishing foundation such as professional formatting, positioning, and distribution offered by Aero Publishing authors can present themselves more confidently and attract the right audience on platforms like LinkedIn.
+
+### For Non-Fiction: Thought Leadership
+
+Non-Fiction authors have the advantage to establish themselves as experts by sharing insights from their books in a professional context.
+
+Instead of promoting the book directly, it helps to break key ideas into short easy to read posts. Feel free to share day to day lessons, frameworks, or perspectives that align with your book.
+
+If your book, for example, focuses on leadership, you might share a post discussing a common mistake managers make and simple ways on how to avoid it. This not only builds authority but also creates curiosity among the readers, leaving them wanting more.
+
+### For Fiction: The "Authorpreneur" Journey
+
+Fiction authors can use LinkedIn differently – by documenting the business side of writing.
+
+Sharing your publishing journey, mistakes to avoid as a first time author, or even challenges that come up may resonate with a professional audience. Posts about discipline, creativity and perseverance often perform well.
+
+This approach helps you not only as a writer, but also as a creator building something meaningful. It opens doors to new opportunities, collaborations and recognition among your niche audience.
+
+## Maximizing Your Content with Repurposing
+
+Creating content daily without pause can be tiring and overwhelming, but overtime it can become manageable when you focus on efficiency.
+
+### The "Create Once, Post Thrice" Method
+
+Rather than creating a separate content for each platform, focus on one relatable piece of content and adapt it.
+
+Did you know that a single can be repurposed multiple times to create traction? This can be done as an Instagram reel, and then converted into a LinkedIn post by expanding on the idea. The core messages remain the same, but the format shifts to suit each platform individually.
+
+A short video, for example explaining a concept from your book can become:
+
+- A TikTok clip with a strong book
+- An Instagram Reel with added captions and visuals
+- A LinkedIn post that expands the idea into a professional insight
+
+This method can save time, maintain consistency across all platforms and ensure your message reaches different audiences without making it tiresome.
+
+## Your 30-Day Action Plan
+
+Start small and stay consistent. During the first week, focus on understanding each platform and identify the type of content that aligns with your vision. In the weeks that follow, begin posting regularly – short videos for discovery, stories for connection and thought-provoking posts for curiosity.
+
+Rather than perfection, aim for consistency. One strong idea, shared extensively across platforms in different formats, is more effective than sporadic posting.
+
+Over time, these efforts compound. Visibility grows exponentially, your daily reach increases and your eBook becomes part of the conversation rather than sitting on the sidelines.
+
+These eBook marketing strategies can increase your sales, if you follow them religiously.
+        `,
+    },
     {
         slug: "how-professional-book-editing-can-transform-your-manuscript",
         category: "Tips & Tricks",
@@ -353,68 +463,6 @@ This is why working with an experienced publishing partner like Aero Publishing 
 ## Is Self-Publishing Right for You?
 
 Self-publishing works best for authors who want full creative and business control, who are willing to invest in professional services, who are building a long-term writing career, and who want to see their book in readers' hands quickly. If that sounds like you, self-publishing may be your ideal path.
-        `,
-    },
-    {
-        slug: "common-mistakes-first-time-authors-make-when-publishing-a-book",
-        category: "Tips & Tricks",
-        title: "Common Mistakes First-Time Authors Make When Publishing a Book",
-        description:
-            "Many new authors rush the publishing process without fully preparing their book for readers. Skipping professional editing, ignoring formatting standards, or neglecting marketing can reduce a book's chances of success. Avoiding these mistakes can make a major difference in a book's visibility and impact.",
-        date: "04 January 2026",
-        comments: "2 Comments",
-        image: "/blog-6.jpg",
-        readTime: "7 min read",
-        author: "Aero Publishing Team",
-        authorRole: "Publishing Experts",
-        content: `
-## Learning From Other Authors' Mistakes
-
-Every experienced publisher has seen the same mistakes made by first-time authors, over and over again. Most of these mistakes are entirely avoidable — but only if you know to look for them. This guide covers the most common pitfalls and how to avoid them.
-
-## Mistake #1: Skipping Professional Editing
-
-This is the most common and costly mistake. Authors who skip professional editing because of cost concerns often pay a much higher price in negative reviews, poor word-of-mouth, and a damaged author reputation.
-
-Professional editing is an investment, not an expense. A well-edited book builds your reputation. A poorly edited book — no matter how brilliant the underlying story — will be dismissed.
-
-## Mistake #2: Designing the Cover Yourself
-
-Unless you're a professional graphic designer with experience in book covers, don't design your own cover. The difference between an amateur cover and a professional one is usually immediately apparent to readers, even if they can't articulate why.
-
-Your cover competes with thousands of professionally designed books in your genre. It needs to match that standard to be competitive.
-
-## Mistake #3: Publishing Before the Book Is Ready
-
-The excitement of completing a manuscript is powerful. The temptation to publish immediately is understandable. Resist it.
-
-Once you publish, you cannot unpublish negative reviews. A book that launches with quality problems can struggle permanently. Take the time to get your book properly edited, formatted, and designed before hitting publish.
-
-## Mistake #4: Ignoring the Book Description
-
-Your book description is your sales pitch. Many authors write descriptions that give away too much plot, that don't hook readers in the opening lines, or that read like a summary rather than marketing copy.
-
-Study successful book descriptions in your genre. Lead with your hook. Create intrigue. End with a call to action.
-
-## Mistake #5: Thinking Publishing Is the Finish Line
-
-Too many first-time authors believe that publishing is the end of the journey. In reality, it's the beginning. Marketing, reviews, and ongoing promotion are what determine whether a book sells beyond its first week.
-
-Plan your marketing strategy before your book launches, not after.
-
-## Mistake #6: Pricing Incorrectly
-
-Pricing strategy varies by genre, format, and market positioning. Many first-time authors either price too high (discouraging discovery) or too low (signaling low quality). Research comparable titles in your genre and price accordingly.
-
-Consider using your launch period for promotional pricing to generate reviews and momentum, then adjusting to your target price.
-
-## Mistake #7: Not Getting an ISBN
-
-ISBNs identify your book uniquely across the publishing ecosystem. While Amazon KDP provides free ISBNs, these are specific to Amazon. An independently purchased ISBN allows you distribute broadly across multiple platforms.
-
-## How Aero Publishing Helps You Avoid These Mistakes
-
-Our team works with first-time authors to guide them through every stage of the publishing process. We've seen these mistakes hundreds of times, and our process is designed to prevent them. From editing and design to distribution and marketing strategy, we ensure your book launches with the best possible foundation for success.
         `,
     },
 ];
