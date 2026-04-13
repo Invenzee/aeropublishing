@@ -4,9 +4,15 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../Button";
-import { featuredPost, blogPosts } from "@/lib/blogData";
+import { featuredPost, blogPosts, calculateReadTime } from "@/lib/blogData";
 
 export default function BlogSection() {
+    // Calculate read times dynamically
+    const featuredWithReadTime = { ...featuredPost, readTime: calculateReadTime(featuredPost.content) };
+    const postsWithReadTime = blogPosts.map(post => ({
+        ...post,
+        readTime: calculateReadTime(post.content)
+    }));
     return (
         <section className="py-20 bg-white bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
             <div className="max-w-[1140px] mx-auto px-6">
@@ -50,21 +56,21 @@ export default function BlogSection() {
                             {featuredPost.description}
                         </p>
 
-                        <Link href={`/blog/${featuredPost.slug}`} className="inline-block text-[#FE695B] font-medium text-sm hover:underline">
+                        <Link href={`/blog/${featuredWithReadTime.slug}`} className="inline-block text-[#FE695B] font-medium text-sm hover:underline">
                             Read Now
                         </Link>
 
                         <div className="flex items-center gap-4 text-xs text-gray-400 font-poppins pt-2">
-                            <span>{featuredPost.date}</span>
+                            <span>{featuredWithReadTime.date}</span>
                             <span className="w-1 h-1 rounded-full bg-gray-300" />
-                            <span>{featuredPost.comments}</span>
+                            <span>{featuredWithReadTime.readTime}</span>
                         </div>
                     </motion.div>
                 </div>
 
                 {/* Grid Posts */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-                    {blogPosts.map((post, index) => (
+                    {postsWithReadTime.map((post, index) => (
                         <motion.article
                             key={index}
                             initial={{ opacity: 0, y: 30 }}
@@ -103,7 +109,7 @@ export default function BlogSection() {
                                     <div className="flex items-center gap-3 text-[10px] text-gray-400 font-poppins">
                                         <span>{post.date}</span>
                                         <span className="w-1 h-1 rounded-full bg-gray-300" />
-                                        <span>{post.comments}</span>
+                                        <span>{post.readTime}</span>
                                     </div>
                                 </div>
                             </div>

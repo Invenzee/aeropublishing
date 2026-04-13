@@ -4,12 +4,19 @@ export interface BlogPost {
     title: string;
     description: string;
     date: string;
-    comments: string;
     image: string;
     readTime: string;
     author: string;
     authorRole: string;
     content: string;
+}
+
+// Helper function to calculate reading time
+export function calculateReadTime(content: string): string {
+    const wordsPerMinute = 200; // Average reading speed
+    const words = content.trim().split(/\s+/).length;
+    const minutes = Math.ceil(words / wordsPerMinute);
+    return `${minutes} min read`;
 }
 
 export const featuredPost: BlogPost = {
@@ -19,7 +26,6 @@ export const featuredPost: BlogPost = {
     description:
         "Many first-time authors assume that once their manuscript is finished, publishing the book will be simple. In reality, the publishing journey involves far more than uploading a file online. Editing, formatting, cover design, metadata optimization, and distribution all play a crucial role in whether a book actually reaches readers.",
     date: "05 January 2026",
-    comments: "0 Comments",
     image: "/main-blog-image.png",
     readTime: "8 min read",
     author: "Aero Publishing Team",
@@ -81,22 +87,19 @@ export const blogPosts: BlogPost[] = [
         title: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
         description:
             "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
-        date: "06 January 2026",
-        comments: "0 Comments",
+        date: "14 April 2026",
         image: "/ebook-promotion.jpg",
-        readTime: "10 min read",
+        readTime: "", // Will be calculated dynamically
         author: "Aero Publishing Team",
         authorRole: "Publishing Experts",
         content: `
-## Introduction
-
 Not long ago, publishing an eBook and listing it on Amazon to generate sales was fairly simple. Sadly, that is no longer the case today. The way people discover books now has changed. Readers are now finding books through social media, rather than search engines or marketplaces. Social media platforms like TikTok, Instagram and LinkedIn are now powerful tools for authors. These tools boost visibility, engagement and can also bring consistent sales. Understanding these platforms and using them strategically can make all the difference between a book that gathers dust and one that gains real traction.
 
 ## The New Rules of eBook Promotion
 
-Readers today don't simply search for books, they stumble upon them. And not always accidentally. Social media has changed how it should be consumed, making it more organic to discover content. Algorithms favour engagement, storytelling and relatability over old school marketing tactics. This is where BookTok marketing saves the day.
+Readers today don't simply search for books, they stumble upon them. And not always accidentally. Social media has changed how it should be consumed, making it more organic to discover content. Algorithms favour engagement, storytelling and relatability over old school marketing tactics. This is where [BookTok marketing](https://www.blueticksocial.com/blog/the-rise-of-booktok-how-tiktok-transformed-publishing-and-digital-marketing) saves the day.
 
-As an author, it means that visibility is no longer achieved by being listed, rather it is about being seen, shared and talked about. A strong author presence can allow you to build familiarity and a loyal audience. Instead of relying solely on book listings, authors are finding creative ways to increase their sales. Many also combine these efforts with professional support like Aero Publishing's book marketing services to amplify reach and position their eBooks effectively across platforms. Successful ecosystems, where readers can connect with their ideas, personality and process can make all the difference.
+As an author, it means that visibility is no longer achieved by being listed, rather it is about being seen, shared and talked about. A strong author presence can allow you to build familiarity and a loyal audience. Instead of relying solely on book listings, authors are finding creative ways to increase their sales. Many also combine these efforts with professional support like [Aero Publishing](https://www.aeropublishing.us/book-marketing)'s book marketing services to amplify reach and position their eBooks effectively across platforms. Successful ecosystems, where readers can connect with their ideas, personality and process can make all the difference.
 
 ## Leveraging TikTok's Viral Potential
 
@@ -118,7 +121,7 @@ For instance, if the book is about productivity, a quick 30 second video explain
 
 ## Visual Storytelling On Instagram
 
-As opposed to TikTok, Instagram for authors offers a more curated environment where aesthetics play a big role in building a loyal audience.
+As opposed to TikTok, [Instagram for authors](https://elizabethspanncraig.com/uncategorized/what-to-post-on-instagram-as-authors/) offers a more curated environment where aesthetics play a big role in building a loyal audience.
 
 ### Using Reels for Discovery
 
@@ -192,7 +195,6 @@ These eBook marketing strategies can increase your sales, if you follow them rel
         description:
             "Many authors underestimate the importance of professional editing. Even the most talented writers benefit from expert editing that improves clarity, structure, and readability. Proper editing not only strengthens your story but also ensures your book meets publishing standards and creates a better experience for readers.",
         date: "04 January 2026",
-        comments: "10 Comments",
         image: "/blog-1.jpg",
         readTime: "6 min read",
         author: "Aero Publishing Team",
@@ -242,7 +244,6 @@ At Aero Publishing, our team of professional editors is experienced across all g
         description:
             "Amazon Kindle Direct Publishing has made it easier than ever for authors to publish their own books. However, understanding the platform, formatting requirements, and publishing process is essential for success. With the right preparation, authors can turn their manuscripts into professionally published books available worldwide.",
         date: "04 January 2026",
-        comments: "4 Comments",
         image: "/blog-2.jpg",
         readTime: "7 min read",
         author: "Aero Publishing Team",
@@ -304,7 +305,6 @@ Navigating KDP successfully requires both technical knowledge and publishing exp
         description:
             "Readers often judge a book by its cover before they ever read the description. A professionally designed cover communicates genre, tone, and credibility. Investing in strong cover design can dramatically improve a book's chances of attracting readers and standing out in competitive marketplaces.",
         date: "04 January 2026",
-        comments: "0 Comments",
         image: "/blog-3.jpg",
         readTime: "5 min read",
         author: "Aero Publishing Team",
@@ -356,7 +356,6 @@ Every cover we produce is delivered in both digital (Kindle) and print-ready for
         description:
             "Writing a manuscript is only the first step in becoming a published author. The publishing process includes editing, formatting, cover design, distribution setup, and marketing preparation. Understanding each step helps authors navigate the journey more confidently and avoid common mistakes.",
         date: "04 January 2026",
-        comments: "14 Comments",
         image: "/blog-4.jpg",
         readTime: "9 min read",
         author: "Aero Publishing Team",
@@ -418,7 +417,6 @@ Navigating this entire process alone is possible, but challenging. Aero Publishi
         description:
             "Self-publishing allows authors to maintain full ownership of their books, including rights and royalties. Unlike traditional publishing models, authors have more flexibility in pricing, marketing, and distribution, allowing them to build their careers on their own terms.",
         date: "04 January 2026",
-        comments: "8 Comments",
         image: "/blog-5.jpg",
         readTime: "6 min read",
         author: "Aero Publishing Team",
@@ -468,10 +466,22 @@ Self-publishing works best for authors who want full creative and business contr
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
-    if (featuredPost.slug === slug) return featuredPost;
-    return blogPosts.find((post) => post.slug === slug);
+    if (featuredPost.slug === slug) {
+        const post = { ...featuredPost };
+        post.readTime = calculateReadTime(post.content);
+        return post;
+    }
+    const post = blogPosts.find((post) => post.slug === slug);
+    if (post) {
+        return { ...post, readTime: calculateReadTime(post.content) };
+    }
+    return undefined;
 }
 
 export function getAllPosts(): BlogPost[] {
-    return [featuredPost, ...blogPosts];
+    const allPosts = [featuredPost, ...blogPosts];
+    return allPosts.map(post => ({
+        ...post,
+        readTime: calculateReadTime(post.content)
+    }));
 }
