@@ -371,7 +371,7 @@ export default function BlogPostClient({ post, relatedPosts }: Props) {
                                 </p>
                                 <div className="flex flex-col gap-3">
                                     <Button variant="secondary" className="w-full justify-center">
-                                        <a href="tel:+17602801847">Call Us: 760 280 1847</a>
+                                        <a href="tel:+13108350771">Call Us: 310 835 0771</a>
                                     </Button>
                                     <button
                                         onClick={() => (window as any).Tawk_API?.maximize()}

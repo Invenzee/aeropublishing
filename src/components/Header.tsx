@@ -61,7 +61,7 @@ export default function Header() {
                     <div className="flex items-center gap-6">
                         <div className="flex items-center gap-2">
                             <Phone size={14} className="text-white cursor-pointer" />
-                            <span className="text-white text-sm font-poppins font-normal cursor-pointer max-sm:hidden"><a href="tel:+17602801847">760 280 1847</a></span>
+                            <span className="text-white text-sm font-poppins font-normal cursor-pointer max-sm:hidden"><a href="tel:+13108350771">310 835 0771</a></span>
                         </div>
                         <div className="flex items-center gap-1">
                             <Mail size={14} className="text-white cursor-pointer" />

@@ -74,7 +74,7 @@ export default function Hero() {
 
                         <div className="flex flex-wrap gap-4 pt-4">
                             <Button font="poppins" variant="primary" className="max-sm:text-[14px] max-sm:px-4">
-                                <a href="tel:+17602801847">760 280 1847</a>
+                                <a href="tel:+13108350771">310 835 0771</a>
                             </Button>
                             <Button
                                 variant="secondary"

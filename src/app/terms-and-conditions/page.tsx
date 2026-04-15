@@ -76,7 +76,7 @@ export default function TermsAndConditions() {
 
                         <ul className="list-disc pl-6 mt-4 space-y-2">
                             <li>Claim your refund specifying your concern by contacting us via any of the following three modes:</li>
-                            <li><a href="tel:+1760280184">Toll free #: 760 280 1847</a></li>
+                            <li><a href="tel:+1760280184">Toll free #: 310 835 0771</a></li>
                             <li>Live Chat</li>
                             <li><a href="mailto:info@aeropublishing.com">info@aeropublishing.com</a></li>
                         </ul>
