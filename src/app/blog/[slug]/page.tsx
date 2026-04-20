@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const post = getBlogPostBySlug(slug);
     if (!post) return {};
     return {
-        title: `${post.title} – Aero Publishing Blog`,
-        description: post.description,
+        title: post.metaTitle,
+        description: post.metaDescription,
     };
 }
 

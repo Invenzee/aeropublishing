@@ -1,4 +1,6 @@
 export interface BlogPost {
+    metaTitle?: string;
+    metaDescription?: string;
     slug: string;
     category: string;
     title: string;
@@ -20,6 +22,8 @@ export function calculateReadTime(content: string): string {
 }
 
 export const featuredPost: BlogPost = {
+    metaTitle: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
+    metaDescription: "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
     slug: "why-most-first-time-authors-fail-at-self-publishing",
     category: "Recent News",
     title: "Why Most First-Time Authors Fail at Self-Publishing (And How to Avoid It)",
@@ -82,6 +86,8 @@ Publishing a book is one of the most rewarding experiences an author can have. A
 
 export const blogPosts: BlogPost[] = [
         {
+        metaTitle: " Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
+        metaDescription: "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
         slug: "how-to-promote-your-ebook-on-booktok-instagram-linkedin",
         category: "Tips & Tricks",
         title: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
