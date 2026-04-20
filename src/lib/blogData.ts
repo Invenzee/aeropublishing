@@ -86,7 +86,7 @@ Publishing a book is one of the most rewarding experiences an author can have. A
 
 export const blogPosts: BlogPost[] = [
         {
-        metaTitle: " Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
+        metaTitle: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
         metaDescription: "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
         slug: "how-to-promote-your-ebook-on-booktok-instagram-linkedin",
         category: "Tips & Tricks",
