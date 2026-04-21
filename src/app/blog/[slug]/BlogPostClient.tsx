@@ -186,16 +186,7 @@ export default function BlogPostClient({ post, relatedPosts }: Props) {
                     >
                         {post.title}
                     </motion.h1>
-
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.25 }}
-                        className="text-white/80 font-poppins text-[15px] leading-relaxed max-w-2xl mx-auto mb-8"
-                    >
-                        {post.description}
-                    </motion.p>
-
+                    
                     {/* Meta row */}
                     <motion.div
                         initial={{ opacity: 0 }}
