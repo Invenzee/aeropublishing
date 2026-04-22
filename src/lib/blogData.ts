@@ -24,81 +24,17 @@ export function calculateReadTime(content: string): string {
 export const featuredPost: BlogPost = {
     metaTitle: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
     metaDescription: "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
-    slug: "why-most-first-time-authors-fail-at-self-publishing",
-    category: "Recent News",
-    title: "Why Most First-Time Authors Fail at Self-Publishing (And How to Avoid It)",
+    slug: "how-to-promote-your-ebook-on-booktok-instagram-linkedin",
+    category: "Tips & Tricks",
+    title: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
     description:
-        "Many first-time authors assume that once their manuscript is finished, publishing the book will be simple. In reality, the publishing journey involves far more than uploading a file online. Editing, formatting, cover design, metadata optimization, and distribution all play a crucial role in whether a book actually reaches readers.",
-    date: "05 January 2026",
-    image: "/main-blog-image.png",
-    readTime: "8 min read",
+        "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
+    date: "14 April 2026",
+    image: "/ebook-promotion.jpg",
+    readTime: "", // Will be calculated dynamically
     author: "Aero Publishing Team",
     authorRole: "Publishing Experts",
     content: `
-## The Illusion of Simple Publishing
-
-Many first-time authors assume that once their manuscript is finished, publishing the book will be simple. In reality, the publishing journey involves far more than uploading a file online. Editing, formatting, cover design, metadata optimization, and distribution all play a crucial role in whether a book actually reaches readers.
-
-One of the biggest challenges new authors face is navigating the technical side of publishing. A poorly formatted book, an unprofessional cover, or weak book descriptions can significantly impact a book's visibility and sales.
-
-## The Most Common Mistakes
-
-### 1. Skipping Professional Editing
-
-The first and most critical mistake is bypassing professional editing. Self-editing is limited — you simply cannot spot every inconsistency, grammatical error, or structural weakness in your own work. Readers notice these flaws immediately, and a book riddled with errors quickly loses credibility.
-
-Professional editors bring fresh eyes and industry expertise. They don't just fix typos — they improve your narrative flow, strengthen character development, and ensure your message lands with maximum impact.
-
-### 2. Underestimating Cover Design
-
-"Don't judge a book by its cover" is advice readers don't follow. In a marketplace crowded with thousands of titles, your cover is your first and sometimes only chance to make an impression. Amateur covers signal amateur content, even if the writing inside is brilliant.
-
-Invest in a professionally designed cover that communicates your book's genre, tone, and promise. A great cover isn't decoration — it's a marketing tool.
-
-### 3. Ignoring Metadata and Keywords
-
-Many authors publish their books without understanding how discoverability works on platforms like Amazon. Your title, subtitle, book description, and keywords determine whether readers can find your book through search.
-
-Spend time researching relevant keywords in your genre. Write a compelling book description that hooks readers in the first two sentences. These small details have an outsized impact on your book's success.
-
-### 4. Rushing to Publish
-
-Patience is a virtue in publishing. Authors who rush their books to market — driven by excitement or impatience — often regret it. Once a book is live, negative reviews can follow you permanently.
-
-Take the time to go through multiple editing passes, beta reader feedback, and formatting checks before hitting publish.
-
-## How Aero Publishing Can Help
-
-At Aero Publishing, we guide authors through every step of the publishing journey — from professional editing and stunning cover design to global distribution and marketing strategy. Our team has helped hundreds of first-time authors launch their books successfully.
-
-You don't have to navigate this alone. With the right support, your book can reach the readers it deserves.
-
-## Key Takeaways
-
-- **Professional editing** is non-negotiable — it's the foundation of a credible, readable book.
-- **Cover design** drives click-through rates and first impressions.
-- **Metadata optimization** determines how easily readers can find your book.
-- **Patience** saves you from permanent negative reviews that hurt long-term sales.
-
-Publishing a book is one of the most rewarding experiences an author can have. Avoid these common pitfalls and give your book the best possible chance of success.
-    `,
-};
-
-export const blogPosts: BlogPost[] = [
-        {
-        metaTitle: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
-        metaDescription: "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
-        slug: "how-to-promote-your-ebook-on-booktok-instagram-linkedin",
-        category: "Tips & Tricks",
-        title: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
-        description:
-            "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
-        date: "14 April 2026",
-        image: "/ebook-promotion.jpg",
-        readTime: "", // Will be calculated dynamically
-        author: "Aero Publishing Team",
-        authorRole: "Publishing Experts",
-        content: `
 Not long ago, publishing an eBook and listing it on Amazon to generate sales was fairly simple. Sadly, that is no longer the case today. The way people discover books now has changed. Readers are now finding books through social media, rather than search engines or marketplaces. Social media platforms like TikTok, Instagram and LinkedIn are now powerful tools for authors. These tools boost visibility, engagement and can also bring consistent sales. Understanding these platforms and using them strategically can make all the difference between a book that gathers dust and one that gains real traction.
 
 ## The New Rules of eBook Promotion
@@ -193,8 +129,10 @@ Over time, these efforts compound. Visibility grows exponentially, your daily re
 
 These eBook marketing strategies can increase your sales, if you follow them religiously.
         `,
-    },
-        {
+}
+
+export const blogPosts: BlogPost[] = [
+    {
         metaTitle: "How to Publish a Poetry eBook on Amazon KDP (Beginner Guide)",
         metaDescription: "Want to self-publish a poetry book? Learn how to publish your poetry eBook on Amazon KDP, optimize keywords, and start selling online.",
         slug: "how-to-publish-a-poetry-ebook-on-amazon-kdp",
@@ -287,6 +225,68 @@ More than good writing, to publish a poetry eBook successfully, you require more
 
 This is not merely to self-publish the content of poetry books, but to do so in a manner that does not erode away its emotionality. When properly done, your poetry gets its audience and establishes the connection that it was intended to do.
         `,
+    },
+    {
+        metaTitle: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
+        metaDescription: "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
+        slug: "why-most-first-time-authors-fail-at-self-publishing",
+        category: "Recent News",
+        title: "Why Most First-Time Authors Fail at Self-Publishing (And How to Avoid It)",
+        description:
+            "Many first-time authors assume that once their manuscript is finished, publishing the book will be simple. In reality, the publishing journey involves far more than uploading a file online. Editing, formatting, cover design, metadata optimization, and distribution all play a crucial role in whether a book actually reaches readers.",
+        date: "05 January 2026",
+        image: "/main-blog-image.png",
+        readTime: "8 min read",
+        author: "Aero Publishing Team",
+        authorRole: "Publishing Experts",
+        content: `
+## The Illusion of Simple Publishing
+
+Many first-time authors assume that once their manuscript is finished, publishing the book will be simple. In reality, the publishing journey involves far more than uploading a file online. Editing, formatting, cover design, metadata optimization, and distribution all play a crucial role in whether a book actually reaches readers.
+
+One of the biggest challenges new authors face is navigating the technical side of publishing. A poorly formatted book, an unprofessional cover, or weak book descriptions can significantly impact a book's visibility and sales.
+
+## The Most Common Mistakes
+
+### 1. Skipping Professional Editing
+
+The first and most critical mistake is bypassing professional editing. Self-editing is limited — you simply cannot spot every inconsistency, grammatical error, or structural weakness in your own work. Readers notice these flaws immediately, and a book riddled with errors quickly loses credibility.
+
+Professional editors bring fresh eyes and industry expertise. They don't just fix typos — they improve your narrative flow, strengthen character development, and ensure your message lands with maximum impact.
+
+### 2. Underestimating Cover Design
+
+"Don't judge a book by its cover" is advice readers don't follow. In a marketplace crowded with thousands of titles, your cover is your first and sometimes only chance to make an impression. Amateur covers signal amateur content, even if the writing inside is brilliant.
+
+Invest in a professionally designed cover that communicates your book's genre, tone, and promise. A great cover isn't decoration — it's a marketing tool.
+
+### 3. Ignoring Metadata and Keywords
+
+Many authors publish their books without understanding how discoverability works on platforms like Amazon. Your title, subtitle, book description, and keywords determine whether readers can find your book through search.
+
+Spend time researching relevant keywords in your genre. Write a compelling book description that hooks readers in the first two sentences. These small details have an outsized impact on your book's success.
+
+### 4. Rushing to Publish
+
+Patience is a virtue in publishing. Authors who rush their books to market — driven by excitement or impatience — often regret it. Once a book is live, negative reviews can follow you permanently.
+
+Take the time to go through multiple editing passes, beta reader feedback, and formatting checks before hitting publish.
+
+## How Aero Publishing Can Help
+
+At Aero Publishing, we guide authors through every step of the publishing journey — from professional editing and stunning cover design to global distribution and marketing strategy. Our team has helped hundreds of first-time authors launch their books successfully.
+
+You don't have to navigate this alone. With the right support, your book can reach the readers it deserves.
+
+## Key Takeaways
+
+- **Professional editing** is non-negotiable — it's the foundation of a credible, readable book.
+- **Cover design** drives click-through rates and first impressions.
+- **Metadata optimization** determines how easily readers can find your book.
+- **Patience** saves you from permanent negative reviews that hurt long-term sales.
+
+Publishing a book is one of the most rewarding experiences an author can have. Avoid these common pitfalls and give your book the best possible chance of success.
+    `,
     },
     {
         slug: "how-professional-book-editing-can-transform-your-manuscript",
