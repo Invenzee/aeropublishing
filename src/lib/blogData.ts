@@ -227,8 +227,8 @@ This is not merely to self-publish the content of poetry books, but to do so in 
         `,
     },
     {
-        metaTitle: "How to Promote Your eBook on BookTok, Instagram & LinkedIn",
-        metaDescription: "Learn how to promote your eBook using BookTok, Instagram, and LinkedIn. Proven strategies for fiction and non-fiction authors to boost visibility and sales.",
+        metaTitle: "Why Most First-Time Authors Fail at Self-Publishing (And How to Avoid It)",
+        metaDescription: "Many first-time authors assume that once their manuscript is finished, publishing the book will be simple. In reality, the publishing journey involves ",
         slug: "why-most-first-time-authors-fail-at-self-publishing",
         category: "Recent News",
         title: "Why Most First-Time Authors Fail at Self-Publishing (And How to Avoid It)",
