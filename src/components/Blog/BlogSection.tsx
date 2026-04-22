@@ -13,6 +13,10 @@ export default function BlogSection() {
         ...post,
         readTime: calculateReadTime(post.content)
     }));
+    
+    // Get only first 3 posts for homepage
+    const displayPosts = postsWithReadTime.slice(0, 3);
+    
     return (
         <section className="py-20 bg-white bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
             <div className="max-w-[1140px] mx-auto px-6">
@@ -47,13 +51,11 @@ export default function BlogSection() {
                         className="flex-1 space-y-3"
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-[36px] leading-[1.2] font-syne font-semibold text-brand-primary">
-                            Why Most First-Time <br />
-                            2026: The Book <span className="text-brand-secondary font-shaded italic font-light text-[40px]">Authors Fail </span> <br />
-                            at Self-Publishing (And How to Avoid It)
+                            {featuredWithReadTime.title}
                         </h2>
 
                         <p className="text-gray-600 font-poppins text-sm leading-relaxed whitespace-pre-line">
-                            {featuredPost.description}
+                            {featuredWithReadTime.description}
                         </p>
 
                         <Link href={`/blog/${featuredWithReadTime.slug}`} className="inline-block text-[#FE695B] font-medium text-sm hover:underline">
@@ -70,7 +72,7 @@ export default function BlogSection() {
 
                 {/* Grid Posts */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-                    {postsWithReadTime.map((post, index) => (
+                    {displayPosts.map((post, index) => (
                         <motion.article
                             key={index}
                             initial={{ opacity: 0, y: 30 }}
@@ -116,7 +118,6 @@ export default function BlogSection() {
                         </motion.article>
                     ))}
                 </div>
-
             </div>
         </section>
     );

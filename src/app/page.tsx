@@ -12,6 +12,7 @@ import AuthorsShowcaseSection from "@/components/AuthorsShowcaseSection";
 import FAQSection from "@/components/FAQSection";
 import PromoSection from "@/components/PromoSection";
 import PortfolioSection from "./book-publishing-landing-page/PortfolioSection";
+import BlogSection from "@/components/Blog/BlogSection";
 
 export const metadata: Metadata = {
   title: "Publish Your Book with Aero – Ghostwriting, Editing & More",
@@ -81,6 +82,7 @@ export default function Home() {
       <TestimonialsSection />
       <WhyChooseUsSection />
       <AuthorsShowcaseSection />
+      <BlogSection />
       <FAQSection faqs={faqs} />
       
       
