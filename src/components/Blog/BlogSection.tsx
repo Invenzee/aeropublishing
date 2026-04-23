@@ -21,6 +21,10 @@ export default function BlogSection() {
         <section className="py-20 bg-white bg-[url('/why-aero-gradient-bg.png')] bg-contain bg-no-repeat bg-left">
             <div className="max-w-[1140px] mx-auto px-6">
 
+                <h1 className="text-3xl md:text-6xl max-auto mb-12 leading-[1.2] font-syne font-semibold text-brand-primary text-center">
+                    Blog
+                </h1>
+
                 {/* Featured Post */}
                 <div className="mb-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                     {/* Image Side */}
