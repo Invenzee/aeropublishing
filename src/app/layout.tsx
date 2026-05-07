@@ -121,14 +121,14 @@ export default function RootLayout({
         </Suspense>
 
         {/* Noscript fallbacks */}
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-ML8Q9N76"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
-        </noscript>
+        </noscript> */}
 
         <noscript>
           <img
