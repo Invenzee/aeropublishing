@@ -92,15 +92,15 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://static.elfsight.com" />
         <link rel="dns-prefetch" href="https://embed.tawk.to" />
 
-        <meta name="msvalidate.01" content="7000FF60495EE20E0D4689F671EDA603" />
-        <meta name="google-site-verification" content="70KQU6GQM-v5XdEOb0Zykiq6Q3sYzR1QO6o3LlfzSmo" />
+        {/* <meta name="msvalidate.01" content="7000FF60495EE20E0D4689F671EDA603" /> */}
+        {/* <meta name="google-site-verification" content="70KQU6GQM-v5XdEOb0Zykiq6Q3sYzR1QO6o3LlfzSmo" /> */}
         <link rel="icon" href="/favicon-3.png" />
       </head>
       <body
         className={`${syne.variable} ${poppins.variable} ${ShadedLarsh.variable} antialiased`}
       >
         {/* ✅ Google Tag Manager - Delayed to improve LCP */}
-        <Script
+        {/* <Script
           id="gtm-init"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -113,7 +113,7 @@ export default function RootLayout({
               })(window,document,'script','dataLayer','GTM-ML8Q9N76');
             `,
           }}
-        />
+        /> */}
 
         {/* ✅ Suspense wrapper for search params */}
         <Suspense fallback={null}>
